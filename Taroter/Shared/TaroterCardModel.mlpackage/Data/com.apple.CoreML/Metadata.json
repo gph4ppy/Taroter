@@ -1,0 +1,12 @@
+{
+  "MLModelVersionStringKey" : "1.0",
+  "MLModelDescriptionKey" : "Tarot card recognition model.",
+  "MLModelCreatorDefinedKey" : {
+    "com.apple.createml.app.tag" : "78.5",
+    "com.apple.createml.version" : "12.0.0",
+    "com.apple.createml.app.version" : "3.0",
+    "com.apple.coreml.model.preview.type" : "imageClassifier"
+  },
+  "MLModelAuthorKey" : "Jakub Dąbrowski",
+  "MLModelLicenseKey" : "--"
+}

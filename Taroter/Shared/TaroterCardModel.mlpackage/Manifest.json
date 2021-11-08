@@ -1,0 +1,24 @@
+{
+    "fileFormatVersion": "1.0.0",
+    "itemInfoEntries": {
+        "47AD9264-371F-4E96-842A-8F64D8EC3AA8": {
+            "author": "com.apple.CoreML",
+            "description": "External FeatureDescription Overlay",
+            "name": "FeatureDescriptions.json",
+            "path": "com.apple.CoreML/FeatureDescriptions.json"
+        },
+        "7BAC222D-40BB-4750-8309-BA8367056614": {
+            "author": "com.apple.CoreML",
+            "description": "CoreML Model Specification",
+            "name": "TaroterCardModel.mlmodel",
+            "path": "com.apple.CoreML/TaroterCardModel.mlmodel"
+        },
+        "B26998AA-C455-4D02-9087-FFC0E8A6EE53": {
+            "author": "com.apple.CoreML",
+            "description": "External Metadata Overlay",
+            "name": "Metadata.json",
+            "path": "com.apple.CoreML/Metadata.json"
+        }
+    },
+    "rootModelIdentifier": "7BAC222D-40BB-4750-8309-BA8367056614"
+}
