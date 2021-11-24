@@ -9,30 +9,24 @@ import SwiftUI
 
 struct MainView: View {
     @AppStorage("isFirstTime") private var isFirstTime: Bool = true
+    private let cardsLabel: Label = Label("Cards", systemImage: "doc.text.image.fill")
+    private let scanLabel: Label = Label("Scan", systemImage: "camera.viewfinder")
     
     var body: some View {
         if isFirstTime {
             WelcomeView()
         } else {
-            TabView {
-                ScannerView()
-                    .tabItem {
-                        Label("Scan",
-                              systemImage: "camera.viewfinder")
-                    }
-                
-                AllCardsView()
-                    .tabItem {
-                        Label("Cards",
-                              systemImage: "doc.text.image.fill")
-                    }
-            }
+            tabView
         }
     }
-}
-
-struct MainView_Previews: PreviewProvider {
-    static var previews: some View {
-        MainView()
+    
+    @ViewBuilder private var tabView: some View {
+        TabView {
+            ScannerView()
+                .tabItem { scanLabel }
+            
+            AllCardsView()
+                .tabItem { cardsLabel }
+        }
     }
 }

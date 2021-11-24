@@ -18,18 +18,7 @@ struct AllCardsView: View {
                 
                 LazyVGrid(columns: columns, spacing: 10) {
                     ForEach(TarotCards.allCases.filter(filterCards), id: \.self) { card in
-                        NavigationLink(destination: CardView(card: card.tarotCard)) {
-                            VStack {
-                                Image(card.tarotCard.imageName)
-                                    .resizable()
-                                    .aspectRatio(contentMode: .fit)
-                                
-                                Text(card.tarotCard.name)
-                                    .font(.footnote)
-                                    .bold()
-                                    .foregroundColor(.primary)
-                            }
-                        }
+                        GridCard(card: card.tarotCard)
                     }
                 }
                 .padding()
@@ -39,7 +28,7 @@ struct AllCardsView: View {
         }
     }
     
-    func filterCards(_ card: TarotCards) -> Bool {
+    private func filterCards(_ card: TarotCards) -> Bool {
         let card = card.tarotCard
         
         return searchText.isEmpty ||

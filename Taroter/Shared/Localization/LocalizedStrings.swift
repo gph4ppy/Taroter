@@ -45,6 +45,13 @@ struct LocalizedStrings {
     public static let uprightKeywords = NSLocalizedString("upright_keywords", comment: "")
     public static let reversedKeywords = NSLocalizedString("reversed_keywords", comment: "")
     public static let cards = NSLocalizedString("cards", comment: "")
+    public static let scanButton = NSLocalizedString("scan_button", comment: "")
+    public static let clearButton = NSLocalizedString("clear_button", comment: "")
+    public static let emptyView = NSLocalizedString("empty_view", comment: "")
+
+    // MARK: - Scanner View
+    public static let pleaseWait = NSLocalizedString("please_wait", comment: "")
+    public static let scannedCards = NSLocalizedString("scanned_cards", comment: "")
     
     // MARK: - Cards
     // - Major Arcana -

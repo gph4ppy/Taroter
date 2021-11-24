@@ -21,10 +21,11 @@ class ScannerCoordinator: NSObject, VNDocumentCameraViewControllerDelegate {
     }
     
     func documentCameraViewController(_ controller: VNDocumentCameraViewController, didFinishWith scan: VNDocumentCameraScan) {
-        let extractedImages = extractImages(from: scan)
-        recognizeCards(from: extractedImages)
-        print(self.recognizedImages.wrappedValue)
-        parent.presentationMode.wrappedValue.dismiss()
+        DispatchQueue.main.async { [self] in
+            let extractedImages = extractImages(from: scan)
+            recognizeCards(from: extractedImages)
+            parent.presentationMode.wrappedValue.dismiss()
+        }
     }
     
     func documentCameraViewControllerDidCancel(_ controller: VNDocumentCameraViewController) {
@@ -145,12 +146,9 @@ fileprivate extension ScannerCoordinator {
     /// The function signature the caller must provide as a completion handler.
     typealias ImagePredictionHandler = (_ predictions: [Prediction]?) -> Void
     
-    
-    
     /// Generates a new request instance that uses the Image Predictor's image classifier model.
     private func createImageClassificationRequest() -> VNImageBasedRequest {
         // Create an image classification request with an image classifier model.
-        
         let imageClassificationRequest = VNCoreMLRequest(model: imageClassifier,
                                                          completionHandler: visionRequestHandler)
         

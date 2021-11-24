@@ -39,10 +39,17 @@
 "search" = "Search...";
 "arcana" = "Arcana";
 "yes_or_no" = "Yes or No?";
-"keywords" = "Keywords";
-"upright_keywords" = "Upright keywords";
-"reversed_keywords" = "Reversed keywords";
+"keywords" = "General";
+"upright_keywords" = "Upright";
+"reversed_keywords" = "Reversed";
 "cards" = "Cards";
+"scan_button" = "Scan";
+"clear_button" = "Clear";
+"empty_view" = "See any scanned cards? \nWe don't either! \n\nClick the \"Scan\" button in the upper right corner to scan the card and get information about it. \n\nWhen you have finished reading the cards, you can clear them by pressing the \"Clear\" button in the upper left corner or by dragging the row to the left.";
+
+// MARK: - Scanner View
+"please_wait" = "Please wait. \nWe are reading your cards...";
+"scanned_cards" = "Scanned Cards";
 
 // MARK: - Cards
 // - Major Arcana -
@@ -136,25 +143,25 @@
 
 // MARK: - Neutral Keywords
 // - Major Arcana -
-"fool_neutral" = "beginnings, new experiences, innocence, optimism, spontaneity, new ways, joy, novelty";
-"magician_neutral" = "The Magician";
-"high_priestess_neutral" = "The High Priestess";
-"empress_neutral" = "The Empress";
-"emperor_neutral" = "The Emperor";
-"hierophant_neutral" = "The Hierophant";
-"lovers_neutral" = "The Lovers";
-"chariot_neutral" = "The Chariot";
-"strength_neutral" = "Strength";
-"hermit_neutral" = "The Hermit";
-"wheel_of_fortune_neutral" = "Wheel of Fortune";
-"justice_neutral" = "Justice";
-"hanged_man_neutral" = "The Hanged Man";
-"death_neutral" = "Death";
-"temperance_neutral" = "Temperance";
-"devil_neutral" = "The Devil";
-"tower_neutral" = "The Tower";
-"star_neutral" = "The Star";
-"moon_neutral" = "The Moon";
+"fool_neutral" = "beginnings\n\nnew experiences\n\ninnocence\n\noptimism\n\nspontaneity\n\nnew ways\n\njoy\n\nnovelty";
+"magician_neutral" = "individualism\n\ntaking action\n\ninitiative\n\nawareness\n\nhaving all the necessary tools\n\nstrong will\n\na new beginning";
+"high_priestess_neutral" = "calm\n\nbalance\n\nintuition\n\nsensitivity\n\nfemininity\n\nemotions\n\nmystery";
+"empress_neutral" = "abundance\n\nmotherhood\n\nthe right decision\n\nemotional security\n\ntrust\n\njoy\n\nfirmness\n\nnature";
+"emperor_neutral" = "stability\n\nfatherhood\n\nstructures\n\nindependence\n\nstriving for a goal\n\nleadership\n\nmasculinity\n\nmaturity\n\nauthority\n\nright choices";
+"hierophant_neutral" = "conformity\n\nlearning\n\nvalue system\n\nfaith\n\ninner wisdom\n\nmoral values\n\nspiritual guide\n\nauthority\n\ngood advice and help\n\nspirituality\n\nprudence";
+"lovers_neutral" = "decision-making time\n\nlove\n\nthe choice between two sides\n\nthe balance of soul and body\n\nopposites\n\njoy";
+"chariot_neutral" = "prosperity\n\nachievement of goals\n\novercoming difficulties\n\nprogress\n\ndynamics\n\ndetermination\n\nstriving forwards";
+"strength_neutral" = "courage\n\nhealth\n\ninner strength\n\nwillpower\n\ncontrol";
+"hermit_neutral" = "knowledge\n\ninner wisdom\n\nexperience\n\npatience\n\nhumility\n\nself-development\n\nself-knowledge";
+"wheel_of_fortune_neutral" = "changeability of fate\n\nchangeability\n\nnothing lasts forever\n\ngood and evil do not last forever\n\nsudden twist\n\ndestiny";
+"justice_neutral" = "justice\n\nevaluation of actions\n\nsummary of events\n\njudgment\n\nresponsibility for one's actions\n\nimpartiality";
+"hanged_man_neutral" = "suspension in life\n\nchange of view of the world\n\nfocus on the inside\n\nimmobility\n\nreevaluation of life\n\nlack of action";
+"death_neutral" = "for the new to come the old must leave\n\ninevitable changes\n\ntransformation\n\nchanges";
+"temperance_neutral" = "calmness\n\nbalance\n\npatience\n\ntemperance\n\ninner peace\n\nforbearance\n\nself-control\n\ninner discipline";
+"devil_neutral" = "human nature\n\nhidden desires\n\na man agrees to primal instincts - e.g. craving for material things or people\n\ndestructive and toxic energy\n\ninner demon\n\nbondage (which man agrees to - mostly illustrated as loose chains)\n\nlikely violence";
+"tower_neutral" = "sudden and violent changes\n\nvalues built on too fragile foundations\n\nthe beginning of the end\n\nlearning from experience\n\njump if you don't want to be crushed by falling walls";
+"star_neutral" = "hope\n\npeace (perhaps after a storm)\n\ntrust\n\nfaith\n\nsuccess\n\nharmony";
+"moon_neutral" = "mystery\n\nsubconsciousness\n\nintuition\n\nemotions\n\nthe inner man\n\ndeep, strong and hidden emotions\n\nillusion\n\ndelusion\n\ndifficult period\n\nvagueness\n\ninstability";
 "sun_neutral" = "The Sun";
 "judgement_neutral" = "Judgement";
 "world_neutral" = "The World";
@@ -226,25 +233,25 @@
 
 // MARK: - Positive Keywords
 // - Major Arcana -
-"fool_positive" = "joy, self-confidence, optimism, carelessness, spontaneity";
-"magician_positive" = "The Magician";
-"high_priestess_positive" = "The High Priestess";
-"empress_positive" = "The Empress";
-"emperor_positive" = "The Emperor";
-"hierophant_positive" = "The Hierophant";
-"lovers_positive" = "The Lovers";
-"chariot_positive" = "The Chariot";
-"strength_positive" = "Strength";
-"hermit_positive" = "The Hermit";
-"wheel_of_fortune_positive" = "Wheel of Fortune";
-"justice_positive" = "Justice";
-"hanged_man_positive" = "The Hanged Man";
-"death_positive" = "Death";
-"temperance_positive" = "Temperance";
-"devil_positive" = "The Devil";
-"tower_positive" = "The Tower";
-"star_positive" = "The Star";
-"moon_positive" = "The Moon";
+"fool_positive" = "joy\n\nself-confidence\n\noptimism\n\ncarelessness\n\nspontaneity";
+"magician_positive" = "action time\n\nassertiveness\n\nknowledge\n\ntaking risks";
+"high_priestess_positive" = "wisdom\n\ncompliance with intuition\n\ninner peace\n\nspirituality\n\nsensitivity\n\nmother\n\nwoman\n\nno action";
+"empress_positive" = "femininity\n\npersonal development\n\nself-confidence\n\nindependence\n\nlife knowledge\n\npositive";
+"emperor_positive" = "responsibility\n\nsuccess\n\ncourage\n\nfinancial stability\n\nmature decisions";
+"hierophant_positive" = "learning\n\nidealism\n\nwisdom\n\nself-will\n\nscience\n\nupbringing";
+"lovers_positive" = "balance\n\nharmony\n\nfriendship\n\nlove\n\nmeetings\n\njoy";
+"chariot_positive" = "success\n\novercoming difficulties\n\nprogress\n\njourney\n\ndynamics";
+"strength_positive" = "power\n\nstrength\n\ncontrol\n\nwisdom\n\ndiscipline\n\nendurance\n\ncontrol over instincts\n\ncourage\n\nself-confidence";
+"hermit_positive" = "wisdom\n\nspiritual development\n\ntherapy\n\nself-knowledge\n\nspirituality\n\nlearning\n\nbeing yourself\n\nlearning from the past";
+"wheel_of_fortune_positive" = "changes\n\na new cycle\n\na new stage in life\n\ndevelopment\n\nhappiness\n\na moment of decision";
+"justice_positive" = "responsibility\n\ndecision\n\nequality\n\nkarma\n\nconsequences\n\ntruth\n\ncause-effect relation\n\ncall for honesty";
+"hanged_man_positive" = "waiting period\n\nuncertainty\n\nlack of direction\n\nnew perspective\n\nsacrifice";
+"death_positive" = "the end of a certain stage in life\n\nfarewell\n\neverything has a price\n\nthe end means new beginnings\n\ntransience";
+"temperance_positive" = "inner peace\n\nbalance\n\ntrust\n\nprudence\n\ncombining opposites";
+"devil_positive" = "temptation\n\nbondage\n\ngreed\n\nlimited perception\n\ndoubts\n\naddiction\n\nignorance\n\na predominance of primal instincts and human nature\n\nobsession\n\nlimitations\n\npowerlessness";
+"tower_positive" = "sudden changes from the outside\n\nforce majeure\n\nthe disintegration of existing ideals\n\nloss of stability\n\nbreakdown of relationships\n\nthe end means a new beginning (after the tower collapses\n\nclean up the ruins and put a new, stronger structure on these foundations)\n\nbreakthrough\n\nfall\n\ndispelling doubts\n\nshock\n\nconflict";
+"star_positive" = "faith\n\noptimism\n\nfavor of fate\n\nidealism\n\nrelease\n\ncontentment\n\nself-knowledge";
+"moon_positive" = "illusion\n\nforeboding\n\nfeelings\n\nmysteries\n\nvagueness\n\nintuition\n\nconfusion, complexity\n\ninsecurity\n\nfear\n\nanxiety";
 "sun_positive" = "The Sun";
 "judgement_positive" = "Judgement";
 "world_positive" = "The World";
@@ -316,25 +323,25 @@
 
 // MARK: - Negative Keywords
 // - Major Arcana -
-"fool_negative" = "wait before making a decision, recklessness, stupidity, immaturity, naivety, unnecessary risk, loss of opportunity";
-"magician_negative" = "The Magician";
-"high_priestess_negative" = "The High Priestess";
-"empress_negative" = "The Empress";
-"emperor_negative" = "The Emperor";
-"hierophant_negative" = "The Hierophant";
-"lovers_negative" = "The Lovers";
-"chariot_negative" = "The Chariot";
-"strength_negative" = "Strength";
-"hermit_negative" = "The Hermit";
-"wheel_of_fortune_negative" = "Wheel of Fortune";
-"justice_negative" = "Justice";
-"hanged_man_negative" = "The Hanged Man";
-"death_negative" = "Death";
-"temperance_negative" = "Temperance";
-"devil_negative" = "The Devil";
-"tower_negative" = "The Tower";
-"star_negative" = "The Star";
-"moon_negative" = "The Moon";
+"fool_negative" = "wait before making a decision\n\nrecklessness\n\nstupidity\n\nimmaturity\n\nnaivety\n\nunnecessary risk\n\nloss of opportunity";
+"magician_negative" = "indecision\n\nshyness\n\nundervaluation\n\nliar\n\nmanipulator\n\nlack of courage\n\ninability to take action";
+"high_priestess_negative" = "complexes\n\nmental issues\n\nfear\n\nworrying about the opinion of others\n\nsuffering\n\nhypersensitivity";
+"empress_negative" = "selfishness\n\npossessiveness\n\ninfidelity\n\nhelplessness\n\ndenial of feelings\n\ninability to solve the problem";
+"emperor_negative" = "instability\n\nimmaturity\n\nabuse of power\n\nlack of authority\n\nimmature decisions\n\nprofessional instability";
+"hierophant_negative" = "credulity\n\nspiritual crisis\n\nlack of concentration\n\ncynicism\n\nbad guide\n\nlearning problems\n\nhypocrisy";
+"lovers_negative" = "fear of making a decision\n\nconflict\n\ndestructive or unhappy love";
+"chariot_negative" = "loss of control\n\ndifficulties in achieving the goal\n\npossible problems with aggression\n\nwarning\n\nchaos\n\noverload of duties\n\nexhaustion\n\noverconfidence";
+"strength_negative" = "predominance of primal instincts\n\nnegation of inner strength\n\nfailure\n\nconceit\n\nunhappiness\n\nstriving for perfectionism\n\nweakness\n\nself-insecurity\n\ncowardice";
+"hermit_negative" = "loneliness\n\nisolation\n\nmasochism\n\navoiding the truth about oneself\n\nfear\n\nhiding\n\navoiding confrontation with problems\n\ndifficulties in relations with others";
+"wheel_of_fortune_negative" = "lack of control\n\nbad luck\n\nunwanted changes\n\ndelays\n\nattempted control\n\nlosses\n\nbad decisions\n\nresignation";
+"justice_negative" = "injustice\n\npunishment\n\ndishonesty\n\ncorruption\n\navoidance of responsibility\n\naccusations\n\nfraud\n\ncriticism\n\nchaos\n\nfalse self-esteem\n\nfailure\n\nconflict with the law\n\nunfair judgment";
+"hanged_man_negative" = "stagnation\n\nlack of interest\n\nblockage\n\nstalling\n\nin a positive sense can mean moving forward with new perspective and energy";
+"death_negative" = "mourning\n\nregret\n\nfear of change\n\nhanging on tightly to the past\n\nloss of hope\n\ndestruction\n\ndepression\n\nfailure\n\nloss";
+"temperance_negative" = "instability\n\nimbalance\n\nimpatience\n\nlack of motivation\n\ndiscouragement\n\nfear of showing feelings\n\nchaos\n\ndifficulty in making a decision\n\nsuperficiality\n\nextremity";
+"devil_negative" = "addiction to drugs/ person/group of people\n\nlack of control over emotions\n\nevil\n\ndeception\n\naggression\n\njealousy\n\nweakness\n\nblindness";
+"tower_negative" = "loss of hope\n\nself-destruction\n\nimprisonment\n\ndepression\n\ninability to make changes\n\navoiding catastrophe\n\ndelaying the inevitable\n\nresisting change\n\nfear of change";
+"star_negative" = "despair\n\nplunging into dreams\n\nillusory hope\n\ndoubt\n\ndisappointment\n\nillusion\n\nresignation\n\nunhappy love\n\npessimism";
+"moon_negative" = "lying\n\ndeception\n\nfear\n\npessimism\n\nconfidence problems\n\nanxiety\n\nmisunderstanding\n\ninternal confusion\n\nin a positive sense it can mean a release of fear, revealed secrets, understanding, clarity";
 "sun_negative" = "The Sun";
 "judgement_negative" = "Judgement";
 "world_negative" = "The World";

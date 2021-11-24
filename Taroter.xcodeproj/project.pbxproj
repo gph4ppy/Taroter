@@ -25,6 +25,7 @@
 		1C53201727183302005AD950 /* ScannerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1C53201627183302005AD950 /* ScannerView.swift */; };
 		1C532019271839BA005AD950 /* AllCardsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1C532018271839BA005AD950 /* AllCardsView.swift */; };
 		1C654625271CD09E00DDC36C /* TaroterCardModel.mlpackage in Sources */ = {isa = PBXBuildFile; fileRef = 1C654624271CD09E00DDC36C /* TaroterCardModel.mlpackage */; };
+		1C960610274C4061007125C1 /* GridCard.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1C96060F274C4061007125C1 /* GridCard.swift */; };
 		1CB9815D2729C845005A0B09 /* TarotCardModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1CB9815C2729C845005A0B09 /* TarotCardModel.swift */; };
 		1CB9815F2729C9AC005A0B09 /* ArcanaEnum.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1CB9815E2729C9AC005A0B09 /* ArcanaEnum.swift */; };
 		1CB981612729CF08005A0B09 /* TarotBooleanEnum.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1CB981602729CF08005A0B09 /* TarotBooleanEnum.swift */; };
@@ -51,6 +52,7 @@
 		1C53201627183302005AD950 /* ScannerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScannerView.swift; sourceTree = "<group>"; };
 		1C532018271839BA005AD950 /* AllCardsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AllCardsView.swift; sourceTree = "<group>"; };
 		1C654624271CD09E00DDC36C /* TaroterCardModel.mlpackage */ = {isa = PBXFileReference; lastKnownFileType = folder.mlpackage; path = TaroterCardModel.mlpackage; sourceTree = "<group>"; };
+		1C96060F274C4061007125C1 /* GridCard.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GridCard.swift; sourceTree = "<group>"; };
 		1CB9815C2729C845005A0B09 /* TarotCardModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TarotCardModel.swift; sourceTree = "<group>"; };
 		1CB9815E2729C9AC005A0B09 /* ArcanaEnum.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ArcanaEnum.swift; sourceTree = "<group>"; };
 		1CB981602729CF08005A0B09 /* TarotBooleanEnum.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TarotBooleanEnum.swift; sourceTree = "<group>"; };
@@ -142,6 +144,7 @@
 				1C07C00F27229E0F007187D6 /* Scanner */,
 				1C53200527182C62005AD950 /* WelcomeScreen.swift */,
 				1C24A3572735DFBC000BC723 /* SearchBar.swift */,
+				1C96060F274C4061007125C1 /* GridCard.swift */,
 			);
 			path = Components;
 			sourceTree = "<group>";
@@ -269,6 +272,7 @@
 				1C53201727183302005AD950 /* ScannerView.swift in Sources */,
 				1C532019271839BA005AD950 /* AllCardsView.swift in Sources */,
 				1C53200827182CE6005AD950 /* WelcomeView.swift in Sources */,
+				1C960610274C4061007125C1 /* GridCard.swift in Sources */,
 				1C07C00E27229A32007187D6 /* Scanner.swift in Sources */,
 				1CB981612729CF08005A0B09 /* TarotBooleanEnum.swift in Sources */,
 				1C24A35A2735E2C4000BC723 /* CardView.swift in Sources */,
