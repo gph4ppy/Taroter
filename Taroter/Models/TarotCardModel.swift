@@ -7,6 +7,7 @@
 
 import Foundation
 
+/// Tarot Card Model
 struct TarotCard {
     // Data
     let name: String
@@ -14,7 +15,6 @@ struct TarotCard {
     let arcana: Arcana
     
     // Keywords
-    let neutralKeywords: String
     let uprightKeywords: String
     let reversedKeywords: String
     let yesOrNo: TarotBoolean

@@ -31,625 +31,547 @@ enum TarotCards: CaseIterable {
                 return TarotCard(name: LocalizedStrings.fool,
                                  imageName: "The Fool",
                                  arcana: .major,
-                                 neutralKeywords: LocalizedStrings.foolNeutral,
-                                 uprightKeywords: LocalizedStrings.foolPositive,
-                                 reversedKeywords: LocalizedStrings.foolNegative,
+                                 uprightKeywords: LocalizedStrings.foolUpright,
+                                 reversedKeywords: LocalizedStrings.foolReversed,
                                  yesOrNo: .yes)
             case .magician:
                 return TarotCard(name: LocalizedStrings.magician,
                                  imageName: "The Magician",
                                  arcana: .major,
-                                 neutralKeywords: LocalizedStrings.magicianNeutral,
-                                 uprightKeywords: LocalizedStrings.magicianPositive,
-                                 reversedKeywords: LocalizedStrings.magicianNegative,
+                                 uprightKeywords: LocalizedStrings.magicianUpright,
+                                 reversedKeywords: LocalizedStrings.magicianReversed,
                                  yesOrNo: .yes)
             case .highPriestess:
                 return TarotCard(name: LocalizedStrings.highPriestess,
                                  imageName: "The High Priestess",
                                  arcana: .major,
-                                 neutralKeywords: LocalizedStrings.highPriestessNeutral,
-                                 uprightKeywords: LocalizedStrings.highPriestessPositive,
-                                 reversedKeywords: LocalizedStrings.highPriestessNegative,
+                                 uprightKeywords: LocalizedStrings.highPriestessUpright,
+                                 reversedKeywords: LocalizedStrings.highPriestessReversed,
                                  yesOrNo: .maybe)
             case .empress:
                 return TarotCard(name: LocalizedStrings.empress,
                                  imageName: "The Empress",
                                  arcana: .major,
-                                 neutralKeywords: LocalizedStrings.empressNeutral,
-                                 uprightKeywords: LocalizedStrings.empressPositive,
-                                 reversedKeywords: LocalizedStrings.empressNegative,
+                                 uprightKeywords: LocalizedStrings.empressUpright,
+                                 reversedKeywords: LocalizedStrings.empressReversed,
                                  yesOrNo: .yes)
             case .emperor:
                 return TarotCard(name: LocalizedStrings.emperor,
                                  imageName: "The Emperor",
                                  arcana: .major,
-                                 neutralKeywords: LocalizedStrings.emperorNeutral,
-                                 uprightKeywords: LocalizedStrings.emperorPositive,
-                                 reversedKeywords: LocalizedStrings.emperorNegative,
+                                 uprightKeywords: LocalizedStrings.emperorUpright,
+                                 reversedKeywords: LocalizedStrings.emperorReversed,
                                  yesOrNo: .maybe)
             case .hierophant:
                 return TarotCard(name: LocalizedStrings.hierophant,
                                  imageName: "The Hierophant",
                                  arcana: .major,
-                                 neutralKeywords: LocalizedStrings.hierophantNeutral,
-                                 uprightKeywords: LocalizedStrings.hierophantPositive,
-                                 reversedKeywords: LocalizedStrings.hierophantNegative,
+                                 uprightKeywords: LocalizedStrings.hierophantUpright,
+                                 reversedKeywords: LocalizedStrings.hierophantReversed,
                                  yesOrNo: .maybe)
             case .lovers:
                 return TarotCard(name: LocalizedStrings.lovers,
                                  imageName: "The Lovers",
                                  arcana: .major,
-                                 neutralKeywords: LocalizedStrings.loversNeutral,
-                                 uprightKeywords: LocalizedStrings.loversPositive,
-                                 reversedKeywords: LocalizedStrings.loversNegative,
+                                 uprightKeywords: LocalizedStrings.loversUpright,
+                                 reversedKeywords: LocalizedStrings.loversReversed,
                                  yesOrNo: .yes)
             case .chariot:
                 return TarotCard(name: LocalizedStrings.chariot,
                                  imageName: "The Chariot",
                                  arcana: .major,
-                                 neutralKeywords: LocalizedStrings.chariotNeutral,
-                                 uprightKeywords: LocalizedStrings.chariotPositive,
-                                 reversedKeywords: LocalizedStrings.chariotNegative,
+                                 uprightKeywords: LocalizedStrings.chariotUpright,
+                                 reversedKeywords: LocalizedStrings.chariotReversed,
                                  yesOrNo: .yes)
             case .strength:
                 return TarotCard(name: LocalizedStrings.strength,
                                  imageName: "Strength",
                                  arcana: .major,
-                                 neutralKeywords: LocalizedStrings.strengthNeutral,
-                                 uprightKeywords: LocalizedStrings.strengthPositive,
-                                 reversedKeywords: LocalizedStrings.strengthNegative,
+                                 uprightKeywords: LocalizedStrings.strengthUpright,
+                                 reversedKeywords: LocalizedStrings.strengthReversed,
                                  yesOrNo: .yes)
             case .hermit:
                 return TarotCard(name: LocalizedStrings.hermit,
                                  imageName: "The Hermit",
                                  arcana: .major,
-                                 neutralKeywords: LocalizedStrings.hermitNeutral,
-                                 uprightKeywords: LocalizedStrings.hermitPositive,
-                                 reversedKeywords: LocalizedStrings.hermitNegative,
+                                 uprightKeywords: LocalizedStrings.hermitUpright,
+                                 reversedKeywords: LocalizedStrings.hermitReversed,
                                  yesOrNo: .maybe)
             case .wheelOfFortune:
                 return TarotCard(name: LocalizedStrings.wheelOfFortune,
                                  imageName: "Wheel Of Fortune",
                                  arcana: .major,
-                                 neutralKeywords: LocalizedStrings.wheelOfFortuneNeutral,
-                                 uprightKeywords: LocalizedStrings.wheelOfFortunePositive,
-                                 reversedKeywords: LocalizedStrings.wheelOfFortuneNegative,
+                                 uprightKeywords: LocalizedStrings.wheelOfFortuneUpright,
+                                 reversedKeywords: LocalizedStrings.wheelOfFortuneReversed,
                                  yesOrNo: .yes)
             case .justice:
                 return TarotCard(name: LocalizedStrings.justice,
                                  imageName: "Justice",
                                  arcana: .major,
-                                 neutralKeywords: LocalizedStrings.justiceNeutral,
-                                 uprightKeywords: LocalizedStrings.justicePositive,
-                                 reversedKeywords: LocalizedStrings.justiceNegative,
+                                 uprightKeywords: LocalizedStrings.justiceUpright,
+                                 reversedKeywords: LocalizedStrings.justiceReversed,
                                  yesOrNo: .maybe)
             case .hangedMan:
                 return TarotCard(name: LocalizedStrings.hangedMan,
                                  imageName: "The Hanged Man",
                                  arcana: .major,
-                                 neutralKeywords: LocalizedStrings.hangedManNeutral,
-                                 uprightKeywords: LocalizedStrings.hangedManPositive,
-                                 reversedKeywords: LocalizedStrings.hangedManNegative,
+                                 uprightKeywords: LocalizedStrings.hangedManUpright,
+                                 reversedKeywords: LocalizedStrings.hangedManReversed,
                                  yesOrNo: .maybe)
             case .death:
                 return TarotCard(name: LocalizedStrings.death,
                                  imageName: "Death",
                                  arcana: .major,
-                                 neutralKeywords: LocalizedStrings.deathNeutral,
-                                 uprightKeywords: LocalizedStrings.deathPositive,
-                                 reversedKeywords: LocalizedStrings.deathNegative,
+                                 uprightKeywords: LocalizedStrings.deathUpright,
+                                 reversedKeywords: LocalizedStrings.deathReversed,
                                  yesOrNo: .no)
             case .temperance:
                 return TarotCard(name: LocalizedStrings.temperance,
                                  imageName: "Temperance",
                                  arcana: .major,
-                                 neutralKeywords: LocalizedStrings.temperanceNeutral,
-                                 uprightKeywords: LocalizedStrings.temperancePositive,
-                                 reversedKeywords: LocalizedStrings.temperanceNegative,
+                                 uprightKeywords: LocalizedStrings.temperanceUpright,
+                                 reversedKeywords: LocalizedStrings.temperanceReversed,
                                  yesOrNo: .yes)
             case .devil:
                 return TarotCard(name: LocalizedStrings.devil,
                                  imageName: "The Devil",
                                  arcana: .major,
-                                 neutralKeywords: LocalizedStrings.devilNeutral,
-                                 uprightKeywords: LocalizedStrings.devilPositive,
-                                 reversedKeywords: LocalizedStrings.devilNegative,
+                                 uprightKeywords: LocalizedStrings.devilUpright,
+                                 reversedKeywords: LocalizedStrings.devilReversed,
                                  yesOrNo: .no)
             case .tower:
                 return TarotCard(name: LocalizedStrings.tower,
                                  imageName: "The Tower",
                                  arcana: .major,
-                                 neutralKeywords: LocalizedStrings.towerNeutral,
-                                 uprightKeywords: LocalizedStrings.towerPositive,
-                                 reversedKeywords: LocalizedStrings.towerNegative,
+                                 uprightKeywords: LocalizedStrings.towerUpright,
+                                 reversedKeywords: LocalizedStrings.towerReversed,
                                  yesOrNo: .no)
             case .star:
                 return TarotCard(name: LocalizedStrings.star,
                                  imageName: "The Star",
                                  arcana: .major,
-                                 neutralKeywords: LocalizedStrings.starNeutral,
-                                 uprightKeywords: LocalizedStrings.starPositive,
-                                 reversedKeywords: LocalizedStrings.starNegative,
+                                 uprightKeywords: LocalizedStrings.starUpright,
+                                 reversedKeywords: LocalizedStrings.starReversed,
                                  yesOrNo: .yes)
             case .moon:
                 return TarotCard(name: LocalizedStrings.moon,
                                  imageName: "The Moon",
                                  arcana: .major,
-                                 neutralKeywords: LocalizedStrings.moonNeutral,
-                                 uprightKeywords: LocalizedStrings.moonPositive,
-                                 reversedKeywords: LocalizedStrings.moonNegative,
+                                 uprightKeywords: LocalizedStrings.moonUpright,
+                                 reversedKeywords: LocalizedStrings.moonReversed,
                                  yesOrNo: .no)
             case .sun:
                 return TarotCard(name: LocalizedStrings.sun,
                                  imageName: "The Sun",
                                  arcana: .major,
-                                 neutralKeywords: LocalizedStrings.sunNeutral,
-                                 uprightKeywords: LocalizedStrings.sunPositive,
-                                 reversedKeywords: LocalizedStrings.sunNegative,
+                                 uprightKeywords: LocalizedStrings.sunUpright,
+                                 reversedKeywords: LocalizedStrings.sunReversed,
                                  yesOrNo: .yes)
             case .judgement:
                 return TarotCard(name: LocalizedStrings.judgement,
                                  imageName: "Judgement",
                                  arcana: .major,
-                                 neutralKeywords: LocalizedStrings.judgementNeutral,
-                                 uprightKeywords: LocalizedStrings.judgementPositive,
-                                 reversedKeywords: LocalizedStrings.judgementNegative,
+                                 uprightKeywords: LocalizedStrings.judgementUpright,
+                                 reversedKeywords: LocalizedStrings.judgementReversed,
                                  yesOrNo: .yes)
             case .world:
                 return TarotCard(name: LocalizedStrings.world,
                                  imageName: "The World",
                                  arcana: .major,
-                                 neutralKeywords: LocalizedStrings.worldNeutral,
-                                 uprightKeywords: LocalizedStrings.worldPositive,
-                                 reversedKeywords: LocalizedStrings.worldNegative,
+                                 uprightKeywords: LocalizedStrings.worldUpright,
+                                 reversedKeywords: LocalizedStrings.worldReversed,
                                  yesOrNo: .yes)
             case .aceOfWands:
                 return TarotCard(name: LocalizedStrings.aceOfWands,
                                  imageName: "Ace of Wands",
                                  arcana: .minor,
-                                 neutralKeywords: LocalizedStrings.aceOfWandsNeutral,
-                                 uprightKeywords: LocalizedStrings.aceOfWandsPositive,
-                                 reversedKeywords: LocalizedStrings.aceOfWandsNegative,
+                                 uprightKeywords: LocalizedStrings.aceOfWandsUpright,
+                                 reversedKeywords: LocalizedStrings.aceOfWandsReversed,
                                  yesOrNo: .yes)
             case .twoOfWands:
                 return TarotCard(name: LocalizedStrings.twoOfWands,
                                  imageName: "Two of Wands",
                                  arcana: .minor,
-                                 neutralKeywords: LocalizedStrings.twoOfWandsNeutral,
-                                 uprightKeywords: LocalizedStrings.twoOfWandsPositive,
-                                 reversedKeywords: LocalizedStrings.twoOfWandsNegative,
+                                 uprightKeywords: LocalizedStrings.twoOfWandsUpright,
+                                 reversedKeywords: LocalizedStrings.twoOfWandsReversed,
                                  yesOrNo: .yes)
             case .threeOfWands:
                 return TarotCard(name: LocalizedStrings.threeOfWands,
                                  imageName: "Three of Wands",
                                  arcana: .minor,
-                                 neutralKeywords: LocalizedStrings.threeOfWandsNeutral,
-                                 uprightKeywords: LocalizedStrings.threeOfWandsPositive,
-                                 reversedKeywords: LocalizedStrings.threeOfWandsNegative,
+                                 uprightKeywords: LocalizedStrings.threeOfWandsUpright,
+                                 reversedKeywords: LocalizedStrings.threeOfWandsReversed,
                                  yesOrNo: .yes)
             case .fourOfWands:
                 return TarotCard(name: LocalizedStrings.fourOfWands,
                                  imageName: "Four of Wands",
                                  arcana: .minor,
-                                 neutralKeywords: LocalizedStrings.fourOfWandsNeutral,
-                                 uprightKeywords: LocalizedStrings.fourOfWandsPositive,
-                                 reversedKeywords: LocalizedStrings.fourOfWandsNegative,
+                                 uprightKeywords: LocalizedStrings.fourOfWandsUpright,
+                                 reversedKeywords: LocalizedStrings.fourOfWandsReversed,
                                  yesOrNo: .yes)
             case .fiveOfWands:
                 return TarotCard(name: LocalizedStrings.fiveOfWands,
                                  imageName: "Five of Wands",
                                  arcana: .minor,
-                                 neutralKeywords: LocalizedStrings.fiveOfWandsNeutral,
-                                 uprightKeywords: LocalizedStrings.fiveOfWandsPositive,
-                                 reversedKeywords: LocalizedStrings.fiveOfWandsNegative,
+                                 uprightKeywords: LocalizedStrings.fiveOfWandsUpright,
+                                 reversedKeywords: LocalizedStrings.fiveOfWandsReversed,
                                  yesOrNo: .no)
             case .sixOfWands:
                 return TarotCard(name: LocalizedStrings.sixOfWands,
                                  imageName: "Six of Wands",
                                  arcana: .minor,
-                                 neutralKeywords: LocalizedStrings.sixOfWandsNeutral,
-                                 uprightKeywords: LocalizedStrings.sixOfWandsPositive,
-                                 reversedKeywords: LocalizedStrings.sixOfWandsNegative,
+                                 uprightKeywords: LocalizedStrings.sixOfWandsUpright,
+                                 reversedKeywords: LocalizedStrings.sixOfWandsReversed,
                                  yesOrNo: .yes)
             case .sevenOfWands:
                 return TarotCard(name: LocalizedStrings.sevenOfWands,
                                  imageName: "Seven of Wands",
                                  arcana: .minor,
-                                 neutralKeywords: LocalizedStrings.sevenOfWandsNeutral,
-                                 uprightKeywords: LocalizedStrings.sevenOfWandsPositive,
-                                 reversedKeywords: LocalizedStrings.sevenOfWandsNegative,
+                                 uprightKeywords: LocalizedStrings.sevenOfWandsUpright,
+                                 reversedKeywords: LocalizedStrings.sevenOfWandsReversed,
                                  yesOrNo: .no)
             case .eightOfWands:
                 return TarotCard(name: LocalizedStrings.eightOfWands,
                                  imageName: "Eight of Wands",
                                  arcana: .minor,
-                                 neutralKeywords: LocalizedStrings.eightOfWandsNeutral,
-                                 uprightKeywords: LocalizedStrings.eightOfWandsPositive,
-                                 reversedKeywords: LocalizedStrings.eightOfWandsNegative,
+                                 uprightKeywords: LocalizedStrings.eightOfWandsUpright,
+                                 reversedKeywords: LocalizedStrings.eightOfWandsReversed,
                                  yesOrNo: .yes)
             case .nineOfWands:
                 return TarotCard(name: LocalizedStrings.nineOfWands,
                                  imageName: "Nine of Wands",
                                  arcana: .minor,
-                                 neutralKeywords: LocalizedStrings.nineOfWandsNeutral,
-                                 uprightKeywords: LocalizedStrings.nineOfWandsPositive,
-                                 reversedKeywords: LocalizedStrings.nineOfWandsNegative,
+                                 uprightKeywords: LocalizedStrings.nineOfWandsUpright,
+                                 reversedKeywords: LocalizedStrings.nineOfWandsReversed,
                                  yesOrNo: .yes)
             case .tenOfWands:
                 return TarotCard(name: LocalizedStrings.tenOfWands,
                                  imageName: "Ten of Wands",
                                  arcana: .minor,
-                                 neutralKeywords: LocalizedStrings.tenOfWandsNeutral,
-                                 uprightKeywords: LocalizedStrings.tenOfWandsPositive,
-                                 reversedKeywords: LocalizedStrings.tenOfWandsNegative,
+                                 uprightKeywords: LocalizedStrings.tenOfWandsUpright,
+                                 reversedKeywords: LocalizedStrings.tenOfWandsReversed,
                                  yesOrNo: .no)
             case .pageOfWands:
                 return TarotCard(name: LocalizedStrings.pageOfWands,
                                  imageName: "Page of Wands",
                                  arcana: .minor,
-                                 neutralKeywords: LocalizedStrings.pageOfWandsNeutral,
-                                 uprightKeywords: LocalizedStrings.pageOfWandsPositive,
-                                 reversedKeywords: LocalizedStrings.pageOfWandsNegative,
+                                 uprightKeywords: LocalizedStrings.pageOfWandsUpright,
+                                 reversedKeywords: LocalizedStrings.pageOfWandsReversed,
                                  yesOrNo: .yes)
             case .knightOfWands:
                 return TarotCard(name: LocalizedStrings.knightOfWands,
                                  imageName: "Knight of Wands",
                                  arcana: .minor,
-                                 neutralKeywords: LocalizedStrings.knightOfWandsNeutral,
-                                 uprightKeywords: LocalizedStrings.knightOfWandsPositive,
-                                 reversedKeywords: LocalizedStrings.knightOfWandsNegative,
+                                 uprightKeywords: LocalizedStrings.knightOfWandsUpright,
+                                 reversedKeywords: LocalizedStrings.knightOfWandsReversed,
                                  yesOrNo: .yes)
             case .queenOfWands:
                 return TarotCard(name: LocalizedStrings.queenOfWands,
                                  imageName: "Queen of Wands",
                                  arcana: .minor,
-                                 neutralKeywords: LocalizedStrings.queenOfWandsNeutral,
-                                 uprightKeywords: LocalizedStrings.queenOfWandsPositive,
-                                 reversedKeywords: LocalizedStrings.queenOfWandsNegative,
+                                 uprightKeywords: LocalizedStrings.queenOfWandsUpright,
+                                 reversedKeywords: LocalizedStrings.queenOfWandsReversed,
                                  yesOrNo: .yes)
             case .kingOfWands:
                 return TarotCard(name: LocalizedStrings.kingOfWands,
                                  imageName: "King of Wands",
                                  arcana: .minor,
-                                 neutralKeywords: LocalizedStrings.kingOfWandsNeutral,
-                                 uprightKeywords: LocalizedStrings.kingOfWandsPositive,
-                                 reversedKeywords: LocalizedStrings.kingOfWandsNegative,
+                                 uprightKeywords: LocalizedStrings.kingOfWandsUpright,
+                                 reversedKeywords: LocalizedStrings.kingOfWandsReversed,
                                  yesOrNo: .yes)
             case .aceOfPentacles:
                 return TarotCard(name: LocalizedStrings.aceOfPentacles,
                                  imageName: "Ace of Pentacles",
                                  arcana: .minor,
-                                 neutralKeywords: LocalizedStrings.aceOfPentaclesNeutral,
-                                 uprightKeywords: LocalizedStrings.aceOfPentaclesPositive,
-                                 reversedKeywords: LocalizedStrings.aceOfPentaclesNegative,
+                                 uprightKeywords: LocalizedStrings.aceOfPentaclesUpright,
+                                 reversedKeywords: LocalizedStrings.aceOfPentaclesReversed,
                                  yesOrNo: .yes)
             case .twoOfPentacles:
                 return TarotCard(name: LocalizedStrings.twoOfPentacles,
                                  imageName: "Two of Pentacles",
                                  arcana: .minor,
-                                 neutralKeywords: LocalizedStrings.twoOfPentaclesNeutral,
-                                 uprightKeywords: LocalizedStrings.twoOfPentaclesPositive,
-                                 reversedKeywords: LocalizedStrings.twoOfPentaclesNegative,
+                                 uprightKeywords: LocalizedStrings.twoOfPentaclesUpright,
+                                 reversedKeywords: LocalizedStrings.twoOfPentaclesReversed,
                                  yesOrNo: .maybe)
             case .threeOfPentacles:
                 return TarotCard(name: LocalizedStrings.threeOfPentacles,
                                  imageName: "Three of Pentacles",
                                  arcana: .minor,
-                                 neutralKeywords: LocalizedStrings.threeOfPentaclesNeutral,
-                                 uprightKeywords: LocalizedStrings.threeOfPentaclesPositive,
-                                 reversedKeywords: LocalizedStrings.threeOfPentaclesNegative,
+                                 uprightKeywords: LocalizedStrings.threeOfPentaclesUpright,
+                                 reversedKeywords: LocalizedStrings.threeOfPentaclesReversed,
                                  yesOrNo: .yes)
             case .fourOfPentacles:
                 return TarotCard(name: LocalizedStrings.fourOfPentacles,
                                  imageName: "Four of Pentacles",
                                  arcana: .minor,
-                                 neutralKeywords: LocalizedStrings.fourOfPentaclesNeutral,
-                                 uprightKeywords: LocalizedStrings.fourOfPentaclesPositive,
-                                 reversedKeywords: LocalizedStrings.fourOfPentaclesNegative,
+                                 uprightKeywords: LocalizedStrings.fourOfPentaclesUpright,
+                                 reversedKeywords: LocalizedStrings.fourOfPentaclesReversed,
                                  yesOrNo: .no)
             case .fiveOfPentacles:
                 return TarotCard(name: LocalizedStrings.fiveOfPentacles,
                                  imageName: "Five of Pentacles",
                                  arcana: .minor,
-                                 neutralKeywords: LocalizedStrings.fiveOfPentaclesNeutral,
-                                 uprightKeywords: LocalizedStrings.fiveOfPentaclesPositive,
-                                 reversedKeywords: LocalizedStrings.fiveOfPentaclesNegative,
+                                 uprightKeywords: LocalizedStrings.fiveOfPentaclesUpright,
+                                 reversedKeywords: LocalizedStrings.fiveOfPentaclesReversed,
                                  yesOrNo: .no)
             case .sixOfPentacles:
                 return TarotCard(name: LocalizedStrings.sixOfPentacles,
                                  imageName: "Six of Pentacles",
                                  arcana: .minor,
-                                 neutralKeywords: LocalizedStrings.sixOfPentaclesNeutral,
-                                 uprightKeywords: LocalizedStrings.sixOfPentaclesPositive,
-                                 reversedKeywords: LocalizedStrings.sixOfPentaclesNegative,
+                                 uprightKeywords: LocalizedStrings.sixOfPentaclesUpright,
+                                 reversedKeywords: LocalizedStrings.sixOfPentaclesReversed,
                                  yesOrNo: .yes)
             case .sevenOfPentacles:
                 return TarotCard(name: LocalizedStrings.sevenOfPentacles,
                                  imageName: "Seven of Pentacles",
                                  arcana: .minor,
-                                 neutralKeywords: LocalizedStrings.sevenOfPentaclesNeutral,
-                                 uprightKeywords: LocalizedStrings.sevenOfPentaclesPositive,
-                                 reversedKeywords: LocalizedStrings.sevenOfPentaclesNegative,
+                                 uprightKeywords: LocalizedStrings.sevenOfPentaclesUpright,
+                                 reversedKeywords: LocalizedStrings.sevenOfPentaclesReversed,
                                  yesOrNo: .maybe)
             case .eightOfPentacles:
                 return TarotCard(name: LocalizedStrings.eightOfPentacles,
                                  imageName: "Eight of Pentacles",
                                  arcana: .minor,
-                                 neutralKeywords: LocalizedStrings.eightOfPentaclesNeutral,
-                                 uprightKeywords: LocalizedStrings.eightOfPentaclesPositive,
-                                 reversedKeywords: LocalizedStrings.eightOfPentaclesNegative,
+                                 uprightKeywords: LocalizedStrings.eightOfPentaclesUpright,
+                                 reversedKeywords: LocalizedStrings.eightOfPentaclesReversed,
                                  yesOrNo: .yes)
             case .nineOfPentacles:
                 return TarotCard(name: LocalizedStrings.nineOfPentacles,
                                  imageName: "Nine of Pentacles",
                                  arcana: .minor,
-                                 neutralKeywords: LocalizedStrings.nineOfPentaclesNeutral,
-                                 uprightKeywords: LocalizedStrings.nineOfPentaclesPositive,
-                                 reversedKeywords: LocalizedStrings.nineOfPentaclesNegative,
+                                 uprightKeywords: LocalizedStrings.nineOfPentaclesUpright,
+                                 reversedKeywords: LocalizedStrings.nineOfPentaclesReversed,
                                  yesOrNo: .yes)
             case .tenOfPentacles:
                 return TarotCard(name: LocalizedStrings.tenOfPentacles,
                                  imageName: "Ten of Pentacles",
                                  arcana: .minor,
-                                 neutralKeywords: LocalizedStrings.tenOfPentaclesNeutral,
-                                 uprightKeywords: LocalizedStrings.tenOfPentaclesPositive,
-                                 reversedKeywords: LocalizedStrings.tenOfPentaclesNegative,
+                                 uprightKeywords: LocalizedStrings.tenOfPentaclesUpright,
+                                 reversedKeywords: LocalizedStrings.tenOfPentaclesReversed,
                                  yesOrNo: .yes)
             case .pageOfPentacles:
                 return TarotCard(name: LocalizedStrings.pageOfPentacles,
                                  imageName: "Page of Pentacles",
                                  arcana: .minor,
-                                 neutralKeywords: LocalizedStrings.pageOfPentaclesNeutral,
-                                 uprightKeywords: LocalizedStrings.pageOfPentaclesPositive,
-                                 reversedKeywords: LocalizedStrings.pageOfPentaclesNegative,
+                                 uprightKeywords: LocalizedStrings.pageOfPentaclesUpright,
+                                 reversedKeywords: LocalizedStrings.pageOfPentaclesReversed,
                                  yesOrNo: .yes)
             case .knightOfPentacles:
                 return TarotCard(name: LocalizedStrings.knightOfPentacles,
                                  imageName: "Knight of Pentacles",
                                  arcana: .minor,
-                                 neutralKeywords: LocalizedStrings.knightOfPentaclesNeutral,
-                                 uprightKeywords: LocalizedStrings.knightOfPentaclesPositive,
-                                 reversedKeywords: LocalizedStrings.knightOfPentaclesNegative,
+                                 uprightKeywords: LocalizedStrings.knightOfPentaclesUpright,
+                                 reversedKeywords: LocalizedStrings.knightOfPentaclesReversed,
                                  yesOrNo: .yes)
             case .queenOfPentacles:
                 return TarotCard(name: LocalizedStrings.queenOfPentacles,
                                  imageName: "Queen of Pentacles",
                                  arcana: .minor,
-                                 neutralKeywords: LocalizedStrings.queenOfPentaclesNeutral,
-                                 uprightKeywords: LocalizedStrings.queenOfPentaclesPositive,
-                                 reversedKeywords: LocalizedStrings.queenOfPentaclesNegative,
+                                 uprightKeywords: LocalizedStrings.queenOfPentaclesUpright,
+                                 reversedKeywords: LocalizedStrings.queenOfPentaclesReversed,
                                  yesOrNo: .yes)
             case .kingOfPentacles:
                 return TarotCard(name: LocalizedStrings.kingOfPentacles,
                                  imageName: "King of Pentacles",
                                  arcana: .minor,
-                                 neutralKeywords: LocalizedStrings.kingOfPentaclesNeutral,
-                                 uprightKeywords: LocalizedStrings.kingOfPentaclesPositive,
-                                 reversedKeywords: LocalizedStrings.kingOfPentaclesNegative,
+                                 uprightKeywords: LocalizedStrings.kingOfPentaclesUpright,
+                                 reversedKeywords: LocalizedStrings.kingOfPentaclesReversed,
                                  yesOrNo: .yes)
             case .aceOfCups:
                 return TarotCard(name: LocalizedStrings.aceOfCups,
                                  imageName: "Ace of Cups",
                                  arcana: .minor,
-                                 neutralKeywords: LocalizedStrings.aceOfCupsNeutral,
-                                 uprightKeywords: LocalizedStrings.aceOfCupsPositive,
-                                 reversedKeywords: LocalizedStrings.aceOfCupsNegative,
+                                 uprightKeywords: LocalizedStrings.aceOfCupsUpright,
+                                 reversedKeywords: LocalizedStrings.aceOfCupsReversed,
                                  yesOrNo: .yes)
             case .twoOfCups:
                 return TarotCard(name: LocalizedStrings.twoOfCups,
                                  imageName: "Two of Cups",
                                  arcana: .minor,
-                                 neutralKeywords: LocalizedStrings.twoOfCupsNeutral,
-                                 uprightKeywords: LocalizedStrings.twoOfCupsPositive,
-                                 reversedKeywords: LocalizedStrings.twoOfCupsNegative,
+                                 uprightKeywords: LocalizedStrings.twoOfCupsUpright,
+                                 reversedKeywords: LocalizedStrings.twoOfCupsReversed,
                                  yesOrNo: .yes)
             case .threeOfCups:
                 return TarotCard(name: LocalizedStrings.threeOfCups,
                                  imageName: "Three of Cups",
                                  arcana: .minor,
-                                 neutralKeywords: LocalizedStrings.threeOfCupsNeutral,
-                                 uprightKeywords: LocalizedStrings.threeOfCupsPositive,
-                                 reversedKeywords: LocalizedStrings.threeOfCupsNegative,
+                                 uprightKeywords: LocalizedStrings.threeOfCupsUpright,
+                                 reversedKeywords: LocalizedStrings.threeOfCupsReversed,
                                  yesOrNo: .yes)
             case .fourOfCups:
                 return TarotCard(name: LocalizedStrings.fourOfCups,
                                  imageName: "Four of Cups",
                                  arcana: .minor,
-                                 neutralKeywords: LocalizedStrings.fourOfCupsNeutral,
-                                 uprightKeywords: LocalizedStrings.fourOfCupsPositive,
-                                 reversedKeywords: LocalizedStrings.fourOfCupsNegative,
+                                 uprightKeywords: LocalizedStrings.fourOfCupsUpright,
+                                 reversedKeywords: LocalizedStrings.fourOfCupsReversed,
                                  yesOrNo: .maybe)
             case .fiveOfCups:
                 return TarotCard(name: LocalizedStrings.fiveOfCups,
                                  imageName: "Five of Cups",
                                  arcana: .minor,
-                                 neutralKeywords: LocalizedStrings.fiveOfCupsNeutral,
-                                 uprightKeywords: LocalizedStrings.fiveOfCupsPositive,
-                                 reversedKeywords: LocalizedStrings.fiveOfCupsNegative,
+                                 uprightKeywords: LocalizedStrings.fiveOfCupsUpright,
+                                 reversedKeywords: LocalizedStrings.fiveOfCupsReversed,
                                  yesOrNo: .no)
             case .sixOfCups:
                 return TarotCard(name: LocalizedStrings.sixOfCups,
                                  imageName: "Six of Cups",
                                  arcana: .minor,
-                                 neutralKeywords: LocalizedStrings.sixOfCupsNeutral,
-                                 uprightKeywords: LocalizedStrings.sixOfCupsPositive,
-                                 reversedKeywords: LocalizedStrings.sixOfCupsNegative,
+                                 uprightKeywords: LocalizedStrings.sixOfCupsUpright,
+                                 reversedKeywords: LocalizedStrings.sixOfCupsReversed,
                                  yesOrNo: .yes)
             case .sevenOfCups:
                 return TarotCard(name: LocalizedStrings.sevenOfCups,
                                  imageName: "Seven of Cups",
                                  arcana: .minor,
-                                 neutralKeywords: LocalizedStrings.sevenOfCupsNeutral,
-                                 uprightKeywords: LocalizedStrings.sevenOfCupsPositive,
-                                 reversedKeywords: LocalizedStrings.sevenOfCupsNegative,
+                                 uprightKeywords: LocalizedStrings.sevenOfCupsUpright,
+                                 reversedKeywords: LocalizedStrings.sevenOfCupsReversed,
                                  yesOrNo: .maybe)
             case .eightOfCups:
                 return TarotCard(name: LocalizedStrings.eightOfCups,
                                  imageName: "Eight of Cups",
                                  arcana: .minor,
-                                 neutralKeywords: LocalizedStrings.eightOfCupsNeutral,
-                                 uprightKeywords: LocalizedStrings.eightOfCupsPositive,
-                                 reversedKeywords: LocalizedStrings.eightOfCupsNegative,
+                                 uprightKeywords: LocalizedStrings.eightOfCupsUpright,
+                                 reversedKeywords: LocalizedStrings.eightOfCupsReversed,
                                  yesOrNo: .no)
             case .nineOfCups:
                 return TarotCard(name: LocalizedStrings.nineOfCups,
                                  imageName: "Nine of Cups",
                                  arcana: .minor,
-                                 neutralKeywords: LocalizedStrings.nineOfCupsNeutral,
-                                 uprightKeywords: LocalizedStrings.nineOfCupsPositive,
-                                 reversedKeywords: LocalizedStrings.nineOfCupsNegative,
+                                 uprightKeywords: LocalizedStrings.nineOfCupsUpright,
+                                 reversedKeywords: LocalizedStrings.nineOfCupsReversed,
                                  yesOrNo: .yes)
             case .tenOfCups:
                 return TarotCard(name: LocalizedStrings.tenOfCups,
                                  imageName: "Ten of Cups",
                                  arcana: .minor,
-                                 neutralKeywords: LocalizedStrings.tenOfCupsNeutral,
-                                 uprightKeywords: LocalizedStrings.tenOfCupsPositive,
-                                 reversedKeywords: LocalizedStrings.tenOfCupsNegative,
+                                 uprightKeywords: LocalizedStrings.tenOfCupsUpright,
+                                 reversedKeywords: LocalizedStrings.tenOfCupsReversed,
                                  yesOrNo: .yes)
             case .pageOfCups:
                 return TarotCard(name: LocalizedStrings.pageOfCups,
                                  imageName: "Page of Cups",
                                  arcana: .minor,
-                                 neutralKeywords: LocalizedStrings.pageOfCupsNeutral,
-                                 uprightKeywords: LocalizedStrings.pageOfCupsPositive,
-                                 reversedKeywords: LocalizedStrings.pageOfCupsNegative,
+                                 uprightKeywords: LocalizedStrings.pageOfCupsUpright,
+                                 reversedKeywords: LocalizedStrings.pageOfCupsReversed,
                                  yesOrNo: .yes)
             case .knightOfCups:
                 return TarotCard(name: LocalizedStrings.knightOfCups,
                                  imageName: "Knight of Cups",
                                  arcana: .minor,
-                                 neutralKeywords: LocalizedStrings.knightOfCupsNeutral,
-                                 uprightKeywords: LocalizedStrings.knightOfCupsPositive,
-                                 reversedKeywords: LocalizedStrings.knightOfCupsNegative,
+                                 uprightKeywords: LocalizedStrings.knightOfCupsUpright,
+                                 reversedKeywords: LocalizedStrings.knightOfCupsReversed,
                                  yesOrNo: .yes)
             case .queenOfCups:
                 return TarotCard(name: LocalizedStrings.queenOfCups,
                                  imageName: "Queen of Cups",
                                  arcana: .minor,
-                                 neutralKeywords: LocalizedStrings.queenOfCupsNeutral,
-                                 uprightKeywords: LocalizedStrings.queenOfCupsPositive,
-                                 reversedKeywords: LocalizedStrings.queenOfCupsNegative,
+                                 uprightKeywords: LocalizedStrings.queenOfCupsUpright,
+                                 reversedKeywords: LocalizedStrings.queenOfCupsReversed,
                                  yesOrNo: .yes)
             case .kingOfCups:
                 return TarotCard(name: LocalizedStrings.kingOfCups,
                                  imageName: "King of Cups",
                                  arcana: .minor,
-                                 neutralKeywords: LocalizedStrings.kingOfCupsNeutral,
-                                 uprightKeywords: LocalizedStrings.kingOfCupsPositive,
-                                 reversedKeywords: LocalizedStrings.kingOfCupsNegative,
+                                 uprightKeywords: LocalizedStrings.kingOfCupsUpright,
+                                 reversedKeywords: LocalizedStrings.kingOfCupsReversed,
                                  yesOrNo: .yes)
             case .aceOfSwords:
                 return TarotCard(name: LocalizedStrings.aceOfSwords,
                                  imageName: "Ace of Swords",
                                  arcana: .minor,
-                                 neutralKeywords: LocalizedStrings.aceOfSwordsNeutral,
-                                 uprightKeywords: LocalizedStrings.aceOfSwordsPositive,
-                                 reversedKeywords: LocalizedStrings.aceOfSwordsNegative,
+                                 uprightKeywords: LocalizedStrings.aceOfSwordsUpright,
+                                 reversedKeywords: LocalizedStrings.aceOfSwordsReversed,
                                  yesOrNo: .no)
             case .twoOfSwords:
                 return TarotCard(name: LocalizedStrings.twoOfSwords,
                                  imageName: "Two of Swords",
                                  arcana: .minor,
-                                 neutralKeywords: LocalizedStrings.twoOfSwordsNeutral,
-                                 uprightKeywords: LocalizedStrings.twoOfSwordsPositive,
-                                 reversedKeywords: LocalizedStrings.twoOfSwordsNegative,
+                                 uprightKeywords: LocalizedStrings.twoOfSwordsUpright,
+                                 reversedKeywords: LocalizedStrings.twoOfSwordsReversed,
                                  yesOrNo: .maybe)
             case .threeOfSwords:
                 return TarotCard(name: LocalizedStrings.threeOfSwords,
                                  imageName: "Three of Swords",
                                  arcana: .minor,
-                                 neutralKeywords: LocalizedStrings.threeOfSwordsNeutral,
-                                 uprightKeywords: LocalizedStrings.threeOfSwordsPositive,
-                                 reversedKeywords: LocalizedStrings.threeOfSwordsNegative,
+                                 uprightKeywords: LocalizedStrings.threeOfSwordsUpright,
+                                 reversedKeywords: LocalizedStrings.threeOfSwordsReversed,
                                  yesOrNo: .no)
             case .fourOfSwords:
                 return TarotCard(name: LocalizedStrings.fourOfSwords,
                                  imageName: "Four of Swords",
                                  arcana: .minor,
-                                 neutralKeywords: LocalizedStrings.fourOfSwordsNeutral,
-                                 uprightKeywords: LocalizedStrings.fourOfSwordsPositive,
-                                 reversedKeywords: LocalizedStrings.fourOfSwordsNegative,
+                                 uprightKeywords: LocalizedStrings.fourOfSwordsUpright,
+                                 reversedKeywords: LocalizedStrings.fourOfSwordsReversed,
                                  yesOrNo: .maybe)
             case .fiveOfSwords:
                 return TarotCard(name: LocalizedStrings.fiveOfSwords,
                                  imageName: "Five of Swords",
                                  arcana: .minor,
-                                 neutralKeywords: LocalizedStrings.fiveOfSwordsNeutral,
-                                 uprightKeywords: LocalizedStrings.fiveOfSwordsPositive,
-                                 reversedKeywords: LocalizedStrings.fiveOfSwordsNegative,
+                                 uprightKeywords: LocalizedStrings.fiveOfSwordsUpright,
+                                 reversedKeywords: LocalizedStrings.fiveOfSwordsReversed,
                                  yesOrNo: .no)
             case .sixOfSwords:
                 return TarotCard(name: LocalizedStrings.sixOfSwords,
                                  imageName: "Six of Swords",
                                  arcana: .minor,
-                                 neutralKeywords: LocalizedStrings.sixOfSwordsNeutral,
-                                 uprightKeywords: LocalizedStrings.sixOfSwordsPositive,
-                                 reversedKeywords: LocalizedStrings.sixOfSwordsNegative,
+                                 uprightKeywords: LocalizedStrings.sixOfSwordsUpright,
+                                 reversedKeywords: LocalizedStrings.sixOfSwordsReversed,
                                  yesOrNo: .maybe)
             case .sevenOfSwords:
                 return TarotCard(name: LocalizedStrings.sevenOfSwords,
                                  imageName: "Seven of Swords",
                                  arcana: .minor,
-                                 neutralKeywords: LocalizedStrings.sevenOfSwordsNeutral,
-                                 uprightKeywords: LocalizedStrings.sevenOfSwordsPositive,
-                                 reversedKeywords: LocalizedStrings.sevenOfSwordsNegative,
+                                 uprightKeywords: LocalizedStrings.sevenOfSwordsUpright,
+                                 reversedKeywords: LocalizedStrings.sevenOfSwordsReversed,
                                  yesOrNo: .no)
             case .eightOfSwords:
                 return TarotCard(name: LocalizedStrings.eightOfSwords,
                                  imageName: "Eight of Swords",
                                  arcana: .minor,
-                                 neutralKeywords: LocalizedStrings.eightOfSwordsNeutral,
-                                 uprightKeywords: LocalizedStrings.eightOfSwordsPositive,
-                                 reversedKeywords: LocalizedStrings.eightOfSwordsNegative,
+                                 uprightKeywords: LocalizedStrings.eightOfSwordsUpright,
+                                 reversedKeywords: LocalizedStrings.eightOfSwordsReversed,
                                  yesOrNo: .no)
             case .nineOfSwords:
                 return TarotCard(name: LocalizedStrings.nineOfSwords,
                                  imageName: "Nine of Swords",
                                  arcana: .minor,
-                                 neutralKeywords: LocalizedStrings.nineOfSwordsNeutral,
-                                 uprightKeywords: LocalizedStrings.nineOfSwordsPositive,
-                                 reversedKeywords: LocalizedStrings.nineOfSwordsNegative,
+                                 uprightKeywords: LocalizedStrings.nineOfSwordsUpright,
+                                 reversedKeywords: LocalizedStrings.nineOfSwordsReversed,
                                  yesOrNo: .no)
             case .tenOfSwords:
                 return TarotCard(name: LocalizedStrings.tenOfSwords,
                                  imageName: "Ten of Swords",
                                  arcana: .minor,
-                                 neutralKeywords: LocalizedStrings.tenOfSwordsNeutral,
-                                 uprightKeywords: LocalizedStrings.tenOfSwordsPositive,
-                                 reversedKeywords: LocalizedStrings.tenOfSwordsNegative,
+                                 uprightKeywords: LocalizedStrings.tenOfSwordsUpright,
+                                 reversedKeywords: LocalizedStrings.tenOfSwordsReversed,
                                  yesOrNo: .no)
             case .pageOfSwords:
                 return TarotCard(name: LocalizedStrings.pageOfSwords,
                                  imageName: "Page of Swords",
                                  arcana: .minor,
-                                 neutralKeywords: LocalizedStrings.pageOfSwordsNeutral,
-                                 uprightKeywords: LocalizedStrings.pageOfSwordsPositive,
-                                 reversedKeywords: LocalizedStrings.pageOfSwordsNegative,
+                                 uprightKeywords: LocalizedStrings.pageOfSwordsUpright,
+                                 reversedKeywords: LocalizedStrings.pageOfSwordsReversed,
                                  yesOrNo: .yes)
             case .knightOfSwords:
                 return TarotCard(name: LocalizedStrings.knightOfSwords,
                                  imageName: "Knight of Swords",
                                  arcana: .minor,
-                                 neutralKeywords: LocalizedStrings.knightOfSwordsNeutral,
-                                 uprightKeywords: LocalizedStrings.knightOfSwordsPositive,
-                                 reversedKeywords: LocalizedStrings.knightOfSwordsNegative,
+                                 uprightKeywords: LocalizedStrings.knightOfSwordsUpright,
+                                 reversedKeywords: LocalizedStrings.knightOfSwordsReversed,
                                  yesOrNo: .yes)
             case .queenOfSwords:
                 return TarotCard(name: LocalizedStrings.queenOfSwords,
                                  imageName: "Queen of Swords",
                                  arcana: .minor,
-                                 neutralKeywords: LocalizedStrings.queenOfSwordsNeutral,
-                                 uprightKeywords: LocalizedStrings.queenOfSwordsPositive,
-                                 reversedKeywords: LocalizedStrings.queenOfSwordsNegative,
+                                 uprightKeywords: LocalizedStrings.queenOfSwordsUpright,
+                                 reversedKeywords: LocalizedStrings.queenOfSwordsReversed,
                                  yesOrNo: .maybe)
             case .kingOfSwords:
                 return TarotCard(name: LocalizedStrings.kingOfSwords,
                                  imageName: "King of Swords",
                                  arcana: .minor,
-                                 neutralKeywords: LocalizedStrings.kingOfSwordsNeutral,
-                                 uprightKeywords: LocalizedStrings.kingOfSwordsPositive,
-                                 reversedKeywords: LocalizedStrings.kingOfSwordsNegative,
+                                 uprightKeywords: LocalizedStrings.kingOfSwordsUpright,
+                                 reversedKeywords: LocalizedStrings.kingOfSwordsReversed,
                                  yesOrNo: .maybe)
         }
     }

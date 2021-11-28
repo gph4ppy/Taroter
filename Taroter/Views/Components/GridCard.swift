@@ -7,6 +7,8 @@
 
 import SwiftUI
 
+/// A view that displays the grid cell.
+/// Consists of an image and text with a name.
 struct GridCard: View {
     let card: TarotCard
     

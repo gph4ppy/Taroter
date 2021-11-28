@@ -8,6 +8,7 @@
 import SwiftUI
 import VisionKit
 
+/// A view that includes the card scanner.
 struct Scanner: UIViewControllerRepresentable {
     @Environment(\.presentationMode) var presentationMode: Binding<PresentationMode>
     @Binding var recognizedImages: [String]

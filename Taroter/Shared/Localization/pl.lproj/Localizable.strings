@@ -39,17 +39,16 @@
 "search" = "Szukaj...";
 "arcana" = "Arkana";
 "yes_or_no" = "Tak czy nie?";
-"keywords" = "Ogólne";
 "upright_keywords" = "Prosta";
 "reversed_keywords" = "Odwrócona";
 "cards" = "Karty";
 "scan_button" = "Skanuj";
 "clear_button" = "Wyczyść";
-"empty_view" = "Widzisz jakieś zeskanowane karty? \nMy też nie! \n\nKliknij przycisk \"Skanuj\" w prawym górnym rogu, aby zeskanować arty i uzyskać informacje na ich temat. \n\nGdy zakończysz odczyt kart, możesz je wyczyścić poprzez wciśnięcie przycisku \"Wyczyść\" w lewym górnym rogu lub przeciągając wiersz w lewo.";
+"empty_view" = "Widzisz jakieś zeskanowane karty? \nMy też nie!\n\nKliknij przycisk \"Skanuj\" w prawym górnym rogu, aby zeskanować karty i uzyskać informacje na ich temat. \n\nGdy zakończysz odczyt kart, możesz je wyczyścić poprzez wciśnięcie przycisku \"Wyczyść\" w lewym górnym rogu lub przeciągając wiersz w lewo.";
 
 // MARK: - Scanner View
-"please_wait" = "Proszę czekać. \nInterpretujemy karty...";
 "scanned_cards" = "Zeskanowane karty";
+"scanner" = "Skaner";
 
 // MARK: - Cards
 // - Major Arcana -
@@ -141,272 +140,183 @@
 "queen_of_swords" = "Królowa mieczy";
 "king_of_swords" = "Król mieczy";
 
-// MARK: - Neutral Keywords
+
+// MARK: - Upright Keywords
 // - Major Arcana -
-"fool_neutral" = "początki\n\nnowe doświadczenia\n\nniewinność\n\noptymizm\n\nspontaniczność\n\nnowe drogi\n\nradość\n\nnowość";
-"magician_neutral" = "indywidualizm\n\npodjęcie działania\n\ninicjatywa\n\nświadomość\n\nposiadanie wszystkich potrzebnych narzędzi\n\nsilna wola\n\nnowy początek";
-"high_priestess_neutral" = "spokój\n\nrównowaga\n\nintuicja\n\nwrażliwość\n\nkobiecość\n\nemocje\n\ntajemnica";
-"empress_neutral" = "dobrobyt\n\nmacierzyństwo\n\nsłuszna decyzja\n\nbezpieczeństwo emocjonalne\n\nzaufanie\n\nradość\n\nstanowczość\n\nnatura";
-"emperor_neutral" = "stabilność\n\nojcostwo\n\nstruktury\n\nniezależność\n\ndążenie do celu\n\nwładza\n\nmęskość\n\ndojrzałość\n\nautorytet\n\nwłaściwe wybory";
-"hierophant_neutral" = "dostosowanie\n\nnauka\n\nsystem wartości\n\nwiara\n\nwewnętrzna mądrość\n\nmoralne wartości\n\nprzewodnik duchowy\n\nautorytet\n\ndobre rady i pomoc\n\nduchowość\n\nrozwaga";
-"lovers_neutral" = "czas podejmowania decyzji\n\nmiłość\n\nwybór pomiędzy dwiema stronami\n\nrównowaga duszy i ciała\n\nprzeciwieństwa\n\nradość";
-"chariot_neutral" = "dobrobyt\n\nosiągnięcie celów\n\nprzezwyciężanie trudności\n\npostęp\n\ndynamika\n\ndeterminacja\n\ndążenie do przodu";
-"strength_neutral" = "odwaga\n\nzdrowie\n\nsiła wewnętrzna\n\nsiła woli\n\nkontrola";
-"hermit_neutral" = "wiedza\n\nwewnętrzna mądrość\n\ndoświadczenie\n\ncierpliwość\n\npokora\n\nsamorozwój\n\nsamopoznanie";
-"wheel_of_fortune_neutral" = "zmienność losu\n\nzmienność\n\nnic nie trwa wiecznie\n\nzło i dobro nie trwają wiecznie\n\nnagły zwrot akcji\n\nprzeznaczenie";
-"justice_neutral" = "sprawiedliwość\n\nocena działań\n\npodsumowanie wydarzeń\n\nosąd\n\nodpowiedzialność za swoje czyny\n\nbezstronność";
-"hanged_man_neutral" = "zawieszenie w życiu\n\nzmiana spojrzenia na świat\n\nskupienie się na wnętrzu\n\nbezruch\n\nprzewartościowanie życia\n\nbrak działań";
-"death_neutral" = "aby przyszło nowe musi odejść stare\n\nnieuniknione zmiany\n\ntransformacja\n\nprzemiana\n\nzmiany";
-"temperance_neutral" = "spokój\n\nrównowaga\n\ncierpliwość\n\numiar\n\nwewnętrzny spokój\n\nwyrozumiałość\n\nsamokontrola\n\nwewnętrzna dyscyplina";
-"devil_neutral" = "ludzka natura\n\nukryte pragnienia\n\nczłowiek godzi się na działanie pierwotnych instynktów - np. pożądanie rzeczy materialnych lub osób\n\ndestrukcyjna i toksyczna energia\n\nwewnętrzny demon\n\nuwiązanie (na które człowiek się godzi - przeważnie ilustrowane jako luźne łańcuchy)\n\nmożliwa przemoc";
-"tower_neutral" = "nagłe i gwałtowne zmiany\n\nwartości zbudowane na zbyt kruchych fundamentach\n\npoczątek końca\n\nnauka z doświadczeń\n\nskacz jeśli nie chcesz zostać przygniecionym przez upadające mury";
-"star_neutral" = "nadzieja\n\nspokój (możliwe\n\nże po burzy)\n\nzaufanie\n\nwiara\n\npowodzenie\n\nharmonia";
-"moon_neutral" = "tajemnica\n\npodświadomość\n\nintuicja\n\nemocje\n\nwnętrze\n\ngłębokie, silne i skryte emocje\n\niluzja\n\nzłudzenie\n\ntrudny okres\n\nniejasność\n\nniestabilność";
-"sun_neutral" = "The Sun";
-"judgement_neutral" = "Judgement";
-"world_neutral" = "The World";
+"fool_upright" = "beztroska\n\nniewinność\n\nnowe doświadczenia\n\nnowe drogi\n\nnowość\n\noptymizm\n\npewność siebie\n\npoczątki\n\nradość\n\nspontaniczność";
+"magician_upright" = "asertywność\n\nczas działania\n\nindywidualizm\n\ninicjatywa\n\nnowy początek\n\npodjęcie działania\n\npodjęcie ryzyka\n\nposiadanie wszystkich potrzebnych narzędzi\n\nsilna wola\n\nwiedza\n\nświadomość";
+"high_priestess_upright" = "brak akcji\n\nduchowość\n\nemocje\n\nintuicja\n\nkobiecość\n\nkobieta\n\nmatka\n\nmądrość\n\nrównowaga\n\nspokój\n\nspokój wewnętrzny\n\ntajemnica\n\nwrażliwość\n\nzgoda z intuicją";
+"empress_upright" = "bezpieczeństwo emocjonalne\n\ndobrobyt\n\nkobiecość\n\nmacierzyństwo\n\nnatura\n\nniezależność\n\npewność siebie\n\npozytyw\n\nradość\n\nrozwój osobisty\n\nstanowczość\n\nsłuszna decyzja\n\nwiedza życiowa\n\nzaufanie";
+"emperor_upright" = "autorytet\n\ndojrzałe decyzje\n\ndojrzałość\n\ndążenie do celu\n\nmęskość\n\nniezależność\n\nodpowiedzialność\n\nodwaga\n\nojcostwo\n\nstabilność\n\nstabilność finansowa\n\nstruktury\n\nsukces\n\nwładza\n\nwłaściwe wybory";
+"hierophant_upright" = "autorytet\n\ndobre rady i pomoc\n\ndostosowanie\n\nduchowość\n\nidealizm\n\nkształcenie\n\nmoralne wartości\n\nmądrość\n\nnauka\n\nprzewodnik duchowy\n\nrozwaga\n\nsystem wartości\n\nwewnętrzna mądrość\n\nwiara\n\nwychowanie\n\nwłasna wola";
+"lovers_upright" = "czas podejmowania decyzji\n\nharmonia\n\nmiłość\n\nprzeciwieństwa\n\nprzyjaźń\n\nradość\n\nrównowaga\n\nrównowaga duszy i ciała\n\nspotkania\n\nwybór pomiędzy dwiema stronami";
+"chariot_upright" = "determinacja\n\ndobrobyt\n\ndynamika\n\ndążenie do przodu\n\nosiągnięcie celów\n\npodróż\n\npokonanie trudności\n\npostęp\n\nprzezwyciężanie trudności\n\nsukces";
+"strength_upright" = "dyscyplina\n\nkontrola\n\nmądrość\n\nodwaga\n\npanowanie nad instynktami\n\npewność siebie\n\nsiła\n\nsiła wewnętrzna\n\nsiła woli\n\nwytrzymałość\n\nwładza\n\nzdrowie";
+"hermit_upright" = "bycie sobą\n\ncierpliwość\n\ndoświadczenie\n\nduchowość\n\nmądrość\n\nnauka\n\nnauka na podstawie przeszłości\n\npokora\n\nrozwój duchowy\n\nsamopoznanie\n\nsamorozwój\n\nterapia\n\nwewnętrzna mądrość\n\nwiedza";
+"wheel_of_fortune_upright" = "bezruch\n\nbrak działań\n\nmoment decyzji\n\nnagły zwrot akcji\n\nnic nie trwa wiecznie\n\nnowy cykl\n\nnowy etap w życiu\n\nprzewartościowanie życia\n\nprzeznaczenie\n\nrozwój\n\nskupienie się na wnętrzu\n\nszczęście\n\nzawieszenie w życiu\n\nzmiana spojrzenia na świat\n\nzmiany\n\nzmienność\n\nzmienność losu\n\nzło i dobro nie trwają wiecznie";
+"justice_upright" = "bezstronność\n\ndecyzja\n\nkarma\n\nkonsekwencje\n\nkontrola\n\nnawołanie do uczciwości\n\nocena działań\n\nodpowiedzialność\n\nodpowiedzialność za swoje czyny\n\nodwaga\n\nosąd\n\npodsumowanie wydarzeń\n\nprawda\n\nprzyczyna-skutek\n\nrówność\n\nsiła wewnętrzna\n\nsiła woli\n\nsprawiedliwość\n\nzdrowie";
+"hanged_man_upright" = "bezruch\n\nbrak działań\n\nbrak kierunku\n\nniepewność\n\nnowa perspektywa\n\nokres czekania\n\npoświęcenie\n\nprzewartościowanie życia\n\nskupienie się na wnętrzu\n\nzawieszenie w życiu\n\nzmiana spojrzenia na świat";
+"death_upright" = "aby przyszło nowe musi odejść stare\n\nkoniec oznacza nowe początki\n\nkoniec pewnego etapu w życiu\n\nnieuniknione zmiany\n\npożegnanie\n\nprzemiana\n\nprzemijalność\n\ntransformacja\n\nwszystko ma swoją cenę\n\nzmiany";
+"temperance_upright" = "cierpliwość\n\nrozwaga\n\nrównowaga\n\nsamokontrola\n\nspokój\n\nspokój wewnętrzny\n\numiar\n\nwewnętrzna dyscyplina\n\nwyrozumiałość\n\nzaufanie\n\nłączenie przeciwieństw";
+"devil_upright" = "bezsilność\n\nchciwość\n\nczłowiek godzi się na działanie pierwotnych instynktów - np. pożądanie rzeczy materialnych lub osób\n\ndestrukcyjna i toksyczna energia\n\nludzka natura\n\nmożliwa przemoc\n\nniewiedza\n\nobsesja\n\nograniczenia\n\nograniczone postrzeganie\n\npokusa\n\nprzewaga pierwotnych instynktów i ludzkiej natury\n\nukryte pragnienia\n\nuwiązanie (na które człowiek się godzi - przeważnie ilustrowane jako luźne łańcuchy)\n\nuzależnienie\n\nwewnętrzny demon\n\nwątpliwości\n\nzniewolenie";
+"tower_upright" = "konflikt\n\nkoniec oznacza nowy początek (po zawaleniu się wieży uprzątnij ruiny i postaw na tych fundamentach nową\n\nmocniejszą konstrukcję)\n\nnagłe i gwałtowne zmiany (przeważnie z zewnątrz)\n\nnauka z doświadczeń\n\npoczątek końca\n\nprzełom\n\nrozpad dotychczasowych ideałów\n\nrozpad relacji\n\nrozwianie wątpliwości\n\nsiła wyższa\n\nskacz jeśli nie chcesz zostać przygniecionym przez upadające mury\n\nupadek\n\nutrata stabilizacji\n\nwartości zbudowane na zbyt kruchych fundamentach\n\nwstrząs";
+"star_upright" = "harmonia\n\nidealizm\n\nnadzieja\n\noptymizm\n\npowodzenie\n\nprzychylność losu\n\nsamopoznanie\n\nspokój (możliwe, że po burzy)\n\nwiara\n\nwyzwolenie\n\nzadowolenie\n\nzaufanie";
+"moon_upright" = "emocje\n\ngłębokie, silne i skryte emocje\n\n iluzja\n\nintuicja\n\nniejasność\n\nniepokój\n\nniestabilność\n\nnieświadomość\n\npodświadomość\n\nstrach\n\ntajemnice lub tajemnica\n\ntrudny okres\n\nuczucia\n\nwnętrze\n\nzmieszanie\n\nzłe przeczucia\n\nzłożoność\n\nzłudzenie";
+"sun_upright" = "cele\n\nduma\n\nojciec\n\noptymizm\n\nosiągnięcia\n\noświecenie\n\nradość\n\nsiła\n\nspełnienie\n\nsukces\n\nszczęście\n\ntriumf\n\nwitalność\n\nzdrowie";
+"judgement_upright" = "ponowne rozpatrzenie przeszłości i zmierzenie się z nią\n\nprzebudzenie\n\nrefleksja\n\nrozliczenie\n\nwybaczenie sobie i innym";
+"world_upright" = "całość\n\ndojrzałość\n\newolucja\n\nharmonia\n\nkoniec i nowy początek\n\noświecenie\n\npełnia\n\nradość\n\nsamoświadomość\n\nspełnienie\n\nsukces\n\nszczęście";
 
 // - Minor Arcana -
 // Wands
-"ace_of_wands_neutral" = "Ace of Wands";
-"two_of_wands_neutral" = "Two of of Wands";
-"three_of_wands_neutral" = "Three of Wands";
-"four_of_wands_neutral" = "Four of Wands";
-"five_of_wands_neutral" = "Five of Wands";
-"six_of_wands_neutral" = "Six of Wands";
-"seven_of_wands_neutral" = "Seven of Wands";
-"eight_of_wands_neutral" = "Eight of Wands";
-"nine_of_wands_neutral" = "Nine of Wands";
-"ten_of_wands_neutral" = "Ten of Wands";
-"page_of_wands_neutral" = "Page of Wands";
-"knight_of_wands_neutral" = "Knight of Wands";
-"queen_of_wands_neutral" = "Queen of Wands";
-"king_of_wands_neutral" = "King of Wands";
+"ace_of_wands_upright" = "Ace of Wands";
+"two_of_wands_upright" = "Two of of Wands";
+"three_of_wands_upright" = "Three of Wands";
+"four_of_wands_upright" = "Four of Wands";
+"five_of_wands_upright" = "Five of Wands";
+"six_of_wands_upright" = "Six of Wands";
+"seven_of_wands_upright" = "Seven of Wands";
+"eight_of_wands_upright" = "Eight of Wands";
+"nine_of_wands_upright" = "Nine of Wands";
+"ten_of_wands_upright" = "Ten of Wands";
+"page_of_wands_upright" = "Page of Wands";
+"knight_of_wands_upright" = "Knight of Wands";
+"queen_of_wands_upright" = "Queen of Wands";
+"king_of_wands_upright" = "King of Wands";
 
 // Pentacles
-"ace_of_pentacles_neutral" = "Ace of Pentacles";
-"two_of_pentacles_neutral" = "Two of Pentacles";
-"three_of_pentacles_neutral" = "Three of Pentacles";
-"four_of_pentacles_neutral" = "Four of Pentacles";
-"five_of_pentacles_neutral" = "Five of Pentacles";
-"six_of_pentacles_neutral" = "Six of Pentacles";
-"seven_of_pentacles_neutral" = "Seven of Pentacles";
-"eight_of_pentacles_neutral" = "Eight of Pentacles";
-"nine_of_pentacles_neutral" = "Nine of Pentacles";
-"ten_of_pentacles_neutral" = "Ten of Pentacles";
-"page_of_pentacles_neutral" = "Page of Pentacles";
-"knight_of_pentacles_neutral" = "Knight of Pentacles";
-"queen_of_pentacles_neutral" = "Queen of Pentacles";
-"king_of_pentacles_neutral" = "King of Pentacles";
+"ace_of_pentacles_upright" = "Ace of Pentacles";
+"two_of_pentacles_upright" = "Two of Pentacles";
+"three_of_pentacles_upright" = "Three of Pentacles";
+"four_of_pentacles_upright" = "Four of Pentacles";
+"five_of_pentacles_upright" = "Five of Pentacles";
+"six_of_pentacles_upright" = "Six of Pentacles";
+"seven_of_pentacles_upright" = "Seven of Pentacles";
+"eight_of_pentacles_upright" = "Eight of Pentacles";
+"nine_of_pentacles_upright" = "Nine of Pentacles";
+"ten_of_pentacles_upright" = "Ten of Pentacles";
+"page_of_pentacles_upright" = "Page of Pentacles";
+"knight_of_pentacles_upright" = "Knight of Pentacles";
+"queen_of_pentacles_upright" = "Queen of Pentacles";
+"king_of_pentacles_upright" = "King of Pentacles";
 
 // Cups
-"ace_of_cups_neutral" = "Ace of Cups";
-"two_of_cups_neutral" = "Two of Cups";
-"three_of_cups_neutral" = "Three of Cups";
-"four_of_cups_neutral" = "Four of Cups";
-"five_of_cups_neutral" = "Five of Cups";
-"six_of_cups_neutral" = "Six of Cups";
-"seven_of_cups_neutral" = "Seven of Cups";
-"eight_of_cups_neutral" = "Eight of Cups";
-"nine_of_cups_neutral" = "Nine of Cups";
-"ten_of_cups_neutral" = "Ten of Cups";
-"page_of_cups_neutral" = "Page of Cups";
-"knight_of_cups_neutral" = "Knight of Cups";
-"queen_of_cups_neutral" = "Queen of Cups";
-"king_of_cups_neutral" = "King of Cups";
+"ace_of_cups_upright" = "Ace of Cups";
+"two_of_cups_upright" = "Two of Cups";
+"three_of_cups_upright" = "Three of Cups";
+"four_of_cups_upright" = "Four of Cups";
+"five_of_cups_upright" = "Five of Cups";
+"six_of_cups_upright" = "Six of Cups";
+"seven_of_cups_upright" = "Seven of Cups";
+"eight_of_cups_upright" = "Eight of Cups";
+"nine_of_cups_upright" = "Nine of Cups";
+"ten_of_cups_upright" = "Ten of Cups";
+"page_of_cups_upright" = "Page of Cups";
+"knight_of_cups_upright" = "Knight of Cups";
+"queen_of_cups_upright" = "Queen of Cups";
+"king_of_cups_upright" = "King of Cups";
 
 // Swords
-"ace_of_swords_neutral" = "Ace of Swords";
-"two_of_swords_neutral" = "Two of Swords";
-"three_of_swords_neutral" = "Three of Swords";
-"four_of_swords_neutral" = "Four of Swords";
-"five_of_swords_neutral" = "Five of Swords";
-"six_of_swords_neutral" = "Six of Swords";
-"seven_of_swords_neutral" = "Seven of Swords";
-"eight_of_swords_neutral" = "Eight of Swords";
-"nine_of_swords_neutral" = "Nine of Swords";
-"ten_of_swords_neutral" = "Ten of Swords";
-"page_of_swords_neutral" = "Page of Swords";
-"knight_of_swords_neutral" = "Knight of Swords";
-"queen_of_swords_neutral" = "Queen of Swords";
-"king_of_swords_neutral" = "King of Swords";
-
-// MARK: - Positive Keywords
-// - Major Arcana -
-"fool_positive" = "radość\n\npewność siebie\n\noptymizm\n\nbeztroska\n\nspontaniczność";
-"magician_positive" = "czas działania\n\nasertywność\n\nwiedza\n\npodjęcie ryzyka";
-"high_priestess_positive" = "mądrość\n\nzgoda z intuicją\n\nspokój wewnętrzny\n\nduchowość\n\nwrażliwość\n\nmatka\n\nkobieta\n\nbrak akcji";
-"empress_positive" = "kobiecość\n\nrozwój osobisty\n\npewność siebie\n\nniezależność\n\nwiedza życiowa\n\npozytywna";
-"emperor_positive" = "odpowiedzialność\n\nsukces\n\nodwaga\n\nstabilność finansowa\n\ndojrzałe decyzje";
-"hierophant_positive" = "kształcenie\n\nidealizm\n\nmądrość\n\nwłasna wola\n\nnauka\n\nwychowanie";
-"lovers_positive" = "równowaga\n\nharmonia\n\nprzyjaźń\n\nmiłość\n\nspotkania\n\nradość";
-"chariot_positive" = "sukces\n\npokonanie trudności\n\npostęp\n\npodróż\n\ndynamika";
-"strength_positive" = "władza\n\nsiła\n\nkontrola\n\nmądrość\n\ndyscyplina\n\nwytrzymałość\n\npanowanie nad instynktami\n\nodwaga\n\npewność siebie";
-"hermit_positive" = "mądrość\n\nrozwój duchowy\n\nterapia\n\nsamopoznanie\n\nduchowość\n\nnauka\n\nbycie sobą\n\nnauka na podstawie przeszłości";
-"wheel_of_fortune_positive" = "zmiany\n\nnowy cykl\n\nnowy etap w życiu\n\nrozwój\n\nszczęście\n\nmoment decyzji";
-"justice_positive" = "odpowiedzialność\n\ndecyzja\n\nrówność\n\nkarma\n\nkonsekwencje\n\nprawda\n\nprzyczyna-skutek\n\nnawołanie do uczciwości";
-"hanged_man_positive" = "okres czekania\n\nniepewność\n\nbrak kierunku\n\nnowa perspektywa\n\npoświęcenie";
-"death_positive" = "koniec pewnego etapu w życiu\n\npożegnanie\n\nwszystko ma swoją cenę\n\nkoniec oznacza nowe początki\n\nprzemijalność";
-"temperance_positive" = "spokój wewnętrzny\n\nrównowaga\n\nzaufanie\n\nrozwaga\n\nłączenie przeciwieństw";
-"devil_positive" = "pokusa\n\nzniewolenie\n\nchciwość\n\nograniczone postrzeganie\n\nwątpliwości\n\nuzależnienie\n\nniewiedza\n\nprzewaga pierwotnych instynktów i ludzkiej natury\n\nobsesja\n\nograniczenia\n\nbezsilność";
-"tower_positive" = "nagłe zmiany z zewnątrz\n\nsiła wyższa\n\nrozpad dotychczasowych ideałów\n\nutrata stabilizacji\n\nrozpad relacji\n\nkoniec oznacza nowy początek (po zawaleniu się wieży uprzątnij ruiny i postaw na tych fundamentach nową, mocniejszą konstrukcję)\n\nprzełom\n\nupadek\n\nrozwianie wątpliwości\n\nwstrząs\n\nkonflikt";
-"star_positive" = "wiara\n\noptymizm\n\nprzychylność losu\n\nidealizm\n\nwyzwolenie\n\nzadowolenie\n\nsamopoznanie";
-"moon_positive" = "iluzja\n\nzłe przeczucia\n\nuczucia\n\ntajemnice\n\nniejasność\n\nintuicja\n\nzmieszanie\n\nzłożoność\n\nnieświadomość\n\nstrach\n\nniepokój";
-"sun_positive" = "The Sun";
-"judgement_positive" = "Judgement";
-"world_positive" = "The World";
-
-// - Minor Arcana -
-// Wands
-"ace_of_wands_positive" = "Ace of Wands";
-"two_of_wands_positive" = "Two of of Wands";
-"three_of_wands_positive" = "Three of Wands";
-"four_of_wands_positive" = "Four of Wands";
-"five_of_wands_positive" = "Five of Wands";
-"six_of_wands_positive" = "Six of Wands";
-"seven_of_wands_positive" = "Seven of Wands";
-"eight_of_wands_positive" = "Eight of Wands";
-"nine_of_wands_positive" = "Nine of Wands";
-"ten_of_wands_positive" = "Ten of Wands";
-"page_of_wands_positive" = "Page of Wands";
-"knight_of_wands_positive" = "Knight of Wands";
-"queen_of_wands_positive" = "Queen of Wands";
-"king_of_wands_positive" = "King of Wands";
-
-// Pentacles
-"ace_of_pentacles_positive" = "Ace of Pentacles";
-"two_of_pentacles_positive" = "Two of Pentacles";
-"three_of_pentacles_positive" = "Three of Pentacles";
-"four_of_pentacles_positive" = "Four of Pentacles";
-"five_of_pentacles_positive" = "Five of Pentacles";
-"six_of_pentacles_positive" = "Six of Pentacles";
-"seven_of_pentacles_positive" = "Seven of Pentacles";
-"eight_of_pentacles_positive" = "Eight of Pentacles";
-"nine_of_pentacles_positive" = "Nine of Pentacles";
-"ten_of_pentacles_positive" = "Ten of Pentacles";
-"page_of_pentacles_positive" = "Page of Pentacles";
-"knight_of_pentacles_positive" = "Knight of Pentacles";
-"queen_of_pentacles_positive" = "Queen of Pentacles";
-"king_of_pentacles_positive" = "King of Pentacles";
-
-// Cups
-"ace_of_cups_positive" = "Ace of Cups";
-"two_of_cups_positive" = "Two of Cups";
-"three_of_cups_positive" = "Three of Cups";
-"four_of_cups_positive" = "Four of Cups";
-"five_of_cups_positive" = "Five of Cups";
-"six_of_cups_positive" = "Six of Cups";
-"seven_of_cups_positive" = "Seven of Cups";
-"eight_of_cups_positive" = "Eight of Cups";
-"nine_of_cups_positive" = "Nine of Cups";
-"ten_of_cups_positive" = "Ten of Cups";
-"page_of_cups_positive" = "Page of Cups";
-"knight_of_cups_positive" = "Knight of Cups";
-"queen_of_cups_positive" = "Queen of Cups";
-"king_of_cups_positive" = "King of Cups";
-
-// Swords
-"ace_of_swords_positive" = "Ace of Swords";
-"two_of_swords_positive" = "Two of Swords";
-"three_of_swords_positive" = "Three of Swords";
-"four_of_swords_positive" = "Four of Swords";
-"five_of_swords_positive" = "Five of Swords";
-"six_of_swords_positive" = "Six of Swords";
-"seven_of_swords_positive" = "Seven of Swords";
-"eight_of_swords_positive" = "Eight of Swords";
-"nine_of_swords_positive" = "Nine of Swords";
-"ten_of_swords_positive" = "Ten of Swords";
-"page_of_swords_positive" = "Page of Swords";
-"knight_of_swords_positive" = "Knight of Swords";
-"queen_of_swords_positive" = "Queen of Swords";
-"king_of_swords_positive" = "King of Swords";
+"ace_of_swords_upright" = "Ace of Swords";
+"two_of_swords_upright" = "Two of Swords";
+"three_of_swords_upright" = "Three of Swords";
+"four_of_swords_upright" = "Four of Swords";
+"five_of_swords_upright" = "Five of Swords";
+"six_of_swords_upright" = "Six of Swords";
+"seven_of_swords_upright" = "Seven of Swords";
+"eight_of_swords_upright" = "Eight of Swords";
+"nine_of_swords_upright" = "Nine of Swords";
+"ten_of_swords_upright" = "Ten of Swords";
+"page_of_swords_upright" = "Page of Swords";
+"knight_of_swords_upright" = "Knight of Swords";
+"queen_of_swords_upright" = "Queen of Swords";
+"king_of_swords_upright" = "King of Swords";
 
 // MARK: - Negative Keywords
 // - Major Arcana -
-"fool_negative" = "poczekać przed podjęciem decyzji\n\nlekkomyślność\n\ngłupota\n\nniedojrzałość\n\nnaiwność\n\nniepotrzebne ryzyko\n\nutrata okazji";
-"magician_negative" = "niezdecydowanie\n\nnieśmiałość\n\nniedowartościowanie\n\nkłamca\n\nmanipulant\n\nbrak odwagi\n\nniemożność podjęcia działania";
-"high_priestess_negative" = "kompleksy\n\nproblemy psychiczne\n\nstrach\n\nprzejmowanie się opinią innych\n\ncierpienie\n\nnadwrażliwość";
-"empress_negative" = "egoizm\n\nzaborczość\n\nniewierność\n\nbezradność\n\nzaprzeczenie uczuciom\n\nniemożność rozwiązania problemów";
-"emperor_negative" = "niestabilność\n\nniedojrzałość\n\nnadużywanie władzy\n\nbrak autorytetu\n\nniedojrzałe decyzje\n\nniestabilność zawodowa";
-"hierophant_negative" = "łatwowierność\n\nkryzys duchowy\n\n brak koncentracji\n\ncynizm\n\nzły przewodnik\n\nproblemy z nauką\n\nobłuda";
-"lovers_negative" = "strach przed podjęciem decyzji\n\nkonflikt\n\ndestrukcyjna lub nieszczęśliwa miłość";
-"chariot_negative" = "utrata kontroli\n\ntrudności w dążeniu do celu\n\nmożliwe problemy z agresją\n\nostrzeżenie\n\nchaos\n\nnatłok obowiązków\n\nprzemęczenie\n\nnadmierna pewność siebie";
-"strength_negative" = "przewaga pierwotnych instynktów\n\nnegacja siły wewnętrznej\n\nniepowodzenie\n\nzarozumiałość\n\nnieszczęście\n\ndążenie do perfekcjonizmu\n\nsłabość\n\nniepewność siebie\n\ntchórzostwo";
-"hermit_negative" = "samotność\n\nizolacja\n\nmasochizm\n\nunikanie prawdy o sobie\n\nstrach\n\nukrycie\n\nunikanie konfrontacji z problemami\n\ntrudności w relacjach z innymi";
-"wheel_of_fortune_negative" = "brak kontroli\n\npech\n\nniechciane zmiany\n\nopóźnienia\n\npróba kontroli\n\nstarty\n\nzłe decyzje\n\nrezygnacja";
-"justice_negative" = "niesprawiedliwość\n\nkara\n\nnieuczciwość\n\nnieszczerość\n\nkorupcja\n\nunikanie odpowiedzialności\n\noskarżenia\n\noszustwo\n\nkrytyka\n\nchaos\n\nfałszywa samoocena\n\nniepowodzenie\n\nkonflikt z prawem\n\nniesprawiedliwy wyrok";
-"hanged_man_negative" = "stagnacja\n\nbrak zainteresowania\n\nblokada\n\nutknięcie w martwym punkcie\n\nw pozytywnym znaczeniu może oznaczać pójście do przodu z nową perspektywą i energią";
-"death_negative" = "żałoba\n\nżal\n\nstrach przed zmianami\n\nkurczowe trzymanie się przeszłości\n\nutrata nadziei\n\nzniszczenie\n\ndepresja\n\nporażka\n\nstrata";
-"temperance_negative" = "niestabilność\n\nbrak równowagi\n\nniecierpliwość\n\nbrak motywacji\n\nzniechęcenie\n\nstrach przed okazaniem uczuć\n\nchaos\n\ntrudność w podjęciu decyzji\n\npowierzchowność\n\nskrajność";
-"devil_negative" = "uzależnienie od używek/osoby/grupy osób\n\nbrak kontroli nad emocjami\n\nzło\n\noszustwo\n\nagresja\n\nzazdrość\n\nsłabość\n\nzaślepienie";
-"tower_negative" = "utrata nadziei\n\nautodestrukcja\n\nuwięzienie\n\ndepresja\n\nniemożność dokonania zmian\n\nunikanie katastrofy\n\nopóźnianie nieuniknionego\n\nopieranie się zmianom\n\nstrach przed zmianami";
-"star_negative" = "rozpacz\n\npogrążenie w marzeniach\n\nzłudna nadzieja\n\nzwątpienie\n\nrozczarowanie\n\niluzja\n\nrezygnacja\n\nnieszczęśliwa miłość\n\npesymizm";
-"moon_negative" = "kłamstwo\n\noszustwo\n\nstrach\n\npesymizm\n\nproblemy z pewnością siebie\n\nniepokój\n\nnieporozumienie\n\nwewnętrzne zamieszanie\n\nw pozytywnym znaczeniu może oznaczać uwolnienie od strachu, odsłonięte tajemnice, zrozumienie, jasność";
-"sun_negative" = "The Sun";
-"judgement_negative" = "Judgement";
-"world_negative" = "The World";
+"fool_reversed" = "głupota\n\nlekkomyślność\n\nnaiwność\n\nniedojrzałość\n\nniepotrzebne ryzyko\n\npoczekać przed podjęciem decyzji\n\nutrata okazji";
+"magician_reversed" = "brak odwagi\n\nkłamca\n\nmanipulant\n\nniedowartościowanie\n\nniemożność podjęcia działania\n\nniezdecydowanie\n\nnieśmiałość";
+"high_priestess_reversed" = "cierpienie\n\nkompleksy\n\nnadwrażliwość\n\nproblemy psychiczne\n\nprzejmowanie się opinią innych\n\nstrach";
+"empress_reversed" = "bezradność\n\negoizm\n\nniemożność rozwiązania problemów\n\nniewierność\n\nzaborczość\n\nzaprzeczenie uczuciom";
+"emperor_reversed" = "brak autorytetu\n\nnadużywanie władzy\n\nniedojrzałe decyzje\n\nniedojrzałość\n\nniestabilność\n\nniestabilność zawodowa";
+"hierophant_reversed" = "brak koncentracji\n\ncynizm\n\nkryzys duchowy\n\nobłuda\n\nproblemy z nauką\n\nzły przewodnik\n\nłatwowierność";
+"lovers_reversed" = "destrukcyjna lub nieszczęśliwa miłość\n\nkonflikt\n\nstrach przed podjęciem decyzji";
+"chariot_reversed" = "chaos\n\nmożliwe problemy z agresją\n\nnadmierna pewność siebie\n\nnatłok obowiązków\n\nostrzeżenie\n\nprzemęczenie\n\ntrudności w dążeniu do celu\n\nutrata kontroli";
+"strength_reversed" = "dążenie do perfekcjonizmu\n\nnegacja siły wewnętrznej\n\nniepewność siebie\n\nniepowodzenie\n\nnieszczęście\n\nprzewaga pierwotnych instynktów\n\nsłabość\n\ntchórzostwo\n\nzarozumiałość";
+"hermit_reversed" = "izolacja\n\nmasochizm\n\nsamotność\n\nstrach\n\ntrudności w relacjach z innymi\n\nukrycie\n\nunikanie konfrontacji z problemami\n\nunikanie prawdy o sobie";
+"wheel_of_fortune_reversed" = "brak kontroli\n\nniechciane zmiany\n\nopóźnienia\n\npech\n\npróba kontroli\n\nrezygnacja\n\nstraty\n\nzłe decyzje";
+"justice_reversed" = "chaos\n\nfałszywa samoocena\n\nkara\n\nkonflikt z prawem\n\nkorupcja\n\nkrytyka\n\nniepowodzenie\n\nniesprawiedliwość\n\nniesprawiedliwy wyrok\n\nnieszczerość\n\nnieuczciwość\n\noskarżenia\n\noszustwo\n\nunikanie odpowiedzialności";
+"hanged_man_reversed" = "blokada\n\nbrak zainteresowania\n\nstagnacja\n\nutknięcie w martwym punkcie\n\nw pozytywnym znaczeniu może oznaczać pójście do przodu z nową perspektywą i energią";
+"death_reversed" = "depresja\n\nkurczowe trzymanie się przeszłości\n\nporażka\n\nstrach przed zmianami\n\nstrata\n\nutrata nadziei\n\nzniszczenie\n\nżal\n\nżałoba";
+"temperance_reversed" = "brak motywacji\n\nbrak równowagi\n\nchaos\n\nniecierpliwość\n\nniestabilność\n\npowierzchowność\n\nskrajność\n\nstrach przed okazaniem uczuć\n\ntrudność w podjęciu decyzji\n\nzniechęcenie";
+"devil_reversed" = "agresja\n\nbrak kontroli nad emocjami\n\noszustwo\n\nsłabość\n\nuzależnienie od używek/osoby/grupy osób\n\nzazdrość\n\nzaślepienie\n\nzło";
+"tower_reversed" = "autodestrukcja\n\ndepresja\n\nniemożność dokonania zmian\n\nopieranie się zmianom\n\nopóźnianie nieuniknionego\n\nstrach przed zmianami\n\nunikanie katastrofy\n\nutrata nadziei\n\nuwięzienie";
+"star_reversed" = "iluzja\n\nnieszczęśliwa miłość\n\npesymizm\n\npogrążenie w marzeniach\n\nrezygnacja\n\nrozczarowanie\n\nrozpacz\n\nzwątpienie\n\nzłudna nadzieja";
+"moon_reversed" = "kłamstwo\n\nniepokój\n\nnieporozumienie\n\noszustwo\n\npesymizm\n\nproblemy z pewnością siebie\n\nstrach\n\nwewnętrzne zamieszanie\n\nw pozytywnym znaczeniu może oznaczać jasność, odsłonięte tajemnice, uwolnienie od strachu, zrozumienie";
+"sun_reversed" = "egoizm\n\nnierealistyczne oczekiwania\n\nrozczarowanie\n\nzablokowane szczęście\n\nzarozumiałość\n\nzawód\n\nzbyt duża pewność siebie\n\nzbyt optymistyczne podejście";
+"judgement_reversed" = "brak samoświadomości\n\nbrak wyciągnięcia wniosków i lekcji\n\nkarma\n\nwewnętrzny krytyk\n\nzwątpienie w siebie";
+"world_reversed" = "brak zamknięcia\n\npoczucie niekompletności\n\nstagnacja\n\nszukanie skrótów\n\nzamknięcie się w sobie";
 
 // - Minor Arcana -
 // Wands
-"ace_of_wands_negative" = "Ace of Wands";
-"two_of_wands_negative" = "Two of of Wands";
-"three_of_wands_negative" = "Three of Wands";
-"four_of_wands_negative" = "Four of Wands";
-"five_of_wands_negative" = "Five of Wands";
-"six_of_wands_negative" = "Six of Wands";
-"seven_of_wands_negative" = "Seven of Wands";
-"eight_of_wands_negative" = "Eight of Wands";
-"nine_of_wands_negative" = "Nine of Wands";
-"ten_of_wands_negative" = "Ten of Wands";
-"page_of_wands_negative" = "Page of Wands";
-"knight_of_wands_negative" = "Knight of Wands";
-"queen_of_wands_negative" = "Queen of Wands";
-"king_of_wands_negative" = "King of Wands";
+"ace_of_wands_reversed" = "Ace of Wands";
+"two_of_wands_reversed" = "Two of of Wands";
+"three_of_wands_reversed" = "Three of Wands";
+"four_of_wands_reversed" = "Four of Wands";
+"five_of_wands_reversed" = "Five of Wands";
+"six_of_wands_reversed" = "Six of Wands";
+"seven_of_wands_reversed" = "Seven of Wands";
+"eight_of_wands_reversed" = "Eight of Wands";
+"nine_of_wands_reversed" = "Nine of Wands";
+"ten_of_wands_reversed" = "Ten of Wands";
+"page_of_wands_reversed" = "Page of Wands";
+"knight_of_wands_reversed" = "Knight of Wands";
+"queen_of_wands_reversed" = "Queen of Wands";
+"king_of_wands_reversed" = "King of Wands";
 
 // Pentacles
-"ace_of_pentacles_negative" = "Ace of Pentacles";
-"two_of_pentacles_negative" = "Two of Pentacles";
-"three_of_pentacles_negative" = "Three of Pentacles";
-"four_of_pentacles_negative" = "Four of Pentacles";
-"five_of_pentacles_negative" = "Five of Pentacles";
-"six_of_pentacles_negative" = "Six of Pentacles";
-"seven_of_pentacles_negative" = "Seven of Pentacles";
-"eight_of_pentacles_negative" = "Eight of Pentacles";
-"nine_of_pentacles_negative" = "Nine of Pentacles";
-"ten_of_pentacles_negative" = "Ten of Pentacles";
-"page_of_pentacles_negative" = "Page of Pentacles";
-"knight_of_pentacles_negative" = "Knight of Pentacles";
-"queen_of_pentacles_negative" = "Queen of Pentacles";
-"king_of_pentacles_negative" = "King of Pentacles";
+"ace_of_pentacles_reversed" = "Ace of Pentacles";
+"two_of_pentacles_reversed" = "Two of Pentacles";
+"three_of_pentacles_reversed" = "Three of Pentacles";
+"four_of_pentacles_reversed" = "Four of Pentacles";
+"five_of_pentacles_reversed" = "Five of Pentacles";
+"six_of_pentacles_reversed" = "Six of Pentacles";
+"seven_of_pentacles_reversed" = "Seven of Pentacles";
+"eight_of_pentacles_reversed" = "Eight of Pentacles";
+"nine_of_pentacles_reversed" = "Nine of Pentacles";
+"ten_of_pentacles_reversed" = "Ten of Pentacles";
+"page_of_pentacles_reversed" = "Page of Pentacles";
+"knight_of_pentacles_reversed" = "Knight of Pentacles";
+"queen_of_pentacles_reversed" = "Queen of Pentacles";
+"king_of_pentacles_reversed" = "King of Pentacles";
 
 // Cups
-"ace_of_cups_negative" = "Ace of Cups";
-"two_of_cups_negative" = "Two of Cups";
-"three_of_cups_negative" = "Three of Cups";
-"four_of_cups_negative" = "Four of Cups";
-"five_of_cups_negative" = "Five of Cups";
-"six_of_cups_negative" = "Six of Cups";
-"seven_of_cups_negative" = "Seven of Cups";
-"eight_of_cups_negative" = "Eight of Cups";
-"nine_of_cups_negative" = "Nine of Cups";
-"ten_of_cups_negative" = "Ten of Cups";
-"page_of_cups_negative" = "Page of Cups";
-"knight_of_cups_negative" = "Knight of Cups";
-"queen_of_cups_negative" = "Queen of Cups";
-"king_of_cups_negative" = "King of Cups";
+"ace_of_cups_reversed" = "Ace of Cups";
+"two_of_cups_reversed" = "Two of Cups";
+"three_of_cups_reversed" = "Three of Cups";
+"four_of_cups_reversed" = "Four of Cups";
+"five_of_cups_reversed" = "Five of Cups";
+"six_of_cups_reversed" = "Six of Cups";
+"seven_of_cups_reversed" = "Seven of Cups";
+"eight_of_cups_reversed" = "Eight of Cups";
+"nine_of_cups_reversed" = "Nine of Cups";
+"ten_of_cups_reversed" = "Ten of Cups";
+"page_of_cups_reversed" = "Page of Cups";
+"knight_of_cups_reversed" = "Knight of Cups";
+"queen_of_cups_reversed" = "Queen of Cups";
+"king_of_cups_reversed" = "King of Cups";
 
 // Swords
-"ace_of_swords_negative" = "Ace of Swords";
-"two_of_swords_negative" = "Two of Swords";
-"three_of_swords_negative" = "Three of Swords";
-"four_of_swords_negative" = "Four of Swords";
-"five_of_swords_negative" = "Five of Swords";
-"six_of_swords_negative" = "Six of Swords";
-"seven_of_swords_negative" = "Seven of Swords";
-"eight_of_swords_negative" = "Eight of Swords";
-"nine_of_swords_negative" = "Nine of Swords";
-"ten_of_swords_negative" = "Ten of Swords";
-"page_of_swords_negative" = "Page of Swords";
-"knight_of_swords_negative" = "Knight of Swords";
-"queen_of_swords_negative" = "Queen of Swords";
-"king_of_swords_negative" = "King of Swords";
+"ace_of_swords_reversed" = "Ace of Swords";
+"two_of_swords_reversed" = "Two of Swords";
+"three_of_swords_reversed" = "Three of Swords";
+"four_of_swords_reversed" = "Four of Swords";
+"five_of_swords_reversed" = "Five of Swords";
+"six_of_swords_reversed" = "Six of Swords";
+"seven_of_swords_reversed" = "Seven of Swords";
+"eight_of_swords_reversed" = "Eight of Swords";
+"nine_of_swords_reversed" = "Nine of Swords";
+"ten_of_swords_reversed" = "Ten of Swords";
+"page_of_swords_reversed" = "Page of Swords";
+"knight_of_swords_reversed" = "Knight of Swords";
+"queen_of_swords_reversed" = "Queen of Swords";
+"king_of_swords_reversed" = "King of Swords";

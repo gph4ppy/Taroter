@@ -8,8 +8,8 @@
 import SwiftUI
 
 struct WelcomeView: View {
-    @AppStorage("isFirstTime") private var isFirstTime: Bool    = true
-    @State private var showingMainView: Bool                    = false
+    @AppStorage("isFirstTime") private var isFirstTime: Bool = true
+    @State private var showingMainView: Bool                 = false
     
     var body: some View {
         VStack(spacing: 30) {
@@ -19,28 +19,9 @@ struct WelcomeView: View {
                 .bold()
             
             // Tutorial Tab View
-            TabView {
-                // 1st screen
-                WelcomeScreen(imageName: "sun.haze.fill",
-                              title: LocalizedStrings.firstTitle,
-                              description: LocalizedStrings.firstDescription)
-                // 2nd screen
-                WelcomeScreen(imageName: "doc.text.fill.viewfinder",
-                              title: LocalizedStrings.secondTitle,
-                              description: LocalizedStrings.secondDescription)
-                
-                // 3rd screen
-                WelcomeScreen(imageName: "doc.text.magnifyingglass",
-                              title: LocalizedStrings.thirdTitle,
-                              description: LocalizedStrings.thirdDescription)
-                
-                // 4th screen
-                WelcomeScreen(imageName: "moon.stars.fill",
-                              title: LocalizedStrings.fourthTitle,
-                              description: LocalizedStrings.fourthDescription)
-            }
-            .tabViewStyle(PageTabViewStyle(indexDisplayMode: .always))
-            .indexViewStyle(PageIndexViewStyle(backgroundDisplayMode: .always))
+            TabView(content: createTabViewContent)
+                .tabViewStyle(PageTabViewStyle(indexDisplayMode: .always))
+                .indexViewStyle(PageIndexViewStyle(backgroundDisplayMode: .always))
             
             // Start Using App Button
             Button(action: { self.showingMainView = true }) {
@@ -49,6 +30,30 @@ struct WelcomeView: View {
             }
         }
         .padding(.vertical)
-        .fullScreenCover(isPresented: $showingMainView) { ScannerView() }
+        .fullScreenCover(isPresented: $showingMainView) { HomeView() }
+    }
+}
+
+// MARK: - Methods
+private extension WelcomeView {
+    @ViewBuilder func createTabViewContent() -> some View {
+        // 1st screen
+        WelcomeScreen(imageName: "sun.haze.fill",
+                      title: LocalizedStrings.firstTitle,
+                      description: LocalizedStrings.firstDescription)
+        // 2nd screen
+        WelcomeScreen(imageName: "doc.text.fill.viewfinder",
+                      title: LocalizedStrings.secondTitle,
+                      description: LocalizedStrings.secondDescription)
+        
+        // 3rd screen
+        WelcomeScreen(imageName: "doc.text.magnifyingglass",
+                      title: LocalizedStrings.thirdTitle,
+                      description: LocalizedStrings.thirdDescription)
+        
+        // 4th screen
+        WelcomeScreen(imageName: "moon.stars.fill",
+                      title: LocalizedStrings.fourthTitle,
+                      description: LocalizedStrings.fourthDescription)
     }
 }

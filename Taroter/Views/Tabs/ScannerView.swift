@@ -7,10 +7,10 @@
 
 import SwiftUI
 
-struct ScannerView: View {
-    @AppStorage("isFirstTime") private var isFirstTime: Bool    = true
-    @State private var cardNames: [String]                      = []
-    @State private var cards: [TarotCards]                      = []
+struct HomeView: View {
+    @AppStorage("isFirstTime") private var isFirstTime: Bool = true
+    @State private var cardNames: [String]                   = []
+    @State private var cards: [TarotCards]                   = []
     
     var body: some View {
         NavigationView {
@@ -23,51 +23,38 @@ struct ScannerView: View {
                         .padding()
                 } else {
                     List {
-                        ForEach(cardNames, id: \.self) { cardName in
-                            HStack(spacing: 10) {
-                                Image(cardName)
-                                    .resizable()
-                                    .aspectRatio(contentMode: .fit)
-                                    .frame(width: 100)
-                                
-                                VStack {
-                                    Text(cardName)
-                                        .font(.title3)
-                                        .bold()
-                                    
-                                    Spacer()
-                                }
-                            }
-                        }
-                        .onDelete(perform: delete)
+                        ForEach(cards,
+                                id: \.self,
+                                content: createCardPreview)
+                            .onDelete(perform: delete)
                     }
                 }
             }
+            .navigationBarTitleDisplayMode(.large)
             .navigationBarHidden(false)
             .navigationBarTitle(LocalizedStrings.scannedCards)
             .toolbar(content: makeToolbar)
         }
         .onAppear(perform: setFirstTimeStatus)
-    }
-}
-
-struct ScannerView_Previews: PreviewProvider {
-    static var previews: some View {
-        ScannerView()
+        .onChange(of: cardNames, perform: defineCards)
     }
 }
 
 // MARK: - Methods
-private extension ScannerView {
+private extension HomeView {
     func setFirstTimeStatus() {
         if isFirstTime {
             self.isFirstTime = false
         }
     }
     
-    func defineCards() {
-        self.cardNames.forEach { cardName in
-            
+    func defineCards(_:[String]) {
+        TarotCards.allCases.forEach { card in
+            cardNames.forEach { imageName in
+                if card.tarotCard.imageName == imageName {
+                    self.cards.append(card)
+                }
+            }
         }
     }
     
@@ -77,11 +64,12 @@ private extension ScannerView {
 }
 
 // MARK: - Views
-private extension ScannerView {
+private extension HomeView {
     @ToolbarContentBuilder func makeToolbar() -> some ToolbarContent {
         ToolbarItem(placement: .navigationBarLeading) {
             Button(LocalizedStrings.clearButton) {
                 cardNames.removeAll()
+                cards.removeAll()
             }
             .disabled(cardNames.isEmpty ? true : false)
         }
@@ -90,6 +78,24 @@ private extension ScannerView {
             NavigationLink(LocalizedStrings.scanButton) {
                 Scanner(recognizedImages: $cardNames)
                     .navigationBarHidden(true)
+            }
+        }
+    }
+    
+    @ViewBuilder private func createCardPreview(card: TarotCards) -> some View {
+        let tarotCard = card.tarotCard
+        
+        NavigationLink(destination: CardView(card: tarotCard)) {
+            HStack(spacing: 10) {
+                Image(tarotCard.imageName)
+                    .resizable()
+                    .aspectRatio(contentMode: .fit)
+                    .frame(width: 50)
+                
+                Text(tarotCard.name)
+                    .font(.title3)
+                    .bold()
+                    .frame(maxWidth: .infinity)
             }
         }
     }

@@ -8,73 +8,60 @@
 import SwiftUI
 
 struct CardView: View {
-    let isLandscape: Bool   = UIDevice.current.orientation.isLandscape
-    let size: CGSize        = UIScreen.main.bounds.size
+    let height: CGFloat = UIScreen.main.bounds.size.height
     let card: TarotCard
     
     var body: some View {
-        GeometryReader { geom in
-            List {
-                // Card images
-                HStack {
-                    Spacer()
-                    Image(card.imageName)
-                        .resizable()
-                        .aspectRatio(contentMode: .fit)
-                    Image(card.imageName)
-                        .resizable()
-                        .aspectRatio(contentMode: .fit)
-                        .rotationEffect(Angle(degrees: 180))
-                    Spacer()
-                }
-                .padding()
-                .frame(height: isLandscape ? size.height / 1.3 : size.width - 100)
+        List {
+            // Card images - upright and reversed
+            HStack {
+                Image(card.imageName)
+                    .resizable()
+                    .aspectRatio(contentMode: .fit)
                 
-                // Arcana
-                createRow(title: LocalizedStrings.arcana,
-                          data: card.arcana.name)
-                
-                // Yes or No
-                createRow(title: LocalizedStrings.yesOrNo,
-                          data: card.yesOrNo.label)
-                
-                // Keywords
-                HStack {
-                    Spacer()
-                    
-                    createKeywordColumn(title: LocalizedStrings.keywords,
-                                        data: card.neutralKeywords,
-                                        size: geom.size)
-                    
-                    Group {
-                        Spacer()
-                        Divider()
-                        Spacer()
-                    }
-                    
-                    createKeywordColumn(title: LocalizedStrings.uprightKeywords,
-                                        data: card.uprightKeywords,
-                                        size: geom.size)
-                    
-                    Group {
-                        Spacer()
-                        Divider()
-                        Spacer()
-                    }
-                    
-                    createKeywordColumn(title: LocalizedStrings.reversedKeywords,
-                                        data: card.reversedKeywords,
-                                        size: geom.size)
-                    
-                    Spacer()
-                }
+                Image(card.imageName)
+                    .resizable()
+                    .aspectRatio(contentMode: .fit)
+                    .rotationEffect(Angle(degrees: 180))
             }
+            .frame(maxWidth: .infinity, maxHeight: height / 1.3)
+            .padding()
+            
+            // Arcana
+            createRow(title: LocalizedStrings.arcana,
+                      data: card.arcana.name)
+            
+            // Yes or No
+            createRow(title: LocalizedStrings.yesOrNo,
+                      data: card.yesOrNo.label)
+            
+            // Keywords
+            HStack {
+                // Upright Keywords
+                createKeywordColumn(title: LocalizedStrings.uprightKeywords,
+                                    data: card.uprightKeywords)
+                
+                Divider()
+                
+                // Reversed Keywords
+                createKeywordColumn(title: LocalizedStrings.reversedKeywords,
+                                    data: card.reversedKeywords)
+            }
+            .frame(maxWidth: .infinity)
         }
         .navigationBarTitle(card.name)
         .navigationBarTitleDisplayMode(.inline)
     }
-    
-    @ViewBuilder private func createRow(title: String, data: String) -> some View {
+}
+
+// MARK: - ViewBuilder Methods
+private extension CardView {
+    /// This method creates a list row with data.
+    /// - Parameters:
+    ///   - title: The title of the information provided on the row
+    ///   - data: Card data related to the title of the row
+    /// - Returns: List row
+    @ViewBuilder func createRow(title: String, data: String) -> some View {
         HStack {
             Text(title)
                 .bold()
@@ -88,7 +75,12 @@ struct CardView: View {
         }
     }
     
-    @ViewBuilder private func createKeywordColumn(title: String, data: String, size: CGSize) -> some View {
+    /// This method creates a column with card keywords.
+    /// - Parameters:
+    ///   - title: The title of the card orientation provided on the column [Upright/Reversed]
+    ///   - data: Card keywords related to the title of the column (card orientation)
+    /// - Returns: A column in the list row
+    @ViewBuilder func createKeywordColumn(title: String, data: String) -> some View {
         VStack(alignment: .center) {
             Text(title)
                 .bold()
@@ -102,12 +94,6 @@ struct CardView: View {
             
             Spacer()
         }
-        .frame(width: (size.width / 4) - 5)
-    }
-}
-
-struct CardView_Previews: PreviewProvider {
-    static var previews: some View {
-        CardView(card: TarotCard(name: LocalizedStrings.fool, imageName: "The Fool", arcana: .major, neutralKeywords: LocalizedStrings.foolNeutral, uprightKeywords: LocalizedStrings.foolPositive, reversedKeywords: LocalizedStrings.foolNegative, yesOrNo: .yes))
+        .frame(maxWidth: .infinity)
     }
 }

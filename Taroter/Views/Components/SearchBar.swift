@@ -7,6 +7,8 @@
 
 import SwiftUI
 
+/// A view used to filter the content of the array.
+/// Searches for items containing the specified text.
 struct SearchBar: View {
     @Binding var text: String
     

@@ -9,13 +9,15 @@ import SwiftUI
 
 struct AllCardsView: View {
     @State private var searchText: String = ""
-    let columns = [GridItem(.adaptive(minimum: 100))]
+    let columns: [GridItem]               = [GridItem(.adaptive(minimum: 100))]
     
     var body: some View {
         NavigationView {
             ScrollView {
+                // Search Bar
                 SearchBar(text: $searchText)
                 
+                // Cards Grid
                 LazyVGrid(columns: columns, spacing: 10) {
                     ForEach(TarotCards.allCases.filter(filterCards), id: \.self) { card in
                         GridCard(card: card.tarotCard)
@@ -27,7 +29,14 @@ struct AllCardsView: View {
             .navigationBarTitleDisplayMode(.large)
         }
     }
-    
+}
+
+// MARK: - Methods
+private extension AllCardsView {
+    /// This method filters an array with cards using the search text, entered in Search Bar.
+    /// - Parameter card: Tarot Card Model, stores data about the card.
+    /// - Returns: A logical value indicates whether a given card contains the given text.
+    ///            If so, it is displayed in AllCardsView.
     private func filterCards(_ card: TarotCards) -> Bool {
         let card = card.tarotCard
         
@@ -36,14 +45,7 @@ struct AllCardsView: View {
         card.arcana.name.contains(searchText) ||
         card.yesOrNo.label.contains(searchText) ||
         card.imageName.contains(searchText) ||
-        card.neutralKeywords.contains(searchText) ||
         card.uprightKeywords.contains(searchText) ||
         card.reversedKeywords.contains(searchText)
-    }
-}
-
-struct AllCardsView_Previews: PreviewProvider {
-    static var previews: some View {
-        AllCardsView()
     }
 }

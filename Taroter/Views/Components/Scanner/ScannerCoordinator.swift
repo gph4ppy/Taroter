@@ -10,8 +10,8 @@ import VisionKit
 import Vision
 
 class ScannerCoordinator: NSObject, VNDocumentCameraViewControllerDelegate {
-    private var predictionHandlers: [VNRequest: ImagePredictionHandler]     = [:]
-    private let imageClassifier: VNCoreMLModel                              = createImageClassifier()
+    private var predictionHandlers: [VNRequest: ImagePredictionHandler] = [:]
+    private let imageClassifier: VNCoreMLModel                          = createImageClassifier()
     var recognizedImages: Binding<[String]>
     var parent: Scanner
     
