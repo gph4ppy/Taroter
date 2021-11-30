@@ -7,6 +7,7 @@
 
 import SwiftUI
 
+/// A view that displays details about the card.
 struct CardView: View {
     let height: CGFloat = UIScreen.main.bounds.size.height
     let card: TarotCard

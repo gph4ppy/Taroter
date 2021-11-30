@@ -22,7 +22,7 @@
 		1C53200B27182DD0005AD950 /* MainButtonStyle.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1C53200A27182DD0005AD950 /* MainButtonStyle.swift */; };
 		1C53200F27182F7C005AD950 /* LocalizedStrings.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1C53200E27182F7C005AD950 /* LocalizedStrings.swift */; };
 		1C53201227182FAE005AD950 /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = 1C53201427182FAE005AD950 /* Localizable.strings */; };
-		1C53201727183302005AD950 /* ScannerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1C53201627183302005AD950 /* ScannerView.swift */; };
+		1C53201727183302005AD950 /* HomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1C53201627183302005AD950 /* HomeView.swift */; };
 		1C532019271839BA005AD950 /* AllCardsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1C532018271839BA005AD950 /* AllCardsView.swift */; };
 		1C654625271CD09E00DDC36C /* TaroterCardModel.mlpackage in Sources */ = {isa = PBXBuildFile; fileRef = 1C654624271CD09E00DDC36C /* TaroterCardModel.mlpackage */; };
 		1C960610274C4061007125C1 /* GridCard.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1C96060F274C4061007125C1 /* GridCard.swift */; };
@@ -49,7 +49,7 @@
 		1C53200E27182F7C005AD950 /* LocalizedStrings.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocalizedStrings.swift; sourceTree = "<group>"; };
 		1C53201327182FAE005AD950 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/Localizable.strings; sourceTree = "<group>"; };
 		1C53201527182FB1005AD950 /* pl */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = pl; path = pl.lproj/Localizable.strings; sourceTree = "<group>"; };
-		1C53201627183302005AD950 /* ScannerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScannerView.swift; sourceTree = "<group>"; };
+		1C53201627183302005AD950 /* HomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeView.swift; sourceTree = "<group>"; };
 		1C532018271839BA005AD950 /* AllCardsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AllCardsView.swift; sourceTree = "<group>"; };
 		1C654624271CD09E00DDC36C /* TaroterCardModel.mlpackage */ = {isa = PBXFileReference; lastKnownFileType = folder.mlpackage; path = TaroterCardModel.mlpackage; sourceTree = "<group>"; };
 		1C96060F274C4061007125C1 /* GridCard.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GridCard.swift; sourceTree = "<group>"; };
@@ -130,7 +130,7 @@
 			isa = PBXGroup;
 			children = (
 				1C53200727182CE6005AD950 /* WelcomeView.swift */,
-				1C53201627183302005AD950 /* ScannerView.swift */,
+				1C53201627183302005AD950 /* HomeView.swift */,
 				1C532018271839BA005AD950 /* AllCardsView.swift */,
 				1C24A3592735E2C4000BC723 /* CardView.swift */,
 				1C531FF627182B87005AD950 /* MainView.swift */,
@@ -269,7 +269,7 @@
 				1C07C01127229E1C007187D6 /* ScannerCoordinator.swift in Sources */,
 				1C53200F27182F7C005AD950 /* LocalizedStrings.swift in Sources */,
 				1CB9815F2729C9AC005A0B09 /* ArcanaEnum.swift in Sources */,
-				1C53201727183302005AD950 /* ScannerView.swift in Sources */,
+				1C53201727183302005AD950 /* HomeView.swift in Sources */,
 				1C532019271839BA005AD950 /* AllCardsView.swift in Sources */,
 				1C53200827182CE6005AD950 /* WelcomeView.swift in Sources */,
 				1C960610274C4061007125C1 /* GridCard.swift in Sources */,

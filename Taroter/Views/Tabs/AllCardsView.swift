@@ -7,6 +7,8 @@
 
 import SwiftUI
 
+/// A view that shows all 78 cards in a grid.
+/// After tapping the cell, it moves to the view with details of the selected card.
 struct AllCardsView: View {
     @State private var searchText: String = ""
     let columns: [GridItem]               = [GridItem(.adaptive(minimum: 100))]
@@ -25,8 +27,9 @@ struct AllCardsView: View {
                 }
                 .padding()
             }
-            .navigationBarTitle(LocalizedStrings.cards)
+            .navigationViewStyle(.stack)
             .navigationBarTitleDisplayMode(.large)
+            .navigationBarTitle(LocalizedStrings.cards)
         }
     }
 }

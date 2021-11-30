@@ -21,11 +21,9 @@ class ScannerCoordinator: NSObject, VNDocumentCameraViewControllerDelegate {
     }
     
     func documentCameraViewController(_ controller: VNDocumentCameraViewController, didFinishWith scan: VNDocumentCameraScan) {
-        DispatchQueue.main.async { [self] in
-            let extractedImages = extractImages(from: scan)
-            recognizeCards(from: extractedImages)
-            parent.presentationMode.wrappedValue.dismiss()
-        }
+        let extractedImages = extractImages(from: scan)
+        recognizeCards(from: extractedImages)
+        parent.presentationMode.wrappedValue.dismiss()
     }
     
     func documentCameraViewControllerDidCancel(_ controller: VNDocumentCameraViewController) {

@@ -25,6 +25,7 @@ struct MainView: View {
                 HomeView().tabItem { scanLabel }
                 AllCardsView().tabItem { cardsLabel }
             }
+            .transition(.move(edge: .bottom))
         }
     }
 }

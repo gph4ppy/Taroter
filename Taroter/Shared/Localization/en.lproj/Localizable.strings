@@ -142,28 +142,28 @@
 
 // MARK: - Upright Keywords
 // - Major Arcana -
-"fool_upright" = "joy\n\nself-confidence\n\noptimism\n\ncarelessness\n\nspontaneity";
-"magician_upright" = "action time\n\nassertiveness\n\nknowledge\n\ntaking risks";
-"high_priestess_upright" = "wisdom\n\ncompliance with intuition\n\ninner peace\n\nspirituality\n\nsensitivity\n\nmother\n\nwoman\n\nno action";
-"empress_upright" = "femininity\n\npersonal development\n\nself-confidence\n\nindependence\n\nlife knowledge\n\nupright";
-"emperor_upright" = "responsibility\n\nsuccess\n\ncourage\n\nfinancial stability\n\nmature decisions";
-"hierophant_upright" = "learning\n\nidealism\n\nwisdom\n\nself-will\n\nscience\n\nupbringing";
-"lovers_upright" = "balance\n\nharmony\n\nfriendship\n\nlove\n\nmeetings\n\njoy";
-"chariot_upright" = "success\n\novercoming difficulties\n\nprogress\n\njourney\n\ndynamics";
-"strength_upright" = "power\n\nstrength\n\ncontrol\n\nwisdom\n\ndiscipline\n\nendurance\n\ncontrol over instincts\n\ncourage\n\nself-confidence";
-"hermit_upright" = "wisdom\n\nspiritual development\n\ntherapy\n\nself-knowledge\n\nspirituality\n\nlearning\n\nbeing yourself\n\nlearning from the past";
-"wheel_of_fortune_upright" = "changes\n\na new cycle\n\na new stage in life\n\ndevelopment\n\nhappiness\n\na moment of decision";
-"justice_upright" = "responsibility\n\ndecision\n\nequality\n\nkarma\n\nconsequences\n\ntruth\n\ncause-effect relation\n\ncall for honesty";
-"hanged_man_upright" = "waiting period\n\nuncertainty\n\nlack of direction\n\nnew perspective\n\nsacrifice";
-"death_upright" = "the end of a certain stage in life\n\nfarewell\n\neverything has a price\n\nthe end means new beginnings\n\ntransience";
-"temperance_upright" = "inner peace\n\nbalance\n\ntrust\n\nprudence\n\ncombining opposites";
-"devil_upright" = "temptation\n\nbondage\n\ngreed\n\nlimited perception\n\ndoubts\n\naddiction\n\nignorance\n\na predominance of primal instincts and human nature\n\nobsession\n\nlimitations\n\npowerlessness";
-"tower_upright" = "sudden changes from the outside\n\nforce majeure\n\nthe disintegration of existing ideals\n\nloss of stability\n\nbreakdown of relationships\n\nthe end means a new beginning (after the tower collapses\n\nclean up the ruins and put a new, stronger structure on these foundations)\n\nbreakthrough\n\nfall\n\ndispelling doubts\n\nshock\n\nconflict";
-"star_upright" = "faith\n\noptimism\n\nfavor of fate\n\nidealism\n\nrelease\n\ncontentment\n\nself-knowledge";
-"moon_upright" = "illusion\n\nforeboding\n\nfeelings\n\nmysteries\n\nvagueness\n\nintuition\n\nconfusion, complexity\n\ninsecurity\n\nfear\n\nanxiety";
-"sun_upright" = "The Sun";
-"judgement_upright" = "Judgement";
-"world_upright" = "The World";
+"fool_upright" = "beginnings, carefree, innocence, joy, new experiences, new ways, novelty, optimism, self-confidence, spontaneity";
+"magician_upright" = "a new beginning, action time, assertiveness, awareness, having all the necessary tools, individualism, initiative, knowledge, strong will, taking a risk, taking action";
+"high_priestess_upright" = "balance, consent with intuition, emotions, femininity, inner peace, intuition, mother, mystery, no action, peace, sensitivity, spirituality, wisdom, woman";
+"empress_upright" = "emotional security, femininity, firmness, independence, joy, life knowledge, motherhood, nature, personal development, positive, self-confidence, the right decision, trust, well-being";
+"emperor_upright" = "authority, courage, fatherhood, financial stability, independence, masculinity, mature decisions, maturity, power, responsibility, right choices, stability, striving for a goal, structures, successs";
+"hierophant_upright" = "adjustment, authority, education, faith, good advice and help,  idealism, inner wisdom, moral values, prudence, science, self-will, spiritual guide, spirituality, upbringing, value system, wisdom";
+"lovers_upright" = "balance, body and soul balance, a choice between the two sides, decision-making time, friendship, harmony, joy, love, meetings, opposites";
+"chariot_upright" = "achieving goals, determination, dynamics, journey, moving forward, overcoming difficulties, progress, prosperity, success";
+"strength_upright" = "control, control over instincts, courage, discipline, endurance, health, inner strength, power, self-confidence, strength, willpower, wisdom";
+"hermit_upright" = "being yourself, experience, humility, inner wisdom, knowledge, learning, learning from the past, patience, self-development, self-knowledge, spiritual development, spirituality, therapy, wisdom";
+"wheel_of_fortune_upright" = "bad and good do not last forever, change of fate, change of view of the world, changes, destiny, development, focusing on the inside, happiness, lack of action, moment of decision, new cycle, new stage in life, nothing lasts forever, reevaluation of life, stillness, sudden twist of action, suspension in life, volatility";
+"justice_upright" = "call for honesty, cause-effect, consequences, control, courage, decision, equality, evaluation of actions, health, impartiality, inner strength, judgment, justice, karma, responsibility, responsibility for one's actions, summary of events, truth, willpower";
+"hanged_man_upright" = "change of view of the world, focus on the inside, lack of action, lack of direction, new perspective, reevaluation of life, sacrifice, stillness, suspension in life, uncertainty, waiting period";
+"death_upright" = "changes, everything has its price, farewell, for the new to come the old must leave, inevitable changes, the end means new beginnings, the end of a certain stage in life, transformation, transiency";
+"temperance_upright" = "balance, calmness, combining opposites, inner discipline, inner peace, patience, prudence, self-control, temperance, trust, understanding";
+"devil_upright" = "a person agrees to the action of primal instincts - e.g. craving for material things or people, addiction, bondage (which man agrees to - mostly illustrated as loose chains), destructive and toxic energy, doubts, enslavement, greed, hidden desires, human nature, ignorance, inner demon, limitations, limited perception, obsession, possible violence, powerlessness, predominance of primal instincts and human nature, temptation";
+"tower_upright" = "beginning of the end (after the tower collapses, clean up the ruins and put a new, stronger structure on these foundations), breakthrough, conflict, dispelling doubts, fall, force majeure, jump if you do not want to be crushed by falling walls, learning from experience, loss of stability, shock, sudden and violent changes (usually from the outside), the collapse of relationships, the disintegration of existing ideals, the end means a new beginning, values built on too fragile foundations";
+"star_upright" = "contentment, faith, harmony, hope, idealism, liberation, optimism, peace (possibly after a storm), self-knowledge, success, trust";
+"moon_upright" = "anxiety, bad feeling, complexity, confusion, deep, strong and secretive emotions, delusion, difficult period, emotions, fear, feelings, illusion, inner self, instability, intuition, mystery or mysteries, subconsciousness, unawareness, vagueness";
+"sun_upright" = "achievement, enlightenment, father, fulfillment, goals, happiness, health, joy, optimism, pride, strength, success, triumph, vitality";
+"judgement_upright" = "awakening, forgiving yourself and others, reconsider and face the past, reflecting, settling accounts with yourself";
+"world_upright" = "end and new beginning, enlightenment, evolution, fulfillment, fullness, happiness, harmony, joy, maturity, self-awareness, success, wholeness";
 
 // - Minor Arcana -
 // Wands

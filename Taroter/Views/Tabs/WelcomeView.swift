@@ -7,9 +7,9 @@
 
 import SwiftUI
 
+/// A view with the welcome tutorial.
 struct WelcomeView: View {
     @AppStorage("isFirstTime") private var isFirstTime: Bool = true
-    @State private var showingMainView: Bool                 = false
     
     var body: some View {
         VStack(spacing: 30) {
@@ -24,18 +24,22 @@ struct WelcomeView: View {
                 .indexViewStyle(PageIndexViewStyle(backgroundDisplayMode: .always))
             
             // Start Using App Button
-            Button(action: { self.showingMainView = true }) {
+            Button {
+                withAnimation { self.isFirstTime = false }
+            } label: {
                 Text(LocalizedStrings.welcomeButton)
                     .mainButtonStyle(cornerRadius: 15)
             }
+
         }
         .padding(.vertical)
-        .fullScreenCover(isPresented: $showingMainView) { HomeView() }
     }
 }
 
 // MARK: - Methods
 private extension WelcomeView {
+    /// This method creates the contents of the welcome screen.
+    /// - Returns: TabView content
     @ViewBuilder func createTabViewContent() -> some View {
         // 1st screen
         WelcomeScreen(imageName: "sun.haze.fill",

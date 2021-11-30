@@ -15,10 +15,12 @@ struct GridCard: View {
     var body: some View {
         NavigationLink(destination: CardView(card: card)) {
             VStack {
+                // Card Image
                 Image(card.imageName)
                     .resizable()
                     .aspectRatio(contentMode: .fit)
                 
+                // Card Name
                 Text(card.name)
                     .font(.footnote)
                     .bold()
