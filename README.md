@@ -50,7 +50,9 @@ Taroter is available for free on the AppStore - you can try it out yourself. To 
 - iPod touch - _Requires iOS 14.0 or later._
 
 ## Usage
--- to do --
+<p align="center">
+  <blockquote class="imgur-embed-pub" lang="en" data-id="a/EX0yIv9"  ><a href="//imgur.com/a/EX0yIv9">Taroter usage</a></blockquote><script async src="//s.imgur.com/min/embed.js" charset="utf-8"></script>
+</p>
 
 ## Project Status
 The project is _in progress_.
