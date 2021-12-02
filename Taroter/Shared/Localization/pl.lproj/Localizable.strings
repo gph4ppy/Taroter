@@ -168,7 +168,7 @@
 
 // - Minor Arcana -
 // Wands
-"ace_of_wands_upright" = "Ace of Wands";
+"ace_of_wands_upright" = "dobry początek, działanie, energia, impas, inspiracja, nowe możliwości, pierwszy krok, podjęcie inicjatywy, potencjał, rozwój, szansa";
 "two_of_wands_upright" = "Two of of Wands";
 "three_of_wands_upright" = "Three of Wands";
 "four_of_wands_upright" = "Four of Wands";
@@ -258,7 +258,7 @@
 
 // - Minor Arcana -
 // Wands
-"ace_of_wands_reversed" = "Ace of Wands";
+"ace_of_wands_reversed" = "brak energii, brak motywacji, brak pasji, opóźnienia, rozproszenie, wahanie, zły kierunek lub jego brak";
 "two_of_wands_reversed" = "Two of of Wands";
 "three_of_wands_reversed" = "Three of Wands";
 "four_of_wands_reversed" = "Four of Wands";

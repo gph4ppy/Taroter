@@ -142,28 +142,28 @@
 
 // MARK: - Upright Keywords
 // - Major Arcana -
-"fool_upright" = "beginnings, carefree, innocence, joy, new experiences, new ways, novelty, optimism, self-confidence, spontaneity";
-"magician_upright" = "a new beginning, action time, assertiveness, awareness, having all the necessary tools, individualism, initiative, knowledge, strong will, taking a risk, taking action";
-"high_priestess_upright" = "balance, consent with intuition, emotions, femininity, inner peace, intuition, mother, mystery, no action, peace, sensitivity, spirituality, wisdom, woman";
-"empress_upright" = "emotional security, femininity, firmness, independence, joy, life knowledge, motherhood, nature, personal development, positive, self-confidence, the right decision, trust, well-being";
-"emperor_upright" = "authority, courage, fatherhood, financial stability, independence, masculinity, mature decisions, maturity, power, responsibility, right choices, stability, striving for a goal, structures, successs";
-"hierophant_upright" = "adjustment, authority, education, faith, good advice and help,  idealism, inner wisdom, moral values, prudence, science, self-will, spiritual guide, spirituality, upbringing, value system, wisdom";
-"lovers_upright" = "balance, body and soul balance, a choice between the two sides, decision-making time, friendship, harmony, joy, love, meetings, opposites";
-"chariot_upright" = "achieving goals, determination, dynamics, journey, moving forward, overcoming difficulties, progress, prosperity, success";
-"strength_upright" = "control, control over instincts, courage, discipline, endurance, health, inner strength, power, self-confidence, strength, willpower, wisdom";
-"hermit_upright" = "being yourself, experience, humility, inner wisdom, knowledge, learning, learning from the past, patience, self-development, self-knowledge, spiritual development, spirituality, therapy, wisdom";
-"wheel_of_fortune_upright" = "bad and good do not last forever, change of fate, change of view of the world, changes, destiny, development, focusing on the inside, happiness, lack of action, moment of decision, new cycle, new stage in life, nothing lasts forever, reevaluation of life, stillness, sudden twist of action, suspension in life, volatility";
-"justice_upright" = "call for honesty, cause-effect, consequences, control, courage, decision, equality, evaluation of actions, health, impartiality, inner strength, judgment, justice, karma, responsibility, responsibility for one's actions, summary of events, truth, willpower";
-"hanged_man_upright" = "change of view of the world, focus on the inside, lack of action, lack of direction, new perspective, reevaluation of life, sacrifice, stillness, suspension in life, uncertainty, waiting period";
-"death_upright" = "changes, everything has its price, farewell, for the new to come the old must leave, inevitable changes, the end means new beginnings, the end of a certain stage in life, transformation, transiency";
-"temperance_upright" = "balance, calmness, combining opposites, inner discipline, inner peace, patience, prudence, self-control, temperance, trust, understanding";
-"devil_upright" = "a person agrees to the action of primal instincts - e.g. craving for material things or people, addiction, bondage (which man agrees to - mostly illustrated as loose chains), destructive and toxic energy, doubts, enslavement, greed, hidden desires, human nature, ignorance, inner demon, limitations, limited perception, obsession, possible violence, powerlessness, predominance of primal instincts and human nature, temptation";
-"tower_upright" = "beginning of the end (after the tower collapses, clean up the ruins and put a new, stronger structure on these foundations), breakthrough, conflict, dispelling doubts, fall, force majeure, jump if you do not want to be crushed by falling walls, learning from experience, loss of stability, shock, sudden and violent changes (usually from the outside), the collapse of relationships, the disintegration of existing ideals, the end means a new beginning, values built on too fragile foundations";
-"star_upright" = "contentment, faith, harmony, hope, idealism, liberation, optimism, peace (possibly after a storm), self-knowledge, success, trust";
-"moon_upright" = "anxiety, bad feeling, complexity, confusion, deep, strong and secretive emotions, delusion, difficult period, emotions, fear, feelings, illusion, inner self, instability, intuition, mystery or mysteries, subconsciousness, unawareness, vagueness";
-"sun_upright" = "achievement, enlightenment, father, fulfillment, goals, happiness, health, joy, optimism, pride, strength, success, triumph, vitality";
-"judgement_upright" = "awakening, forgiving yourself and others, reconsider and face the past, reflecting, settling accounts with yourself";
-"world_upright" = "end and new beginning, enlightenment, evolution, fulfillment, fullness, happiness, harmony, joy, maturity, self-awareness, success, wholeness";
+"fool_upright" = "beginnings\n\ncarefree\n\ninnocence\n\njoy\n\nnew experiences\n\nnew ways\n\nnovelty\n\noptimism\n\nself-confidence\n\nspontaneity";
+"magician_upright" = "a new beginning\n\naction time\n\nassertiveness\n\nawareness\n\nhaving all the necessary tools\n\nindividualism\n\ninitiative\n\nknowledge\n\nstrong will\n\ntaking a risk\n\ntaking action";
+"high_priestess_upright" = "balance\n\nconsent with intuition\n\nemotions\n\nfemininity\n\ninner peace\n\nintuition\n\nmother\n\nmystery\n\nno action\n\npeace\n\nsensitivity\n\nspirituality\n\nwisdom\n\nwoman";
+"empress_upright" = "emotional security\n\nfemininity\n\nfirmness\n\nindependence\n\njoy\n\nlife knowledge\n\nmotherhood\n\nnature\n\npersonal development\n\npositive\n\nself-confidence\n\nthe right decision\n\ntrust\n\nwell-being";
+"emperor_upright" = "authority\n\ncourage\n\nfatherhood\n\nfinancial stability\n\nindependence\n\nmasculinity\n\nmature decisions\n\nmaturity\n\npower\n\nresponsibility\n\nright choices\n\nstability\n\nstriving for a goal\n\nstructures\n\nsuccesss";
+"hierophant_upright" = "adjustment\n\nauthority\n\neducation\n\nfaith\n\ngood advice and help\n\n idealism\n\ninner wisdom\n\nmoral values\n\nprudence\n\nscience\n\nself-will\n\nspiritual guide\n\nspirituality\n\nupbringing\n\nvalue system\n\nwisdom";
+"lovers_upright" = "balance\n\nbody and soul balance\n\na choice between the two sides\n\ndecision-making time\n\nfriendship\n\nharmony\n\njoy\n\nlove\n\nmeetings\n\nopposites";
+"chariot_upright" = "achieving goals\n\ndetermination\n\ndynamics\n\njourney\n\nmoving forward\n\novercoming difficulties\n\nprogress\n\nprosperity\n\nsuccess";
+"strength_upright" = "control\n\ncontrol over instincts\n\ncourage\n\ndiscipline\n\nendurance\n\nhealth\n\ninner strength\n\npower\n\nself-confidence\n\nstrength\n\nwillpower\n\nwisdom";
+"hermit_upright" = "being yourself\n\nexperience\n\nhumility\n\ninner wisdom\n\nknowledge\n\nlearning\n\nlearning from the past\n\npatience\n\nself-development\n\nself-knowledge\n\nspiritual development\n\nspirituality\n\ntherapy\n\nwisdom";
+"wheel_of_fortune_upright" = "bad and good do not last forever\n\nchange of fate\n\nchange of view of the world\n\nchanges\n\ndestiny\n\ndevelopment\n\nfocusing on the inside\n\nhappiness\n\nlack of action\n\nmoment of decision\n\nnew cycle\n\nnew stage in life\n\nnothing lasts forever\n\nreevaluation of life\n\nstillness\n\nsudden twist of action\n\nsuspension in life\n\nvolatility";
+"justice_upright" = "call for honesty\n\ncause-effect\n\nconsequences\n\ncontrol\n\ncourage\n\ndecision\n\nequality\n\nevaluation of actions\n\nhealth\n\nimpartiality\n\ninner strength\n\njudgment\n\njustice\n\nkarma\n\nresponsibility\n\nresponsibility for one's actions\n\nsummary of events\n\ntruth\n\nwillpower";
+"hanged_man_upright" = "change of view of the world\n\nfocus on the inside\n\nlack of action\n\nlack of direction\n\nnew perspective\n\nreevaluation of life\n\nsacrifice\n\nstillness\n\nsuspension in life\n\nuncertainty\n\nwaiting period";
+"death_upright" = "changes\n\neverything has its price\n\nfarewell\n\nfor the new to come the old must leave\n\ninevitable changes\n\nthe end means new beginnings\n\nthe end of a certain stage in life\n\ntransformation\n\ntransiency";
+"temperance_upright" = "balance\n\ncalmness\n\ncombining opposites\n\ninner discipline\n\ninner peace\n\npatience\n\nprudence\n\nself-control\n\ntemperance\n\ntrust\n\nunderstanding";
+"devil_upright" = "a person agrees to the action of primal instincts - e.g. craving for material things or people\n\naddiction\n\nbondage (which man agrees to - mostly illustrated as loose chains)\n\ndestructive and toxic energy\n\ndoubts\n\nenslavement\n\ngreed\n\nhidden desires\n\nhuman nature\n\nignorance\n\ninner demon\n\nlimitations\n\nlimited perception\n\nobsession\n\npossible violence\n\npowerlessness\n\npredominance of primal instincts and human nature\n\ntemptation";
+"tower_upright" = "beginning of the end (after the tower collapses\n\nclean up the ruins and put a new\n\nstronger structure on these foundations)\n\nbreakthrough\n\nconflict\n\ndispelling doubts\n\nfall\n\nforce majeure\n\njump if you do not want to be crushed by falling walls\n\nlearning from experience\n\nloss of stability\n\nshock\n\nsudden and violent changes (usually from the outside)\n\nthe collapse of relationships\n\nthe disintegration of existing ideals\n\nthe end means a new beginning\n\nvalues built on too fragile foundations";
+"star_upright" = "contentment\n\nfaith\n\nharmony\n\nhope\n\nidealism\n\nliberation\n\noptimism\n\npeace (possibly after a storm)\n\nself-knowledge\n\nsuccess\n\ntrust";
+"moon_upright" = "anxiety\n\nbad feeling\n\ncomplexity\n\nconfusion\n\ndeep\n\nstrong and secretive emotions\n\ndelusion\n\ndifficult period\n\nemotions\n\nfear\n\nfeelings\n\nillusion\n\ninner self\n\ninstability\n\nintuition\n\nmystery or mysteries\n\nsubconsciousness\n\nunawareness\n\nvagueness";
+"sun_upright" = "achievement\n\nenlightenment\n\nfather\n\nfulfillment\n\ngoals\n\nhappiness\n\nhealth\n\njoy\n\noptimism\n\npride\n\nstrength\n\nsuccess\n\ntriumph\n\nvitality";
+"judgement_upright" = "awakening\n\nforgiving yourself and others\n\nreconsider and face the past\n\nreflecting\n\nsettling accounts with yourself";
+"world_upright" = "end and new beginning\n\nenlightenment\n\nevolution\n\nfulfillment\n\nfullness\n\nhappiness\n\nharmony\n\njoy\n\nmaturity\n\nself-awareness\n\nsuccess\n\nwholeness";
 
 // - Minor Arcana -
 // Wands
@@ -232,28 +232,28 @@
 
 // MARK: - Negative Keywords
 // - Major Arcana -
-"fool_reversed" = "wait before making a decision\n\nrecklessness\n\nstupidity\n\nimmaturity\n\nnaivety\n\nunnecessary risk\n\nloss of opportunity";
-"magician_reversed" = "indecision\n\nshyness\n\nundervaluation\n\nliar\n\nmanipulator\n\nlack of courage\n\ninability to take action";
-"high_priestess_reversed" = "complexes\n\nmental issues\n\nfear\n\nworrying about the opinion of others\n\nsuffering\n\nhypersensitivity";
-"empress_reversed" = "selfishness\n\npossessiveness\n\ninfidelity\n\nhelplessness\n\ndenial of feelings\n\ninability to solve the problem";
-"emperor_reversed" = "instability\n\nimmaturity\n\nabuse of power\n\nlack of authority\n\nimmature decisions\n\nprofessional instability";
-"hierophant_reversed" = "credulity\n\nspiritual crisis\n\nlack of concentration\n\ncynicism\n\nbad guide\n\nlearning problems\n\nhypocrisy";
-"lovers_reversed" = "fear of making a decision\n\nconflict\n\ndestructive or unhappy love";
-"chariot_reversed" = "loss of control\n\ndifficulties in achieving the goal\n\npossible problems with aggression\n\nwarning\n\nchaos\n\noverload of duties\n\nexhaustion\n\noverconfidence";
-"strength_reversed" = "predominance of primal instincts\n\nnegation of inner strength\n\nfailure\n\nconceit\n\nunhappiness\n\nstriving for perfectionism\n\nweakness\n\nself-insecurity\n\ncowardice";
-"hermit_reversed" = "loneliness\n\nisolation\n\nmasochism\n\navoiding the truth about oneself\n\nfear\n\nhiding\n\navoiding confrontation with problems\n\ndifficulties in relations with others";
-"wheel_of_fortune_reversed" = "lack of control\n\nbad luck\n\nunwanted changes\n\ndelays\n\nattempted control\n\nlosses\n\nbad decisions\n\nresignation";
-"justice_reversed" = "injustice\n\npunishment\n\ndishonesty\n\ncorruption\n\navoidance of responsibility\n\naccusations\n\nfraud\n\ncriticism\n\nchaos\n\nfalse self-esteem\n\nfailure\n\nconflict with the law\n\nunfair judgment";
-"hanged_man_reversed" = "stagnation\n\nlack of interest\n\nblockage\n\nstalling\n\nin a upright sense can mean moving forward with new perspective and energy";
-"death_reversed" = "mourning\n\nregret\n\nfear of change\n\nhanging on tightly to the past\n\nloss of hope\n\ndestruction\n\ndepression\n\nfailure\n\nloss";
-"temperance_reversed" = "instability\n\nimbalance\n\nimpatience\n\nlack of motivation\n\ndiscouragement\n\nfear of showing feelings\n\nchaos\n\ndifficulty in making a decision\n\nsuperficiality\n\nextremity";
-"devil_reversed" = "addiction to drugs/ person/group of people\n\nlack of control over emotions\n\nevil\n\ndeception\n\naggression\n\njealousy\n\nweakness\n\nblindness";
-"tower_reversed" = "loss of hope\n\nself-destruction\n\nimprisonment\n\ndepression\n\ninability to make changes\n\navoiding catastrophe\n\ndelaying the inevitable\n\nresisting change\n\nfear of change";
-"star_reversed" = "despair\n\nplunging into dreams\n\nillusory hope\n\ndoubt\n\ndisappointment\n\nillusion\n\nresignation\n\nunhappy love\n\npessimism";
-"moon_reversed" = "lying\n\ndeception\n\nfear\n\npessimism\n\nconfidence problems\n\nanxiety\n\nmisunderstanding\n\ninternal confusion\n\nin a upright sense it can mean a release of fear, revealed secrets, understanding, clarity";
-"sun_reversed" = "The Sun";
-"judgement_reversed" = "Judgement";
-"world_reversed" = "The World";
+"fool_reversed" = "immaturity\n\nloss of opportunity\n\nnaivety\n\nrecklessness\n\nstupidity\n\nunnecessary risk\n\nwait before making a decision";
+"magician_reversed" = "inability to take action\n\nindecision\n\nlack of courage\n\nliar\n\nmanipulation or manipuator\n\nshyness\n\nundervaluation";
+"high_priestess_reversed" = "complexes\n\nfear\n\nhypersensitivity\n\nmental issues\n\nsuffering\n\nworrying about the opinion of others";
+"empress_reversed" = "denial of feelings\n\nhelplessness\n\ninability to solve the problem\n\ninfidelity\n\npossessiveness\n\nselfishness";
+"emperor_reversed" = "abuse of power\n\nimmature decisions\n\nimmaturity\n\ninstability\n\nlack of authority\n\nprofessional instability";
+"hierophant_reversed" = "bad guide\n\ncredulity\n\ncynicism\n\nhypocrisy\n\nlack of concentration\n\nlearning problems\n\nspiritual crisis";
+"lovers_reversed" = "conflict\n\ndestructive or unhappy love\n\nfear of making a decision";
+"chariot_reversed" = "chaos\n\ndifficulties in achieving the goal\n\nexhaustion\n\nloss of control\n\noverconfidence\n\noverload of duties\n\npossible problems with aggression\n\nwarning";
+"strength_reversed" = "conceit\n\ncowardice\n\nfailure\n\nnegation of inner strength\n\npredominance of primal instincts\n\nself-insecurity\n\nstriving for perfectionism\n\nunhappiness\n\nweakness";
+"hermit_reversed" = "avoiding confrontation with problems\n\navoiding the truth about oneself\n\ndifficulties in relations with others\n\nfear\n\nhiding\n\nisolation\n\nloneliness\n\nmasochism";
+"wheel_of_fortune_reversed" = "attempted control\n\nbad decisions\n\nbad luck\n\ndelays\n\nlack of control\n\nlosses\n\nresignation\n\nunwanted changes";
+"justice_reversed" = "accusations\n\navoidance of responsibility\n\nchaos\n\nconflict with the law\n\ncorruption\n\ncriticism\n\ndishonesty\n\nfailure\n\nfalse self-esteem\n\nfraud\n\ninjustice\n\npunishment\n\nunfair judgment";
+"hanged_man_reversed" = "blockage\n\nlack of interest\n\nstagnation\n\nstalling\n\nin a upright sense can mean moving forward with new perspective and energy";
+"death_reversed" = "depression\n\ndestruction\n\nfailure\n\nfear of change\n\nhanging on tightly to the past\n\nloss\n\nloss of hope\n\nmourning\n\nregret";
+"temperance_reversed" = "chaos\n\ndifficulty in making a decision\n\ndiscouragement\n\nextremity\n\nfear of showing feelings\n\nimbalance\n\nimpatience\n\ninstability\n\nlack of motivation\n\nsuperficiality";
+"devil_reversed" = "addiction to drugs/person/group of people\n\naggression\n\nblindness\n\ndeception\n\nevil\n\njealousy\n\nlack of control over emotions\n\nweakness";
+"tower_reversed" = "avoiding catastrophe\n\ndelaying the inevitable\n\ndepression\n\nfear of change\n\nimprisonment\n\ninability to make changes\n\nloss of hope\n\nresisting change\n\nself-destruction";
+"star_reversed" = "despair\n\ndisappointment\n\ndoubt\n\nillusion\n\nillusory hope\n\npessimism\n\nplunging into dreams\n\nresignation\n\nunhappy love";
+"moon_reversed" = "anxiety\n\nclarity\n\nconfidence problems\n\ndeception\n\nfear\n\nin a positive sense it can mean a release of fear, internal confusion, lying, misunderstanding, pessimism, revealed secrets, understanding";
+"sun_reversed" = "blocked happiness\n\nconceit\n\ndisappointment\n\nselfishness\n\ntoo much self-confidence\n\ntoo optimistic attitude\n\nunrealistic expectations";
+"judgement_reversed" = "internal critic\n\nkarma\n\nlack of drawing conclusions and lessons\n\nlack of self-awareness\n\nself-doubt";
+"world_reversed" = "lack of closure\n\nfeeling of incompleteness\n\nstagnation\n\nlooking for shortcuts\n\nclosing in on yourself";
 
 // - Minor Arcana -
 // Wands
