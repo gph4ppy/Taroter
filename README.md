@@ -50,7 +50,9 @@ Taroter is available for free on the AppStore - you can try it out yourself. To 
 - iPod touch - _Requires iOS 14.0 or later._
 
 ## Usage
--- to do --
+<p align="center">
+  -- to do --
+</p>
 
 ## Project Status
 The project is _in progress_.
