@@ -167,36 +167,36 @@
 
 // - Minor Arcana -
 // Wands
-"ace_of_wands_upright" = "Ace of Wands";
-"two_of_wands_upright" = "Two of of Wands";
-"three_of_wands_upright" = "Three of Wands";
-"four_of_wands_upright" = "Four of Wands";
-"five_of_wands_upright" = "Five of Wands";
-"six_of_wands_upright" = "Six of Wands";
-"seven_of_wands_upright" = "Seven of Wands";
-"eight_of_wands_upright" = "Eight of Wands";
-"nine_of_wands_upright" = "Nine of Wands";
-"ten_of_wands_upright" = "Ten of Wands";
-"page_of_wands_upright" = "Page of Wands";
-"knight_of_wands_upright" = "Knight of Wands";
-"queen_of_wands_upright" = "Queen of Wands";
-"king_of_wands_upright" = "King of Wands";
+"ace_of_wands_upright" = "action\n\ndevelopment\n\nenergy\n\nfirst step\n\ngood start\n\nimpasse\n\ninspiration\n\nnew opportunities\n\nopportunity\n\npotential\n\ntaking initiative";
+"two_of_wands_upright" = "choice\n\ncontrol\n\ndiscoveries\n\ndiscovering your possibilities\n\nfuture planning\n\nindependence\n\nisolation from people\n\nprogress\n\nrisk-taking\n\nself-confidence";
+"three_of_wands_upright" = "achieving goals\n\nbroadening horizons\n\ncoming to terms with the past\n\ndevelopment\n\nforesight\n\njourney\n\nlooking to the future\n\nmaturity\n\nself-confidence\n\nsuccess in projects\n\nsuccessful start";
+"four_of_wands_upright" = "all gatherings/parties/reunions\n\nbelonging\n\ncelebration\n\ncommunity\n\nfun\n\nharmony\n\nhope for a better future\n\njoy of life\n\noptimism\n\nrelaxation\n\nreliability\n\nsafety\n\nstability";
+"five_of_wands_upright" = "ambitions\n\nboldness\n\ncompetition\n\nconflict\n\ndefending ideas\n\ndiversity\n\nego clashes\n\nexam\n\nfight\n\nfight according to the rules\n\nfight for your right\n\ntaking risks\n\ntension\n\ntest";
+"six_of_wands_upright" = "confidence\n\nfulfillment\n\nglory\n\ngood news\n\njoy\n\nmomentary success\n\npride\n\nprogress\n\nrecognition\n\nreward\n\nsatisfaction\n\nsocial recognition\n\nsuccess\n\ntriumph\n\nvictory";
+"seven_of_wands_upright" = "courage\n\nfighting adversities\n\nfighting from a strong position\n\ngood action plan\n\nopposition\n\nperseverance\n\nprotection\n\nresistance\n\nself-defense\n\nzeal";
+"eight_of_wands_upright" = "a multitude of events\n\naction\n\nexcitement\n\nmovement\n\nprogress\n\nquick action\n\nquick change\n\nspeed\n\nsudden changes\n\nsudden events\n\nturmoil";
+"nine_of_wands_upright" = "courage\n\ndefense\n\nendurance\n\nexpectation\n\nfatigue\n\nlimits\n\nmental injury\n\nproximity to success\n\nreadiness for the next fight\n\nrest and regeneration after fights (challenges)\n\nstate of emergency\n\nstaying alert and mindful\n\nstrength";
+"ten_of_wands_upright" = "additional responsibility\n\nburden\n\ndifficulties from our choice (these wands can be abandoned\n\nbut you do not do it)\n\nduty\n\nhard work\n\nstress\n\nstruggle\n\nthe last straight to the goal\n\nthe need for rest";
+"page_of_wands_upright" = "cheerfulness\n\ndiscoveries\n\nenergy\n\nexcitement\n\nextraversion\n\nfearlessness\n\nideas\n\ninspiration\n\nnew ideas\n\npossibilities and opportunities for action\n\nreadiness to take action\n\nunlimited potential";
+"knight_of_wands_upright" = "adventure\n\ncourage\n\ndynamism\n\neagerness\n\nenergy\n\nhaste\n\nimpatience\n\nimpetuosity\n\nimpulsiveness\n\ninspiration\n\npassion\n\nrebelliousness\n\nstrength\n\nwillingness to take risks";
+"queen_of_wands_upright" = "abundance\n\ncharisma\n\ncourage\n\ncreativity\n\ndetermination\n\ngenerosity\n\nindependence\n\nmaturity\n\nnatural authority\n\noptimism\n\npassion\n\npeace\n\npride\n\nself-confidence\n\nself-expression\n\nstability\n\nstrength\n\nstriving for a goal\n\ncan symbolize a woman with these characteristics";
+"king_of_wands_upright" = "ambition\n\nassertiveness\n\nbold decisions\n\nboldness\n\ncharisma\n\nfaith in one's abilities\n\nhonor\n\noptimism\n\nstrong personality\n\ntaking control\n\nvision";
 
 // Pentacles
-"ace_of_pentacles_upright" = "Ace of Pentacles";
-"two_of_pentacles_upright" = "Two of Pentacles";
-"three_of_pentacles_upright" = "Three of Pentacles";
-"four_of_pentacles_upright" = "Four of Pentacles";
-"five_of_pentacles_upright" = "Five of Pentacles";
-"six_of_pentacles_upright" = "Six of Pentacles";
-"seven_of_pentacles_upright" = "Seven of Pentacles";
-"eight_of_pentacles_upright" = "Eight of Pentacles";
-"nine_of_pentacles_upright" = "Nine of Pentacles";
-"ten_of_pentacles_upright" = "Ten of Pentacles";
-"page_of_pentacles_upright" = "Page of Pentacles";
-"knight_of_pentacles_upright" = "Knight of Pentacles";
-"queen_of_pentacles_upright" = "Queen of Pentacles";
-"king_of_pentacles_upright" = "King of Pentacles";
+"ace_of_pentacles_upright" = "development of matters related to material matters\n\nefficiency\n\ngenerosity\n\ngetting to know one's own worth\n\nhealth\n\nmanifestation\n\nmaterial benefits\n\nnew chance\n\nnew perspectives\n\npromising plans\n\nprosperity\n\nsatisfaction\n\nsecurity\n\nstability";
+"two_of_pentacles_upright" = "adaptation\n\nbalance\n\nflexibility\n\nfun\n\nharmony\n\nlight treatment of money\n\nmany priorities\n\nresourcefulness\n\ntalent\n\nthe need to achieve balance (especially financial)\n\ntime and priority management\n\nvolatility";
+"three_of_pentacles_upright" = "award\n\ncommission (order)\n\ncommitment to goals\n\ncommon goals\n\ncooperation\n\nefficiency\n\neffort\n\ngood atmosphere at work\n\nimplementation\n\nlearning\n\nmastery in the field\n\nprofessional opportunities\n\nskills improvement\n\nteamwork";
+"four_of_pentacles_upright" = "accumulation of goods\n\nconservatism\n\ncontrol\n\nfear of losing what has been achieved\n\nmaterial stabilization\n\nmaterialism\n\npossessiveness\n\nprosperity\n\nsavings\n\nsecurity\n\nuncertainty\n\nworkaholism";
+"five_of_pentacles_upright" = "anxiety\n\nbeing in need\n\nburdens\n\ncompassion\n\ndesperation\n\ndisappointment\n\nemotional/financial/health poverty\n\ngoing further even though the target is under the nose (it's unnoticed or ignored - characters on the card pass by the bright windows)\n\nhardship\n\nlack\n\nlack of support\n\nmisfortune\n\npoverty\n\nscarcity\n\nworry";
+"six_of_pentacles_upright" = "charity\n\ncommunity\n\ndistinction\n\nequality\n\ngenerosity\n\ngetting help\n\ngratitude\n\nhelping\n\njustice\n\nmaterial help\n\nmutuality\n\npatience\n\nreceiving a gift\n\nsharing with others\n\nwillingness to help";
+"seven_of_pentacles_upright" = "developing what has been cherished\n\nlong-term perspective\n\npatience\n\nperseverance\n\nplanning\n\nrest\n\nstillness\n\nwaiting\n\nwaiting for the fruits of your work";
+"eight_of_pentacles_upright" = "a slow but systematic path to the goal\n\naccuracy\n\nachievements\n\ncommitment\n\ncontinuity\n\ndedication\n\ndevelopment\n\ndiligence\n\ndiligent work\n\nhigh standards\n\nknowledge\n\nlearning\n\nmastery\n\norder\n\npatience\n\nquality\n\nskills\n\nskills development\n\ntalent\n\nthe effects of effort\n\nwork on various spheres of life";
+"nine_of_pentacles_upright" = "achievements\n\ncomfort\n\nconfidence\n\nenjoying the fruits of hard work\n\nfinancial independence\n\nhappiness\n\nleisure\n\nmaterial security\n\npeace\n\nprofit\n\nprosperity\n\nrewarding efforts\n\nself-sufficiency\n\nsuccess";
+"ten_of_pentacles_upright" = "achievement of everything\n\ncompletion of a project/venture\n\ncontribution\n\nfamily\n\nfriends\n\nhappiness\n\ninheritance\n\ninheritance of property\n\nlong-term success\n\nmaterial stability\n\nmutual happiness based mainly on a sense of stability and prosperity\n\nprosperity\n\nroots\n\nsecurity\n\nwealth";
+"page_of_pentacles_upright" = "ambitions\n\nbeginning of a material venture\n\nbeing diligent\n\ncaution\n\nconsistency\n\ncourage\n\ndiligence\n\nfinancial opportunities\n\nfirst professional successes\n\ngenerosity\n\nlearning\n\nloyalty\n\nmanifestation\n\nperseverance\n\npracticality\n\nrationality\n\nreliability\n\nskills development\n\nstudent\n\nstudies\n\nsuccess through work";
+"knight_of_pentacles_upright" = "a job well done\n\ncommitment\n\nconscientiousness\n\nconstancy\n\ndedication\n\ndetermination\n\ndiligence\n\nefficiency\n\nendurance\n\nfriend\n\nhard work\n\nhonesty\n\nhonor\n\nloyalty\n\npatience\n\npersistence in feelings and/or intentions\n\npracticality\n\nproductivity\n\nreliability\n\nresilience\n\nroutine\n\nsafety\n\nself-discipline\n\nslow but systematic achievement of goals\n\nstrength\n\nstubbornness\n\nsuccess\n\nsuccessful actions";
+"queen_of_pentacles_upright" = "big heart\n\ncaring\n\ncommitment to comfort/luxury/prosperity\n\ndevotion\n\ndiligence\n\ndiscipline\n\nentrepreneurship\n\nfinancial security\n\ngenerosity\n\nhelp\n\nhonesty\n\nhospitality\n\nmaturity\n\npatience\n\npractical approach\n\nprosperity\n\nrationality\n\nrealism\n\nsmugness\n\nwealth";
+"king_of_pentacles_upright" = "abundance\n\nambition\n\ncarefree\n\ncaring\n\ndiscipline\n\nfidelity\n\nfinancial power\n\nfinancial security\n\nfulfillment\n\ngenerosity\n\nleadership\n\nloyalty\n\nmaterial success\n\nmaturity\n\noptimism\n\npatience\n\npeace of mind\n\npractical approach to life\n\nprosperity\n\nreliability\n\nresponsibility\n\nstrong character\n\nsuccess";
 
 // Cups
 "ace_of_cups_upright" = "Ace of Cups";

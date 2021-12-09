@@ -18,4 +18,7 @@ struct TarotCard {
     let uprightKeywords: String
     let reversedKeywords: String
     let yesOrNo: TarotBoolean
+    
+    // Search
+    let searchKeywords: [String]
 }

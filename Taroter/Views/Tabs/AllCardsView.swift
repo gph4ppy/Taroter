@@ -27,10 +27,10 @@ struct AllCardsView: View {
                 }
                 .padding()
             }
-            .navigationViewStyle(.stack)
             .navigationBarTitleDisplayMode(.large)
             .navigationBarTitle(LocalizedStrings.cards)
         }
+        .navigationViewStyle(.stack)
     }
 }
 
@@ -41,14 +41,22 @@ private extension AllCardsView {
     /// - Returns: A logical value indicates whether a given card contains the given text.
     ///            If so, it is displayed in AllCardsView.
     private func filterCards(_ card: TarotCards) -> Bool {
-        let card = card.tarotCard
+        let card                 = card.tarotCard
+        let searchKeywords       = card.searchKeywords.map { $0.lowercased() }
+        let lowercasedSearchText = searchText.lowercased()
+        var isTextInSearchArray  = false
         
-        return searchText.isEmpty ||
-        card.name.contains(searchText) ||
-        card.arcana.name.contains(searchText) ||
-        card.yesOrNo.label.contains(searchText) ||
-        card.imageName.contains(searchText) ||
-        card.uprightKeywords.contains(searchText) ||
-        card.reversedKeywords.contains(searchText)
+        searchKeywords.forEach {
+            isTextInSearchArray  = $0.contains(lowercasedSearchText) ? true : false
+        }
+        
+        return lowercasedSearchText.isEmpty ||
+        card.name.lowercased().contains(lowercasedSearchText) ||
+        card.arcana.name.lowercased().contains(lowercasedSearchText) ||
+        card.yesOrNo.label.lowercased().contains(lowercasedSearchText) ||
+        card.imageName.lowercased().contains(lowercasedSearchText) ||
+        card.uprightKeywords.lowercased().contains(lowercasedSearchText) ||
+        card.reversedKeywords.lowercased().contains(lowercasedSearchText) ||
+        isTextInSearchArray
     }
 }

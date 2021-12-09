@@ -168,52 +168,52 @@
 
 // - Minor Arcana -
 // Wands
-"ace_of_wands_upright" = "dobry początek, działanie, energia, impas, inspiracja, nowe możliwości, pierwszy krok, podjęcie inicjatywy, potencjał, rozwój, szansa";
-"two_of_wands_upright" = "Two of of Wands";
-"three_of_wands_upright" = "Three of Wands";
-"four_of_wands_upright" = "Four of Wands";
-"five_of_wands_upright" = "Five of Wands";
-"six_of_wands_upright" = "Six of Wands";
-"seven_of_wands_upright" = "Seven of Wands";
-"eight_of_wands_upright" = "Eight of Wands";
-"nine_of_wands_upright" = "Nine of Wands";
-"ten_of_wands_upright" = "Ten of Wands";
-"page_of_wands_upright" = "Page of Wands";
-"knight_of_wands_upright" = "Knight of Wands";
-"queen_of_wands_upright" = "Queen of Wands";
-"king_of_wands_upright" = "King of Wands";
+"ace_of_wands_upright" = "dobry początek\n\ndziałanie\n\nenergia\n\nimpas\n\ninspiracja\n\nnowe możliwości\n\npierwszy krok\n\npodjęcie inicjatywy\n\npotencjał\n\nrozwój\n\nszansa";
+"two_of_wands_upright" = "izolacja od ludzi\n\nkontrola\n\nniezależność\n\nodkrycia\n\nodkrywanie swoich możliwości\n\npewność siebie\n\npodejmowanie ryzyka\n\npostęp\n\nprzyszłościowe planowanie\n\nsamodzielność\n\nwybór";
+"three_of_wands_upright" = "dalekowzroczność (przewidywanie/prognozowanie)\n\ndojrzałość\n\npatrzenie w przyszłość\n\npewność siebie\n\npodróż\n\npogodzenie się z przeszłością\n\npomyślny początek\n\nposzerzanie horyzontów\n\nrealizacja zamierzeń\n\nrozwój\n\nsukces w przedsięwzięciach";
+"four_of_wands_upright" = "bezpieczeństwo\n\ncelebracja\n\nharmonia\n\nnadzieja lepszej przyszłości\n\noptymizm\n\nprzynależność\n\nradość z życia\n\nrelaks\n\nsolidność\n\nspołeczność\n\nstabilność\n\nwszelkie imprezy/zjazdy/spotkania\n\nzabawa";
+"five_of_wands_upright" = "ambicje\n\negzamin\n\nkonflikt\n\nnapięcie\n\nobrona idei\n\npodjęcie ryzyka\n\nrywalizacja\n\nróżnorodność\n\nsprawdzian\n\nstarcia ego\n\nwalka\n\nwalka o swoje racje\n\nwalka zgodna z zasadami\n\nśmiałość";
+"six_of_wands_upright" = "chwała\n\nchwilowy sukces\n\ndobre wiadomości\n\nduma\n\nnagroda\n\npewność siebie\n\nprogres\n\nradość\n\nsatysfakcja\n\nspełnienie\n\nsukces\n\ntriumf\n\nuznanie\n\nuznanie społeczne\n\nzwycięstwo";
+"seven_of_wands_upright" = "dobry plan działania\n\ngorliwość\n\nobrona siebie\n\nochrona\n\nodwaga\n\nopozycja\n\nopór\n\nwalka z przeciwnościami losu\n\nwalka z silnej pozycji\n\nwytrwałość";
+"eight_of_wands_upright" = "działanie\n\nekscytacja\n\nnagłe wydarzenia\n\nnagłe zmiany\n\nnatłok wydarzeń\n\npostęp\n\nruch\n\nszybka zmiana\n\nszybkie działanie\n\nszybkość\n\nzamieszanie";
+"nine_of_wands_upright" = "bliskość do sukcesu\n\ngotowość do kolejnej walki\n\ngranice\n\nobrona\n\noczekiwanie\n\nodwaga\n\npsychiczne zranienie\n\nsiła\n\nstan zagrożenia\n\nwypoczynek i regeneracja sił po stoczonych walkach (wyzwaniach)\n\nwytrwałość\n\nwytrzymałość\n\nzachowanie czujności oraz uważności\n\nzmęczenie";
+"ten_of_wands_upright" = "ciężka praca\n\ndodatkowa odpowiedzialność\n\nobciążenie\n\nobowiązek\n\nostatnia prosta do celu\n\npotrzeba wypoczynku\n\nprzeciwności z naszego wyboru (buławy można porzucić a jednak się tego nie robi)\n\nstres\n\nzmagania";
+"page_of_wands_upright" = "ekscytacja\n\nekstrawertyzm\n\nenergiczność\n\ngotowość do działania\n\ninspiracja\n\nmożliwości i okazje do działania\n\nnieograniczony potencjał\n\nnieustraszoność\n\nnowe pomysły\n\nodkrycia\n\npomysły\n\nwesołość";
+"knight_of_wands_upright" = "buntowniczość\n\ndynamizm\n\nenergia\n\ngotowość do podjęcia ryzyka\n\nimpulsywność\n\nnatchnienie\n\nniecierpliwość\n\nodwaga\n\npasja\n\nporywczość\n\npośpiech\n\nprzygoda\n\nsiła\n\nzapał";
+"queen_of_wands_upright" = "charyzma\n\ndeterminacja\n\ndojrzałość\n\nduma\n\ndążenie do celu\n\nhojność\n\nnaturalny autorytet\n\nniezależność\n\nobfitość\n\nodwaga\n\noptymizm\n\npasja\n\npewność siebie\n\nsiła\n\nspokój\n\nstabilność\n\ntwórczość\n\nwyrażanie siebie\n\nmoże symbolizować kobietę o tych cechach";
+"king_of_wands_upright" = "ambicja\n\nasertywność\n\ncharyzma\n\nhonor\n\nodważne decyzje\n\noptymizm\n\nprzejęcie kontroli\n\nsilna osobowość\n\nwiara w swoje możliwości\n\nwizja\n\nśmiałość";
 
 // Pentacles
-"ace_of_pentacles_upright" = "Ace of Pentacles";
-"two_of_pentacles_upright" = "Two of Pentacles";
-"three_of_pentacles_upright" = "Three of Pentacles";
-"four_of_pentacles_upright" = "Four of Pentacles";
-"five_of_pentacles_upright" = "Five of Pentacles";
-"six_of_pentacles_upright" = "Six of Pentacles";
-"seven_of_pentacles_upright" = "Seven of Pentacles";
-"eight_of_pentacles_upright" = "Eight of Pentacles";
-"nine_of_pentacles_upright" = "Nine of Pentacles";
-"ten_of_pentacles_upright" = "Ten of Pentacles";
-"page_of_pentacles_upright" = "Page of Pentacles";
-"knight_of_pentacles_upright" = "Knight of Pentacles";
-"queen_of_pentacles_upright" = "Queen of Pentacles";
-"king_of_pentacles_upright" = "King of Pentacles";
+"ace_of_pentacles_upright" = "bezpieczeństwo\n\ndobrobyt\n\nkorzyści materialne\n\nmanifestacja\n\nnowa szansa\n\nnowe perspektywy\n\nobiecujące plany\n\npoznawanie własnej wartości\n\nrozwój spraw związanych ze sprawami materialnymi\n\nstabilność\n\nszczodrość\n\nwydajność\n\nzadowolenie\n\nzdrowie";
+"two_of_pentacles_upright" = "adaptacja\n\nelastyczność\n\nharmonia\n\nkonieczność osiągnięcia równowagi (zwłaszcza finansowej)\n\nlekkie traktowanie pieniądza\n\nrównowaga\n\ntalent\n\nwiele priorytetów\n\nzabawa\n\nzaradność\n\nzarządzanie czasem i priorytetami\n\nzmienność";
+"three_of_pentacles_upright" = "dobra atmosfera w pracy\n\ndoskonalenie umiejętności\n\nmistrzostwo w dziedzinie\n\nnagroda\n\nnauka\n\npraca zespołowa\n\nrealizacja\n\nszanse zawodowe\n\nwspólne cele\n\nwspółpraca\n\nwydajność\n\nwysiłek\n\nzaangażowanie w realizację celów\n\nzlecenie";
+"four_of_pentacles_upright" = "bezpieczeństwo\n\ndobrobyt\n\ngromadzenie dóbr\n\nkonserwatyzm\n\nkontrola\n\nmaterializm\n\nniepewność\n\nobawy przed stratą tego co się osiągnęło\n\noszczędność\n\npracoholizm\n\nstabilizacja materialna\n\nzaborczość";
+"five_of_pentacles_upright" = "bieda\n\nbieda finansowa/emocjonalna/zdrowotna\n\nbrak wsparcia\n\nbycie w potrzebie\n\ndesperacja\n\nniedostatek\n\nniepokój\n\nnieszczęście\n\nobciążenia\n\npodążanie dalej mimo że cel znajduje się pod nosem (lecz się go nie dostrzega lub ignoruje - postacie na karcie przechodzą obok jasnego okna)\n\nrozczarowanie\n\ntrudności\n\nubóstwo\n\nwspółczucie\n\nzmartwienie";
+"six_of_pentacles_upright" = "cierpliwość\n\ndawanie pomocy\n\ndobroczynność\n\ndzielenie się z innymi\n\ngotowość niesienia pomocy\n\nhojność\n\notrzymanie pomocy\n\notrzymanie prezentu\n\npomoc materialna\n\nrówność\n\nspołeczność\n\nsprawiedliwość\n\nwdzięczność\n\nwyróżnienie\n\nwzajemność";
+"seven_of_pentacles_upright" = "bezruch\n\ncierpliwość\n\noczekiwanie\n\noczekiwanie na owoce swojej pracy\n\nodpoczynek\n\nperspektywa długoterminowa\n\nplanowanie\n\nrozwój tego co było pielęgnowane\n\nwytrwałość";
+"eight_of_pentacles_upright" = "cierpliwość\n\nciągłość\n\ndokładność\n\nefekty włożonego trudu\n\njakość\n\nmistrzostwo\n\nnauka\n\nosiągnięcia\n\nporządek\n\npowolna lecz systematyczna droga do celu\n\npoświęcenie\n\npraca nad różnymi sferami życia\n\npracowitość\n\nrozwój\n\nrozwój umiejętności\n\nsumienna praca\n\ntalent\n\numiejętności\n\nwiedza\n\nwysokie standardy\n\nzaangażowanie";
+"nine_of_pentacles_upright" = "bezpieczeństwo materialne\n\ndobrobyt\n\nkomfort\n\nkorzystanie z owoców ciężkiej pracy\n\nnagradzane wysiłki\n\nniezależność finansowa\n\nosiągnięcia\n\npewność siebie\n\npowodzenie\n\nsamowystarczalność\n\nspokój\n\nsukces\n\nszczęście\n\nwygoda\n\nwypoczynek\n\nzyski";
+"ten_of_pentacles_upright" = "bezpieczeństwo\n\nbogactwo\n\ndobrobyt\n\ndziedzictwo\n\ndziedziczenie majątku\n\ndługoterminowy sukces\n\nkorzenie\n\nosiągnięcie wszystkiego\n\nprzyjaciele\n\nrodzina\n\nstabilizacja materialna\n\nszczęście\n\nukończenie przedsięwzięcia/projektu\n\nwkład\n\nwzajemne szczęście oparte głównie na poczuciu stabilizacji i dobrobycie";
+"page_of_pentacles_upright" = "ambicje\n\nbycie pilnym\n\nhojność\n\nkonsekwentność\n\nlojalność\n\nmanifestacja\n\nmożliwości finansowe\n\nnauka\n\nniezawodność\n\nodwaga\n\nostrożność\n\npierwsze sukcesy zawodowe\n\npoczątek przedsięwzięcia materialnego\n\npracowitość\n\npraktyczność\n\nracjonalność\n\nrozwój umiejętności\n\nstudent\n\nstudia\n\nsukces dzięki pracy\n\nwytrwałość";
+"knight_of_pentacles_upright" = "bezpieczeństwo\n\ncierpliwość\n\nciężka praca\n\ndeterminacja\n\ndobrze wykonane zadanie\n\nhonorowość\n\nlojalność\n\nniezawodność\n\noddanie\n\nodporność\n\npowodzenie\n\npowolne lecz systematyczne realizowanie celów\n\npracowitość\n\npraktyczność\n\nproduktywność\n\nprzyjaciel\n\nrutyna\n\nsamodyscyplina\n\nsiła\n\nstałość\n\nstałość w uczuciach i/lub zamiarach\n\nsumienność\n\nuczciwość\n\nudane działania\n\nupór\n\nwydajność\n\nwytrzymałość\n\nzaangażowanie";
+"queen_of_pentacles_upright" = "bezpieczeństwo finansowe\n\ncierpliwość\n\ndojrzałość\n\ndyscyplina\n\ngościnność\n\nhojność\n\nmajętność\n\noddanie\n\nopiekuńczość\n\npomoc\n\npowodzenie w sprawach majątkowych\n\npracowitość\n\npraktyczne podejście\n\nprzedsiębiorczość\n\nprzywiązanie do dobrobytu/wygody/luksusu\n\nrealizm\n\nrozsądek\n\nuczciwość\n\nwielkie serce\n\nzadowolenie z siebie";
+"king_of_pentacles_upright" = "ambicja\n\nbezpieczeństwo finansowe\n\nbeztroska\n\ncierpliwość\n\ndobrobyt\n\ndojrzałość\n\ndyscyplina\n\nfinansowa potęga\n\nhojność\n\nlojalność\n\nniezawodność\n\nobfitość\n\nodpowiedzialność\n\nopiekuńczość\n\noptymizm\n\npraktyczne podejście do życia\n\nprzywództwo\n\nsilny charakter\n\nspełnienie\n\nspokój\n\nsukces\n\nsukces materialny\n\nwierność";
 
 // Cups
-"ace_of_cups_upright" = "Ace of Cups";
-"two_of_cups_upright" = "Two of Cups";
-"three_of_cups_upright" = "Three of Cups";
-"four_of_cups_upright" = "Four of Cups";
-"five_of_cups_upright" = "Five of Cups";
-"six_of_cups_upright" = "Six of Cups";
-"seven_of_cups_upright" = "Seven of Cups";
-"eight_of_cups_upright" = "Eight of Cups";
-"nine_of_cups_upright" = "Nine of Cups";
-"ten_of_cups_upright" = "Ten of Cups";
-"page_of_cups_upright" = "Page of Cups";
-"knight_of_cups_upright" = "Knight of Cups";
-"queen_of_cups_upright" = "Queen of Cups";
-"king_of_cups_upright" = "King of Cups";
+"ace_of_cups_upright" = "dar losu\n\nemocjonalny początek\n\nintuicja\n\nkreatywność\n\nmiłość\n\nnowe relacje\n\nnowe uczucia\n\npodświadomość\n\nprzebudzenie emocjonalne\n\nprzyjaźń\n\nstłumione emocje\n\nwspółczucie";
+"two_of_cups_upright" = "bliskie więzi\n\ndobre stosunki między ludźmi\n\nharmonia\n\nmiłość\n\npartnerstwo\n\npojednanie\n\npołączenie\n\nprzyciąganie\n\nprzyjaźń\n\nradość\n\nrównowaga\n\nwzajemny szacunek\n\nzakochanie\n\nzgoda\n\nzgodność emocjonalna\n\nzwiązek\n\nłączenie sił";
+"three_of_cups_upright" = "imprezy i spotkania\n\nkreatywność\n\nprzyjaźń\n\nradość życia\n\nrozrywka\n\nspołeczność\n\nspędzanie czasu w gronie przyjaciół\n\nwspółpraca\n\nzabawa\n\nświętowanie";
+"four_of_cups_upright" = "apatia\n\nbrak satysfakcji\n\nkontemplacja\n\nmelancholia\n\nna oferowane możliwości\n\nniedocenianie tego co się posiada\n\nniewykorzystywanie szansy\n\nniezadowolenie\n\nnuda\n\nobojętność\n\nprzewartościowanie\n\nrozczarowanie\n\nrozmyślanie\n\nsmutek\n\nuczucie odłączenia\n\nzamknięcie\n\nzmarnowane okazje";
+"five_of_cups_upright" = "cierpienie\n\nemocjonalny ból\n\npesymizm\n\nporażka\n\npożegnanie\n\nprzygnębienie\n\nrozczarowanie\n\nrozstanie\n\nsamotność\n\nsmutek\n\nstrata\n\nukrywanie emocji\n\nutrata czegoś cennego\n\nzamknięcie w przeszłości\n\nżal\n\nżałoba";
+"six_of_cups_upright" = "idealizowanie\n\nniewinność\n\nnostalgia\n\npowrót do wspomnień które przeminęły\n\nprzyjemność\n\nradość\n\nsentyment do przeszłości\n\nsentymentalizm\n\ntęsknota\n\nwspomnienia\n\nżycie przeszłością\n\nżyczliwość";
+"seven_of_cups_upright" = "fantazje\n\niluzja\n\nmarzenia\n\nmnogość decyzji\n\nmożliwości\n\nmyślenie życzeniowe\n\nniezdecydowanie\n\nproblem z wyborem\n\ntrudność z podjęciem decyzji\n\nzłudzenia";
+"eight_of_cups_upright" = "odejście\n\nodpuszczenie\n\nporzucenie\n\nposzukiwanie\n\nrozczarowanie\n\nrozstanie\n\nstrata\n\nuwolnienie się od przeszłości\n\nwycofanie\n\nzakończenie związku (być może toksycznego)\n\nzdystansowanie się\n\nzostawienie przeszłości i ruszenie ku przyszłości";
+"nine_of_cups_upright" = "osiągnięcia\n\npewność siebie\n\nprzyjemność\n\nsatysfakcja\n\nspełnienie życzeń\n\nstabilność\n\nsukces\n\nuznanie\n\nwygoda materialna\n\nzadowolenie";
+"ten_of_cups_upright" = "bezpieczeństwo emocjonalne\n\nharmonia\n\npoczucie jedności\n\npowrót do domu\n\nradość\n\nrodzina\n\nsielanka\n\nspełnienie\n\nspełnienie marzeń\n\nstabilność emocjonalna\n\nszczęście";
+"page_of_cups_upright" = "bogactwo uczuć\n\nciekawość\n\ngotowość do dawania uczuć\n\ngłowa w chmurach\n\nidealizm\n\nintuicja\n\nmarzyciel\n\nnaiwność\n\nniewinność\n\nromantyczność\n\nspontaniczność\n\nwolność emocjonalna\n\nwrażliwość";
+"knight_of_cups_upright" = "ciepło\n\nidealista\n\nkochanek\n\nkreatywność\n\nmarzyciel\n\npiękno\n\nprzyjazna atmosfera\n\nromans\n\nromantyczna atmosfera\n\nromantyczność\n\ntransformacja emocjonalna\n\nurok\n\nwrażliwość\n\nwyobraźnia";
+"queen_of_cups_upright" = "chęć pomocy innym\n\nciepło\n\ndojrzałość uczuć\n\nemocjonalność\n\njasnowidzenie\n\nkochająca osoba (przeważnie kobieta)\n\nopiekuńczość\n\npodążanie za głosem serca\n\npostrzeganie rzeczywistości i podejmowanie decyzji przez pryzmat emocji\n\npotrzeba dawania oraz otrzymywania miłości/opieki\n\nsilna intuicja\n\nstabilność emocjonalna\n\nuczciwość\n\nurok\n\nuzdrowicielka\n\nwielkie serce\n\nwrażliwość\n\nwsparcie\n\nwspółczucie";
+"king_of_cups_upright" = "bezpieczeństwo emocjonalne\n\nciepło\n\ndobro\n\ndoradzanie\n\ndyplomacja\n\nemocjonalna pełnia i dojrzałość\n\nemocjonalność\n\nhojność\n\nmądrość\n\nniezawodność\n\nochrona bliskich\n\noddanie\n\nodpowiedzialność\n\nprawość\n\nrównowaga emocjonalna\n\nuzdrowiciel\n\nwewnętrzny spokój\n\nwspółczucie";
 
 // Swords
 "ace_of_swords_upright" = "Ace of Swords";
@@ -258,52 +258,52 @@
 
 // - Minor Arcana -
 // Wands
-"ace_of_wands_reversed" = "brak energii, brak motywacji, brak pasji, opóźnienia, rozproszenie, wahanie, zły kierunek lub jego brak";
-"two_of_wands_reversed" = "Two of of Wands";
-"three_of_wands_reversed" = "Three of Wands";
-"four_of_wands_reversed" = "Four of Wands";
-"five_of_wands_reversed" = "Five of Wands";
-"six_of_wands_reversed" = "Six of Wands";
-"seven_of_wands_reversed" = "Seven of Wands";
-"eight_of_wands_reversed" = "Eight of Wands";
-"nine_of_wands_reversed" = "Nine of Wands";
-"ten_of_wands_reversed" = "Ten of Wands";
-"page_of_wands_reversed" = "Page of Wands";
-"knight_of_wands_reversed" = "Knight of Wands";
-"queen_of_wands_reversed" = "Queen of Wands";
-"king_of_wands_reversed" = "King of Wands";
+"ace_of_wands_reversed" = "brak energii\n\nbrak motywacji\n\nbrak pasji\n\nopóźnienia\n\nrozproszenie\n\nwahanie\n\nzły kierunek lub jego brak";
+"two_of_wands_reversed" = "brak działań\n\nniedowartościowanie\n\nniezdecydowanie\n\nprzesadne analizowanie\n\nsamotność\n\nstrach przed nieznanym\n\ntrudności\n\nunikanie ryzyka\n\nzłe planowanie lub jego brak";
+"three_of_wands_reversed" = "brak postępów\n\nbrak zaufania do siebie\n\nfrustracja\n\nograniczenia\n\nopóźnienia\n\nprzeszkody\n\nprześladowanie przeszłością\n\nstagnacja\n\nwiększe problemy niż się to wydaje";
+"four_of_wands_reversed" = "brak gotowości do działania\n\nbrak korzeni\n\nbrak wsparcia\n\nkonflikt domowy\n\nkonflikt z innymi\n\nniesolidność\n\nniestabilność\n\npoczucie bycia niebie widzianym";
+"five_of_wands_reversed" = "brutalność\n\ndążenie po trupach do celu\n\nharmonię\n\nnieuczciwa i podstępna walka\n\noszustwo\n\npokój\n\nporozumienia\n\nprzemoc\n\nsprzeczności\n\nunikanie konfliktu\n\nw pozytywnym znaczeniu może oznaczać zakończenie konfliktu\n\nwspółpracę\n\nzerwane kontakty\n\nzerwanie umowy";
+"six_of_wands_reversed" = "brak nagród\n\nbrak osiągnięć\n\nbrak uznania\n\nporażka\n\nprzesadne zajmowanie się sobą i swoimi uczuciami\n\nrozczarowanie\n\nzwycięstwo przeciwnika";
+"seven_of_wands_reversed" = "brak wiary w siebie\n\ndążenie po trupach do celu\n\nkłótnie\n\npoczucie zagrożenia\n\npoddanie się\n\nprzytłoczenie\n\nwyczerpanie";
+"eight_of_wands_reversed" = "bierność\n\nchaos\n\nczekanie\n\nfrustracja\n\nnieprzygotowanie\n\nopieranie się zmianom\n\nopóźnienia\n\npowolność\n\npośpiech";
+"nine_of_wands_reversed" = "brak chęci do działania\n\ndefensywa\n\nnieprzygotowanie\n\nodmowa kompromisu\n\nparanoja\n\npoddanie się\n\npostrzeganie życia jako walki o wszystko\n\nprzytłoczenie\n\nzmęczenie";
+"ten_of_wands_reversed" = "granica wytrzymałości\n\nprzytłoczenie\n\ntrudność\n\nupadek\n\nwzięcie na siebie zbyt dużej odpowiedzialności\n\nzmęczenie";
+"page_of_wands_reversed" = "brak pomysłów\n\nbrak wytrwałości\n\nbrak zdecydowania\n\nlenistwo\n\nnapady złości\n\nniecierpliwość\n\npośpiech\n\nrozproszenie\n\nsamoograniczające się przekonania\n\nzawodność";
+"knight_of_wands_reversed" = "agresja\n\nbezczelność\n\nbrak samokontroli\n\nbrak solidności\n\nfrustracja\n\nkłótnie\n\nnadmierne ego\n\nniebezpieczeństwo\n\nniestabilność\n\nszukanie okazji do walki\n\nucieczka przed obowiązkami\n\nznudzenie";
+"queen_of_wands_reversed" = "brak pewności siebie\n\nkontrolowanie wszystkiego i wszystkich\n\nkrytycyzm\n\nlekkomyślność\n\nmściwość\n\nnerwowość\n\nsamolubność\n\ntyran\n\nwysokie oczekiwania\n\nzaborczość\n\nzazdrość\n\nzgorzkniałość";
+"king_of_wands_reversed" = "bezsilność\n\nbezwzględność\n\nbrak cierpliwości\n\ndespota\n\nimpulsywność\n\nkapryśność\n\nnieskuteczność\n\nnietolerancja\n\nporywczość\n\npośpiech\n\nsamolubność\n\nsłabe przewodnictwo\n\ntyran\n\nwysokie oczekiwania\n\nzłośliwość";
 
 // Pentacles
-"ace_of_pentacles_reversed" = "Ace of Pentacles";
-"two_of_pentacles_reversed" = "Two of Pentacles";
-"three_of_pentacles_reversed" = "Three of Pentacles";
-"four_of_pentacles_reversed" = "Four of Pentacles";
-"five_of_pentacles_reversed" = "Five of Pentacles";
-"six_of_pentacles_reversed" = "Six of Pentacles";
-"seven_of_pentacles_reversed" = "Seven of Pentacles";
-"eight_of_pentacles_reversed" = "Eight of Pentacles";
-"nine_of_pentacles_reversed" = "Nine of Pentacles";
-"ten_of_pentacles_reversed" = "Ten of Pentacles";
-"page_of_pentacles_reversed" = "Page of Pentacles";
-"knight_of_pentacles_reversed" = "Knight of Pentacles";
-"queen_of_pentacles_reversed" = "Queen of Pentacles";
-"king_of_pentacles_reversed" = "King of Pentacles";
+"ace_of_pentacles_reversed" = "brak planowania\n\nbrak stabilizacji finansowej\n\nchciwość\n\nmaterializm\n\nniedobór\n\nniedostatek\n\nniewykorzystana szansa\n\nniewłaściwe wykorzystanie dóbr\n\nskąpstwo\n\ntrudności finansowe\n\nzłe inwestycje";
+"two_of_pentacles_reversed" = "brak organizacji\n\nbrak równowagi\n\nchaos\n\ndezorganizacja\n\ndługi\n\nprzytłoczenie\n\nrozrzutność\n\ntrudność ze spłatą kredytu\n\nzmiana priorytetów";
+"three_of_pentacles_reversed" = "brak harmonii\n\nbrak odpowiedzialności\n\nbrak pracy zespołowej\n\nbrak spójności\n\nbrak uznania\n\nego\n\nkrytyka\n\nlenistwo\n\nograniczenia\n\nrywalizacja\n\nsłaba motywacja\n\nutracona szansa na sukces\n\nzarozumialstwo";
+"four_of_pentacles_reversed" = "egoizm\n\nnadmierne wydatki\n\nsamoobrona\n\nskąpstwo";
+"five_of_pentacles_reversed" = "nędza\n\npowrót (poprawa) po stracie\n\npozytywne zmiany\n\nprzezwyciężenie przeciwności losu\n\nubóstwo duchowe\n\nzałamanie psychiczne";
+"six_of_pentacles_reversed" = "interesowność (coś za coś)\n\nkontrola ludzi\n\nnadużycie hojności\n\nnieczyste intencje\n\nnierówność\n\nniespłacone długi\n\nskąpstwo\n\nstrata\n\nwymuszenie\n\nzazdrość\n\nzobowiązania";
+"seven_of_pentacles_reversed" = "brak długoterminowej wizji\n\nbrak rozwoju\n\nbrak satysfakcji\n\nlenistwo\n\nmały wysiłek\n\nniedokończona praca\n\nniepowodzenie\n\nzniecierpliwienie";
+"eight_of_pentacles_reversed" = "brak jakości\n\nbrak koncentracji\n\nbrak motywacji\n\nlenistwo\n\nniedokładna praca\n\nniesumienna praca\n\nnieuczciwe interesy\n\nniskie umiejętności\n\nperfekcjonizm\n\npraca w pośpiechu\n\npracoholizm";
+"nine_of_pentacles_reversed" = "brak dyscypliny\n\nchciwość\n\nlekkomyślne wydawanie pieniędzy\n\nmaterializm\n\nniestabilność materialna\n\nnieumiejętność określania priorytetów\n\npowierzchowność\n\nżycie ponad stan";
+"ten_of_pentacles_reversed" = "bankructwo\n\nbrak pewności siebie\n\nciemna strona bogactwa\n\ndługi\n\nfinansowa porażka\n\nkonflikt o pieniądze\n\nkłótnie i nieporozumienia w rodzinie z powodu pieniędzy\n\nlenistwo\n\nniepewność\n\nniestabilność\n\nspory rodzinne\n\nstarość\n\nstrata\n\nulotny sukces";
+"page_of_pentacles_reversed" = "brak odpowiedzialności\n\nbrak postępów\n\nbuntowniczość\n\ndługi\n\nnauka na porażce\n\nniedojrzałość\n\nniepewność\n\nnierozsądność\n\nnieuczciwość\n\nniewłaściwe posługiwanie się pieniędzmi\n\nrozrzutność\n\nsamokrytycyzm\n\nstracone szanse\n\nsłabe perspektywy\n\nupartość\n\nzwlekanie";
+"knight_of_pentacles_reversed" = "bierność\n\nbrak odpowiedzialności\n\nlenistwo\n\nmaterializm\n\nniecierpliwość\n\nnuda\n\nperfekcjonizm\n\npracoholizm\n\nskąpość\n\ntaniość\n\nuczucie utknięcia";
+"queen_of_pentacles_reversed" = "bezwzględność\n\nbrak tolerancji\n\nchciwość\n\ndbanie o siebie\n\nkapryśność\n\nkonflikt praca-dom\n\nlenistwo\n\nmanipulacja ludźmi i sytuacjami\n\nmaterializm\n\npowierzchowność\n\nprymitywność\n\nprzedmiotowe traktowanie ludzi\n\nsamolubność\n\nskąpość\n\nzachłanność\n\nzazdrość\n\nzmienność\n\nżądza pieniędzy";
+"king_of_pentacles_reversed" = "brak wrażliwości\n\nchciwość\n\nkorupcja\n\nlenistwo\n\nmarnotrawstwo\n\nmaterializm\n\nniesprawiedliwość\n\nnieuczciwe interesy\n\nnuda\n\nobsesja na punkcie bogactwa i statusu\n\npazerność\n\npłytkość\n\nrozrzutność\n\ntrudny charakter\n\ntyran\n\nupartość\n\nutrata bezpieczeństwa finansowego\n\nzaborczość";
 
 // Cups
-"ace_of_cups_reversed" = "Ace of Cups";
-"two_of_cups_reversed" = "Two of Cups";
-"three_of_cups_reversed" = "Three of Cups";
-"four_of_cups_reversed" = "Four of Cups";
-"five_of_cups_reversed" = "Five of Cups";
-"six_of_cups_reversed" = "Six of Cups";
-"seven_of_cups_reversed" = "Seven of Cups";
-"eight_of_cups_reversed" = "Eight of Cups";
-"nine_of_cups_reversed" = "Nine of Cups";
-"ten_of_cups_reversed" = "Ten of Cups";
-"page_of_cups_reversed" = "Page of Cups";
-"knight_of_cups_reversed" = "Knight of Cups";
-"queen_of_cups_reversed" = "Queen of Cups";
-"king_of_cups_reversed" = "King of Cups";
+"ace_of_cups_reversed" = "blokada emocjonalna\n\nchłód\n\nniepokój emocjonalny\n\nprzygnębienie\n\nprzytłoczenie emocjonalne\n\npustka\n\nstrata emocjonalna\n\nuczucie niekochania\n\nzablokowana kreatywność";
+"two_of_cups_reversed" = "brak równowagi\n\nemocjonalne wycofanie\n\nizolacja\n\nkłótnia\n\nnapięcie\n\nnieodwzajemniona miłość\n\nnieporozumienie\n\nniestabilność emocjonalna\n\nnieufność\n\nniezgoda\n\nodrzucenie\n\nrozdzielenie\n\nrozstania\n\nzła komunikacja";
+"three_of_cups_reversed" = "izolacja\n\nmożliwa zdrada/ingerencja osoby trzeciej\n\nnadmiar\n\nnadużywanie przyjemności\n\nnieumiejętność cieszenia się z życia\n\nniezrównoważone życie towarzyskie\n\nostre imprezowanie\n\nrozwiązłość seksualna\n\nsamotność\n\nskandal\n\nzazdrość";
+"four_of_cups_reversed" = "akceptacja\n\ndepresja\n\njasność\n\nkoncentrowanie się na negatywach\n\nnegatywność\n\npodejmowanie działań\n\npójście do przodu\n\nwybór szczęścia\n\nwycofanie";
+"five_of_cups_reversed" = "akceptacja\n\ndepresja\n\nnieumiejętność pogodzenia się ze stratą emocjonalną\n\nodnalezienie spokoju\n\nosobiste niepowodzenie\n\npogodzenie się z przeszłością\n\nprzebaczenie\n\npójście dalej\n\nrozpacz\n\nrozpad dotychczasowego życia";
+"six_of_cups_reversed" = "niezależność\n\nutknięcie w przeszłości\n\nwyidealizowane wspomnienia\n\nżycie przeszłością";
+"seven_of_cups_reversed" = "brak celu\n\ndokonywanie wyborów\n\nnieład\n\nprzytłoczenie wyborami\n\nrozczarowanie\n\nrozpraszanie uwagi\n\nzamieszanie\n\nżycie iluzjami";
+"eight_of_cups_reversed" = "brak nadziei\n\nbrak wiary\n\ndepresja\n\nkurczowe trzymanie się przeszłości/relacji\n\nlęk przed zmianą\n\nmonotonia\n\nniemożność pójścia dalej\n\nniezdecydowanie\n\npozostawanie w złej sytuacji\n\nstagnacja\n\nucieczka\n\nunikanie\n\nzamknięcie się w sobie";
+"nine_of_cups_reversed" = "arogancja\n\nbrak spełnienia\n\nczekanie z założonymi rękoma na zmianę\n\nmaterializm\n\nniespełnione pragnienia\n\nniezadowolenie\n\nniezadowolenie z siebie\n\nrozczarowanie\n\nsnobizm\n\nzarozumiałość";
+"ten_of_cups_reversed" = "brak porozumienia\n\ndysharmonia\n\nizolacja\n\nkonflikt domowy\n\nniedopasowane wartości\n\nodłączenie\n\nseparacja\n\nzmagające się relacje\n\nżycie ideałami";
+"page_of_cups_reversed" = "blokada emocjonalna\n\nblokada twórcza\n\niluzja\n\nkapryśność\n\nnadmierna emocjonalność\n\nniedojrzałość\n\nniepewność\n\npodstęp\n\nprzygnębienie\n\nuwiedzenie\n\nzaniedbywanie wewnętrznego dziecka\n\nzazdrość";
+"knight_of_cups_reversed" = "kapryśność\n\nmanipulacja\n\nnadmierna wyobraźnia\n\nnarcyzm\n\nnierealistyczność\n\nobsesja\n\npróżność\n\nrozczarowanie\n\nstrach przed zaangażowaniem emocjonalnym\n\nuczuciowa obojętność\n\nuległość\n\nunikanie konfliktów\n\nuwodziciel\n\nzazdrość\n\nzmieszanie";
+"queen_of_cups_reversed" = "dawanie za dużo\n\niluzyjna miłość\n\nkruchość\n\nmęczeństwo\n\nnadwrażliwość\n\nniepewność\n\npowierzchowność\n\nrozczarowanie\n\nuzależnienie\n\nzawód miłosny";
+"king_of_cups_reversed" = "manipulacja\n\nnachalność\n\nniedojrzałość emocjonalna\n\nniepokój\n\nopryskliwość\n\nosoba raniąca i ograniczająca bliskie osoby\n\nporzucenie emocji\n\nproblemy z nałogami\n\nprzytłoczenie\n\nsamolubność\n\nstłumienie\n\nwycofanie\n\nzazdrość\n\nzimno";
 
 // Swords
 "ace_of_swords_reversed" = "Ace of Swords";
