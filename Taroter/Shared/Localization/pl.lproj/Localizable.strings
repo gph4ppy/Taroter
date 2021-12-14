@@ -200,10 +200,10 @@
 "king_of_pentacles_upright" = "ambicja\n\nbezpieczeństwo finansowe\n\nbeztroska\n\ncierpliwość\n\ndobrobyt\n\ndojrzałość\n\ndyscyplina\n\nfinansowa potęga\n\nhojność\n\nlojalność\n\nniezawodność\n\nobfitość\n\nodpowiedzialność\n\nopiekuńczość\n\noptymizm\n\npraktyczne podejście do życia\n\nprzywództwo\n\nsilny charakter\n\nspełnienie\n\nspokój\n\nsukces\n\nsukces materialny\n\nwierność";
 
 // Cups
-"ace_of_cups_upright" = "dar losu\n\nemocjonalny początek\n\nintuicja\n\nkreatywność\n\nmiłość\n\nnowe relacje\n\nnowe uczucia\n\npodświadomość\n\nprzebudzenie emocjonalne\n\nprzyjaźń\n\nstłumione emocje\n\nwspółczucie";
+"ace_of_cups_upright" = "dar losu\n\nemocjonalny początek\n\nintuicja\n\nkreatywność\n\nmiłość\n\nnowe relacje\n\nnowe uczucia\n\npodświadomość\n\nprzebudzenie emocjonalne\n\nprzyjaźń\n\nwspółczucie";
 "two_of_cups_upright" = "bliskie więzi\n\ndobre stosunki między ludźmi\n\nharmonia\n\nmiłość\n\npartnerstwo\n\npojednanie\n\npołączenie\n\nprzyciąganie\n\nprzyjaźń\n\nradość\n\nrównowaga\n\nwzajemny szacunek\n\nzakochanie\n\nzgoda\n\nzgodność emocjonalna\n\nzwiązek\n\nłączenie sił";
 "three_of_cups_upright" = "imprezy i spotkania\n\nkreatywność\n\nprzyjaźń\n\nradość życia\n\nrozrywka\n\nspołeczność\n\nspędzanie czasu w gronie przyjaciół\n\nwspółpraca\n\nzabawa\n\nświętowanie";
-"four_of_cups_upright" = "apatia\n\nbrak satysfakcji\n\nkontemplacja\n\nmelancholia\n\nna oferowane możliwości\n\nniedocenianie tego co się posiada\n\nniewykorzystywanie szansy\n\nniezadowolenie\n\nnuda\n\nobojętność\n\nprzewartościowanie\n\nrozczarowanie\n\nrozmyślanie\n\nsmutek\n\nuczucie odłączenia\n\nzamknięcie\n\nzmarnowane okazje";
+"four_of_cups_upright" = "apatia\n\nbrak satysfakcji\n\nkontemplacja\n\nmelancholia\n\nniedocenianie tego co się posiada\n\nniewykorzystywanie szansy\n\nniezadowolenie\n\nnuda\n\nobojętność\n\nprzewartościowanie\n\nrozczarowanie\n\nrozmyślanie\n\nsmutek\n\nuczucie odłączenia\n\nzamknięcie\n\nzamknięcie na oferowane możliwości\n\nzmarnowane okazje";
 "five_of_cups_upright" = "cierpienie\n\nemocjonalny ból\n\npesymizm\n\nporażka\n\npożegnanie\n\nprzygnębienie\n\nrozczarowanie\n\nrozstanie\n\nsamotność\n\nsmutek\n\nstrata\n\nukrywanie emocji\n\nutrata czegoś cennego\n\nzamknięcie w przeszłości\n\nżal\n\nżałoba";
 "six_of_cups_upright" = "idealizowanie\n\nniewinność\n\nnostalgia\n\npowrót do wspomnień które przeminęły\n\nprzyjemność\n\nradość\n\nsentyment do przeszłości\n\nsentymentalizm\n\ntęsknota\n\nwspomnienia\n\nżycie przeszłością\n\nżyczliwość";
 "seven_of_cups_upright" = "fantazje\n\niluzja\n\nmarzenia\n\nmnogość decyzji\n\nmożliwości\n\nmyślenie życzeniowe\n\nniezdecydowanie\n\nproblem z wyborem\n\ntrudność z podjęciem decyzji\n\nzłudzenia";
@@ -216,20 +216,20 @@
 "king_of_cups_upright" = "bezpieczeństwo emocjonalne\n\nciepło\n\ndobro\n\ndoradzanie\n\ndyplomacja\n\nemocjonalna pełnia i dojrzałość\n\nemocjonalność\n\nhojność\n\nmądrość\n\nniezawodność\n\nochrona bliskich\n\noddanie\n\nodpowiedzialność\n\nprawość\n\nrównowaga emocjonalna\n\nuzdrowiciel\n\nwewnętrzny spokój\n\nwspółczucie";
 
 // Swords
-"ace_of_swords_upright" = "Ace of Swords";
-"two_of_swords_upright" = "Two of Swords";
-"three_of_swords_upright" = "Three of Swords";
-"four_of_swords_upright" = "Four of Swords";
-"five_of_swords_upright" = "Five of Swords";
-"six_of_swords_upright" = "Six of Swords";
-"seven_of_swords_upright" = "Seven of Swords";
-"eight_of_swords_upright" = "Eight of Swords";
-"nine_of_swords_upright" = "Nine of Swords";
-"ten_of_swords_upright" = "Ten of Swords";
-"page_of_swords_upright" = "Page of Swords";
-"knight_of_swords_upright" = "Knight of Swords";
-"queen_of_swords_upright" = "Queen of Swords";
-"king_of_swords_upright" = "King of Swords";
+"ace_of_swords_upright" = "inspiracja\n\njasność umysłu\n\nkoncentracja\n\nnowy pomysł\n\nobiektywizm\n\nprzełom\n\nsukces\n\nszansa na rozwiązanie problemów\n\nwizja\n\nwładza nad umysłem\n\nzrozumienie";
+"two_of_swords_upright" = "dwie strony sprawy\n\nharmonia\n\nimpas\n\nkompromis\n\nkonieczność podjęcia wyboru\n\npodejmowanie decyzji między możliwościami\n\ntrudne decyzje\n\nukryte informacje\n\nutknięcie\n\nzrozumienie";
+"three_of_swords_upright" = "ból\n\ncierpienie\n\ndziałanie wbrew uczuciom\n\nniepokój\n\nrozczarowanie\n\nrozpacz\n\nrozstanie\n\nrozłąka\n\nsmutek\n\nuraz\n\nzawód\n\nzranienie\n\nzłamane serce\n\nżałoba";
+"four_of_swords_upright" = "izolacja\n\nmedytacja\n\nodpoczynek\n\npotrzeba spokoju\n\nregeneracja sił\n\nrelaks\n\nsamoobrona\n\nsamotność\n\nwyciszenie\n\nwycofanie";
+"five_of_swords_upright" = "agresja\n\nchciwość\n\nchytrość\n\nklęska\n\nkonflikt\n\nkonkurencja\n\nniepowodzenie\n\nniesława\n\noszustwo\n\npodstęp\n\nprzebiegłość\n\nprzegrana\n\npyrrusowe zwycięstwo\n\nrozpacz\n\nspory\n\nstrata\n\nwrogość\n\nwygrana za wszelką cenę";
+"six_of_swords_upright" = "brak komunikacji\n\nmilczenie\n\nodejście\n\npozostawienie przeszłości za sobą i wyruszenie w nieznane\n\nprzejście\n\nprzyjmowanie lekcji\n\nzmiana";
+"seven_of_swords_upright" = "chciwość\n\nintrygi\n\nkradzież\n\nkłamstwo\n\nkłótnia\n\nnieuczciwość\n\npodstęp\n\nprzebiegłość\n\nucieczka\n\nukryte motywy\n\nwyrachowanie\n\nzaradność\n\nzdrada";
+"eight_of_swords_upright" = "granice\n\nkryzys\n\nmentalność ofiary\n\nnegatywne myśli\n\nnieświadomość\n\nobawy\n\nograniczenia\n\npułapka bez wyjścia\n\ntrudna sytuacja życiowa\n\ntrudności\n\nuwięzienie\n\nwewnętrzna blokada\n\nwewnętrzne blokady\n\nwięzień swoich myśl";
+"nine_of_swords_upright" = "bezsenność\n\nból\n\ncierpienie\n\ndepresja\n\ndręczące pytania\n\nizolacja\n\nkoszmary senne\n\nkryzys\n\nniepokój\n\nproblemy ze snem\n\nprzytłoczenie\n\npunkt krytyczny\n\nrozpacz\n\nstrach\n\nstrata\n\ntworzenie najczarniejszego scenariusza w głowie\n\nudręka\n\nwątpliwości\n\nzałamanie psychiczne\n\nzwątpienie";
+"ten_of_swords_upright" = "bolesne zakończenia\n\nból\n\ncierpienie\n\ngłębokie rany\n\nkryzys\n\nniepowodzenie\n\nnieszczęście\n\nosiągnięcie dna\n\nporażka\n\nrozstanie\n\nruina\n\nsmutek\n\nupadek\n\nwyczerpanie\n\nzdrada\n\nzwątpienie w sens życia\n\nzwątpienie w siebie\n\nślepy zaułek";
+"page_of_swords_upright" = "błyskotliwość\n\nciekawość\n\ncięty język\n\nimpuls\n\ninteligencja\n\nkomunikacja\n\nlogiczne myślenie\n\nnauka\n\npoczątek pomysłu\n\npragnienie wiedzy\n\nsprawność umysłowa\n\nzbytnie analizowanie spraw i myśli";
+"knight_of_swords_upright" = "ambicje\n\nasertywność\n\nbezpośredniość\n\nbystry i jasny rozum\n\ndeterminacja\n\ngwałtowność\n\nidealizm\n\ninteligencja\n\nniecierpliwość\n\nodwaga\n\nszybkie myślenie\n\nupór\n\nzdecydowanie";
+"queen_of_swords_upright" = "analityczność\n\nasertywność\n\nbezpośredniość\n\nbezwzględność\n\ncięty język\n\ndojrzałość\n\ndominacja\n\ngranica\n\ninteligencja\n\nniezależność\n\nobiektywizm\n\nobrona swoich poglądów i zasad\n\nperfekcjonizm\n\nracjonalność\n\nrygorystyczne zasady (które mają być przestrzegane przez nią i innych)\n\nspostrzegawczość\n\nsprawiedliwość\n\nsurowość\n\nszczerość\n\ntajemniczość\n\nzdecydowanie\n\nzdyscyplinowanie";
+"king_of_swords_upright" = "autorytet\n\nbystrość\n\nbłyskotliwość\n\ndojrzałość\n\ndyplomacja\n\ndyscyplina\n\ninteligencja\n\njasność umysłu\n\nmoralność\n\nobiektywizm\n\nporządek\n\nprawda\n\nrozsądek w działaniu\n\nsprawiedliwość\n\nuczciwość\n\nwykształcenie\n\nzdecydowane wyrażanie swoich poglądów";
 
 // MARK: - Negative Keywords
 // - Major Arcana -
@@ -251,7 +251,7 @@
 "devil_reversed" = "agresja\n\nbrak kontroli nad emocjami\n\noszustwo\n\nsłabość\n\nuzależnienie od używek/osoby/grupy osób\n\nzazdrość\n\nzaślepienie\n\nzło";
 "tower_reversed" = "autodestrukcja\n\ndepresja\n\nniemożność dokonania zmian\n\nopieranie się zmianom\n\nopóźnianie nieuniknionego\n\nstrach przed zmianami\n\nunikanie katastrofy\n\nutrata nadziei\n\nuwięzienie";
 "star_reversed" = "iluzja\n\nnieszczęśliwa miłość\n\npesymizm\n\npogrążenie w marzeniach\n\nrezygnacja\n\nrozczarowanie\n\nrozpacz\n\nzwątpienie\n\nzłudna nadzieja";
-"moon_reversed" = "kłamstwo\n\nniepokój\n\nnieporozumienie\n\noszustwo\n\npesymizm\n\nproblemy z pewnością siebie\n\nstrach\n\nwewnętrzne zamieszanie\n\nw pozytywnym znaczeniu może oznaczać jasność, odsłonięte tajemnice, uwolnienie od strachu, zrozumienie";
+"moon_reversed" = "jasność\n\nkłamstwo\n\nniepokój\n\nnieporozumienie\n\nodsłonięte tajemnice\n\noszustwo\n\npesymizm\n\nproblemy z pewnością siebie\n\nstrach\n\nuwolnienie od strachu\n\nwewnętrzne zamieszanie\n\nzrozumienie";
 "sun_reversed" = "egoizm\n\nnierealistyczne oczekiwania\n\nrozczarowanie\n\nzablokowane szczęście\n\nzarozumiałość\n\nzawód\n\nzbyt duża pewność siebie\n\nzbyt optymistyczne podejście";
 "judgement_reversed" = "brak samoświadomości\n\nbrak wyciągnięcia wniosków i lekcji\n\nkarma\n\nwewnętrzny krytyk\n\nzwątpienie w siebie";
 "world_reversed" = "brak zamknięcia\n\npoczucie niekompletności\n\nstagnacja\n\nszukanie skrótów\n\nzamknięcie się w sobie";
@@ -261,8 +261,8 @@
 "ace_of_wands_reversed" = "brak energii\n\nbrak motywacji\n\nbrak pasji\n\nopóźnienia\n\nrozproszenie\n\nwahanie\n\nzły kierunek lub jego brak";
 "two_of_wands_reversed" = "brak działań\n\nniedowartościowanie\n\nniezdecydowanie\n\nprzesadne analizowanie\n\nsamotność\n\nstrach przed nieznanym\n\ntrudności\n\nunikanie ryzyka\n\nzłe planowanie lub jego brak";
 "three_of_wands_reversed" = "brak postępów\n\nbrak zaufania do siebie\n\nfrustracja\n\nograniczenia\n\nopóźnienia\n\nprzeszkody\n\nprześladowanie przeszłością\n\nstagnacja\n\nwiększe problemy niż się to wydaje";
-"four_of_wands_reversed" = "brak gotowości do działania\n\nbrak korzeni\n\nbrak wsparcia\n\nkonflikt domowy\n\nkonflikt z innymi\n\nniesolidność\n\nniestabilność\n\npoczucie bycia niebie widzianym";
-"five_of_wands_reversed" = "brutalność\n\ndążenie po trupach do celu\n\nharmonię\n\nnieuczciwa i podstępna walka\n\noszustwo\n\npokój\n\nporozumienia\n\nprzemoc\n\nsprzeczności\n\nunikanie konfliktu\n\nw pozytywnym znaczeniu może oznaczać zakończenie konfliktu\n\nwspółpracę\n\nzerwane kontakty\n\nzerwanie umowy";
+"four_of_wands_reversed" = "brak gotowości do działania\n\nbrak korzeni\n\nbrak wsparcia\n\nkonflikt domowy\n\nkonflikt z innymi\n\nniesolidność\n\nniestabilność\n\npoczucie bycia niemile widzianym";
+"five_of_wands_reversed" = "brutalność\n\ndążenie po trupach do celu\n\nharmonię\n\nnieuczciwa i podstępna walka\n\noszustwo\n\npokój\n\nporozumienia\n\nprzemoc\n\nsprzeczności\n\nunikanie konfliktu\n\nwspółpraca\n\nzakończenie konfliktu\n\nzerwane kontakty\n\nzerwanie umowy";
 "six_of_wands_reversed" = "brak nagród\n\nbrak osiągnięć\n\nbrak uznania\n\nporażka\n\nprzesadne zajmowanie się sobą i swoimi uczuciami\n\nrozczarowanie\n\nzwycięstwo przeciwnika";
 "seven_of_wands_reversed" = "brak wiary w siebie\n\ndążenie po trupach do celu\n\nkłótnie\n\npoczucie zagrożenia\n\npoddanie się\n\nprzytłoczenie\n\nwyczerpanie";
 "eight_of_wands_reversed" = "bierność\n\nchaos\n\nczekanie\n\nfrustracja\n\nnieprzygotowanie\n\nopieranie się zmianom\n\nopóźnienia\n\npowolność\n\npośpiech";
@@ -276,7 +276,7 @@
 // Pentacles
 "ace_of_pentacles_reversed" = "brak planowania\n\nbrak stabilizacji finansowej\n\nchciwość\n\nmaterializm\n\nniedobór\n\nniedostatek\n\nniewykorzystana szansa\n\nniewłaściwe wykorzystanie dóbr\n\nskąpstwo\n\ntrudności finansowe\n\nzłe inwestycje";
 "two_of_pentacles_reversed" = "brak organizacji\n\nbrak równowagi\n\nchaos\n\ndezorganizacja\n\ndługi\n\nprzytłoczenie\n\nrozrzutność\n\ntrudność ze spłatą kredytu\n\nzmiana priorytetów";
-"three_of_pentacles_reversed" = "brak harmonii\n\nbrak odpowiedzialności\n\nbrak pracy zespołowej\n\nbrak spójności\n\nbrak uznania\n\nego\n\nkrytyka\n\nlenistwo\n\nograniczenia\n\nrywalizacja\n\nsłaba motywacja\n\nutracona szansa na sukces\n\nzarozumialstwo";
+"three_of_pentacles_reversed" = "brak harmonii\n\nbrak odpowiedzialności\n\nbrak pracy zespołowej\n\nbrak spójności\n\nbrak uznania\n\nego\n\nkrytyka\n\nlenistwo\n\nograniczenia\n\nrywalizacja\n\nsłaba motywacja\n\nutracona szansa na sukces\n\nzarozumiałość";
 "four_of_pentacles_reversed" = "egoizm\n\nnadmierne wydatki\n\nsamoobrona\n\nskąpstwo";
 "five_of_pentacles_reversed" = "nędza\n\npowrót (poprawa) po stracie\n\npozytywne zmiany\n\nprzezwyciężenie przeciwności losu\n\nubóstwo duchowe\n\nzałamanie psychiczne";
 "six_of_pentacles_reversed" = "interesowność (coś za coś)\n\nkontrola ludzi\n\nnadużycie hojności\n\nnieczyste intencje\n\nnierówność\n\nniespłacone długi\n\nskąpstwo\n\nstrata\n\nwymuszenie\n\nzazdrość\n\nzobowiązania";
@@ -290,7 +290,7 @@
 "king_of_pentacles_reversed" = "brak wrażliwości\n\nchciwość\n\nkorupcja\n\nlenistwo\n\nmarnotrawstwo\n\nmaterializm\n\nniesprawiedliwość\n\nnieuczciwe interesy\n\nnuda\n\nobsesja na punkcie bogactwa i statusu\n\npazerność\n\npłytkość\n\nrozrzutność\n\ntrudny charakter\n\ntyran\n\nupartość\n\nutrata bezpieczeństwa finansowego\n\nzaborczość";
 
 // Cups
-"ace_of_cups_reversed" = "blokada emocjonalna\n\nchłód\n\nniepokój emocjonalny\n\nprzygnębienie\n\nprzytłoczenie emocjonalne\n\npustka\n\nstrata emocjonalna\n\nuczucie niekochania\n\nzablokowana kreatywność";
+"ace_of_cups_reversed" = "blokada emocjonalna\n\nchłód\n\nniepokój emocjonalny\n\nprzygnębienie\n\nprzytłoczenie emocjonalne\n\npustka\n\nstłumione emocje\n\nstrata emocjonalna\n\nuczucie niekochania\n\nzablokowana kreatywność";
 "two_of_cups_reversed" = "brak równowagi\n\nemocjonalne wycofanie\n\nizolacja\n\nkłótnia\n\nnapięcie\n\nnieodwzajemniona miłość\n\nnieporozumienie\n\nniestabilność emocjonalna\n\nnieufność\n\nniezgoda\n\nodrzucenie\n\nrozdzielenie\n\nrozstania\n\nzła komunikacja";
 "three_of_cups_reversed" = "izolacja\n\nmożliwa zdrada/ingerencja osoby trzeciej\n\nnadmiar\n\nnadużywanie przyjemności\n\nnieumiejętność cieszenia się z życia\n\nniezrównoważone życie towarzyskie\n\nostre imprezowanie\n\nrozwiązłość seksualna\n\nsamotność\n\nskandal\n\nzazdrość";
 "four_of_cups_reversed" = "akceptacja\n\ndepresja\n\njasność\n\nkoncentrowanie się na negatywach\n\nnegatywność\n\npodejmowanie działań\n\npójście do przodu\n\nwybór szczęścia\n\nwycofanie";
@@ -306,17 +306,17 @@
 "king_of_cups_reversed" = "manipulacja\n\nnachalność\n\nniedojrzałość emocjonalna\n\nniepokój\n\nopryskliwość\n\nosoba raniąca i ograniczająca bliskie osoby\n\nporzucenie emocji\n\nproblemy z nałogami\n\nprzytłoczenie\n\nsamolubność\n\nstłumienie\n\nwycofanie\n\nzazdrość\n\nzimno";
 
 // Swords
-"ace_of_swords_reversed" = "Ace of Swords";
-"two_of_swords_reversed" = "Two of Swords";
-"three_of_swords_reversed" = "Three of Swords";
-"four_of_swords_reversed" = "Four of Swords";
-"five_of_swords_reversed" = "Five of Swords";
-"six_of_swords_reversed" = "Six of Swords";
-"seven_of_swords_reversed" = "Seven of Swords";
-"eight_of_swords_reversed" = "Eight of Swords";
-"nine_of_swords_reversed" = "Nine of Swords";
-"ten_of_swords_reversed" = "Ten of Swords";
-"page_of_swords_reversed" = "Page of Swords";
-"knight_of_swords_reversed" = "Knight of Swords";
-"queen_of_swords_reversed" = "Queen of Swords";
-"king_of_swords_reversed" = "King of Swords";
+"ace_of_swords_reversed" = "blokada intelektualna\n\nbrutalność\n\nkłótnia\n\nnieporozumienie\n\nniesprawiedliwość\n\nnieumiejętność wyrażania swoich myśli\n\nwrogość\n\nzamieszanie";
+"two_of_swords_reversed" = "dezorientacja\n\nfałsz\n\nniechęć\n\nniepewność\n\nniepokój\n\nniezdecydowanie\n\nwahanie\n\nza dużo informacji";
+"three_of_swords_reversed" = "przebaczenie\n\nstrata\n\ntłumienie emocji\n\nuzdrowienie\n\nzablokowanie zdrowienia\n\nzamieszanie";
+"four_of_swords_reversed" = "niepokój\n\npowrót do zdrowia\n\nprzebudzenie\n\nregeneracja\n\nstagnacja\n\nuwolnienie z izolacji\n\nwyczerpanie\n\nwypalenie";
+"five_of_swords_reversed" = "kompromis\n\npojednanie\n\npostanowienie\n\nzadośćuczynienie\n\nzemsta\n\nżal";
+"six_of_swords_reversed" = "niechęć do zmian\n\nniedokończone sprawy\n\npowrót do kłopotów\n\nprzemiana osobista\n\nuciekanie do problemów\n\nutknięcie w przeszłości\n\nuwięzienie";
+"seven_of_swords_reversed" = "dochowanie tajemnic\n\nodzyskanie czegoś\n\nsamooszukiwanie się\n\nsyndrom oszusta\n\nujawnienie prawdy\n\nwyrzuty sumienia\n\nwyznanie\n\nzwycięstwo nad oszustwem\n\nzłośliwość";
+"eight_of_swords_reversed" = "przejęcie kontroli\n\nstawienie czoła lękom\n\nucieczka\n\nuwolnienie z trudnej sytuacji\n\nwolność";
+"nine_of_swords_reversed" = "głęboko zakorzenione lęki\n\nnadzieja\n\nnowa perspektywa\n\npoczucie winy\n\npowrót do zdrowia\n\nproblem ze zdrowiem psychicznym\n\nsamotność\n\nstawianie czoła życiu\n\nszukanie pomocy\n\nuwolnienie od lęków\n\nuwolnienie zmartwień\n\nwewnętrzny zamęt";
+"ten_of_swords_reversed" = "nawrót\n\nodbudowa\n\nodzyskanie wewnętrznej siły\n\npokonanie przeciwności losu\n\npoprawa\n\nregeneracja\n\nrozpacz\n\nstawianie oporu nieuchronnemu końcowi\n\nuwolnienie\n\nuzdrowienie\n\nwyciągnięte wnioski";
+"page_of_swords_reversed" = "brak działania\n\nbrak planowania\n\ncyniczność\n\nobraźliwość\n\npośpiech\n\nroztrzepanie\n\nsamokrytycyzm\n\nsarkazm\n\nupór\n\nwidzenie tylko swoich racji\n\nzłośliwość";
+"knight_of_swords_reversed" = "agresja\n\narogancja\n\nbezczelność\n\nbezwzględność\n\nbrak koncentracji\n\nbrak strategii\n\nimpulsywność\n\nkłótliwość\n\nnietaktowność\n\ntyran\n\nwypalenie\n\nzłośliwość";
+"queen_of_swords_reversed" = "bez litości\n\nbezczelność\n\nmanipulacja\n\nnadmierna emocjonalność\n\nokrutność\n\noziębłość\n\npamiętliwość\n\npesymizm\n\nprzebiegłość\n\nwykorzystywanie ludzi do ukrytych celów\n\nwymagania\n\nzgorzkniałość\n\nzłośliwość\n\nłatwe uleganie wpływom";
+"king_of_swords_reversed" = "arogant\n\nbezlitosny\n\nbezwzględność\n\ndespota\n\ndyktator\n\ndążenie do władzy za wszelką cenę\n\negoista\n\nirracjonalność\n\nkontrola\n\nkrytykant\n\nmanipulacja\n\nnadużywanie władzy\n\nnieuczciwość\n\nnieugięty\n\nopresja\n\nzimny";

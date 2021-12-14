@@ -199,9 +199,9 @@
 "king_of_pentacles_upright" = "abundance\n\nambition\n\ncarefree\n\ncaring\n\ndiscipline\n\nfidelity\n\nfinancial power\n\nfinancial security\n\nfulfillment\n\ngenerosity\n\nleadership\n\nloyalty\n\nmaterial success\n\nmaturity\n\noptimism\n\npatience\n\npeace of mind\n\npractical approach to life\n\nprosperity\n\nreliability\n\nresponsibility\n\nstrong character\n\nsuccess";
 
 // Cups
-"ace_of_cups_upright" = "Ace of Cups";
-"two_of_cups_upright" = "Two of Cups";
-"three_of_cups_upright" = "Three of Cups";
+"ace_of_cups_upright" = "compassion, creativity, emotional awakening, emotional beginning, friendship, gift of fate, intuition, love, new feelings, new relationships, subconscious";
+"two_of_cups_upright" = "attraction, balance, close connections, connection, consent, emotional compatibility, falling in love, friendship, good relations between people, harmony, joining forces, joy, love, mutual respect, partnership, reconciliation, relationship";
+"three_of_cups_upright" = "celebration, community, cooperation, creativity, entertainment, events and gatherings, friendship, fun, joy of life, spending time with friends";
 "four_of_cups_upright" = "Four of Cups";
 "five_of_cups_upright" = "Five of Cups";
 "six_of_cups_upright" = "Six of Cups";
@@ -257,36 +257,36 @@
 
 // - Minor Arcana -
 // Wands
-"ace_of_wands_reversed" = "Ace of Wands";
-"two_of_wands_reversed" = "Two of of Wands";
-"three_of_wands_reversed" = "Three of Wands";
-"four_of_wands_reversed" = "Four of Wands";
-"five_of_wands_reversed" = "Five of Wands";
-"six_of_wands_reversed" = "Six of Wands";
-"seven_of_wands_reversed" = "Seven of Wands";
-"eight_of_wands_reversed" = "Eight of Wands";
-"nine_of_wands_reversed" = "Nine of Wands";
-"ten_of_wands_reversed" = "Ten of Wands";
-"page_of_wands_reversed" = "Page of Wands";
-"knight_of_wands_reversed" = "Knight of Wands";
-"queen_of_wands_reversed" = "Queen of Wands";
-"king_of_wands_reversed" = "King of Wands";
+"ace_of_wands_reversed" = "delay\n\ndistraction\n\nhesitation\n\nlack of energy\n\nlack of motivation\n\nlack of passion\n\nwrong or no direction";
+"two_of_wands_reversed" = "avoiding risk\n\ndifficulty\n\nfear of the unknown\n\nindecision\n\nlack of action\n\nloneliness\n\nover-analysis\n\npoor planning or lack of it\n\nundervaluation";
+"three_of_wands_reversed" = "bigger problems than it seems\n\ndelays\n\nfrustration\n\nlack of progress\n\nlack of self-confidence\n\nlimitations\n\nobstacles\n\npersecution of the past\n\nstagnation";
+"four_of_wands_reversed" = "conflict with others\n\nfeeling of being unwelcome\n\nhome conflict\n\ninstability\n\nlack of readiness to take action\n\nlack of roots\n\nlack of support\n\nunreliability";
+"five_of_wands_reversed" = "agreements\n\navoiding conflict\n\nbreaking a contract\n\nbroken contacts\n\nbrutality\n\ncontradictions\n\ncooperation\n\ndeception\n\nend of a conflict\n\nharmony\n\npeace\n\npursuing a goal by elbow way to the top\n\nunfair and insidious fight\n\nviolence";
+"six_of_wands_reversed" = "disappointment\n\nexcessive concern for oneself and one's feelings\n\nfailure\n\nno achievement\n\nno recognition\n\nno rewards\n\nvictory for the opponent";
+"seven_of_wands_reversed" = "exhaustion\n\nlack of self-confidence\n\noverwhelming\n\npursuing a goal by elbow way to the top\n\nquarrels\n\nsense of threat\n\nsurrender";
+"eight_of_wands_reversed" = "chaos\n\ndelay\n\nfrustration\n\nhaste\n\npassivity\n\nresistance to change\n\nslowness\n\nunpreparedness\n\nwaiting";
+"nine_of_wands_reversed" = "defensive\n\nfatigue\n\nlack of willingness to act\n\noverwhelming\n\nparanoia\n\nperceiving life as a fight for everything\n\nrefusal to compromise\n\nsurrender\n\nunpreparedness";
+"ten_of_wands_reversed" = "endurance limit\n\noverwhelming\n\ndifficulty\n\nfall\n\ntaking too much responsibility\n\nfatigue";
+"page_of_wands_reversed" = "lack of ideas\n\nlack of perseverance\n\nlack of determination\n\nlaziness\n\ntantrums\n\nimpatience\n\nhaste\n\ndistraction\n\nself-limiting beliefs\n\nfailure";
+"knight_of_wands_reversed" = "aggression\n\ninsolence\n\nlack of self-control\n\nlack of reliability\n\nfrustration\n\nquarrels\n\nexcessive ego\n\ndanger\n\ninstability\n\nlooking for opportunities to fight\n\nrunning away from duties\n\nboredom";
+"queen_of_wands_reversed" = "bitterness\n\ncontrolling everything and everyone\n\ncriticism\n\nhigh expectations\n\njealousy\n\nlack of self-confidence\n\nnervousness\n\npossessiveness\n\nrecklessness\n\nselfishness\n\ntyrant\n\nvindictiveness";
+"king_of_wands_reversed" = "capriciousness\n\ndespot\n\nhaste\n\nhigh expectations\n\nimpulsiveness\n\nineffectiveness\n\nintolerance\n\nlack of patience\n\nmalice\n\npoor leadership\n\npowerlessness\n\nruthlessness\n\nselfishness\n\ntyrant";
 
 // Pentacles
-"ace_of_pentacles_reversed" = "Ace of Pentacles";
-"two_of_pentacles_reversed" = "Two of Pentacles";
-"three_of_pentacles_reversed" = "Three of Pentacles";
-"four_of_pentacles_reversed" = "Four of Pentacles";
-"five_of_pentacles_reversed" = "Five of Pentacles";
-"six_of_pentacles_reversed" = "Six of Pentacles";
-"seven_of_pentacles_reversed" = "Seven of Pentacles";
-"eight_of_pentacles_reversed" = "Eight of Pentacles";
-"nine_of_pentacles_reversed" = "Nine of Pentacles";
-"ten_of_pentacles_reversed" = "Ten of Pentacles";
-"page_of_pentacles_reversed" = "Page of Pentacles";
-"knight_of_pentacles_reversed" = "Knight of Pentacles";
-"queen_of_pentacles_reversed" = "Queen of Pentacles";
-"king_of_pentacles_reversed" = "King of Pentacles";
+"ace_of_pentacles_reversed" = "avarice\n\nbad investment\n\nfinancial difficulties\n\ngreed\n\nlack\n\nlack of financial stability\n\nlack of planning\n\nmaterialism\n\nmissed opportunity\n\nmisuse of goods\n\nscarcity";
+"two_of_pentacles_reversed" = "change of priorities\n\nchaos\n\ndebts\n\ndifficulty with loan repayment\n\ndisorganization\n\nextravagance\n\nimbalance\n\nlack of organization\n\noverwhelmingness";
+"three_of_pentacles_reversed" = "competition\n\nconceit\n\ncriticism\n\nego\n\nlack of consistency\n\nlack of harmony\n\nlack of recognition\n\nlack of responsibility\n\nlack of teamwork\n\nlaziness\n\nlimitations\n\nlost chance for success\n\npoor motivation";
+"four_of_pentacles_reversed" = "greed\n\nover-spending\n\nself-defense\n\nselfishness";
+"five_of_pentacles_reversed" = "mental breakdown\n\novercoming adversities\n\npositive changes\n\npoverty\n\nreturn (improvement) after loss\n\nspiritual poverty";
+"six_of_pentacles_reversed" = "abuse of generosity\n\navarice\n\nextortion\n\nimpure intentions\n\ninequality\n\njealousy\n\nloss\n\nobligations\n\npeople control\n\nself-interest (doing something in order to get something)\n\nunpaid debts";
+"seven_of_pentacles_reversed" = "failure\n\nimpatience\n\nlack of long-term vision\n\nlaziness\n\nlittle effort\n\nno development\n\nno satisfaction\n\nunfinished work";
+"eight_of_pentacles_reversed" = "hurried work\n\ninaccurate work\n\nlack of concentration\n\nlack of motivation\n\nlack of quality\n\nlaziness\n\nlow skills\n\nperfectionism\n\nunfair business\n\nunscrupulous work\n\nworkaholism";
+"nine_of_pentacles_reversed" = "failure to prioritize\n\ngreed\n\nlack of discipline\n\nlife beyond one's means\n\nmaterial instability\n\nmaterialism\n\nreckless spending\n\nsuperficiality";
+"ten_of_pentacles_reversed" = "bankruptcy\n\nconflict over money\n\ndark side of wealth\n\ndebts\n\nfamily disputes\n\nfinancial failure\n\nfleeting success\n\ninsecurity\n\ninstability\n\nlack of self-confidence\n\nlaziness\n\nloss\n\nold age\n\nquarrels and misunderstandings in the family over money";
+"page_of_pentacles_reversed" = "debts\n\ndishonesty\n\nimmaturity\n\ninsecurity\n\nlack of progress\n\nlack of responsibility\n\nlearning to fail\n\nmissed opportunities\n\nmisuse of money\n\npoor prospects\n\nprocrastination\n\nprofligacy\n\nrebelliousness\n\nself-criticism\n\nstubbornness\n\nunwise";
+"knight_of_pentacles_reversed" = "boredom\n\ncheapness\n\nfeeling stuck\n\nimpatience\n\nirresponsibility\n\nlaziness\n\nmaterialism\n\npassivity\n\nperfectionism\n\nstinginess\n\nworkaholism";
+"queen_of_pentacles_reversed" = "avarice\n\ncapriciousness\n\ngreed\n\nintolerance\n\njealousy\n\nlaziness\n\nlust for money\n\nmanipulation of people and situations\n\nmaterialism\n\nprimitiveness\n\nruthlessness\n\nself-care\n\nselfishness\n\nsuperficiality\n\ntreating people objectively\n\nvolatility\n\nwork-house conflict";
+"king_of_pentacles_reversed" = "boredom\n\ncorruption\n\ndifficult character\n\nextravagance\n\ngreed\n\ninjustice\n\ninsensitivity\n\nlaziness\n\nloss of financial security\n\nmaterialism\n\nobsession with wealth and status\n\npossessiveness\n\nshallowness\n\nstubbornness\n\ntyrant\n\nunfair business\n\nwaste";
 
 // Cups
 "ace_of_cups_reversed" = "Ace of Cups";
