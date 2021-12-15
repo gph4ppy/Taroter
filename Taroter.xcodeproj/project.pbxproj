@@ -10,7 +10,7 @@
 		1C07C00E27229A32007187D6 /* Scanner.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1C07C00D27229A32007187D6 /* Scanner.swift */; };
 		1C07C01127229E1C007187D6 /* ScannerCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1C07C01027229E1C007187D6 /* ScannerCoordinator.swift */; };
 		1C24A3582735DFBC000BC723 /* SearchBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1C24A3572735DFBC000BC723 /* SearchBar.swift */; };
-		1C24A35A2735E2C4000BC723 /* CardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1C24A3592735E2C4000BC723 /* CardView.swift */; };
+		1C24A35A2735E2C4000BC723 /* CardDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1C24A3592735E2C4000BC723 /* CardDetailView.swift */; };
 		1C310DE727230B4B007EB058 /* Launch Screen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1C310DE627230B4B007EB058 /* Launch Screen.storyboard */; };
 		1C407F7C2729E7A0004043D8 /* TarotCardsEnum.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1C407F7B2729E7A0004043D8 /* TarotCardsEnum.swift */; };
 		1C531FF527182B87005AD950 /* TaroterApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1C531FF427182B87005AD950 /* TaroterApp.swift */; };
@@ -30,7 +30,13 @@
 		1C6899852767F113004C4091 /* TarotBooleanEnum.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1CB981602729CF08005A0B09 /* TarotBooleanEnum.swift */; };
 		1C6899862767F115004C4091 /* ArcanaEnum.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1CB9815E2729C9AC005A0B09 /* ArcanaEnum.swift */; };
 		1C6899882767F3BB004C4091 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1CC6FF2B2767BDCB00B68785 /* Assets.xcassets */; };
+		1C7F8195276951CA0084F2BF /* CardManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1C7F8194276951CA0084F2BF /* CardManager.swift */; };
+		1C7F8196276951DE0084F2BF /* CardManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1C7F8194276951CA0084F2BF /* CardManager.swift */; };
+		1C7F81992769590F0084F2BF /* ListBuilder.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1C7F81982769590F0084F2BF /* ListBuilder.swift */; };
+		1C7F819A276959220084F2BF /* ListBuilder.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1C7F81982769590F0084F2BF /* ListBuilder.swift */; };
+		1C7F819C27695D390084F2BF /* CardDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1C7F819B27695D390084F2BF /* CardDetailView.swift */; };
 		1C960610274C4061007125C1 /* GridCard.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1C96060F274C4061007125C1 /* GridCard.swift */; };
+		1C9CA0E82769445A00C4BF20 /* SearchBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1C9CA0E72769445A00C4BF20 /* SearchBar.swift */; };
 		1CB9815D2729C845005A0B09 /* TarotCardModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1CB9815C2729C845005A0B09 /* TarotCardModel.swift */; };
 		1CB9815F2729C9AC005A0B09 /* ArcanaEnum.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1CB9815E2729C9AC005A0B09 /* ArcanaEnum.swift */; };
 		1CB981612729CF08005A0B09 /* TarotBooleanEnum.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1CB981602729CF08005A0B09 /* TarotBooleanEnum.swift */; };
@@ -92,7 +98,7 @@
 		1C07C00D27229A32007187D6 /* Scanner.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Scanner.swift; sourceTree = "<group>"; };
 		1C07C01027229E1C007187D6 /* ScannerCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScannerCoordinator.swift; sourceTree = "<group>"; };
 		1C24A3572735DFBC000BC723 /* SearchBar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchBar.swift; sourceTree = "<group>"; };
-		1C24A3592735E2C4000BC723 /* CardView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardView.swift; sourceTree = "<group>"; };
+		1C24A3592735E2C4000BC723 /* CardDetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardDetailView.swift; sourceTree = "<group>"; };
 		1C310DE627230B4B007EB058 /* Launch Screen.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = "Launch Screen.storyboard"; sourceTree = "<group>"; };
 		1C407F7B2729E7A0004043D8 /* TarotCardsEnum.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TarotCardsEnum.swift; sourceTree = "<group>"; };
 		1C531FF127182B87005AD950 /* Taroter.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Taroter.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -109,7 +115,11 @@
 		1C53201627183302005AD950 /* HomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeView.swift; sourceTree = "<group>"; };
 		1C532018271839BA005AD950 /* AllCardsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AllCardsView.swift; sourceTree = "<group>"; };
 		1C654624271CD09E00DDC36C /* TaroterCardModel.mlpackage */ = {isa = PBXFileReference; lastKnownFileType = folder.mlpackage; path = TaroterCardModel.mlpackage; sourceTree = "<group>"; };
+		1C7F8194276951CA0084F2BF /* CardManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardManager.swift; sourceTree = "<group>"; };
+		1C7F81982769590F0084F2BF /* ListBuilder.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListBuilder.swift; sourceTree = "<group>"; };
+		1C7F819B27695D390084F2BF /* CardDetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardDetailView.swift; sourceTree = "<group>"; };
 		1C96060F274C4061007125C1 /* GridCard.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GridCard.swift; sourceTree = "<group>"; };
+		1C9CA0E72769445A00C4BF20 /* SearchBar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchBar.swift; sourceTree = "<group>"; };
 		1CB9815C2729C845005A0B09 /* TarotCardModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TarotCardModel.swift; sourceTree = "<group>"; };
 		1CB9815E2729C9AC005A0B09 /* ArcanaEnum.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ArcanaEnum.swift; sourceTree = "<group>"; };
 		1CB981602729CF08005A0B09 /* TarotBooleanEnum.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TarotBooleanEnum.swift; sourceTree = "<group>"; };
@@ -153,7 +163,8 @@
 		1C531FE827182B87005AD950 = {
 			isa = PBXGroup;
 			children = (
-				1C531FF327182B87005AD950 /* Taroter */,
+				1C53200C27182F5E005AD950 /* Shared */,
+				1C531FF327182B87005AD950 /* TaroterIOS */,
 				1CC6FF2A2767BDC700B68785 /* TaroterWatchOS */,
 				1CC6FF352767BDCC00B68785 /* TaroterWatchOS WatchKit Extension */,
 				1C531FF227182B87005AD950 /* Products */,
@@ -170,11 +181,9 @@
 			name = Products;
 			sourceTree = "<group>";
 		};
-		1C531FF327182B87005AD950 /* Taroter */ = {
+		1C531FF327182B87005AD950 /* TaroterIOS */ = {
 			isa = PBXGroup;
 			children = (
-				1CB9815B2729C83A005A0B09 /* Models */,
-				1C53200C27182F5E005AD950 /* Shared */,
 				1C53200227182C1E005AD950 /* Views */,
 				1C53200927182DB8005AD950 /* Modifiers */,
 				1C531FF427182B87005AD950 /* TaroterApp.swift */,
@@ -182,7 +191,7 @@
 				1C531FF827182B89005AD950 /* Assets.xcassets */,
 				1C531FFA27182B89005AD950 /* Preview Content */,
 			);
-			path = Taroter;
+			path = TaroterIOS;
 			sourceTree = "<group>";
 		};
 		1C531FFA27182B89005AD950 /* Preview Content */ = {
@@ -208,7 +217,7 @@
 				1C53200727182CE6005AD950 /* WelcomeView.swift */,
 				1C53201627183302005AD950 /* HomeView.swift */,
 				1C532018271839BA005AD950 /* AllCardsView.swift */,
-				1C24A3592735E2C4000BC723 /* CardView.swift */,
+				1C24A3592735E2C4000BC723 /* CardDetailView.swift */,
 				1C531FF627182B87005AD950 /* MainView.swift */,
 			);
 			path = Tabs;
@@ -236,8 +245,11 @@
 		1C53200C27182F5E005AD950 /* Shared */ = {
 			isa = PBXGroup;
 			children = (
-				1C654624271CD09E00DDC36C /* TaroterCardModel.mlpackage */,
+				1C7F8197276958F50084F2BF /* ViewModels */,
 				1C53200D27182F66005AD950 /* Localization */,
+				1C7F81932769519F0084F2BF /* Protocols */,
+				1CB9815B2729C83A005A0B09 /* Models */,
+				1C654624271CD09E00DDC36C /* TaroterCardModel.mlpackage */,
 			);
 			path = Shared;
 			sourceTree = "<group>";
@@ -249,6 +261,31 @@
 				1C53200E27182F7C005AD950 /* LocalizedStrings.swift */,
 			);
 			path = Localization;
+			sourceTree = "<group>";
+		};
+		1C7F81932769519F0084F2BF /* Protocols */ = {
+			isa = PBXGroup;
+			children = (
+				1C7F8194276951CA0084F2BF /* CardManager.swift */,
+			);
+			path = Protocols;
+			sourceTree = "<group>";
+		};
+		1C7F8197276958F50084F2BF /* ViewModels */ = {
+			isa = PBXGroup;
+			children = (
+				1C7F81982769590F0084F2BF /* ListBuilder.swift */,
+			);
+			path = ViewModels;
+			sourceTree = "<group>";
+		};
+		1C9CA0E62769444800C4BF20 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				1C9CA0E72769445A00C4BF20 /* SearchBar.swift */,
+				1C7F819B27695D390084F2BF /* CardDetailView.swift */,
+			);
+			path = Views;
 			sourceTree = "<group>";
 		};
 		1CB9815B2729C83A005A0B09 /* Models */ = {
@@ -273,6 +310,7 @@
 		1CC6FF352767BDCC00B68785 /* TaroterWatchOS WatchKit Extension */ = {
 			isa = PBXGroup;
 			children = (
+				1C9CA0E62769444800C4BF20 /* Views */,
 				1CC6FF362767BDCC00B68785 /* MainView.swift */,
 				1CC6FF382767BDCC00B68785 /* TaroterApp.swift */,
 				1CC6FF3C2767BDCD00B68785 /* Assets.xcassets */,
@@ -438,13 +476,15 @@
 				1C53200F27182F7C005AD950 /* LocalizedStrings.swift in Sources */,
 				1CB9815F2729C9AC005A0B09 /* ArcanaEnum.swift in Sources */,
 				1C53201727183302005AD950 /* HomeView.swift in Sources */,
+				1C7F81992769590F0084F2BF /* ListBuilder.swift in Sources */,
 				1C532019271839BA005AD950 /* AllCardsView.swift in Sources */,
 				1C53200827182CE6005AD950 /* WelcomeView.swift in Sources */,
 				1C960610274C4061007125C1 /* GridCard.swift in Sources */,
 				1C07C00E27229A32007187D6 /* Scanner.swift in Sources */,
 				1CB981612729CF08005A0B09 /* TarotBooleanEnum.swift in Sources */,
-				1C24A35A2735E2C4000BC723 /* CardView.swift in Sources */,
+				1C24A35A2735E2C4000BC723 /* CardDetailView.swift in Sources */,
 				1C654625271CD09E00DDC36C /* TaroterCardModel.mlpackage in Sources */,
+				1C7F8195276951CA0084F2BF /* CardManager.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -453,10 +493,14 @@
 			buildActionMask = 2147483647;
 			files = (
 				1C6899832767EFF3004C4091 /* TarotCardsEnum.swift in Sources */,
+				1C7F819A276959220084F2BF /* ListBuilder.swift in Sources */,
 				1C6899822767EFF0004C4091 /* TarotCardModel.swift in Sources */,
 				1CC6FF372767BDCC00B68785 /* MainView.swift in Sources */,
 				1CC6FF4E2767C23B00B68785 /* LocalizedStrings.swift in Sources */,
 				1C6899852767F113004C4091 /* TarotBooleanEnum.swift in Sources */,
+				1C7F8196276951DE0084F2BF /* CardManager.swift in Sources */,
+				1C7F819C27695D390084F2BF /* CardDetailView.swift in Sources */,
+				1C9CA0E82769445A00C4BF20 /* SearchBar.swift in Sources */,
 				1C6899862767F115004C4091 /* ArcanaEnum.swift in Sources */,
 				1CC6FF392767BDCC00B68785 /* TaroterApp.swift in Sources */,
 			);
@@ -615,7 +659,7 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_ASSET_PATHS = "\"Taroter/Preview Content\"";
+				DEVELOPMENT_ASSET_PATHS = "\"TaroterIOS/Preview Content\"";
 				DEVELOPMENT_TEAM = G6NTB33VYZ;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
@@ -647,7 +691,7 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_ASSET_PATHS = "\"Taroter/Preview Content\"";
+				DEVELOPMENT_ASSET_PATHS = "\"TaroterIOS/Preview Content\"";
 				DEVELOPMENT_TEAM = G6NTB33VYZ;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;

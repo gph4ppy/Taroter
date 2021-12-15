@@ -95,7 +95,7 @@ private extension HomeView {
     @ViewBuilder private func createScannedCardRow(card: TarotCards) -> some View {
         let tarotCard = card.tarotCard
         
-        NavigationLink(destination: CardView(card: tarotCard)) {
+        NavigationLink(destination: CardDetailView(card: tarotCard)) {
             HStack(spacing: 10) {
                 Image(tarotCard.imageName)
                     .resizable()

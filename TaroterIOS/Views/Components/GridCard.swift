@@ -13,7 +13,7 @@ struct GridCard: View {
     let card: TarotCard
     
     var body: some View {
-        NavigationLink(destination: CardView(card: card)) {
+        NavigationLink(destination: CardDetailView(card: card)) {
             VStack {
                 // Card Image
                 Image(card.imageName)
