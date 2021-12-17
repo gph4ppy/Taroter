@@ -12,6 +12,8 @@ import SwiftUI
 /// - TabView which includes HomeView with scanner and view with all cards.
 struct MainView: View {
     @AppStorage("isFirstTime") private var isFirstTime: Bool = true
+    @State private var cardNames: [String]                   = []
+    @State private var cards: [TarotCards]                   = []
     private let scanLabel: Label                             = Label(LocalizedStrings.scanner,
                                                                      systemImage: "camera.viewfinder")
     private let cardsLabel: Label                            = Label(LocalizedStrings.cards,
@@ -22,10 +24,40 @@ struct MainView: View {
             WelcomeView()
         } else {
             TabView {
-                HomeView().tabItem { scanLabel }
-                AllCardsView().tabItem { cardsLabel }
+                NavigationView {
+                    HomeView(cardNames: $cardNames, cards: $cards)
+                        .toolbar(content: makeToolbar)
+                }
+                .tabItem { scanLabel }
+                
+                NavigationView {
+                    AllCardsView()
+                }
+                .tabItem { cardsLabel }
             }
             .transition(.move(edge: .bottom))
+            .navigationViewStyle(.stack)
+        }
+    }
+    
+    /// This methods creates the toolbar content
+    /// - Returns: ToolbarContent
+    @ToolbarContentBuilder func makeToolbar() -> some ToolbarContent {
+        // Clear Button
+        ToolbarItem(placement: .navigationBarLeading) {
+            Button(LocalizedStrings.clearButton) {
+                cardNames.removeAll()
+                cards.removeAll()
+            }
+            .disabled(cardNames.isEmpty ? true : false)
+        }
+        
+        // Scan Button
+        ToolbarItem(placement: .navigationBarTrailing) {
+            NavigationLink(LocalizedStrings.scanButton) {
+                Scanner(recognizedImages: $cardNames)
+                    .navigationBarHidden(true)
+            }
         }
     }
 }

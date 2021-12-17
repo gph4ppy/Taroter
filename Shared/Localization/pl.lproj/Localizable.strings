@@ -23,8 +23,13 @@
 "third_description" = "Oczywiście, jeśli uznasz, że szybciej uda Ci się wyszukać kartę, przełącz się w drugą zakładkę i wpisz jej nazwę!";
 
 // 4th screen
-"fourth_title" = "To wszystko!";
-"fourth_description" = "Jesteś gotowy, aby ułatwić swoje odczyty. :) ";
+"fourth_title" = "Jednakże...";
+"fourth_description" = "Pamiętaj o tym, że jesteś wolną istotą i jako autor aplikacji nie odpowiadam za Twoje interpretacje oraz decyzje podjęte na podstawie słów kluczowych/danych/informacji dotyczących kart!";
+
+
+// 5th screen
+"fifth_title" = "To wszystko!";
+"fifth_description" = "Jesteś gotowy, aby ułatwić swoje odczyty. :)";
 
 // MARK: - YES/NO/MAYBE
 "yes" = "TAK";
@@ -223,7 +228,7 @@
 "five_of_swords_upright" = "agresja\n\nchciwość\n\nchytrość\n\nklęska\n\nkonflikt\n\nkonkurencja\n\nniepowodzenie\n\nniesława\n\noszustwo\n\npodstęp\n\nprzebiegłość\n\nprzegrana\n\npyrrusowe zwycięstwo\n\nrozpacz\n\nspory\n\nstrata\n\nwrogość\n\nwygrana za wszelką cenę";
 "six_of_swords_upright" = "brak komunikacji\n\nmilczenie\n\nodejście\n\npozostawienie przeszłości za sobą i wyruszenie w nieznane\n\nprzejście\n\nprzyjmowanie lekcji\n\nzmiana";
 "seven_of_swords_upright" = "chciwość\n\nintrygi\n\nkradzież\n\nkłamstwo\n\nkłótnia\n\nnieuczciwość\n\npodstęp\n\nprzebiegłość\n\nucieczka\n\nukryte motywy\n\nwyrachowanie\n\nzaradność\n\nzdrada";
-"eight_of_swords_upright" = "granice\n\nkryzys\n\nmentalność ofiary\n\nnegatywne myśli\n\nnieświadomość\n\nobawy\n\nograniczenia\n\npułapka bez wyjścia\n\ntrudna sytuacja życiowa\n\ntrudności\n\nuwięzienie\n\nwewnętrzna blokada\n\nwewnętrzne blokady\n\nwięzień swoich myśl";
+"eight_of_swords_upright" = "granice\n\nkryzys\n\nmentalność ofiary\n\nnegatywne myśli\n\nnieświadomość\n\nobawy\n\nograniczenia\n\npułapka bez wyjścia\n\ntrudna sytuacja życiowa\n\ntrudności\n\nuwięzienie\n\nwewnętrzne blokady\n\nwięzień swoich myśl";
 "nine_of_swords_upright" = "bezsenność\n\nból\n\ncierpienie\n\ndepresja\n\ndręczące pytania\n\nizolacja\n\nkoszmary senne\n\nkryzys\n\nniepokój\n\nproblemy ze snem\n\nprzytłoczenie\n\npunkt krytyczny\n\nrozpacz\n\nstrach\n\nstrata\n\ntworzenie najczarniejszego scenariusza w głowie\n\nudręka\n\nwątpliwości\n\nzałamanie psychiczne\n\nzwątpienie";
 "ten_of_swords_upright" = "bolesne zakończenia\n\nból\n\ncierpienie\n\ngłębokie rany\n\nkryzys\n\nniepowodzenie\n\nnieszczęście\n\nosiągnięcie dna\n\nporażka\n\nrozstanie\n\nruina\n\nsmutek\n\nupadek\n\nwyczerpanie\n\nzdrada\n\nzwątpienie w sens życia\n\nzwątpienie w siebie\n\nślepy zaułek";
 "page_of_swords_upright" = "błyskotliwość\n\nciekawość\n\ncięty język\n\nimpuls\n\ninteligencja\n\nkomunikacja\n\nlogiczne myślenie\n\nnauka\n\npoczątek pomysłu\n\npragnienie wiedzy\n\nsprawność umysłowa\n\nzbytnie analizowanie spraw i myśli";

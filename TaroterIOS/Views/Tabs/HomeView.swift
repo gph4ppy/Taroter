@@ -12,35 +12,31 @@ import SwiftUI
 /// - displays scanned cards.
 struct HomeView: View {
     @AppStorage("isFirstTime") private var isFirstTime: Bool = true
-    @State private var cardNames: [String]                   = []
-    @State private var cards: [TarotCards]                   = []
+    @Binding var cardNames: [String]
+    @Binding var cards: [TarotCards]
     
     var body: some View {
-        NavigationView {
-            VStack {
-                if cardNames.isEmpty {
-                    // Information that no cards have been scanned.
-                    Text(LocalizedStrings.emptyView)
-                        .foregroundColor(.gray)
-                        .font(.title3)
-                        .multilineTextAlignment(.center)
-                        .padding()
-                } else {
-                    // List of scanned cards
-                    List {
-                        ForEach(cards,
-                                id: \.self,
-                                content: createScannedCardRow)
-                            .onDelete(perform: delete)
-                    }
+        VStack {
+            if cardNames.isEmpty {
+                // Information that no cards have been scanned.
+                Text(LocalizedStrings.emptyView)
+                    .foregroundColor(.gray)
+                    .font(.title3)
+                    .multilineTextAlignment(.center)
+                    .padding()
+            } else {
+                // List of scanned cards
+                List {
+                    ForEach(cards,
+                            id: \.self,
+                            content: createScannedCardRow)
+                        .onDelete(perform: delete)
                 }
             }
-            .navigationBarTitleDisplayMode(.large)
-            .navigationBarHidden(false)
-            .navigationBarTitle(LocalizedStrings.scannedCards)
-            .toolbar(content: makeToolbar)
         }
-        .navigationViewStyle(.stack)
+        .navigationBarTitleDisplayMode(.large)
+        .navigationBarHidden(false)
+        .navigationBarTitle(LocalizedStrings.scannedCards)
         .onChange(of: cardNames, perform: defineCards)
     }
 }
@@ -50,11 +46,9 @@ private extension HomeView {
     /// This method is used to receive the object of the scanned card
     /// by using the scanned card class label.
     func defineCards(_:[String]) {
-        TarotCards.allCases.forEach { card in
-            cardNames.forEach { imageName in
-                if card.tarotCard.imageName == imageName {
-                    self.cards.append(card)
-                }
+        cardNames.forEach { imageName in
+            cards += TarotCards.allCases.filter {
+                $0.tarotCard.imageName == imageName && !cards.contains($0)
             }
         }
     }
@@ -62,33 +56,13 @@ private extension HomeView {
     /// This method removes a card row from the list.
     /// - Parameter offsets: Represents the indexes of elements in the array with card names
     func delete(at offsets: IndexSet) {
+        self.cards.remove(atOffsets: offsets)
         self.cardNames.remove(atOffsets: offsets)
     }
 }
 
 // MARK: - Views
 private extension HomeView {
-    /// This methods creates the toolbar content
-    /// - Returns: ToolbarContent
-    @ToolbarContentBuilder func makeToolbar() -> some ToolbarContent {
-        // Clear Button
-        ToolbarItem(placement: .navigationBarLeading) {
-            Button(LocalizedStrings.clearButton) {
-                cardNames.removeAll()
-                cards.removeAll()
-            }
-            .disabled(cardNames.isEmpty ? true : false)
-        }
-        
-        // Scan Button
-        ToolbarItem(placement: .navigationBarTrailing) {
-            NavigationLink(LocalizedStrings.scanButton) {
-                Scanner(recognizedImages: $cardNames)
-                    .navigationBarHidden(true)
-            }
-        }
-    }
-    
     /// This method creates a list row with an image and the name of the scanned card.
     /// - Parameter card: An object containing the data of the scanned card
     /// - Returns: NavigationLink with an image and the name of the scanned card

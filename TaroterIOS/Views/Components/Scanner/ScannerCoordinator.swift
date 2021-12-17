@@ -10,7 +10,7 @@ import VisionKit
 import Vision
 
 /// A class that delegates the work of the Scanner.
-class ScannerCoordinator: NSObject, VNDocumentCameraViewControllerDelegate {
+final class ScannerCoordinator: NSObject, VNDocumentCameraViewControllerDelegate {
     var recognizedImages: Binding<[String]>
     var parent: Scanner
     

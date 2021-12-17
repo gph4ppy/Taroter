@@ -7,6 +7,7 @@
 
 import SwiftUI
 
+/// This structure is used to create views in List.
 struct ListBuilder {
     /// This method creates a list row with data.
     /// - Parameters:

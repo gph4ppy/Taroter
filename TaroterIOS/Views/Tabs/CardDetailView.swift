@@ -9,10 +9,18 @@ import SwiftUI
 
 /// A view that displays details about the card.
 struct CardDetailView: View {
-    let height: CGFloat = UIScreen.main.bounds.size.height
     let card: TarotCard
     
     var body: some View {
+        GeometryReader(content: createDetailList)
+            .navigationBarTitle(card.name)
+            .navigationBarTitleDisplayMode(.inline)
+    }
+}
+
+// MARK: - Views
+private extension CardDetailView {
+    @ViewBuilder func createDetailList(geom: GeometryProxy) -> some View {
         List {
             // Card images - upright and reversed
             HStack {
@@ -25,7 +33,7 @@ struct CardDetailView: View {
                     .aspectRatio(contentMode: .fit)
                     .rotationEffect(Angle(degrees: 180))
             }
-            .frame(maxWidth: .infinity, maxHeight: height / 1.3)
+            .frame(maxWidth: .infinity, maxHeight: geom.size.height / 1.3)
             .padding()
             
             // Arcana
@@ -50,7 +58,5 @@ struct CardDetailView: View {
             }
             .frame(maxWidth: .infinity)
         }
-        .navigationBarTitle(card.name)
-        .navigationBarTitleDisplayMode(.inline)
     }
 }

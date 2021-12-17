@@ -23,8 +23,12 @@
 "third_description" = "Of course, if you decide that you will be able to find a card faster, switch to the second tab and enter its name!";
 
 // 4th screen
-"fourth_title" = "That's it!";
-"fourth_description" = "You are ready to facilitate your readings. :)";
+"fourth_title" = "However...";
+"fourth_description" = "Remember that you are a free being and as the author of the application I am not responsible for your interpretations and decisions made based on card keywords/data/information!";
+
+// 5th screen
+"fifth_title" = "That's it!";
+"fifth_description" = "You are ready to facilitate your readings. :)";
 
 // MARK: - YES/NO/MAYBE
 "yes" = "YES";
@@ -199,36 +203,36 @@
 "king_of_pentacles_upright" = "abundance\n\nambition\n\ncarefree\n\ncaring\n\ndiscipline\n\nfidelity\n\nfinancial power\n\nfinancial security\n\nfulfillment\n\ngenerosity\n\nleadership\n\nloyalty\n\nmaterial success\n\nmaturity\n\noptimism\n\npatience\n\npeace of mind\n\npractical approach to life\n\nprosperity\n\nreliability\n\nresponsibility\n\nstrong character\n\nsuccess";
 
 // Cups
-"ace_of_cups_upright" = "compassion, creativity, emotional awakening, emotional beginning, friendship, gift of fate, intuition, love, new feelings, new relationships, subconscious";
-"two_of_cups_upright" = "attraction, balance, close connections, connection, consent, emotional compatibility, falling in love, friendship, good relations between people, harmony, joining forces, joy, love, mutual respect, partnership, reconciliation, relationship";
-"three_of_cups_upright" = "celebration, community, cooperation, creativity, entertainment, events and gatherings, friendship, fun, joy of life, spending time with friends";
-"four_of_cups_upright" = "Four of Cups";
-"five_of_cups_upright" = "Five of Cups";
-"six_of_cups_upright" = "Six of Cups";
-"seven_of_cups_upright" = "Seven of Cups";
-"eight_of_cups_upright" = "Eight of Cups";
-"nine_of_cups_upright" = "Nine of Cups";
-"ten_of_cups_upright" = "Ten of Cups";
-"page_of_cups_upright" = "Page of Cups";
-"knight_of_cups_upright" = "Knight of Cups";
-"queen_of_cups_upright" = "Queen of Cups";
-"king_of_cups_upright" = "King of Cups";
+"ace_of_cups_upright" = "compassion\n\ncreativity\n\nemotional awakening\n\nemotional beginning\n\nfriendship\n\ngift of fate\n\nintuition\n\nlove\n\nnew feelings\n\nnew relationships\n\nsubconscious";
+"two_of_cups_upright" = "attraction\n\nbalance\n\nclose connections\n\nconnection\n\nconsent\n\nemotional compatibility\n\nfalling in love\n\nfriendship\n\ngood relations between people\n\nharmony\n\njoining forces\n\njoy\n\nlove\n\nmutual respect\n\npartnership\n\nreconciliation\n\nrelationship";
+"three_of_cups_upright" = "celebration\n\ncommunity\n\ncooperation\n\ncreativity\n\nentertainment\n\nevents and gatherings\n\nfriendship\n\nfun\n\njoy of life\n\nspending time with friends";
+"four_of_cups_upright" = "apathy\n\nboredom\n\nclosure\n\nclosure to opportunities offered\n\ncontemplation\n\ndisappointment\n\ndissatisfaction\n\nfeeling disconnected\n\nindifference\n\nmeditation\n\nmelancholy\n\nmissed opportunities\n\nnot taking advantage of an opportunity\n\nreevaluation\n\nsadness\n\nunderestimating what you have";
+"five_of_cups_upright" = "breakup\n\nclosure in the past\n\ndepression\n\ndisappointment\n\nemotional pain\n\nfailure\n\nfarewell\n\nhiding emotions\n\nloneliness\n\nloss\n\nloss of something valuable\n\nmourning\n\npessimism\n\nregret\n\nsadness\n\nsuffering";
+"six_of_cups_upright" = "idealizing\n\ninnocence\n\njoy\n\nkindness\n\nliving in the past\n\nlonging\n\nmemories\n\nnostalgia\n\npleasure\n\nreturning to past memories\n\nsentiment to the past\n\nsentimentalism";
+"seven_of_cups_upright" = "delusions\n\ndifficulty with making decisions\n\ndreams\n\nfantasies\n\nillusion\n\nindecision\n\nmultitude of decisions\n\npossibilities\n\nproblem with choice\n\nwishful thinking";
+"eight_of_cups_upright" = "abandoning\n\nbreaking up\n\ndisappointment\n\ndistancing yourself\n\nending a relationship (possibly toxic)\n\nleaving\n\nleaving the past and moving to the future\n\nletting go\n\nletting go of the past\n\nloss\n\nsearching\n\nwithdrawal";
+"nine_of_cups_upright" = "achievements\n\ncontentment\n\nfulfillment of wishes\n\nmaterial comfort\n\npleasure\n\nrecognition\n\nsatisfaction\n\nself-confidence\n\nstability\n\nsuccess";
+"ten_of_cups_upright" = "dream come true\n\nemotional security\n\nemotional stability\n\nfamily\n\nfulfillment\n\nhappiness\n\nharmony\n\nidyll\n\njoy\n\nreturning home\n\nsense of unity";
+"page_of_cups_upright" = "curiosity\n\ndreamer\n\nemotional freedom\n\nhead in the clouds\n\nidealism\n\ninnocence\n\nintuition\n\nnaivety\n\nromance\n\nsensitivity\n\nspontaneity\n\nwealth of feelings\n\nwillingness to give feelings";
+"knight_of_cups_upright" = "beauty\n\ncharm\n\ncreativity\n\ndreamer\n\nemotional transformation\n\nfriendly atmosphere\n\nidealist\n\nimagination\n\nlover\n\nromance\n\nromantic atmosphere\n\nsensitivity\n\nwarmth";
+"queen_of_cups_upright" = "a loving person (usually a woman)\n\nbig heart\n\ncaring\n\ncharm\n\nclairvoyance\n\ncompassion\n\nemotional stability\n\nemotionality\n\nfollowing the heart\n\nhealer\n\nhonesty\n\nmaturity of feelings\n\nperceiving reality and making decisions through the prism of emotions\n\nsensitivity\n\nstrong intuition\n\nsupport\n\nthe need to give and receive love/care\n\nwarmth\n\nwillingness to help others";
+"king_of_cups_upright" = "compassion\n\ncounseling\n\ndevotion\n\ndiplomacy\n\nemotional balance\n\nemotional security\n\nemotional wholeness and maturity\n\nemotionality\n\ngenerosity\n\ngoodness\n\nhealer\n\ninner peace\n\nintegrity\n\nprotection of loved ones\n\nreliability\n\nresponsibility\n\nwarmth\n\nwisdom";
 
 // Swords
-"ace_of_swords_upright" = "Ace of Swords";
-"two_of_swords_upright" = "Two of Swords";
-"three_of_swords_upright" = "Three of Swords";
-"four_of_swords_upright" = "Four of Swords";
-"five_of_swords_upright" = "Five of Swords";
-"six_of_swords_upright" = "Six of Swords";
-"seven_of_swords_upright" = "Seven of Swords";
-"eight_of_swords_upright" = "Eight of Swords";
-"nine_of_swords_upright" = "Nine of Swords";
-"ten_of_swords_upright" = "Ten of Swords";
-"page_of_swords_upright" = "Page of Swords";
-"knight_of_swords_upright" = "Knight of Swords";
-"queen_of_swords_upright" = "Queen of Swords";
-"king_of_swords_upright" = "King of Swords";
+"ace_of_swords_upright" = "breakthrough\n\nchance to solve problems\n\nconcentration\n\ninspiration\n\nmental clarity\n\nnew idea\n\nobjectivity\n\npower over the mind\n\nsuccess\n\nunderstanding\n\nvision";
+"two_of_swords_upright" = "a necessity to make a choice\n\ncompromise\n\ndifficult decisions\n\ngetting stuck\n\nharmony\n\nhidden information\n\nimpasse\n\nmaking decisions between possibilities\n\ntwo sides of the matter\n\nunderstanding";
+"three_of_swords_upright" = "acting against feelings\n\nanxiety\n\nbreakup\n\nbroken heart\n\ndespair\n\ndisappointment\n\nhurt\n\nmourning\n\npain\n\nsadness\n\nseparation\n\nsuffering\n\ntrauma";
+"four_of_swords_upright" = "isolation\n\nloneliness\n\nmeditation\n\nneed for peace\n\nregeneration\n\nrelaxation\n\nrest\n\nself-defense\n\ntranquility\n\nwithdrawal";
+"five_of_swords_upright" = "aggression\n\ncompetition\n\nconflict\n\ncunning\n\ndeception\n\ndefeat\n\ndespair\n\nfailure\n\nfoxiness\n\nfraud\n\ngreed\n\nhostility\n\ninfamy\n\nloss\n\npyrrhic victory\n\nstrife\n\nwin at all costs";
+"six_of_swords_upright" = "change\n\nlack of communication\n\nleave the past behind and set off into the unknown\n\nsilence\n\ntake lessons\n\nwalk away\n\nwalk over";
+"seven_of_swords_upright" = "betrayal\n\ncalculation\n\ncunning\n\ndeception\n\ndishonesty\n\nescape\n\ngreed\n\nhidden motives\n\nintrigue\n\nlying\n\nquarrel\n\nresourcefulness\n\ntheft";
+"eight_of_swords_upright" = "boundaries\n\ncrisis\n\ndifficult life situation\n\ndifficulties\n\nfears\n\nimprisonment\n\ninternal blockades\n\nlimitations\n\nnegative thoughts\n\nprisoner of your thoughts\n\ntrap with no way out\n\nunawareness\n\nvictim mentality";
+"nine_of_swords_upright" = "anguish\n\nanxiety\n\ncreating the darkest scenario in your head\n\ncrisis\n\ndepression\n\ndespair\n\ndoubt\n\ndoubts\n\nfear\n\ninsomnia\n\nisolation\n\nloss\n\nmental breakdown\n\nnagging questions\n\nnightmares\n\noverwhelming\n\npain\n\nsleep problems\n\nsuffering\n\ntipping point";
+"ten_of_swords_upright" = "betrayal\n\nbreakup\n\ncrisis\n\ndead-end\n\ndeep wounds\n\ndoubting the meaning of life\n\nexhaustion\n\nfailure\n\nfall\n\nmisfortune\n\npain\n\npainful endings\n\nreaching bottom\n\nruin\n\nsadness\n\nself-doubt\n\nsuffering";
+"page_of_swords_upright" = "brilliance\n\ncommunication\n\ncuriosity\n\nimpulse\n\nintelligence\n\nlearning\n\nlogical thinking\n\nmental agility\n\nover-analyzing things and thoughts\n\nrepartee (sharp tongue)\n\nstarting an idea\n\nthirst for knowledge";
+"knight_of_swords_upright" = "ambitions\n\nassertiveness\n\ncourage\n\ndetermination\n\ndirectness\n\nidealism\n\nimpatience\n\nintelligence\n\nquick thinking\n\nsharp and clear reason\n\nstubbornness\n\nviolence";
+"queen_of_swords_upright" = "analytical\n\nassertiveness\n\nboundary\n\ndefending one's views and principles\n\ndetermination\n\ndirectness\n\ndiscipline\n\ndomination\n\nhonesty\n\nindependence\n\nintelligence\n\njustice\n\nmaturity\n\nobjectivity\n\nperceptiveness\n\nperfectionism\n\nrationality\n\nrepartee (sharp tongue)\n\nruthlessness\n\nsecrecy\n\nseverity\n\nstrict rules (to be followed by her and others)";
+"king_of_swords_upright" = "authority\n\nbrilliance\n\nclarity of mind\n\ncleverness\n\ncommon sense in action\n\ndiplomacy\n\ndiscipline\n\neducation\n\nexpressing one's views decidedly\n\nhonesty\n\nintelligence\n\njustice\n\nmaturity\n\nmorality\n\nobjectivity\n\norder\n\ntruth";
 
 // MARK: - Negative Keywords
 // - Major Arcana -
@@ -250,7 +254,7 @@
 "devil_reversed" = "addiction to drugs/person/group of people\n\naggression\n\nblindness\n\ndeception\n\nevil\n\njealousy\n\nlack of control over emotions\n\nweakness";
 "tower_reversed" = "avoiding catastrophe\n\ndelaying the inevitable\n\ndepression\n\nfear of change\n\nimprisonment\n\ninability to make changes\n\nloss of hope\n\nresisting change\n\nself-destruction";
 "star_reversed" = "despair\n\ndisappointment\n\ndoubt\n\nillusion\n\nillusory hope\n\npessimism\n\nplunging into dreams\n\nresignation\n\nunhappy love";
-"moon_reversed" = "anxiety\n\nclarity\n\nconfidence problems\n\ndeception\n\nfear\n\nin a positive sense it can mean a release of fear, internal confusion, lying, misunderstanding, pessimism, revealed secrets, understanding";
+"moon_reversed" = "anxiety\n\nclarity\n\nconfidence problems\n\ndeception\n\nfear\n\ninner confusion\n\nlie\n\nmisunderstanding\n\npessimism\n\nrelease from fear\n\nsecrets revealed\n\nunderstanding";
 "sun_reversed" = "blocked happiness\n\nconceit\n\ndisappointment\n\nselfishness\n\ntoo much self-confidence\n\ntoo optimistic attitude\n\nunrealistic expectations";
 "judgement_reversed" = "internal critic\n\nkarma\n\nlack of drawing conclusions and lessons\n\nlack of self-awareness\n\nself-doubt";
 "world_reversed" = "lack of closure\n\nfeeling of incompleteness\n\nstagnation\n\nlooking for shortcuts\n\nclosing in on yourself";
@@ -289,33 +293,33 @@
 "king_of_pentacles_reversed" = "boredom\n\ncorruption\n\ndifficult character\n\nextravagance\n\ngreed\n\ninjustice\n\ninsensitivity\n\nlaziness\n\nloss of financial security\n\nmaterialism\n\nobsession with wealth and status\n\npossessiveness\n\nshallowness\n\nstubbornness\n\ntyrant\n\nunfair business\n\nwaste";
 
 // Cups
-"ace_of_cups_reversed" = "Ace of Cups";
-"two_of_cups_reversed" = "Two of Cups";
-"three_of_cups_reversed" = "Three of Cups";
-"four_of_cups_reversed" = "Four of Cups";
-"five_of_cups_reversed" = "Five of Cups";
-"six_of_cups_reversed" = "Six of Cups";
-"seven_of_cups_reversed" = "Seven of Cups";
-"eight_of_cups_reversed" = "Eight of Cups";
-"nine_of_cups_reversed" = "Nine of Cups";
-"ten_of_cups_reversed" = "Ten of Cups";
-"page_of_cups_reversed" = "Page of Cups";
-"knight_of_cups_reversed" = "Knight of Cups";
-"queen_of_cups_reversed" = "Queen of Cups";
-"king_of_cups_reversed" = "King of Cups";
+"ace_of_cups_reversed" = "blocked creativity\n\ncoldness\n\ndepression\n\nemotional anxiety\n\nemotional block\n\nemotional loss\n\nemotional overwhelm\n\nemptiness\n\nfeeling of unloving\n\nrepressed emotions";
+"two_of_cups_reversed" = "bad communication\n\nbreakups\n\ndisagreement\n\ndistrust\n\nemotional instability\n\nemotional withdrawal\n\nimbalance\n\nisolation\n\nmisunderstanding\n\nquarrel\n\nrejection\n\nseparation\n\ntension\n\nunrequited love";
+"three_of_cups_reversed" = "abuse of pleasure\n\nexcess\n\nheavy partying\n\ninability to enjoy life\n\nisolation\n\njealousy\n\nloneliness\n\npossible betrayal/disloyalty/interference by a third party\n\nscandal\n\nsexual promiscuity\n\nunbalanced social life";
+"four_of_cups_reversed" = "acceptance\n\nchoosing happiness\n\nclarity\n\ndepression\n\nfocusing on negatives\n\nmoving forward\n\nnegativity\n\ntaking action\n\nwithdrawal";
+"five_of_cups_reversed" = "acceptance\n\ncoming to terms with the past\n\ndepression\n\ndespair\n\ndisintegration of life so far\n\nfinding peace\n\nforgiveness\n\ngoing further\n\ninability to come to terms with emotional loss\n\npersonal failure";
+"six_of_cups_reversed" = "getting stuck in the past\n\nidealized memories\n\nindependence\n\nliving in the past";
+"seven_of_cups_reversed" = "being overwhelmed by choices\n\nconfusion\n\ndisappointment\n\ndisorder\n\ndistraction\n\nliving in illusions\n\nmaking choices\n\nmissing a goal";
+"eight_of_cups_reversed" = "avoiding\n\nbeing in a bad situation\n\nclinging to the past/relationship\n\ndepression\n\nfear of change\n\ninability to go further\n\nindecision\n\nlack of faith\n\nlack of hope\n\nmonotony\n\nrunning away\n\nstagnation\n\nwithdrawal from oneself";
+"nine_of_cups_reversed" = "arrogance\n\nconceit\n\ndisappointment\n\ndissatisfaction\n\ndissatisfaction with oneself\n\nlack of fulfillment\n\nmaterialism\n\nsnobbery\n\nunfulfilled desires\n\nwaiting with folded hands for change";
+"ten_of_cups_reversed" = "disagreement\n\ndisconnection\n\ndisharmony\n\ndomestic conflict\n\nisolation\n\nliving with ideals\n\nmismatched values\n\nseparation\n\nstruggling relationships";
+"page_of_cups_reversed" = "capriciousness\n\ncreative block\n\ndeception\n\ndepression\n\nemotional block\n\nexcessive emotionality\n\nillusion\n\nimmaturity\n\ninsecurity\n\njealousy\n\nneglecting the inner child\n\nseduction";
+"knight_of_cups_reversed" = "avoiding conflicts\n\ncapriciousness\n\nconfusion\n\ndisappointment\n\nemotional indifference\n\nfear of emotional involvement\n\njealousy\n\nmanipulation\n\nnarcissism\n\nobsession\n\noverimagination\n\nseducer\n\nsubmission\n\nunrealisticism\n\nvanity";
+"queen_of_cups_reversed" = "addiction\n\ndisappointment\n\nfragility\n\ngiving too much\n\nheartbreak\n\nillusory love\n\ninsecurity\n\nmartyrdom\n\noversensitivity\n\nsuperficiality";
+"king_of_cups_reversed" = "a person hurting and limiting loved ones\n\nabandonment of emotions\n\nanxiety\n\ncold\n\nemotional immaturity\n\nharshness\n\njealousy\n\nmanipulation\n\noverwhelming\n\nproblems with addictions\n\npushiness\n\nselfishness\n\nsuppression\n\nwithdrawal";
 
 // Swords
-"ace_of_swords_reversed" = "Ace of Swords";
-"two_of_swords_reversed" = "Two of Swords";
-"three_of_swords_reversed" = "Three of Swords";
-"four_of_swords_reversed" = "Four of Swords";
-"five_of_swords_reversed" = "Five of Swords";
-"six_of_swords_reversed" = "Six of Swords";
-"seven_of_swords_reversed" = "Seven of Swords";
-"eight_of_swords_reversed" = "Eight of Swords";
-"nine_of_swords_reversed" = "Nine of Swords";
-"ten_of_swords_reversed" = "Ten of Swords";
-"page_of_swords_reversed" = "Page of Swords";
-"knight_of_swords_reversed" = "Knight of Swords";
-"queen_of_swords_reversed" = "Queen of Swords";
-"king_of_swords_reversed" = "King of Swords";
+"ace_of_swords_reversed" = "brutality\n\nconfusion\n\nhostility\n\ninability to express one's thoughts\n\ninjustice\n\nintellectual blockade\n\nmisunderstanding\n\nquarrel";
+"two_of_swords_reversed" = "anxiety\n\naversion\n\nconfusion\n\nfalsehood\n\nhesitation\n\nindecision\n\ninsecurity\n\ntoo much information";
+"three_of_swords_reversed" = "blocking recovery\n\nconfusion\n\nforgiveness\n\nhealing\n\nloss\n\nsuppression of emotions";
+"four_of_swords_reversed" = "anxiety\n\nawakening\n\nburnout\n\nexhaustion\n\nrecovery\n\nregeneration\n\nrelease from isolation\n\nstagnation";
+"five_of_swords_reversed" = "compromise\n\nreconciliation\n\nresolution\n\nredress\n\nrevenge\n\nregret";
+"six_of_swords_reversed" = "getting stuck in the past\n\nimprisonment\n\npersonal transformation\n\nreluctance to change\n\nreturn to trouble\n\nrunning away from problems\n\nunfinished business";
+"seven_of_swords_reversed" = "confession\n\ndisclosure of the truth\n\nimposter syndrome\n\nkeeping secrets\n\nregaining something\n\nremorse\n\nself-deception\n\nspite\n\nvictory over frauds";
+"eight_of_swords_reversed" = "taking control\n\nfacing fears\n\nrunning away\n\nfreeing from a difficult situation\n\nfreedom";
+"nine_of_swords_reversed" = "deeply ingrained fears\n\nfacing life\n\nguilt\n\nhope\n\ninner confusion\n\nloneliness\n\nmental health problem\n\nnew perspective\n\nrecovery\n\nrelease from fears\n\nrelease worry\n\nseeking help";
+"ten_of_swords_reversed" = "despair\n\nhealing\n\nimprovement\n\nlessons learned\n\novercoming adversity\n\nrebuild\n\nrecurrence\n\nregain inner strength\n\nregeneration\n\nrelease\n\nresisting the inevitable end";
+"page_of_swords_reversed" = "absentmindedness\n\ncynicism\n\nlack of action\n\nlack of planning\n\nmaliciousness\n\noffensiveness\n\nrush\n\nsarcasm\n\nseeing only one's rightness\n\nself-criticism\n\nstubbornness";
+"knight_of_swords_reversed" = "aggression\n\narrogance\n\nburnout\n\nimpulsiveness\n\ninsolence\n\nlack of concentration\n\nlack of strategy\n\nmalice\n\nquarrelship\n\nruthlessness\n\ntactlessness\n\ntyrant";
+"queen_of_swords_reversed" = "bitterness\n\ncoldness\n\ncruelty\n\ncunning\n\neasily influenced\n\nexcessive emotionality\n\nforgetfulness\n\ninsolence\n\nmalice\n\nmanipulation\n\nmerciless\n\npessimism\n\nrequirements\n\nusing people for hidden purposes";
+"king_of_swords_reversed" = "abuse of power\n\nadamant\n\narrogant\n\ncold\n\ncontrol\n\ncritic\n\ndespot\n\ndictator\n\ndishonesty\n\nirrationality\n\nmanipulation\n\noppression\n\nruthless\n\nruthlessness\n\nselfish\n\nthe pursuit of power at all costs";

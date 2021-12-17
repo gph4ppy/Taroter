@@ -14,24 +14,21 @@ struct AllCardsView: View, CardManager {
     let columns: [GridItem]               = [GridItem(.adaptive(minimum: 100))]
     
     var body: some View {
-        NavigationView {
-            ScrollView {
-                // Search Bar
-                SearchBar(text: $searchText)
-                
-                // Cards Grid
-                LazyVGrid(columns: columns, spacing: 10) {
-                    ForEach(TarotCards.allCases.filter {
-                        filterCards($0, search: $searchText)
-                    }, id: \.self) { card in
-                        GridCard(card: card.tarotCard)
-                    }
+        ScrollView {
+            // Search Bar
+            SearchBar(text: $searchText)
+            
+            // Cards Grid
+            LazyVGrid(columns: columns, spacing: 10) {
+                ForEach(TarotCards.allCases.filter {
+                    filterCards($0, search: $searchText)
+                }, id: \.self) { card in
+                    GridCard(card: card.tarotCard)
                 }
-                .padding()
             }
-            .navigationBarTitleDisplayMode(.large)
-            .navigationBarTitle(LocalizedStrings.cards)
+            .padding()
         }
-        .navigationViewStyle(.stack)
+        .navigationBarTitleDisplayMode(.large)
+        .navigationBarTitle(LocalizedStrings.cards)
     }
 }

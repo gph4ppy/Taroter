@@ -282,6 +282,7 @@
 		1C9CA0E62769444800C4BF20 /* Views */ = {
 			isa = PBXGroup;
 			children = (
+				1CC6FF362767BDCC00B68785 /* MainView.swift */,
 				1C9CA0E72769445A00C4BF20 /* SearchBar.swift */,
 				1C7F819B27695D390084F2BF /* CardDetailView.swift */,
 			);
@@ -311,7 +312,6 @@
 			isa = PBXGroup;
 			children = (
 				1C9CA0E62769444800C4BF20 /* Views */,
-				1CC6FF362767BDCC00B68785 /* MainView.swift */,
 				1CC6FF382767BDCC00B68785 /* TaroterApp.swift */,
 				1CC6FF3C2767BDCD00B68785 /* Assets.xcassets */,
 				1CC6FF412767BDCD00B68785 /* Info.plist */,

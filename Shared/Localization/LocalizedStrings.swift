@@ -28,6 +28,10 @@ struct LocalizedStrings {
     public static let fourthTitle = NSLocalizedString("fourth_title", comment: "")
     public static let fourthDescription = NSLocalizedString("fourth_description", comment: "")
     
+    // 5th screen
+    public static let fifthTitle = NSLocalizedString("fifth_title", comment: "")
+    public static let fifthDescription = NSLocalizedString("fifth_description", comment: "")
+    
     // MARK: - YES/NO/MAYBE
     public static let yes = NSLocalizedString("yes", comment: "")
     public static let no = NSLocalizedString("no", comment: "")

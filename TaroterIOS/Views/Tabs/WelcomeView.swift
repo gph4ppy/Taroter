@@ -56,8 +56,13 @@ private extension WelcomeView {
                       description: LocalizedStrings.thirdDescription)
         
         // 4th screen
-        WelcomeScreen(imageName: "moon.stars.fill",
+        WelcomeScreen(imageName: "brain.head.profile",
                       title: LocalizedStrings.fourthTitle,
                       description: LocalizedStrings.fourthDescription)
+        
+        // 5th screen
+        WelcomeScreen(imageName: "moon.stars.fill",
+                      title: LocalizedStrings.fifthTitle,
+                      description: LocalizedStrings.fifthDescription)
     }
 }

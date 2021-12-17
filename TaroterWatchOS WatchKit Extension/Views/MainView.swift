@@ -9,18 +9,20 @@ import SwiftUI
 
 /// The main view of the watch app.
 struct MainView: View, CardManager {
-    @State private var searchText: String = ""
+    @AppStorage("isFirstTime") var isFirstTime: Bool = true
+    @State private var searchText: String            = ""
     
     var body: some View {
         NavigationView {
             GeometryReader(content: createCardsList)
                 .navigationBarTitle(LocalizedStrings.cards)
+                .alert(isPresented: $isFirstTime, content: createWelcomeAlert)
         }
     }
 }
 
 // MARK: - Views
-extension MainView {
+private extension MainView {
     /// This method creates a row that redirects to the view with the card's data
     /// - Parameters:
     ///   - card: Tarot Card Model, stores data about the card.
@@ -54,5 +56,18 @@ extension MainView {
                 createCardRow(card: card.tarotCard, height: geom.size.height)
             }
         }
+    }
+    
+    /// This method creates a welcome alert saying that the app developer
+    /// is not responsible for the wrong actions.
+    /// - Returns: Alert with the information
+    func createWelcomeAlert() -> Alert {
+        Alert(title: Text(LocalizedStrings.welcomeTitle),
+              message: Text(LocalizedStrings.fourthDescription),
+              dismissButton: .default(
+                Text(LocalizedStrings.welcomeButton),
+                action: { self.isFirstTime = false }
+              )
+        )
     }
 }
