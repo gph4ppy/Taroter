@@ -27,7 +27,7 @@ Taroter is an application that not only facilitates learning but also allows you
 ## Features
 - Scan multiple cards and discover their meaning! At this point, Taroter only recognizes the Rider-Waite deck.
 - If you need some meaning quickly, you don't need to scan - you can search for a given card by its name.
-- Each of the 78 cards contains a photo, the answer to the "yes or no" question, the general keywords, and the keywords in a straight and reversed position. Everything is available at hand, in one place, with the support of English and Polish languages.
+- Each of the 78 cards contains a photo, the answer to the "yes or no" question and the keywords in a straight and reversed position. Everything is available at hand, in one place, with the support of English and Polish languages.
 - Taroter works in a vertical and horizontal mode so that each user can use the application in any device orientation.
 
 ## Screenshots
