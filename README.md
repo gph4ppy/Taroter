@@ -12,8 +12,6 @@
 * [Project Status](#project-status)
 * [Contact](#contact)
 
-<!--- [Download](#download) << below screnshots --->
-
 ## Introduction
 People who learn to read Tarot often have trouble deciphering the meanings of the cards at first. Yes, everything is about the intuition and feelings related to the card, however, keywords often make it easier for beginners.
 
@@ -56,10 +54,7 @@ Taroter is available for free on the AppStore - you can try it out yourself. To 
 - Watch - _Requires watchOS 7.0 or later._
 
 ## Usage
-<p align="center">
-  ![Taroter Usage](https://user-images.githubusercontent.com/41966757/146793328-9e64a4c9-c4f8-4c26-8e4d-9de7bb78a843.gif)
-</p>
-
+![Taroter Usage](https://user-images.githubusercontent.com/41966757/146793328-9e64a4c9-c4f8-4c26-8e4d-9de7bb78a843.gif)
 
 ## Project Status
 The project is _in progress_.
