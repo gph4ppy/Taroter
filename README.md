@@ -57,8 +57,9 @@ Taroter is available for free on the AppStore - you can try it out yourself. To 
 
 ## Usage
 <p align="center">
-  -- to do --
+  ![Taroter Usage](https://user-images.githubusercontent.com/41966757/146793328-9e64a4c9-c4f8-4c26-8e4d-9de7bb78a843.gif)
 </p>
+
 
 ## Project Status
 The project is _in progress_.
