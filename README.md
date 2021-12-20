@@ -1,5 +1,5 @@
 # Taroter
-![Status](https://img.shields.io/static/v1?label=status&message=in-progress&color=red) [![Current Version](https://img.shields.io/badge/version-1.0-green.svg)](https://github.com/gph4ppy/taroter) [![GitHub Stars](https://img.shields.io/github/stars/gph4ppy/taroter.svg)](https://github.com/gph4ppy/Taroter/stargazers) [![GitHub Issues](https://img.shields.io/github/issues/gph4ppy/taroter.svg)](https://github.com/gph4ppy/taroter/issues)
+![Status](https://img.shields.io/static/v1?label=status&message=complete&color=brightgreen) [![Current Version](https://img.shields.io/badge/version-1.0-green.svg)](https://github.com/gph4ppy/taroter) [![GitHub Stars](https://img.shields.io/github/stars/gph4ppy/taroter.svg)](https://github.com/gph4ppy/Taroter/stargazers) [![GitHub Issues](https://img.shields.io/github/issues/gph4ppy/taroter.svg)](https://github.com/gph4ppy/taroter/issues)
 
 > A Tarot Cards scanning application.
 
@@ -31,7 +31,11 @@ Taroter is an application that not only facilitates learning but also allows you
 - Taroter works in a vertical and horizontal mode so that each user can use the application in any device orientation.
 
 ## Screenshots
--- to do -- 
+| Card Detail View          | Scanner                   |
+|:-------------------------:|:-------------------------:|
+| ![Light Detail View](https://user-images.githubusercontent.com/41966757/146786082-47d460a4-f560-43ba-8cd9-19656f55fea4.png)    | ![Light Detail View](https://user-images.githubusercontent.com/41966757/146786123-59870b9a-56c9-428a-8b8f-dceae90505a7.png)    |
+| **Light AllCardsView**    | **Dark AllCardsView**     |
+| ![Light AllCardsView](https://user-images.githubusercontent.com/41966757/146786161-857560d2-27e2-4aff-b3fe-6358fde47c80.png)   |  ![Dark AllCardsView](https://user-images.githubusercontent.com/41966757/146786188-d5d10dd9-d254-4767-ac02-69ed43f5397a.png)   |
 
 <!---- TO DO
 ## Download
