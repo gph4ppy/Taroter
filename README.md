@@ -36,22 +36,24 @@ Taroter is an application that not only facilitates learning but also allows you
 | ![Light Detail View](https://user-images.githubusercontent.com/41966757/146786161-857560d2-27e2-4aff-b3fe-6358fde47c80.png)    | ![Light Detail View](https://user-images.githubusercontent.com/41966757/146786188-d5d10dd9-d254-4767-ac02-69ed43f5397a.png)    |
 | **Light AllCardsView**    | **Dark AllCardsView**     |
 | ![Light AllCardsView](https://user-images.githubusercontent.com/41966757/146786082-47d460a4-f560-43ba-8cd9-19656f55fea4.png)   |  ![Dark AllCardsView](https://user-images.githubusercontent.com/41966757/146786123-59870b9a-56c9-428a-8b8f-dceae90505a7.png)   |
+| **Watch AllCardsView**    | **Watch DetailView**     |
+| ![Light AllCardsView](https://user-images.githubusercontent.com/41966757/146790821-5d73a51e-5b11-4f02-af5e-5045f56202fb.PNG)   |  ![Dark AllCardsView](https://user-images.githubusercontent.com/41966757/146790864-67d118da-f7b0-4e34-acf4-334527eb66c4.PNG)   |
 
-<!---- TO DO
 ## Download
 Taroter is available for free on the AppStore - you can try it out yourself. To download it, click on the button below.
 
 <p align="center">
-  <a href="">
+  <a href="https://apps.apple.com/us/app/taroter-tarot-cards-scanner/id1597650532#?platform=iphone">
     <img alt="Download on the App Store" title="App Store" src="https://developer.apple.com/assets/elements/badges/download-on-the-app-store.svg" width="200">
   </a>
 </p>
------->
 
 **Requirements:**
 - iPhone - _Requires iOS 14.0 or later._
 - iPad - _Requires iPadOS 14.0 or later._
 - iPod touch - _Requires iOS 14.0 or later._
+- Mac -  _Requires M1 Mac with macOS 11.0 or later._
+- Watch - _Requires watchOS 7.0 or later._
 
 ## Usage
 <p align="center">
