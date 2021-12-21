@@ -59,7 +59,7 @@ Taroter is available for free on the AppStore - you can try it out yourself. To 
 </p>
 
 ## Project Status
-The project is _in progress_.
+The project is _complete_ and **may be** further developed.
 
 ## Contact
 Feel free to contact me at:
