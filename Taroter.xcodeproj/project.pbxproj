@@ -11,6 +11,9 @@
 		1C07C01127229E1C007187D6 /* ScannerCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1C07C01027229E1C007187D6 /* ScannerCoordinator.swift */; };
 		1C24A3582735DFBC000BC723 /* SearchBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1C24A3572735DFBC000BC723 /* SearchBar.swift */; };
 		1C24A35A2735E2C4000BC723 /* CardDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1C24A3592735E2C4000BC723 /* CardDetailView.swift */; };
+		1C28428627775E8500B19AD5 /* SideBarButtonStyle.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1C28428527775E8500B19AD5 /* SideBarButtonStyle.swift */; };
+		1C28428A27775EFC00B19AD5 /* SideBarButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1C28428927775EFC00B19AD5 /* SideBarButton.swift */; };
+		1C28428C27775F2000B19AD5 /* BlurView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1C28428B27775F2000B19AD5 /* BlurView.swift */; };
 		1C310DE727230B4B007EB058 /* Launch Screen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1C310DE627230B4B007EB058 /* Launch Screen.storyboard */; };
 		1C407F7C2729E7A0004043D8 /* TarotCardsEnum.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1C407F7B2729E7A0004043D8 /* TarotCardsEnum.swift */; };
 		1C531FF527182B87005AD950 /* TaroterApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1C531FF427182B87005AD950 /* TaroterApp.swift */; };
@@ -30,6 +33,14 @@
 		1C6899852767F113004C4091 /* TarotBooleanEnum.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1CB981602729CF08005A0B09 /* TarotBooleanEnum.swift */; };
 		1C6899862767F115004C4091 /* ArcanaEnum.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1CB9815E2729C9AC005A0B09 /* ArcanaEnum.swift */; };
 		1C6899882767F3BB004C4091 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1CC6FF2B2767BDCB00B68785 /* Assets.xcassets */; };
+		1C770F0D27766110005FA2F9 /* TarotCardModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1CB9815C2729C845005A0B09 /* TarotCardModel.swift */; };
+		1C770F0E27766112005FA2F9 /* TarotCardsEnum.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1C407F7B2729E7A0004043D8 /* TarotCardsEnum.swift */; };
+		1C770F0F27766114005FA2F9 /* ArcanaEnum.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1CB9815E2729C9AC005A0B09 /* ArcanaEnum.swift */; };
+		1C770F1027766116005FA2F9 /* TarotBooleanEnum.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1CB981602729CF08005A0B09 /* TarotBooleanEnum.swift */; };
+		1C770F1127766168005FA2F9 /* CardManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1C7F8194276951CA0084F2BF /* CardManager.swift */; };
+		1C770F122776618B005FA2F9 /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = 1C53201427182FAE005AD950 /* Localizable.strings */; };
+		1C770F132776618E005FA2F9 /* LocalizedStrings.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1C53200E27182F7C005AD950 /* LocalizedStrings.swift */; };
+		1C770F1627766859005FA2F9 /* ListBuilder.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1C7F81982769590F0084F2BF /* ListBuilder.swift */; };
 		1C7F8195276951CA0084F2BF /* CardManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1C7F8194276951CA0084F2BF /* CardManager.swift */; };
 		1C7F8196276951DE0084F2BF /* CardManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1C7F8194276951CA0084F2BF /* CardManager.swift */; };
 		1C7F81992769590F0084F2BF /* ListBuilder.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1C7F81982769590F0084F2BF /* ListBuilder.swift */; };
@@ -40,6 +51,8 @@
 		1CB9815D2729C845005A0B09 /* TarotCardModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1CB9815C2729C845005A0B09 /* TarotCardModel.swift */; };
 		1CB9815F2729C9AC005A0B09 /* ArcanaEnum.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1CB9815E2729C9AC005A0B09 /* ArcanaEnum.swift */; };
 		1CB981612729CF08005A0B09 /* TarotBooleanEnum.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1CB981602729CF08005A0B09 /* TarotBooleanEnum.swift */; };
+		1CC5EE9227788F69003DE010 /* CardsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1CC5EE9127788F69003DE010 /* CardsView.swift */; };
+		1CC5EE95277893F8003DE010 /* CardDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1CC5EE94277893F8003DE010 /* CardDetailView.swift */; };
 		1CC6FF2C2767BDCB00B68785 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1CC6FF2B2767BDCB00B68785 /* Assets.xcassets */; };
 		1CC6FF322767BDCC00B68785 /* TaroterWatchOS WatchKit Extension.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = 1CC6FF312767BDCC00B68785 /* TaroterWatchOS WatchKit Extension.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
 		1CC6FF372767BDCC00B68785 /* MainView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1CC6FF362767BDCC00B68785 /* MainView.swift */; };
@@ -50,6 +63,12 @@
 		1CC6FF4D2767C23200B68785 /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = 1C53201427182FAE005AD950 /* Localizable.strings */; };
 		1CC6FF4E2767C23B00B68785 /* LocalizedStrings.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1C53200E27182F7C005AD950 /* LocalizedStrings.swift */; };
 		1CC6FF4F2767C23F00B68785 /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = 1C53201427182FAE005AD950 /* Localizable.strings */; };
+		1CE5B42527761E69009E200D /* TaroterMacOSApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1CE5B42427761E69009E200D /* TaroterMacOSApp.swift */; };
+		1CE5B42727761E69009E200D /* MainView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1CE5B42627761E69009E200D /* MainView.swift */; };
+		1CE5B42927761E6A009E200D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1CE5B42827761E6A009E200D /* Assets.xcassets */; };
+		1CE5B42C27761E6A009E200D /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1CE5B42B27761E6A009E200D /* Preview Assets.xcassets */; };
+		1CE5B42E27761E6A009E200D /* Persistence.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1CE5B42D27761E6A009E200D /* Persistence.swift */; };
+		1CE5B43127761E6A009E200D /* TaroterMacOS.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 1CE5B42F27761E6A009E200D /* TaroterMacOS.xcdatamodeld */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -99,6 +118,9 @@
 		1C07C01027229E1C007187D6 /* ScannerCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScannerCoordinator.swift; sourceTree = "<group>"; };
 		1C24A3572735DFBC000BC723 /* SearchBar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchBar.swift; sourceTree = "<group>"; };
 		1C24A3592735E2C4000BC723 /* CardDetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardDetailView.swift; sourceTree = "<group>"; };
+		1C28428527775E8500B19AD5 /* SideBarButtonStyle.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SideBarButtonStyle.swift; sourceTree = "<group>"; };
+		1C28428927775EFC00B19AD5 /* SideBarButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SideBarButton.swift; sourceTree = "<group>"; };
+		1C28428B27775F2000B19AD5 /* BlurView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BlurView.swift; sourceTree = "<group>"; };
 		1C310DE627230B4B007EB058 /* Launch Screen.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = "Launch Screen.storyboard"; sourceTree = "<group>"; };
 		1C407F7B2729E7A0004043D8 /* TarotCardsEnum.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TarotCardsEnum.swift; sourceTree = "<group>"; };
 		1C531FF127182B87005AD950 /* Taroter.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Taroter.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -123,6 +145,8 @@
 		1CB9815C2729C845005A0B09 /* TarotCardModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TarotCardModel.swift; sourceTree = "<group>"; };
 		1CB9815E2729C9AC005A0B09 /* ArcanaEnum.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ArcanaEnum.swift; sourceTree = "<group>"; };
 		1CB981602729CF08005A0B09 /* TarotBooleanEnum.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TarotBooleanEnum.swift; sourceTree = "<group>"; };
+		1CC5EE9127788F69003DE010 /* CardsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardsView.swift; sourceTree = "<group>"; };
+		1CC5EE94277893F8003DE010 /* CardDetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardDetailView.swift; sourceTree = "<group>"; };
 		1CC6FF292767BDC700B68785 /* Taroter.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Taroter.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		1CC6FF2B2767BDCB00B68785 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		1CC6FF312767BDCC00B68785 /* TaroterWatchOS WatchKit Extension.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = "TaroterWatchOS WatchKit Extension.appex"; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -131,6 +155,14 @@
 		1CC6FF3C2767BDCD00B68785 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		1CC6FF3F2767BDCD00B68785 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		1CC6FF412767BDCD00B68785 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		1CE5B42227761E69009E200D /* TaroterMacOS.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TaroterMacOS.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		1CE5B42427761E69009E200D /* TaroterMacOSApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TaroterMacOSApp.swift; sourceTree = "<group>"; };
+		1CE5B42627761E69009E200D /* MainView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainView.swift; sourceTree = "<group>"; };
+		1CE5B42827761E6A009E200D /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		1CE5B42B27761E6A009E200D /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		1CE5B42D27761E6A009E200D /* Persistence.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Persistence.swift; sourceTree = "<group>"; };
+		1CE5B43027761E6A009E200D /* TaroterMacOS.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = TaroterMacOS.xcdatamodel; sourceTree = "<group>"; };
+		1CE5B43227761E6A009E200D /* TaroterMacOS.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = TaroterMacOS.entitlements; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -142,6 +174,13 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 		1CC6FF2E2767BDCC00B68785 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		1CE5B41F27761E69009E200D /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -160,6 +199,42 @@
 			path = Scanner;
 			sourceTree = "<group>";
 		};
+		1C28428327775C1400B19AD5 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				1C28428727775EEF00B19AD5 /* Tabs */,
+				1C28428827775EF200B19AD5 /* Components */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		1C28428427775E6D00B19AD5 /* Modifiers */ = {
+			isa = PBXGroup;
+			children = (
+				1C28428527775E8500B19AD5 /* SideBarButtonStyle.swift */,
+			);
+			path = Modifiers;
+			sourceTree = "<group>";
+		};
+		1C28428727775EEF00B19AD5 /* Tabs */ = {
+			isa = PBXGroup;
+			children = (
+				1CE5B42627761E69009E200D /* MainView.swift */,
+				1CC5EE9127788F69003DE010 /* CardsView.swift */,
+			);
+			path = Tabs;
+			sourceTree = "<group>";
+		};
+		1C28428827775EF200B19AD5 /* Components */ = {
+			isa = PBXGroup;
+			children = (
+				1C28428927775EFC00B19AD5 /* SideBarButton.swift */,
+				1C28428B27775F2000B19AD5 /* BlurView.swift */,
+				1CC5EE94277893F8003DE010 /* CardDetailView.swift */,
+			);
+			path = Components;
+			sourceTree = "<group>";
+		};
 		1C531FE827182B87005AD950 = {
 			isa = PBXGroup;
 			children = (
@@ -167,6 +242,7 @@
 				1C531FF327182B87005AD950 /* TaroterIOS */,
 				1CC6FF2A2767BDC700B68785 /* TaroterWatchOS */,
 				1CC6FF352767BDCC00B68785 /* TaroterWatchOS WatchKit Extension */,
+				1CE5B42327761E69009E200D /* TaroterMacOS */,
 				1C531FF227182B87005AD950 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -177,6 +253,7 @@
 				1C531FF127182B87005AD950 /* Taroter.app */,
 				1CC6FF292767BDC700B68785 /* Taroter.app */,
 				1CC6FF312767BDCC00B68785 /* TaroterWatchOS WatchKit Extension.appex */,
+				1CE5B42227761E69009E200D /* TaroterMacOS.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -227,9 +304,9 @@
 			isa = PBXGroup;
 			children = (
 				1C07C00F27229E0F007187D6 /* Scanner */,
+				1C96060F274C4061007125C1 /* GridCard.swift */,
 				1C53200527182C62005AD950 /* WelcomeScreen.swift */,
 				1C24A3572735DFBC000BC723 /* SearchBar.swift */,
-				1C96060F274C4061007125C1 /* GridCard.swift */,
 			);
 			path = Components;
 			sourceTree = "<group>";
@@ -300,6 +377,15 @@
 			path = Models;
 			sourceTree = "<group>";
 		};
+		1CC5EE93277890CD003DE010 /* Core Data */ = {
+			isa = PBXGroup;
+			children = (
+				1CE5B42F27761E6A009E200D /* TaroterMacOS.xcdatamodeld */,
+				1CE5B42D27761E6A009E200D /* Persistence.swift */,
+			);
+			path = "Core Data";
+			sourceTree = "<group>";
+		};
 		1CC6FF2A2767BDC700B68785 /* TaroterWatchOS */ = {
 			isa = PBXGroup;
 			children = (
@@ -324,6 +410,28 @@
 			isa = PBXGroup;
 			children = (
 				1CC6FF3F2767BDCD00B68785 /* Preview Assets.xcassets */,
+			);
+			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		1CE5B42327761E69009E200D /* TaroterMacOS */ = {
+			isa = PBXGroup;
+			children = (
+				1CC5EE93277890CD003DE010 /* Core Data */,
+				1C28428427775E6D00B19AD5 /* Modifiers */,
+				1C28428327775C1400B19AD5 /* Views */,
+				1CE5B42427761E69009E200D /* TaroterMacOSApp.swift */,
+				1CE5B42827761E6A009E200D /* Assets.xcassets */,
+				1CE5B43227761E6A009E200D /* TaroterMacOS.entitlements */,
+				1CE5B42A27761E6A009E200D /* Preview Content */,
+			);
+			path = TaroterMacOS;
+			sourceTree = "<group>";
+		};
+		1CE5B42A27761E6A009E200D /* Preview Content */ = {
+			isa = PBXGroup;
+			children = (
+				1CE5B42B27761E6A009E200D /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
 			sourceTree = "<group>";
@@ -384,6 +492,23 @@
 			productReference = 1CC6FF312767BDCC00B68785 /* TaroterWatchOS WatchKit Extension.appex */;
 			productType = "com.apple.product-type.watchkit2-extension";
 		};
+		1CE5B42127761E69009E200D /* TaroterMacOS */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 1CE5B43527761E6A009E200D /* Build configuration list for PBXNativeTarget "TaroterMacOS" */;
+			buildPhases = (
+				1CE5B41E27761E69009E200D /* Sources */,
+				1CE5B41F27761E69009E200D /* Frameworks */,
+				1CE5B42027761E69009E200D /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = TaroterMacOS;
+			productName = TaroterMacOS;
+			productReference = 1CE5B42227761E69009E200D /* TaroterMacOS.app */;
+			productType = "com.apple.product-type.application";
+		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
@@ -391,7 +516,7 @@
 			isa = PBXProject;
 			attributes = {
 				BuildIndependentTargetsInParallel = 1;
-				LastSwiftUpdateCheck = 1310;
+				LastSwiftUpdateCheck = 1320;
 				LastUpgradeCheck = 1310;
 				TargetAttributes = {
 					1C531FF027182B87005AD950 = {
@@ -402,6 +527,9 @@
 					};
 					1CC6FF302767BDCC00B68785 = {
 						CreatedOnToolsVersion = 13.1;
+					};
+					1CE5B42127761E69009E200D = {
+						CreatedOnToolsVersion = 13.2.1;
 					};
 				};
 			};
@@ -422,6 +550,7 @@
 				1C531FF027182B87005AD950 /* Taroter */,
 				1CC6FF282767BDC700B68785 /* TaroterWatchOS */,
 				1CC6FF302767BDCC00B68785 /* TaroterWatchOS WatchKit Extension */,
+				1CE5B42127761E69009E200D /* TaroterMacOS */,
 			);
 		};
 /* End PBXProject section */
@@ -455,6 +584,16 @@
 				1CC6FF4F2767C23F00B68785 /* Localizable.strings in Resources */,
 				1C6899882767F3BB004C4091 /* Assets.xcassets in Resources */,
 				1CC6FF3D2767BDCD00B68785 /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		1CE5B42027761E69009E200D /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1CE5B42C27761E6A009E200D /* Preview Assets.xcassets in Resources */,
+				1C770F122776618B005FA2F9 /* Localizable.strings in Resources */,
+				1CE5B42927761E6A009E200D /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -503,6 +642,29 @@
 				1C9CA0E82769445A00C4BF20 /* SearchBar.swift in Sources */,
 				1C6899862767F115004C4091 /* ArcanaEnum.swift in Sources */,
 				1CC6FF392767BDCC00B68785 /* TaroterApp.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		1CE5B41E27761E69009E200D /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1C770F1027766116005FA2F9 /* TarotBooleanEnum.swift in Sources */,
+				1C28428C27775F2000B19AD5 /* BlurView.swift in Sources */,
+				1CE5B42E27761E6A009E200D /* Persistence.swift in Sources */,
+				1C28428627775E8500B19AD5 /* SideBarButtonStyle.swift in Sources */,
+				1CC5EE9227788F69003DE010 /* CardsView.swift in Sources */,
+				1CE5B43127761E6A009E200D /* TaroterMacOS.xcdatamodeld in Sources */,
+				1C770F0F27766114005FA2F9 /* ArcanaEnum.swift in Sources */,
+				1CC5EE95277893F8003DE010 /* CardDetailView.swift in Sources */,
+				1C770F132776618E005FA2F9 /* LocalizedStrings.swift in Sources */,
+				1CE5B42727761E69009E200D /* MainView.swift in Sources */,
+				1C28428A27775EFC00B19AD5 /* SideBarButton.swift in Sources */,
+				1C770F1127766168005FA2F9 /* CardManager.swift in Sources */,
+				1CE5B42527761E69009E200D /* TaroterMacOSApp.swift in Sources */,
+				1C770F0D27766110005FA2F9 /* TarotCardModel.swift in Sources */,
+				1C770F1627766859005FA2F9 /* ListBuilder.swift in Sources */,
+				1C770F0E27766112005FA2F9 /* TarotCardsEnum.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -587,6 +749,7 @@
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
 				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
+				MACOSX_DEPLOYMENT_TARGET = 12.0;
 				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
 				MTL_FAST_MATH = YES;
 				ONLY_ACTIVE_ARCH = YES;
@@ -643,6 +806,7 @@
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
 				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
+				MACOSX_DEPLOYMENT_TARGET = 12.0;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				MTL_FAST_MATH = YES;
 				SDKROOT = iphoneos;
@@ -830,6 +994,66 @@
 			};
 			name = Release;
 		};
+		1CE5B43327761E6A009E200D /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = TaroterMacOS/TaroterMacOS.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"TaroterMacOS/Preview Content\"";
+				DEVELOPMENT_TEAM = G6NTB33VYZ;
+				ENABLE_HARDENED_RUNTIME = YES;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_LSApplicationCategoryType = "public.app-category.utilities";
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+				);
+				MACOSX_DEPLOYMENT_TARGET = 12.0;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.jakubdabrowski.TaroterMacOS;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = macosx;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+			};
+			name = Debug;
+		};
+		1CE5B43427761E6A009E200D /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = TaroterMacOS/TaroterMacOS.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"TaroterMacOS/Preview Content\"";
+				DEVELOPMENT_TEAM = G6NTB33VYZ;
+				ENABLE_HARDENED_RUNTIME = YES;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_LSApplicationCategoryType = "public.app-category.utilities";
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+				);
+				MACOSX_DEPLOYMENT_TARGET = 12.0;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.jakubdabrowski.TaroterMacOS;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = macosx;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+			};
+			name = Release;
+		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -869,7 +1093,29 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
+		1CE5B43527761E6A009E200D /* Build configuration list for PBXNativeTarget "TaroterMacOS" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				1CE5B43327761E6A009E200D /* Debug */,
+				1CE5B43427761E6A009E200D /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
 /* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		1CE5B42F27761E6A009E200D /* TaroterMacOS.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				1CE5B43027761E6A009E200D /* TaroterMacOS.xcdatamodel */,
+			);
+			currentVersion = 1CE5B43027761E6A009E200D /* TaroterMacOS.xcdatamodel */;
+			path = TaroterMacOS.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
 	};
 	rootObject = 1C531FE927182B87005AD950 /* Project object */;
 }

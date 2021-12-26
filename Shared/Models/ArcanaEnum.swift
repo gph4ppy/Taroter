@@ -8,13 +8,15 @@
 import Foundation
 
 enum Arcana {
+    case allCards
     case minor
     case major
     
     var name: String {
         switch self {
-            case .minor: return LocalizedStrings.minorArcana
+            case .allCards: return LocalizedStrings.allCards
             case .major: return LocalizedStrings.majorArcana
+            case .minor: return LocalizedStrings.minorArcana
         }
     }
 }

@@ -36,6 +36,7 @@
 "maybe" = "MAYBE";
 
 // MARK: - Arcana
+"all_cards" = "All Cards";
 "major_arcana" = "Major Arcana";
 "minor_arcana" = "Minor Arcana";
 

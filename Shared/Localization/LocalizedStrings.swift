@@ -38,6 +38,7 @@ struct LocalizedStrings {
     public static let maybe = NSLocalizedString("maybe", comment: "")
     
     // MARK: - Arcana
+    public static let allCards = NSLocalizedString("all_cards", comment: "")
     public static let majorArcana = NSLocalizedString("major_arcana", comment: "")
     public static let minorArcana = NSLocalizedString("minor_arcana", comment: "")
     

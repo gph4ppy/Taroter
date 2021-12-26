@@ -37,6 +37,7 @@
 "maybe" = "MOŻE";
 
 // MARK: - Arcana
+"all_cards" = "Wszystkie Karty";
 "major_arcana" = "Wielkie Arkana";
 "minor_arcana" = "Małe Arkana";
 
