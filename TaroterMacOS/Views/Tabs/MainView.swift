@@ -62,12 +62,12 @@ struct MainView: View {
                 // Main View
                 switch selectedTab {
                     // MARK: - Cards
-                case LocalizedStrings.allCards: CardsView(selectedTab: .allCards)
-                case LocalizedStrings.majorArcana: CardsView(selectedTab: .major)
-                case LocalizedStrings.minorArcana: CardsView(selectedTab: .minor)
+                    case LocalizedStrings.allCards: CardsView(selectedTab: .allCards)
+                    case LocalizedStrings.majorArcana: CardsView(selectedTab: .major)
+                    case LocalizedStrings.minorArcana: CardsView(selectedTab: .minor)
                     
                     // MARK: - Spreads
-                default: CreateSpreadTemplateView()
+                    default: CreateSpreadTemplateView()
                 }
             }
         }
@@ -104,52 +104,117 @@ struct Preview: PreviewProvider {
     }
 }
 
-struct SpreadCard {
-    let id: UUID
-    let number: Int
-    var location: CGPoint
-    var meaning: String
-}
+//struct SpreadCard {
+//    let id: UUID
+//    let number: Int
+//    var location: CGPoint
+//    var meaning: String
+//}
 
 struct CreateSpreadTemplateView: View {
-    @State private var counter: Int      = 1
-    @State private var location: CGPoint = CGPoint(x: 50, y: 50)
+    @State private var counter: Int = 0
     
     var body: some View {
         ScrollView {
-            Button(action: { self.counter += 1}) {
-                Image(systemName: "plus")
+            HStack {
+                Button(action: {
+                    // Save Spread
+                }) {
+                    Image(systemName: "square.and.arrow.down")
+                }
+                
+                Button(action: { self.counter += 1 }) {
+                    Image(systemName: "plus")
+                }
+                .disabled(counter == 78 ? true : false)
             }
             .frame(maxWidth: .infinity,
                    alignment: .topTrailing)
+            .zIndex(1)
             
-            ForEach(1 ... counter, id: \.self) { num in
-                var card = SpreadCard(id: UUID(),
-                                      number: num,
-                                      location: location,
-                                      meaning: "")
-                
-                RoundedRectangle(cornerRadius: 12)
-                    .frame(width: 74.75, height: 124.75)
-                    .overlay(
-                        Text(String(num))
-                            .font(.largeTitle)
-                            .bold()
-                            .foregroundColor(.black)
-                    )
-                    .position(card.location)
-                    .gesture(
-                        DragGesture()
-                            .onChanged { value in
-                                self.location = value.location
-                            }
-                    )
+            ForEach(0..<counter, id: \.self) { num in
+                EmptyTarotCard(number: num + 1)
             }
             
             Spacer()
         }
         .padding()
         .frame(maxWidth: .infinity)
+    }
+}
+
+struct EmptyTarotCard: View {
+    @State var position: CGPoint = CGPoint(x: 50, y: 50)
+    @State var rotationDegrees: Double = 0
+    let number: Int
+    
+    var body: some View {
+        RoundedRectangle(cornerRadius: 12)
+            .frame(width: 74.75, height: 124.75)
+            .shadow(radius: 5)
+            .overlay(cardNumberOverlay)
+            .rotationEffect(.degrees(rotationDegrees))
+            .position(position)
+            .gesture(
+                DragGesture()
+                    .onChanged { value in
+                        self.position = value.location
+                    }
+            )
+            .contextMenu(menuItems: createContextMenu)
+    }
+    
+    @ViewBuilder func createContextMenu() -> some View {
+        Button {
+            withAnimation(.linear(duration: 0.15)) {
+                self.rotationDegrees -= 15
+            }
+        } label: {
+            HStack {
+                Text("Rotate 15° left")
+                Image(systemName: "rotate.left.fill")
+            }
+        }
+        
+        Button {
+            withAnimation(.linear(duration: 0.15)) {
+                self.rotationDegrees += 15
+            }
+        } label: {
+            HStack {
+                Text("Rotate 15° right")
+                Image(systemName: "rotate.right.fill")
+            }
+        }
+        
+        Button {
+            withAnimation(.linear(duration: 0.15)) {
+                self.rotationDegrees -= 90
+            }
+        } label: {
+            HStack {
+                Text("Rotate 90° left")
+                Image(systemName: "rotate.left.fill")
+            }
+        }
+        
+        Button {
+            withAnimation(.linear(duration: 0.15)) {
+                self.rotationDegrees += 90
+            }
+        } label: {
+            HStack {
+                Text("Rotate 90° right")
+                Image(systemName: "rotate.right.fill")
+            }
+        }
+    }
+    
+    var cardNumberOverlay: some View {
+        Text(String(number))
+            .font(.largeTitle)
+            .bold()
+            .foregroundColor(Color(.windowBackgroundColor))
     }
 }
 
