@@ -21,6 +21,7 @@ Taroter is an application that not only facilitates learning but also allows you
 - SwiftUI 2.0
 - VisionKit
 - CoreML
+- Core Data
 
 ## Features
 - Scan multiple cards and discover their meaning! At this point, Taroter only recognizes the Rider-Waite deck.
