@@ -9,6 +9,8 @@
 /* Begin PBXBuildFile section */
 		1C07C00E27229A32007187D6 /* Scanner.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1C07C00D27229A32007187D6 /* Scanner.swift */; };
 		1C07C01127229E1C007187D6 /* ScannerCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1C07C01027229E1C007187D6 /* ScannerCoordinator.swift */; };
+		1C1D17D7277C793A00089DF8 /* TextFieldAlert.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1C1D17D6277C793A00089DF8 /* TextFieldAlert.swift */; };
+		1C1D17DA277C796600089DF8 /* SpreadCard.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1C1D17D9277C796600089DF8 /* SpreadCard.swift */; };
 		1C24A3582735DFBC000BC723 /* SearchBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1C24A3572735DFBC000BC723 /* SearchBar.swift */; };
 		1C24A35A2735E2C4000BC723 /* CardDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1C24A3592735E2C4000BC723 /* CardDetailView.swift */; };
 		1C28428627775E8500B19AD5 /* SideBarButtonStyle.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1C28428527775E8500B19AD5 /* SideBarButtonStyle.swift */; };
@@ -68,7 +70,7 @@
 		1CE5B42927761E6A009E200D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1CE5B42827761E6A009E200D /* Assets.xcassets */; };
 		1CE5B42C27761E6A009E200D /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1CE5B42B27761E6A009E200D /* Preview Assets.xcassets */; };
 		1CE5B42E27761E6A009E200D /* Persistence.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1CE5B42D27761E6A009E200D /* Persistence.swift */; };
-		1CE5B43127761E6A009E200D /* TaroterMacOS.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 1CE5B42F27761E6A009E200D /* TaroterMacOS.xcdatamodeld */; };
+		1CE5B43127761E6A009E200D /* Taroter.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 1CE5B42F27761E6A009E200D /* Taroter.xcdatamodeld */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -116,6 +118,8 @@
 /* Begin PBXFileReference section */
 		1C07C00D27229A32007187D6 /* Scanner.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Scanner.swift; sourceTree = "<group>"; };
 		1C07C01027229E1C007187D6 /* ScannerCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScannerCoordinator.swift; sourceTree = "<group>"; };
+		1C1D17D6277C793A00089DF8 /* TextFieldAlert.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TextFieldAlert.swift; sourceTree = "<group>"; };
+		1C1D17D9277C796600089DF8 /* SpreadCard.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SpreadCard.swift; sourceTree = "<group>"; };
 		1C24A3572735DFBC000BC723 /* SearchBar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchBar.swift; sourceTree = "<group>"; };
 		1C24A3592735E2C4000BC723 /* CardDetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardDetailView.swift; sourceTree = "<group>"; };
 		1C28428527775E8500B19AD5 /* SideBarButtonStyle.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SideBarButtonStyle.swift; sourceTree = "<group>"; };
@@ -199,6 +203,14 @@
 			path = Scanner;
 			sourceTree = "<group>";
 		};
+		1C1D17D8277C795800089DF8 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				1C1D17D9277C796600089DF8 /* SpreadCard.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
 		1C28428327775C1400B19AD5 /* Views */ = {
 			isa = PBXGroup;
 			children = (
@@ -231,6 +243,7 @@
 				1C28428927775EFC00B19AD5 /* SideBarButton.swift */,
 				1C28428B27775F2000B19AD5 /* BlurView.swift */,
 				1CC5EE94277893F8003DE010 /* CardDetailView.swift */,
+				1C1D17D6277C793A00089DF8 /* TextFieldAlert.swift */,
 			);
 			path = Components;
 			sourceTree = "<group>";
@@ -380,7 +393,7 @@
 		1CC5EE93277890CD003DE010 /* Core Data */ = {
 			isa = PBXGroup;
 			children = (
-				1CE5B42F27761E6A009E200D /* TaroterMacOS.xcdatamodeld */,
+				1CE5B42F27761E6A009E200D /* Taroter.xcdatamodeld */,
 				1CE5B42D27761E6A009E200D /* Persistence.swift */,
 			);
 			path = "Core Data";
@@ -417,6 +430,7 @@
 		1CE5B42327761E69009E200D /* TaroterMacOS */ = {
 			isa = PBXGroup;
 			children = (
+				1C1D17D8277C795800089DF8 /* Models */,
 				1CC5EE93277890CD003DE010 /* Core Data */,
 				1C28428427775E6D00B19AD5 /* Modifiers */,
 				1C28428327775C1400B19AD5 /* Views */,
@@ -654,8 +668,10 @@
 				1CE5B42E27761E6A009E200D /* Persistence.swift in Sources */,
 				1C28428627775E8500B19AD5 /* SideBarButtonStyle.swift in Sources */,
 				1CC5EE9227788F69003DE010 /* CardsView.swift in Sources */,
-				1CE5B43127761E6A009E200D /* TaroterMacOS.xcdatamodeld in Sources */,
+				1CE5B43127761E6A009E200D /* Taroter.xcdatamodeld in Sources */,
+				1C1D17D7277C793A00089DF8 /* TextFieldAlert.swift in Sources */,
 				1C770F0F27766114005FA2F9 /* ArcanaEnum.swift in Sources */,
+				1C1D17DA277C796600089DF8 /* SpreadCard.swift in Sources */,
 				1CC5EE95277893F8003DE010 /* CardDetailView.swift in Sources */,
 				1C770F132776618E005FA2F9 /* LocalizedStrings.swift in Sources */,
 				1CE5B42727761E69009E200D /* MainView.swift in Sources */,
@@ -1105,13 +1121,13 @@
 /* End XCConfigurationList section */
 
 /* Begin XCVersionGroup section */
-		1CE5B42F27761E6A009E200D /* TaroterMacOS.xcdatamodeld */ = {
+		1CE5B42F27761E6A009E200D /* Taroter.xcdatamodeld */ = {
 			isa = XCVersionGroup;
 			children = (
 				1CE5B43027761E6A009E200D /* TaroterMacOS.xcdatamodel */,
 			);
 			currentVersion = 1CE5B43027761E6A009E200D /* TaroterMacOS.xcdatamodel */;
-			path = TaroterMacOS.xcdatamodeld;
+			path = Taroter.xcdatamodeld;
 			sourceTree = "<group>";
 			versionGroupType = wrapper.xcdatamodel;
 		};

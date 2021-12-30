@@ -11,22 +11,8 @@ struct PersistenceController {
     static let shared = PersistenceController()
     let container: NSPersistentCloudKitContainer
 
-    static var preview: PersistenceController = {
-        let result = PersistenceController(inMemory: true)
-        let viewContext = result.container.viewContext
-        
-        for _ in 0..<10 {
-            let newItem = Item(context: viewContext)
-            newItem.timestamp = Date()
-        }
-        
-        PersistenceController.shared.save()
-        
-        return result
-    }()
-
     init(inMemory: Bool = false) {
-        container = NSPersistentCloudKitContainer(name: "TaroterMacOS")
+        container = NSPersistentCloudKitContainer(name: "Taroter")
         
         if inMemory {
             container.persistentStoreDescriptions.first!.url = URL(fileURLWithPath: "/dev/null")

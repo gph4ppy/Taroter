@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<model type="com.apple.IDECoreDataModeler.DataModel" documentVersion="1.0" lastSavedToolsVersion="19574" systemVersion="21C52" minimumToolsVersion="Automatic" sourceLanguage="Swift" usedWithCloudKit="YES" userDefinedModelVersionIdentifier="">
+    <entity name="SpreadCards" representedClassName="SpreadCards" syncable="YES" codeGenerationType="class">
+        <attribute name="id" optional="YES" attributeType="UUID" usesScalarValueType="NO"/>
+        <attribute name="meaning" optional="YES" attributeType="String"/>
+        <attribute name="number" optional="YES" attributeType="Integer 32" defaultValueString="0" usesScalarValueType="YES"/>
+        <attribute name="xPosition" optional="YES" attributeType="Double" defaultValueString="0.0" usesScalarValueType="YES"/>
+        <attribute name="yPosition" optional="YES" attributeType="Double" defaultValueString="0.0" usesScalarValueType="YES"/>
+        <relationship name="spreadTemplates" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="SpreadTemplate" inverseName="spreadCards" inverseEntity="SpreadTemplate"/>
+    </entity>
+    <entity name="SpreadTemplate" representedClassName="SpreadTemplate" syncable="YES" codeGenerationType="class">
+        <attribute name="date" optional="YES" attributeType="Date" usesScalarValueType="NO"/>
+        <attribute name="id" optional="YES" attributeType="UUID" usesScalarValueType="NO"/>
+        <attribute name="spreadDescription" optional="YES" attributeType="String"/>
+        <attribute name="title" optional="YES" attributeType="String"/>
+        <relationship name="spreadCards" optional="YES" toMany="YES" deletionRule="Nullify" destinationEntity="SpreadCards" inverseName="spreadTemplates" inverseEntity="SpreadCards"/>
+    </entity>
+    <elements>
+        <element name="SpreadCards" positionX="-63" positionY="-9" width="128" height="119"/>
+        <element name="SpreadTemplate" positionX="-63" positionY="27" width="128" height="104"/>
+    </elements>
+</model>
