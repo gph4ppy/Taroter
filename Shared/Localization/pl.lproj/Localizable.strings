@@ -326,3 +326,7 @@
 "knight_of_swords_reversed" = "agresja\n\narogancja\n\nbezczelność\n\nbezwzględność\n\nbrak koncentracji\n\nbrak strategii\n\nimpulsywność\n\nkłótliwość\n\nnietaktowność\n\ntyran\n\nwypalenie\n\nzłośliwość";
 "queen_of_swords_reversed" = "bez litości\n\nbezczelność\n\nmanipulacja\n\nnadmierna emocjonalność\n\nokrutność\n\noziębłość\n\npamiętliwość\n\npesymizm\n\nprzebiegłość\n\nwykorzystywanie ludzi do ukrytych celów\n\nwymagania\n\nzgorzkniałość\n\nzłośliwość\n\nłatwe uleganie wpływom";
 "king_of_swords_reversed" = "arogant\n\nbezlitosny\n\nbezwzględność\n\ndespota\n\ndyktator\n\ndążenie do władzy za wszelką cenę\n\negoista\n\nirracjonalność\n\nkontrola\n\nkrytykant\n\nmanipulacja\n\nnadużywanie władzy\n\nnieuczciwość\n\nnieugięty\n\nopresja\n\nzimny";
+
+// MARK: - macOS -
+"spread_templates" = "Szablon rozkładów";
+"spreads" = "Rozkłady";

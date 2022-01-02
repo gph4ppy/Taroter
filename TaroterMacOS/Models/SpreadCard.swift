@@ -7,9 +7,13 @@
 
 import Foundation
 
-struct SpreadCard {
+struct SpreadCard: Hashable {
     let id: UUID
     let number: Int
     var location: CGPoint
     var meaning: String
+    
+    func hash(into hasher: inout Hasher) {
+        hasher.combine(id)
+    }
 }

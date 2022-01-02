@@ -47,7 +47,6 @@ private extension CardsView {
         withAnimation {
             self.selectedCard = card
             self.showingCardDetail = true
-            print("Toggled to true")
         }
     }
 }

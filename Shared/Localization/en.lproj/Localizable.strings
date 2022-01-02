@@ -324,3 +324,7 @@
 "knight_of_swords_reversed" = "aggression\n\narrogance\n\nburnout\n\nimpulsiveness\n\ninsolence\n\nlack of concentration\n\nlack of strategy\n\nmalice\n\nquarrelship\n\nruthlessness\n\ntactlessness\n\ntyrant";
 "queen_of_swords_reversed" = "bitterness\n\ncoldness\n\ncruelty\n\ncunning\n\neasily influenced\n\nexcessive emotionality\n\nforgetfulness\n\ninsolence\n\nmalice\n\nmanipulation\n\nmerciless\n\npessimism\n\nrequirements\n\nusing people for hidden purposes";
 "king_of_swords_reversed" = "abuse of power\n\nadamant\n\narrogant\n\ncold\n\ncontrol\n\ncritic\n\ndespot\n\ndictator\n\ndishonesty\n\nirrationality\n\nmanipulation\n\noppression\n\nruthless\n\nruthlessness\n\nselfish\n\nthe pursuit of power at all costs";
+
+// MARK: - macOS -
+"spread_templates" = "Spread Templates";
+"spreads" = "Spreads"; 

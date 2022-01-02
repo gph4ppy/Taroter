@@ -11,17 +11,32 @@ struct TextFieldAlert: View {
     let title: String
     let message: String?
     @Binding var text: String
+    @Binding var spreadDescription: String?
     @Binding var isPresented: Bool
+    let alertType: AlertType
     let doneButtonAction: () -> ()
+    
+    enum AlertType {
+        case saving
+        case meaning
+    }
     
     var body: some View {
         VStack {
             Text(title).bold()
             Text(message ?? "")
             
-            TextField("Card meaning or question...",
+            TextField(alertType == .saving ? "Title" : "Card meaning or question...",
                       text: $text)
                 .textFieldStyle(.roundedBorder)
+            
+            if let spreadDescription = Binding($spreadDescription), alertType == .saving {
+                Text("Description").padding(.top)
+                TextEditor(text: spreadDescription)
+                    .cornerRadius(12)
+                    .shadow(color: Color.primary.opacity(0.3), radius: 1, x: 0, y: 1)
+                    .frame(maxHeight: 150)
+            }
             
             Divider()
             
@@ -45,6 +60,7 @@ struct TextFieldAlert: View {
             }
             .foregroundColor(.blue)
             .buttonStyle(.plain)
+            .frame(maxHeight: 44)
         }
         .padding()
         .background(
