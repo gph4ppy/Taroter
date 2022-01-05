@@ -9,92 +9,90 @@ import SwiftUI
 import CoreData
 
 struct MainView: View {
-    @State private var selectedTab: String = LocalizedStrings.allCards
+    @State private var selectedTab: Tabs        = .allCards
     @State private var spreadSearchText: String = ""
-    let colors: [Color] = [Color.black.opacity(0), Color.black, Color.black, Color.black]
-    
-    enum SpreadsTabs: String {
-        case templates
-        case spreads
-        
-        var label: String {
-            switch self {
-                case .templates: return LocalizedStrings.spreadTemplates
-                case .spreads: return ""
-            }
-        }
-    }
+    let colors: [Color]                         = [
+        Color.black.opacity(0), Color.black, Color.black, Color.black
+    ]
     
     var body: some View {
-        GeometryReader { geom in
-            HStack {
-                // Side Bar
-                ZStack {
-                    BlurView()
-                    
-                    sideBarButtons
-                    .mask(
-                        LinearGradient(colors: colors,
-                                       startPoint: .bottom,
-                                       endPoint: .top)
-                    )
-                }
-                .frame(width: geom.size.width / 5)
-                .font(.callout)
+        GeometryReader(content: createMainView)
+    }
+}
+
+// MARK: Views
+private extension MainView {
+    /// This method creates the content of the Main View.
+    /// - Parameter geom: GeometryProxy, which is used to
+    ///                   determine the width of the SideBar
+    /// - Returns: Main View content
+    @ViewBuilder func createMainView(geom: GeometryProxy) -> some View {
+        HStack {
+            // Side Bar
+            ZStack {
+                BlurView()
+                sideBarButtons
+            }
+            .frame(width: geom.size.width / 5)
+            .font(.callout)
+            .zIndex(1)
+            
+            // Main View
+            switch selectedTab {
+                // MARK: - Cards
+                case .allCards:    CardsView(selectedTab: .allCards)
+                case .major:       CardsView(selectedTab: .major)
+                case .minor:       CardsView(selectedTab: .minor)
                 
-                // Main View
-                switch selectedTab {
-                    // MARK: - Cards
-                    case LocalizedStrings.allCards: CardsView(selectedTab: .allCards)
-                    case LocalizedStrings.majorArcana: CardsView(selectedTab: .major)
-                    case LocalizedStrings.minorArcana: CardsView(selectedTab: .minor)
-                    
-                    // MARK: - Spreads
-                    case LocalizedStrings.spreadTemplates: CreateSpreadTemplateView()
-                    default: CreateSpreadTemplateView()
-                }
+                // MARK: - Spreads
+                case .templates:   CreateSpreadTemplateView()
+                case .yourSpreads: CreateSpreadTemplateView()
             }
         }
     }
     
+    /// A VStack containing sections with SideBar buttons.
     var sideBarButtons: some View {
-        ScrollView {
-            LazyVStack(alignment: .leading, spacing: 4) {
-                // MARK: - Cards
-                Text(LocalizedStrings.cards)
-                    .foregroundColor(.gray)
-                    .fontWeight(.semibold)
-                
-                SideBarButton(title: LocalizedStrings.allCards,
-                              systemImage: "rectangle.grid.3x2.fill",
-                              selectedTab: $selectedTab)
-                
-                SideBarButton(title: LocalizedStrings.majorArcana,
-                              systemImage: "globe.asia.australia.fill",
-                              selectedTab: $selectedTab)
-                
-                SideBarButton(title: LocalizedStrings.minorArcana,
-                              systemImage: "wand.and.stars",
-                              selectedTab: $selectedTab)
-                
-                // MARK: - Spreads
-                Text(LocalizedStrings.spreads)
-                    .foregroundColor(.gray)
-                    .fontWeight(.semibold)
-                    .padding(.top)
-                
-                SideBarButton(title: LocalizedStrings.spreadTemplates,
-                              systemImage: "rectangle.portrait.on.rectangle.portrait",
-                              selectedTab: $selectedTab)
-                
-                SideBarButton(title: "Your Spreads",
-                              systemImage: "person.text.rectangle.fill",
-                              selectedTab: $selectedTab)
-                
-                Spacer()
-            }
-            .padding()
+        VStack(alignment: .leading, spacing: 4) {
+            // MARK: - Cards
+            Text(LocalizedStrings.cards)
+                .foregroundColor(.gray)
+                .fontWeight(.semibold)
+            
+            // All Cards
+            SideBarButton(title: LocalizedStrings.allCards,
+                          systemImage: "rectangle.grid.3x2.fill",
+                          selectedTab: $selectedTab)
+            
+            // Major Arcana
+            SideBarButton(title: LocalizedStrings.majorArcana,
+                          systemImage: "globe.asia.australia.fill",
+                          selectedTab: $selectedTab)
+            
+            // Minor Arcana
+            SideBarButton(title: LocalizedStrings.minorArcana,
+                          systemImage: "wand.and.stars",
+                          selectedTab: $selectedTab)
+            
+            // MARK: - Spreads
+            Text(LocalizedStrings.spreads)
+                .foregroundColor(.gray)
+                .fontWeight(.semibold)
+                .padding(.top)
+            
+            // Spread Templates
+            SideBarButton(title: LocalizedStrings.spreadTemplates,
+                          systemImage: "rectangle.portrait.on.rectangle.portrait",
+                          selectedTab: $selectedTab)
+            
+            // Your Spreads
+            SideBarButton(title: LocalizedStrings.yourSpreads,
+                          systemImage: "person.text.rectangle.fill",
+                          selectedTab: $selectedTab)
+            
+            Spacer()
         }
+        .padding()
     }
 }
 

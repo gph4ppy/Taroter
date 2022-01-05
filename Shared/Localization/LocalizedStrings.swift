@@ -328,6 +328,7 @@ struct LocalizedStrings {
     public static let kingOfSwordsReversed = NSLocalizedString("king_of_swords_reversed", comment: "")
     
     // MARK: - macOS -
-    public static let spreadTemplates = NSLocalizedString("spread_templates", comment: "")
     public static let spreads = NSLocalizedString("spreads", comment: "")
+    public static let spreadTemplates = NSLocalizedString("spread_templates", comment: "")
+    public static let yourSpreads = NSLocalizedString("your_spreads", comment: "")
 }

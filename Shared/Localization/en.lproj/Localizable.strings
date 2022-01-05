@@ -326,5 +326,6 @@
 "king_of_swords_reversed" = "abuse of power\n\nadamant\n\narrogant\n\ncold\n\ncontrol\n\ncritic\n\ndespot\n\ndictator\n\ndishonesty\n\nirrationality\n\nmanipulation\n\noppression\n\nruthless\n\nruthlessness\n\nselfish\n\nthe pursuit of power at all costs";
 
 // MARK: - macOS -
-"spread_templates" = "Spread Templates";
 "spreads" = "Spreads"; 
+"spread_templates" = "Spread Templates";
+"your_spreads" = "Your Spreads";

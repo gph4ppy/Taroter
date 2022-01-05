@@ -328,5 +328,6 @@
 "king_of_swords_reversed" = "arogant\n\nbezlitosny\n\nbezwzględność\n\ndespota\n\ndyktator\n\ndążenie do władzy za wszelką cenę\n\negoista\n\nirracjonalność\n\nkontrola\n\nkrytykant\n\nmanipulacja\n\nnadużywanie władzy\n\nnieuczciwość\n\nnieugięty\n\nopresja\n\nzimny";
 
 // MARK: - macOS -
-"spread_templates" = "Szablon rozkładów";
 "spreads" = "Rozkłady";
+"spread_templates" = "Szablon rozkładów";
+"your_spreads" = "Twoje rozkłady";

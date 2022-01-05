@@ -12,10 +12,10 @@ struct CardsView: View, CardManager {
     @State private var showingCardDetail: Bool = false
     @State private var selectedCard: TarotCard?
     private let columns: [GridItem]            = [GridItem(.adaptive(minimum: 130))]
-    let selectedTab: Arcana
+    let selectedTab: Tabs
     
     var body: some View {
-        let arcanaCards = TarotCards.allCases.filter { $0.tarotCard.arcana == selectedTab }
+        let arcanaCards = TarotCards.allCases.filter { $0.tarotCard.arcana.name == selectedTab.label }
         let filteredArcanaCards = arcanaCards.filter { filterCards($0, search: $searchText) }
         let allCards = TarotCards.allCases.filter { filterCards($0, search: $searchText) }
         

@@ -8,11 +8,11 @@
 import SwiftUI
 
 struct EmptyTarotCard: View {
-    @State var rotationDegrees: Double = 0
-    @State var cardMeaning: String = ""
+    @State var cardMeaning: String         = ""
     @State var showingTextFieldAlert: Bool = false
     @State var card: SpreadCard
     @Binding var cards: [SpreadCard]
+    var isEditable: Bool
     
     enum RotationButtonOperation {
         case addition
@@ -26,11 +26,19 @@ struct EmptyTarotCard: View {
                 .frame(width: 74.75, height: 124.75)
                 .shadow(radius: 5)
                 .overlay(cardNumberOverlay)
-                .rotationEffect(.degrees(rotationDegrees))
+                .rotationEffect(.degrees(card.rotationDegrees))
                 .position(card.location)
-                .gesture(DragGesture().onChanged { card.location = $0.location })
+                .gesture(
+                    // Strange code, but without the onEnded,
+                    // the location couldn't be saved
+                    // (although you could move the card).
+                    DragGesture()
+                        .onChanged { card.location = $0.location }
+                        .onEnded { cards[card.number].location = $0.location }
+                )
                 .contextMenu(menuItems: createContextMenu)
                 .id(card.id)
+                .disabled(!isEditable)
             
             // Meaning TextField Alert
             if showingTextFieldAlert {
@@ -77,15 +85,20 @@ private extension EmptyTarotCard {
          Then I assign the value of this variable
          to the cards array.
          ---------------------------------------------- */
-        withAnimation {
-            var filteredCards: [SpreadCard] = []
-            
-            filteredCards = cards.filter { spreadCard in
-                spreadCard.id != card.id
-            }
-            
-            self.cards = filteredCards
+        var filteredCards: [SpreadCard] = []
+        
+        // Filter Cards
+        filteredCards = cards.filter { spreadCard in
+            spreadCard.id != card.id
         }
+        
+        // Assign the numbers again
+        for index in filteredCards.indices {
+            filteredCards[index].number = index
+        }
+        
+        // Assign a filtered array to the displayed array.
+        self.cards = filteredCards
     }
 }
 
@@ -119,9 +132,9 @@ private extension EmptyTarotCard {
         Button {
             withAnimation(.linear(duration: 0.15)) {
                 if isAddition {
-                    self.rotationDegrees += degrees
+                    self.card.rotationDegrees += degrees
                 } else {
-                    self.rotationDegrees -= degrees
+                    self.card.rotationDegrees -= degrees
                 }
             }
         } label: {
@@ -136,14 +149,6 @@ private extension EmptyTarotCard {
             withAnimation { self.showingTextFieldAlert = true }
         } label: {
             Text("Add meaning")
-            Image(systemName: "plus")
-        }
-        
-        // Edit Card Number Button
-        Button {
-            withAnimation { self.showingTextFieldAlert = true }
-        } label: {
-            Text("Edit card number")
             Image(systemName: "plus")
         }
         

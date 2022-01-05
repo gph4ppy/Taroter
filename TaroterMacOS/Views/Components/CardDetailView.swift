@@ -50,20 +50,8 @@ struct CardDetailView: View {
             }
         }
         .overlay(alignment: .topTrailing) {
-            closeButton
+            CloseButton { self.showingCardDetail = false }
         }
-    }
-    
-    var closeButton: some View {
-        Button(action: {
-            withAnimation {
-                self.showingCardDetail = false
-            }
-        }) {
-            Image(systemName: "xmark")
-                .padding()
-        }
-        .buttonStyle(.plain)
     }
 }
 

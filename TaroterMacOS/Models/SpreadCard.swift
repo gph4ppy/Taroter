@@ -9,9 +9,10 @@ import Foundation
 
 struct SpreadCard: Hashable {
     let id: UUID
-    let number: Int
+    var number: Int
     var location: CGPoint
     var meaning: String
+    var rotationDegrees: Double
     
     func hash(into hasher: inout Hasher) {
         hasher.combine(id)
