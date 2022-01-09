@@ -13,10 +13,10 @@ enum SpreadTabs: String {
     
     var label: String {
         switch self {
-            case .savedTemplates: return "Saved templates"
-            case .newTemplate: return "New template"
-            case .savedSpreads: return ""
-            case .newSpread: return ""
+            case .savedTemplates: return LocalizedStrings.savedTemplates
+            case .newTemplate: return LocalizedStrings.newTemplate
+            case .savedSpreads: return LocalizedStrings.savedSpreads
+            case .newSpread: return LocalizedStrings.newSpread
         }
     }
 }

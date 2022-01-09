@@ -7,6 +7,7 @@
 
 import SwiftUI
 
+// A view that blends and blurs with the content behind the window.
 struct BlurView: NSViewRepresentable {
     func makeNSView(context: Context) -> NSVisualEffectView {
         let view = NSVisualEffectView()

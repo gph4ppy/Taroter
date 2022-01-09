@@ -7,17 +7,17 @@
 
 import SwiftUI
 
+enum RotationButtonOperation {
+    case addition
+    case subtraction
+}
+
 struct EmptyTarotCard: View {
     @State var cardMeaning: String         = ""
     @State var showingTextFieldAlert: Bool = false
     @State var card: SpreadCard
     @Binding var cards: [SpreadCard]
     var isEditable: Bool
-    
-    enum RotationButtonOperation {
-        case addition
-        case subtraction
-    }
     
     var body: some View {
         ZStack {
@@ -61,6 +61,18 @@ private extension EmptyTarotCard {
     func assignCardMeaning() {
         card.meaning = self.cardMeaning
         withAnimation { self.showingTextFieldAlert = false }
+    }
+    
+    func rotateCard(isAddition: Bool, degrees: Double) {
+        withAnimation {
+            if isAddition {
+                self.card.rotationDegrees += degrees
+            } else {
+                self.card.rotationDegrees -= degrees
+            }
+            
+            cards[card.number].rotationDegrees = card.rotationDegrees
+        }
     }
     
     /// This method removes the card from the spread.
@@ -129,15 +141,7 @@ private extension EmptyTarotCard {
         let isAddition: Bool  = operation == .addition
         let direction: String = isAddition ? "right" : "left"
         
-        Button {
-            withAnimation(.linear(duration: 0.15)) {
-                if isAddition {
-                    self.card.rotationDegrees += degrees
-                } else {
-                    self.card.rotationDegrees -= degrees
-                }
-            }
-        } label: {
+        Button(action: { rotateCard(isAddition: isAddition, degrees: degrees) }) {
             Text("Rotate \(Int(degrees))° \(direction)")
             Image(systemName: isAddition ? "rotate.right.fill" : "rotate.left.fill")
         }

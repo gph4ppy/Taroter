@@ -45,8 +45,8 @@ private extension MainView {
                 case .minor:       CardsView(selectedTab: .minor)
                 
                 // MARK: - Spreads
-                case .templates:   CreateSpreadTemplateView()
-                case .yourSpreads: CreateSpreadTemplateView()
+                case .templates:   SpreadTemplateView()
+                case .yourSpreads: CreateSpreadView()
             }
         }
     }
@@ -95,87 +95,3 @@ private extension MainView {
         .padding()
     }
 }
-
-//struct CreateSpreadView: View {
-//    @Namespace var namespace
-//    @State private var showingCardPicker: Bool = false
-//    private let columns: [GridItem]            = [GridItem(.adaptive(minimum: 150))]
-//    @State private var cardState: CGSize       = .zero
-//
-//    var body: some View {
-//        VStack(alignment: .center) {
-//            if showingCardPicker {
-//                Rectangle()
-//                    .overlay(alignment: .top) {
-//                        VStack {
-//                            Image(systemName: "chevron.down")
-//                                .foregroundColor(.white)
-//                                .onTapGesture {
-//                                    withAnimation {
-//                                        self.showingCardPicker = false
-//                                    }
-//                                }
-//                                .padding()
-//
-//                            LazyVGrid(columns: columns) {
-//                                ForEach(TarotCards.allCases,
-//                                        id: \.self,
-//                                        content: createGridCard)
-//                            }
-//                            .padding()
-//                        }
-//
-//                    }
-//                    .matchedGeometryEffect(id: "backgroundRect",
-//                                           in: namespace)
-//            } else {
-//                Spacer()
-//
-//                Rectangle()
-//                    .frame(width: 50, height: 25)
-//                    .cornerRadius(8)
-//                    .overlay(alignment: .center) {
-//                        Image(systemName: "chevron.up")
-//                            .foregroundColor(.white)
-//                            .onTapGesture {
-//                                withAnimation {
-//                                    self.showingCardPicker = true
-//                                }
-//                            }
-//                            .padding()
-//                    }
-//                    .offset(y: 5)
-//                    .shadow(radius: 5)
-//                    .matchedGeometryEffect(id: "backgroundRect",
-//                                           in: namespace)
-//            }
-//        }
-//        .frame(maxWidth: .infinity)
-//    }
-//
-//    @ViewBuilder private func createGridCard(card: TarotCards) -> some View {
-//        VStack {
-//            // Card Image
-//            Image(card.tarotCard.imageName)
-//                .resizable()
-//                .aspectRatio(contentMode: .fit)
-//
-//            // Card Name
-//            Text(card.tarotCard.name)
-//                .font(.footnote)
-//                .bold()
-//                .foregroundColor(.white)
-//        }
-//        .offset(x: cardState.width, y: cardState.height)
-//        .gesture(
-//            DragGesture()
-//                .onChanged { value in
-//                    withAnimation {
-//                        self.showingCardPicker = false
-//                    }
-//
-//                    cardState = value.translation
-//                }
-//        )
-//    }
-//}

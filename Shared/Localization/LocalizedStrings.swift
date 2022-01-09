@@ -331,4 +331,10 @@ struct LocalizedStrings {
     public static let spreads = NSLocalizedString("spreads", comment: "")
     public static let spreadTemplates = NSLocalizedString("spread_templates", comment: "")
     public static let yourSpreads = NSLocalizedString("your_spreads", comment: "")
+    public static let savedTemplates = NSLocalizedString("saved_templates", comment: "")
+    public static let newTemplate = NSLocalizedString("new_template", comment: "")
+    public static let savedSpreads = NSLocalizedString("saved_spreads", comment: "")
+    public static let newSpread = NSLocalizedString("new_spread", comment: "")
+    public static let noMeaning = NSLocalizedString("no_meaning", comment: "")
+    public static let meanings = NSLocalizedString("meanings", comment: "")
 }
