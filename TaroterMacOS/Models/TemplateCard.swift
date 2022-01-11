@@ -1,17 +1,15 @@
 //
-//  SpreadCard.swift
+//  TemplateCard.swift
 //  TaroterMacOS
 //
-//  Created by Jakub Dąbrowski on 09/01/2022.
+//  Created by Jakub Dąbrowski on 29/12/2021.
 //
 
 import Foundation
 
-/// A Tarot Card model
-struct SpreadCard: Hashable {
+/// An empty card model
+struct TemplateCard: Hashable {
     let id:              UUID
-    let name:            String
-    let imageName:       String
     var number:          Int
     var location:        CGPoint
     var meaning:         String

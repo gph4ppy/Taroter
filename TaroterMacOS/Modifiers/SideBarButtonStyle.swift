@@ -7,6 +7,7 @@
 
 import SwiftUI
 
+/// The modifier used to style the buttons displayed on the SideBar.
 struct SideBarButtonStyle: ViewModifier {
     let isSelected: Bool
     

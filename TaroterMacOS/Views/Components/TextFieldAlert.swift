@@ -8,30 +8,26 @@
 import SwiftUI
 
 struct TextFieldAlert: View {
-    let title: String
-    let message: String?
-    @Binding var text: String
-    @Binding var spreadDescription: String?
-    @Binding var isPresented: Bool
-    let alertType: AlertType
-    let doneButtonAction: () -> ()
-    
-    enum AlertType {
-        case saving
-        case meaning
-    }
+    @ObservedObject var viewModel: TextFieldAlertViewModel
+    @Binding var isPresented:      Bool
+    let doneButtonAction:          () -> ()
     
     var body: some View {
         VStack {
-            Text(title).bold()
-            Text(message ?? "")
+            // Alert tile and description
+            Text(viewModel.title).bold()
+            Text(viewModel.message)
             
-            TextField(alertType == .saving ? "Title" : "Card meaning or question...",
-                      text: $text)
+            // TextField
+            TextField(viewModel.textFieldPlaceholder, text: $viewModel.textFieldText)
                 .textFieldStyle(.roundedBorder)
             
-            if let spreadDescription = Binding($spreadDescription), alertType == .saving {
-                Text("Description").padding(.top)
+            // TextEditor
+            if let spreadDescription = Binding($viewModel.textEditorText),
+                viewModel.alertType == .saving {
+                Text("Description")
+                    .padding(.top)
+                
                 TextEditor(text: spreadDescription)
                     .cornerRadius(12)
                     .shadow(color: Color.primary.opacity(0.3), radius: 1, x: 0, y: 1)

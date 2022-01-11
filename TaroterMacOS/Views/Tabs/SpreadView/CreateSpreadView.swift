@@ -15,8 +15,8 @@ struct CreateSpreadView: View {
         ZStack {
             // View Switch
             switch selectedTab {
-                case .savedSpreads: EmptyView()
-                case .newSpread: NewSpreadView()
+                case .savedSpreads: SavedSpreads()
+                case .newSpread: NewSpreadView(selectedTab: $selectedTab)
                 default: EmptyView()
             }
             

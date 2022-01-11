@@ -11,15 +11,15 @@ struct SpreadTarotCard: View {
     @State private var showingPlusOverlay: Bool = false
     @State var cardPosition: CGPoint
     @State var rotationDegrees: Double
-    @Binding var cards: [TarotCards]
-    @Binding var selectedCard: TarotCards?
-    let card: TarotCards
+    @Binding var cards: [SpreadCard]
+    @Binding var selectedCard: SpreadCard?
+    let card: SpreadCard
     let isHoverable: Bool
     
     var body: some View {
         VStack(spacing: 10) {
             // Card Image
-            Image(card.tarotCard.imageName)
+            Image(card.imageName)
                 .resizable()
                 .aspectRatio(contentMode: .fit)
                 .frame(width: 74.75)
@@ -27,7 +27,7 @@ struct SpreadTarotCard: View {
                 .rotationEffect(.degrees(rotationDegrees))
             
             // Card Name
-            Text(card.tarotCard.name)
+            Text(card.name)
                 .font(.footnote)
                 .bold()
                 .foregroundColor(isHoverable ? Color(.windowBackgroundColor) : .primary)
@@ -128,11 +128,11 @@ struct SpreadTarotCard: View {
     
     /// This method removes the card from the spread.
     func removeCard() {
-        var filteredCards: [TarotCards] = []
+        var filteredCards: [SpreadCard] = []
         
         // Filter Cards
         filteredCards = cards.filter { spreadCard in
-            spreadCard.tarotCard.name != card.tarotCard.name
+            spreadCard.id != card.id
         }
         
         // Assign a filtered array to the displayed array.

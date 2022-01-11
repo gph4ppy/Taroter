@@ -16,7 +16,8 @@ struct SpreadTemplateView: View {
             // View Switch
             switch selectedTab {
                 case .savedTemplates: SavedTemplates()
-                case .newTemplate: NewSpreadTemplate(selectedTab: $selectedTab, showingSavingAlert: $showingSavingAlert)
+                case .newTemplate: NewSpreadTemplate(selectedTab: $selectedTab,
+                                                     showingAlert: $showingSavingAlert)
                 default: EmptyView()
             }
             

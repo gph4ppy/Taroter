@@ -337,3 +337,14 @@
 "new_spread" = "Nowy rozkład";
 "no_meaning" = "Brak znaczenia";
 "meanings" = "Znaczenia";
+
+// MARK: - Text Field Alert
+// Saving
+"save_spread_title" = "Zapisz rozkład";
+"save_spread_message" = "Proszę wypełnić pola poniżej, aby zapisać rozkład.";
+"save_spread_placeholder" = "Tytuł";
+
+// Meaning
+"meaning_title" = "Znaczenie";
+"meaning_message" = "Dodaj znaczenie karty lub jej pytanie";
+"meaning_placeholder" = "Znaczenie lub pytanie karty...";

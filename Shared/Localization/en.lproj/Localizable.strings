@@ -335,3 +335,14 @@
 "new_spread" = "New spread";
 "no_meaning" = "No meaning";
 "meanings" = "Meanings";
+
+// MARK: - Text Field Alert
+// Saving
+"save_spread_title" = "Save Spread";
+"save_spread_message" = "Please, fill the data below to save the spread.";
+"save_spread_placeholder" = "Title";
+
+// Meaning
+"meaning_title" = "Meaning";
+"meaning_message" = "Add card meaning or question";
+"meaning_placeholder" = "Card meaning or question...";

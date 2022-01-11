@@ -27,15 +27,18 @@ struct SpreadTemplatePreview: View {
                 let cardLocation = CGPoint(x: card.xPosition,
                                            y: card.yPosition)
                 
-                let card = SpreadCard(id: card.id ?? UUID(),
-                                      number: Int(card.number),
-                                      location: cardLocation,
-                                      meaning: card.meaning ?? LocalizedStrings.noMeaning,
-                                      rotationDegrees: card.rotationDegrees)
+                let card = TemplateCard(id: card.id ?? UUID(),
+                                        number: Int(card.number),
+                                        location: cardLocation,
+                                        meaning: card.meaning ?? LocalizedStrings.noMeaning,
+                                        rotationDegrees: card.rotationDegrees)
                 
                 // Card Shape
                 EmptyTarotCard(card: card,
-                               cards: .constant([SpreadCard]()),
+                               cards: .constant([TemplateCard]()),
+                               selectedCard: .constant(nil),
+                               viewModel: .constant(TextFieldAlertViewModel(alertType: .saving)),
+                               showingTextFieldAlert: .constant(false),
                                isEditable: false)
             }
             

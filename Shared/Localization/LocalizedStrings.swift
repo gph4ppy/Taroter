@@ -337,4 +337,15 @@ struct LocalizedStrings {
     public static let newSpread = NSLocalizedString("new_spread", comment: "")
     public static let noMeaning = NSLocalizedString("no_meaning", comment: "")
     public static let meanings = NSLocalizedString("meanings", comment: "")
+    
+    // MARK: - Text Field Alert
+    // Saving
+    public static let saveSpreadTitle = NSLocalizedString("save_spread_title", comment: "")
+    public static let saveSpreadMessage = NSLocalizedString("save_spread_message", comment: "")
+    public static let saveSpreadPlaceholder = NSLocalizedString("save_spread_placeholder", comment: "")
+    
+    // Meaning
+    public static let meaningTitle = NSLocalizedString("meaning_title", comment: "")
+    public static let meaningMessage = NSLocalizedString("meaning_message", comment: "")
+    public static let meaningPlaceholder = NSLocalizedString("meaning_placeholder", comment: "")
 }

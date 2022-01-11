@@ -7,16 +7,12 @@
 
 import SwiftUI
 
-enum RotationButtonOperation {
-    case addition
-    case subtraction
-}
-
 struct EmptyTarotCard: View {
-    @State var cardMeaning: String         = ""
-    @State var showingTextFieldAlert: Bool = false
-    @State var card: SpreadCard
-    @Binding var cards: [SpreadCard]
+    @State var card: TemplateCard
+    @Binding var cards: [TemplateCard]
+    @Binding var selectedCard: TemplateCard?
+    @Binding var viewModel: TextFieldAlertViewModel
+    @Binding var showingTextFieldAlert: Bool
     var isEditable: Bool
     
     var body: some View {
@@ -39,30 +35,12 @@ struct EmptyTarotCard: View {
                 .contextMenu(menuItems: createContextMenu)
                 .id(card.id)
                 .disabled(!isEditable)
-            
-            // Meaning TextField Alert
-            if showingTextFieldAlert {
-                TextFieldAlert(title: "Meaning",
-                               message: "Add card number \(card.number + 1) meaning or question",
-                               text: $cardMeaning,
-                               spreadDescription: .constant(nil),
-                               isPresented: $showingTextFieldAlert,
-                               alertType: .meaning,
-                               doneButtonAction: assignCardMeaning)
-            }
         }
     }
 }
 
 // MARK: - Methods
 private extension EmptyTarotCard {
-    /// This method assigns the card meaning to the card object
-    /// and closes the TextFieldAlert.
-    func assignCardMeaning() {
-        card.meaning = self.cardMeaning
-        withAnimation { self.showingTextFieldAlert = false }
-    }
-    
     func rotateCard(isAddition: Bool, degrees: Double) {
         withAnimation {
             if isAddition {
@@ -78,15 +56,15 @@ private extension EmptyTarotCard {
     /// This method removes the card from the spread.
     func removeCard() {
         /* ----------------------------------------------
-                        MARK: - Workaround
-                cards.remove(at: Index) didn't work:
+         MARK: - Workaround
+         cards.remove(at: Index) didn't work:
          
          - removing a card with its number, in many cases,
-           threw the index out of range.
+         threw the index out of range.
          
          - cards.firstIndex(of: SpreadCard) only searched
-           the first card (index 0); it couldn't find
-           and delete other cards.
+         the first card (index 0); it couldn't find
+         and delete other cards.
          
          Therefore, I filter the array by comparing the
          card ID with the ID of the selected card.
@@ -97,7 +75,7 @@ private extension EmptyTarotCard {
          Then I assign the value of this variable
          to the cards array.
          ---------------------------------------------- */
-        var filteredCards: [SpreadCard] = []
+        var filteredCards: [TemplateCard] = []
         
         // Filter Cards
         filteredCards = cards.filter { spreadCard in
@@ -150,7 +128,11 @@ private extension EmptyTarotCard {
     @ViewBuilder func createContextMenu() -> some View {
         // Add Card Meaning Button
         Button {
-            withAnimation { self.showingTextFieldAlert = true }
+            withAnimation {
+                self.viewModel = TextFieldAlertViewModel(alertType: .meaning)
+                self.selectedCard = card
+                self.showingTextFieldAlert = true
+            }
         } label: {
             Text("Add meaning")
             Image(systemName: "plus")
