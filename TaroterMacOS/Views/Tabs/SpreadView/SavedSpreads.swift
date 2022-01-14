@@ -35,7 +35,8 @@ struct SavedSpreads: View {
             
             // Saved Template
             if let spreadCards = selectedSpread?.tarotSpreadCards, showingSpread {
-                Text("\(spreadCards)")
+                SpreadPreview(showingSpread: $showingSpread,
+                              tarotSpreadCards: spreadCards)
             }
         }
     }
@@ -63,7 +64,7 @@ private extension SavedSpreads {
                 Image(systemName: "chevron.right")
                     .foregroundColor(.gray)
                 
-                Button(action: { print("REMOVE!!") }) {
+                Button(action: { removeSpread(spread: spread) }) {
                     Image(systemName: "minus.circle")
                         .foregroundColor(.red)
                 }

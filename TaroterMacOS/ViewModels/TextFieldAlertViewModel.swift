@@ -21,17 +21,24 @@ final class TextFieldAlertViewModel: ObservableObject {
         self.alertType = alertType
     }
     
+    // The type of alert that affects the content displayed.
     enum AlertType {
         case saving
         case meaning
     }
     
+    /// This method returns a tuple that contains the data displayed in the alert.
+    /// - Returns: String data contained in a tuple.
+    ///            Alert title, alert description, and TextField placeholder.
     func assignAlertData() -> (title: String, message: String, textFieldPlaceholder: String)  {
         switch alertType {
+            // Saving Alert Data
             case .saving:
                 return (title: LocalizedStrings.saveSpreadTitle,
                         message: LocalizedStrings.saveSpreadMessage,
                         textFieldPlaceholder: LocalizedStrings.saveSpreadPlaceholder)
+            
+            // Meaning Alert Data
             case .meaning:
                 return (title: LocalizedStrings.meaningTitle,
                         message: LocalizedStrings.meaningMessage,

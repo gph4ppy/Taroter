@@ -1,20 +1,19 @@
 //
-//  SpreadTemplatePreview.swift
+//  SpreadPreview.swift
 //  TaroterMacOS
 //
-//  Created by Jakub Dąbrowski on 05/01/2022.
+//  Created by Jakub Dąbrowski on 14/01/2022.
 //
 
 import SwiftUI
 
-/// A view showing the saved spread template.
-struct SpreadTemplatePreview: View {
+struct SpreadPreview: View {
     @Environment(\.colorScheme) var colorScheme: ColorScheme
     @Binding var showingSpread: Bool
-    let spreadCards: NSSet
+    let tarotSpreadCards: NSSet
     
     var body: some View {
-        let cards = spreadCards.toArray(SpreadCards.self)
+        let cards = tarotSpreadCards.toArray(TarotSpreadCards.self)
         let sortedCards = cards.sorted { $0.number < $1.number }
         
         ZStack {
@@ -28,18 +27,21 @@ struct SpreadTemplatePreview: View {
                 let cardLocation = CGPoint(x: card.xPosition,
                                            y: card.yPosition)
                 
-                let card = TemplateCard(id: card.id ?? UUID(),
-                                        number: Int(card.number),
-                                        location: cardLocation,
-                                        meaning: card.meaning ?? LocalizedStrings.noMeaning,
-                                        rotationDegrees: card.rotationDegrees)
+                let card = SpreadCard(id: card.id ?? UUID(),
+                                      name: card.name ?? "",
+                                      imageName: card.imageName ?? "",
+                                      number: Int(card.number),
+                                      location: cardLocation,
+                                      meaning: card.meaning ?? LocalizedStrings.noMeaning,
+                                      rotationDegrees: card.rotationDegrees)
                 
                 // Card Shape
-                TemplateCardView(card: card,
-                                 isEditable: false,
-                                 showingTextFieldAlert: .constant(false),
-                                 alertViewModel: nil,
-                                 cardViewModel: nil)
+                SpreadTarotCard(cardPosition: cardLocation,
+                                rotationDegrees: card.rotationDegrees,
+                                cards: .constant([]),
+                                selectedCard: .constant(nil),
+                                card: card,
+                                isHoverable: false)
             }
             
             // Meanings List
@@ -51,7 +53,7 @@ struct SpreadTemplatePreview: View {
 }
 
 // MARK: - Views
-private extension SpreadTemplatePreview {
+private extension SpreadPreview {
     var background: some View {
         // I couldn't find the color that matched the background (in dark mode),
         // NSColor.underPageBackgroundColor didn't work either,
@@ -60,7 +62,7 @@ private extension SpreadTemplatePreview {
         colorScheme == .dark ? AnyView(List{}) : AnyView(Color(.windowBackgroundColor))
     }
     
-    @ViewBuilder func createMeaningsList(cards: [SpreadCards]) -> some View {
+    @ViewBuilder func createMeaningsList(cards: [TarotSpreadCards]) -> some View {
         let sortedCards = cards.sorted { $0.number < $1.number }
         
         ScrollView {

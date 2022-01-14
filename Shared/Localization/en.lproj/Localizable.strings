@@ -337,6 +337,8 @@
 "meanings" = "Meanings";
 
 // MARK: - Text Field Alert
+"description" = "Description";
+
 // Saving
 "save_spread_title" = "Save Spread";
 "save_spread_message" = "Please, fill the data below to save the spread.";
@@ -346,3 +348,7 @@
 "meaning_title" = "Meaning";
 "meaning_message" = "Add card meaning or question";
 "meaning_placeholder" = "Card meaning or question...";
+
+// Buttons
+"save" = "Save";
+"cancel" = "Cancel";

@@ -339,6 +339,8 @@
 "meanings" = "Znaczenia";
 
 // MARK: - Text Field Alert
+"description" = "Opis";
+
 // Saving
 "save_spread_title" = "Zapisz rozkład";
 "save_spread_message" = "Proszę wypełnić pola poniżej, aby zapisać rozkład.";
@@ -348,3 +350,7 @@
 "meaning_title" = "Znaczenie";
 "meaning_message" = "Dodaj znaczenie karty lub jej pytanie";
 "meaning_placeholder" = "Znaczenie lub pytanie karty...";
+
+// Buttons
+"save" = "Zapisz";
+"cancel" = "Anuluj";

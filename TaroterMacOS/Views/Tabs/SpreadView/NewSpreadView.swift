@@ -17,9 +17,9 @@ struct NewSpreadView: View {
     // Core Data Properties
     @Environment(\.managedObjectContext) private var viewContext
     @FetchRequest(
-        sortDescriptors: [NSSortDescriptor(keyPath: \SpreadTemplate.date, ascending: true)],
+        sortDescriptors: [NSSortDescriptor(keyPath: \TarotSpreads.date, ascending: true)],
         animation: .default
-    ) private var spreadTemplates: FetchedResults<SpreadTemplate>
+    ) private var spreadTemplates: FetchedResults<TarotSpreads>
     
     var body: some View {
         ZStack {
@@ -71,7 +71,7 @@ struct NewSpreadView: View {
             if showingSavingAlert {
                 TextFieldAlert(viewModel: viewModel,
                                isPresented: $showingSavingAlert,
-                               doneButtonAction: saveTarotSpread)
+                               saveAction: saveTarotSpread)
             }
         }
     }
@@ -102,27 +102,29 @@ private extension NewSpreadView {
                 newSpread.date = Date()
                 newSpread.title = viewModel.textFieldText
                 newSpread.spreadDescription = viewModel.textEditorText
-//                newSpread.tarotSpreadCards = saveSpreadCards(from: self.displayedCards)
+                newSpread.tarotSpreadCards = saveSpreadCards(from: self.displayedCards)
     
                 PersistenceController.shared.save()
                 self.showingSavingAlert = false
-                self.selectedTab = .savedTemplates
+                self.selectedTab = .savedSpreads
             }
         }
     
         func saveSpreadCards(from cards: [SpreadCard]) -> NSSet? {
-            var cardsArray: [SpreadCard] = []
-    
+            var cardsArray: [TarotSpreadCards] = []
+
             for card in cards {
-                let newCard = TarotSpreadCards(context: viewContext)
-                newCard.id = UUID()
-                newCard.meaning = card.meaning
-                newCard.number = Int32(card.number)
-                newCard.xPosition = card.location.x
-                newCard.yPosition = card.location.y
+                let newCard             = TarotSpreadCards(context: viewContext)
+                newCard.id              = UUID()
+                newCard.name            = card.name
+                newCard.imageName       = card.imageName
+                newCard.meaning         = card.meaning
+                newCard.number          = Int32(card.number)
+                newCard.xPosition       = card.location.x
+                newCard.yPosition       = card.location.y
                 newCard.rotationDegrees = card.rotationDegrees
     
-//                cardsArray.append(newCard)
+                cardsArray.append(newCard)
             }
     
             return NSSet(array: cardsArray)

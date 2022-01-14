@@ -7,6 +7,7 @@
 
 import SwiftUI
 
+/// A button used to close the parent view.
 struct CloseButton: View {
     let action: () -> ()
     

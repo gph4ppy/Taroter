@@ -8,12 +8,12 @@
 import SwiftUI
 
 struct NewSpreadTemplate: View {
-    @State private var viewModel: TextFieldAlertViewModel = TextFieldAlertViewModel(alertType: .saving)
-    @State private var cards: [TemplateCard]              = []
-    @State private var selectedCard: TemplateCard?
+    @StateObject private var cardViewModel: TemplateCardViewModel = TemplateCardViewModel(selectedCard: nil)
+    @StateObject private var alertViewModel: TextFieldAlertViewModel    = TextFieldAlertViewModel(alertType: .saving)
     @Binding var selectedTab: SpreadTabs
     @Binding var showingAlert: Bool
     
+    // Core Data Properties
     @Environment(\.managedObjectContext) private var viewContext
     @FetchRequest(
         sortDescriptors: [NSSortDescriptor(keyPath: \SpreadTemplate.date, ascending: true)],
@@ -27,28 +27,27 @@ struct NewSpreadTemplate: View {
                 createTemplateManagementButtons(windowSize: geom.size)
                 
                 // Cards View
-                ForEach(cards, id: \.self) { card in
-                    EmptyTarotCard(card: card,
-                                   cards: $cards,
-                                   selectedCard: $selectedCard,
-                                   viewModel: $viewModel,
-                                   showingTextFieldAlert: $showingAlert,
-                                   isEditable: true)
+                ForEach(cardViewModel.cards, id: \.self) { card in
+                    TemplateCardView(card: card,
+                                     isEditable: true,
+                                     showingTextFieldAlert: $showingAlert,
+                                     alertViewModel: alertViewModel,
+                                     cardViewModel: cardViewModel)
                 }
             }
             
             // Saving TextField Alert
-            if showingAlert, viewModel.alertType == .saving {
-                TextFieldAlert(viewModel: viewModel,
+            if showingAlert, alertViewModel.alertType == .saving {
+                TextFieldAlert(viewModel: alertViewModel,
                                isPresented: $showingAlert,
-                               doneButtonAction: saveSpreadTemplate)
+                               saveAction: saveSpreadTemplate)
             }
             
             // Meaning TextField Alert
-            if showingAlert, viewModel.alertType == .meaning  {
-                TextFieldAlert(viewModel: viewModel,
+            if showingAlert, alertViewModel.alertType == .meaning  {
+                TextFieldAlert(viewModel: alertViewModel,
                                isPresented: $showingAlert,
-                               doneButtonAction: assignCardMeaning)
+                               saveAction: assignCardMeaning)
             }
         }
     }
@@ -62,26 +61,26 @@ private extension NewSpreadTemplate {
     ///                         (x = half-width and y = half-height).
     func addCard(windowSize: CGSize) {
         let card = TemplateCard(id: UUID(),
-                                number: cards.count,
+                                number: cardViewModel.cards.count,
                                 location: CGPoint(x: windowSize.width / 2,
                                                   y: windowSize.height / 2),
                                 meaning: "",
                                 rotationDegrees: 0.0)
         
-        self.cards.append(card)
+        cardViewModel.cards.append(card)
     }
     
     func clearSpread() {
         withAnimation {
-            self.cards.removeAll()
+            cardViewModel.cards.removeAll()
         }
     }
     
     /// This method assigns the card meaning to the card object
     /// and closes the TextFieldAlert.
     func assignCardMeaning() {
-        if let index = selectedCard?.number {
-            cards[index].meaning = viewModel.textFieldText
+        if let index = cardViewModel.selectedCard?.number {
+            cardViewModel.cards[index].meaning = alertViewModel.textFieldText
             withAnimation { self.showingAlert = false }
         }
     }
@@ -96,9 +95,9 @@ private extension NewSpreadTemplate {
             // Assign Data
             newTemplate.id                = UUID()
             newTemplate.date              = Date()
-            newTemplate.title             = viewModel.textFieldText
-            newTemplate.spreadDescription = viewModel.textEditorText
-            newTemplate.spreadCards       = saveSpreadCards(from: self.cards)
+            newTemplate.title             = alertViewModel.textFieldText
+            newTemplate.spreadDescription = alertViewModel.textEditorText
+            newTemplate.spreadCards       = saveSpreadCards(from: cardViewModel.cards)
             
             // Save
             PersistenceController.shared.save()
@@ -136,22 +135,22 @@ private extension NewSpreadTemplate {
             Button(action: clearSpread) {
                 Image(systemName: "xmark")
             }
-            .disabled(cards.isEmpty ? true : false)
+            .disabled(cardViewModel.cards.isEmpty ? true : false)
             
             // Save Template Button
             Button(action: { withAnimation {
-                self.viewModel = TextFieldAlertViewModel(alertType: .saving)
+                self.alertViewModel.alertType = .saving
                 self.showingAlert = true
             } }) {
                 Image(systemName: "square.and.arrow.down")
             }
-            .disabled(cards.isEmpty ? true : false)
+            .disabled(cardViewModel.cards.isEmpty ? true : false)
             
             // Add Card Button
             Button(action: { addCard(windowSize: windowSize) }) {
                 Image(systemName: "plus")
             }
-            .disabled(cards.count == 78 ? true : false)
+            .disabled(cardViewModel.cards.count == 78 ? true : false)
         }
         .disabled(showingAlert ? true : false)
         .frame(maxWidth: .infinity,

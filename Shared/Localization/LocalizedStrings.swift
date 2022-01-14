@@ -339,6 +339,8 @@ struct LocalizedStrings {
     public static let meanings = NSLocalizedString("meanings", comment: "")
     
     // MARK: - Text Field Alert
+    public static let description = NSLocalizedString("description", comment: "")
+
     // Saving
     public static let saveSpreadTitle = NSLocalizedString("save_spread_title", comment: "")
     public static let saveSpreadMessage = NSLocalizedString("save_spread_message", comment: "")
@@ -348,4 +350,8 @@ struct LocalizedStrings {
     public static let meaningTitle = NSLocalizedString("meaning_title", comment: "")
     public static let meaningMessage = NSLocalizedString("meaning_message", comment: "")
     public static let meaningPlaceholder = NSLocalizedString("meaning_placeholder", comment: "")
+    
+    // Buttons
+    public static let save = NSLocalizedString("save", comment: "")
+    public static let cancel = NSLocalizedString("cancel", comment: "")
 }

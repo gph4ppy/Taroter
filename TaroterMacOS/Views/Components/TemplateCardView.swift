@@ -1,5 +1,5 @@
 //
-//  EmptyTarotCard.swift
+//  TemplateCardView.swift
 //  TaroterMacOS
 //
 //  Created by Jakub Dąbrowski on 30/12/2021.
@@ -7,13 +7,15 @@
 
 import SwiftUI
 
-struct EmptyTarotCard: View {
+struct TemplateCardView: View {
+    // Properties
     @State var card: TemplateCard
-    @Binding var cards: [TemplateCard]
-    @Binding var selectedCard: TemplateCard?
-    @Binding var viewModel: TextFieldAlertViewModel
-    @Binding var showingTextFieldAlert: Bool
     var isEditable: Bool
+    @Binding var showingTextFieldAlert: Bool
+    
+    // View Models
+    let alertViewModel: TextFieldAlertViewModel?
+    let cardViewModel: TemplateCardViewModel?
     
     var body: some View {
         ZStack {
@@ -25,14 +27,11 @@ struct EmptyTarotCard: View {
                 .rotationEffect(.degrees(card.rotationDegrees))
                 .position(card.location)
                 .gesture(
-                    // Strange code, but without the onEnded,
-                    // the location couldn't be saved
-                    // (although you could move the card).
                     DragGesture()
-                        .onChanged { card.location = $0.location }
-                        .onEnded { cards[card.number].location = $0.location }
+                        .onChanged(relocateCard)
+                        .onEnded(saveCardPosition)
                 )
-                .contextMenu(menuItems: createContextMenu)
+                .contextMenu { isEditable ? createContextMenu() : nil }
                 .id(card.id)
                 .disabled(!isEditable)
         }
@@ -40,7 +39,7 @@ struct EmptyTarotCard: View {
 }
 
 // MARK: - Methods
-private extension EmptyTarotCard {
+private extension TemplateCardView {
     func rotateCard(isAddition: Bool, degrees: Double) {
         withAnimation {
             if isAddition {
@@ -49,15 +48,32 @@ private extension EmptyTarotCard {
                 self.card.rotationDegrees -= degrees
             }
             
-            cards[card.number].rotationDegrees = card.rotationDegrees
+            if let cardViewModel = cardViewModel {
+                let index = card.number
+                cardViewModel.cards[index].rotationDegrees = self.card.rotationDegrees
+            }
+        }
+    }
+    
+    func relocateCard(value: DragGesture.Value) -> Void {
+        if let cardViewModel = cardViewModel {
+            cardViewModel.selectedCard = card
+            card.location = value.location
+        }
+    }
+    
+    func saveCardPosition(value: DragGesture.Value) -> Void {
+        if let cardViewModel = cardViewModel {
+            let index = card.number
+            cardViewModel.cards[index].location = value.location
         }
     }
     
     /// This method removes the card from the spread.
     func removeCard() {
         /* ----------------------------------------------
-         MARK: - Workaround
-         cards.remove(at: Index) didn't work:
+                        MARK: - Workaround
+              cards.remove(at: Index) didn't work:
          
          - removing a card with its number, in many cases,
          threw the index out of range.
@@ -77,23 +93,37 @@ private extension EmptyTarotCard {
          ---------------------------------------------- */
         var filteredCards: [TemplateCard] = []
         
-        // Filter Cards
-        filteredCards = cards.filter { spreadCard in
-            spreadCard.id != card.id
+        if let cardViewModel = cardViewModel {
+            // Filter Cards
+            filteredCards = cardViewModel.cards.filter { spreadCard in
+                spreadCard.id != card.id
+            }
+            
+            // Assign the numbers again
+            for index in filteredCards.indices {
+                filteredCards[index].number = index
+            }
+            
+            // Assign a filtered array to the displayed array.
+            cardViewModel.cards = filteredCards
         }
-        
-        // Assign the numbers again
-        for index in filteredCards.indices {
-            filteredCards[index].number = index
+    }
+    
+    func addMeaning() {
+        withAnimation {
+            // Assign selected card
+            guard let cardViewModel = cardViewModel else { return }
+            cardViewModel.selectedCard = card
+            
+            // Show TextFieldAlert
+            self.alertViewModel?.alertType = .meaning
+            self.showingTextFieldAlert = true
         }
-        
-        // Assign a filtered array to the displayed array.
-        self.cards = filteredCards
     }
 }
 
 // MARK: - Views
-private extension EmptyTarotCard {
+private extension TemplateCardView {
     var cardNumberOverlay: some View {
         Text(String(card.number + 1))
             .font(.largeTitle)
@@ -127,13 +157,7 @@ private extension EmptyTarotCard {
     
     @ViewBuilder func createContextMenu() -> some View {
         // Add Card Meaning Button
-        Button {
-            withAnimation {
-                self.viewModel = TextFieldAlertViewModel(alertType: .meaning)
-                self.selectedCard = card
-                self.showingTextFieldAlert = true
-            }
-        } label: {
+        Button(action: addMeaning) {
             Text("Add meaning")
             Image(systemName: "plus")
         }

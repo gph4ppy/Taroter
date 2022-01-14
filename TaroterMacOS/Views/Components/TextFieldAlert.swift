@@ -10,7 +10,7 @@ import SwiftUI
 struct TextFieldAlert: View {
     @ObservedObject var viewModel: TextFieldAlertViewModel
     @Binding var isPresented:      Bool
-    let doneButtonAction:          () -> ()
+    let saveAction:                () -> ()
     
     var body: some View {
         VStack {
@@ -24,48 +24,66 @@ struct TextFieldAlert: View {
             
             // TextEditor
             if let spreadDescription = Binding($viewModel.textEditorText),
-                viewModel.alertType == .saving {
-                Text("Description")
-                    .padding(.top)
-                
-                TextEditor(text: spreadDescription)
-                    .cornerRadius(12)
-                    .shadow(color: Color.primary.opacity(0.3), radius: 1, x: 0, y: 1)
-                    .frame(maxHeight: 150)
+               viewModel.alertType == .saving {
+                descriptionView(text: spreadDescription)
             }
             
             Divider()
             
-            HStack {
-                Button(action: doneButtonAction) {
-                    Text("Done")
-                }
-                .frame(maxWidth: .infinity, alignment: .center)
-                
-                Divider()
-                
-                Button(action: {
-                    withAnimation {
-                        self.isPresented = false
-                    }
-                }) {
-                    Text("Cancel")
-                        .bold()
-                }
-                .frame(maxWidth: .infinity, alignment: .center)
-            }
-            .foregroundColor(.blue)
-            .buttonStyle(.plain)
-            .frame(maxHeight: 44)
+            // Buttons HStack
+            buttons
         }
         .padding()
-        .background(
-            RoundedRectangle(cornerRadius: 12)
-                .fill(Color(NSColor.windowBackgroundColor))
-                .shadow(radius: 2)
-        )
+        .background(background)
         .padding()
         .transition(.scale(scale: 0.25, anchor: .center))
         .zIndex(1)
+    }
+}
+
+// MARK: - Views
+private extension TextFieldAlert {
+    /// Alert background.
+    var background: some View {
+        RoundedRectangle(cornerRadius: 12)
+            .fill(Color(NSColor.windowBackgroundColor))
+            .shadow(radius: 2)
+    }
+    
+    /// Save and Cancel Buttons
+    var buttons: some View {
+        HStack {
+            // Save Button
+            Button(action: saveAction) {
+                Text(LocalizedStrings.save)
+                    .frame(maxWidth: .infinity, alignment: .center)
+            }
+            
+            Divider()
+            
+            // Cancel Button
+            Button(action: { withAnimation { self.isPresented = false } }) {
+                Text(LocalizedStrings.cancel)
+                    .bold()
+                    .frame(maxWidth: .infinity, alignment: .center)
+            }
+        }
+        .buttonStyle(.plain)
+        .foregroundColor(.blue)
+        .frame(maxHeight: 44)
+    }
+    
+    /// A TextEditor and a label above it.
+    /// - Parameter text: A Binding to the variable containing
+    ///                   the description text to edit.
+    /// - Returns: A view consisting of TextEditor and Text above it.
+    @ViewBuilder func descriptionView(text: Binding<String>) -> some View {
+        Text(LocalizedStrings.description)
+            .padding(.top)
+        
+        TextEditor(text: text)
+            .cornerRadius(12)
+            .shadow(color: Color.primary.opacity(0.3), radius: 1, x: 0, y: 1)
+            .frame(maxHeight: 150)
     }
 }
