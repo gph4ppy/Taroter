@@ -8,13 +8,15 @@
 import SwiftUI
 
 struct SpreadTarotCard: View {
+    // Properties
     @State private var showingPlusOverlay: Bool = false
-    @State var cardPosition: CGPoint
-    @State var rotationDegrees: Double
-    @Binding var cards: [SpreadCard]
-    @Binding var selectedCard: SpreadCard?
-    let card: SpreadCard
-    let isHoverable: Bool
+    @State var card: SpreadCard
+    var isHoverable: Bool
+    @Binding var showingTextFieldAlert: Bool
+    
+    // View Models
+    let alertViewModel: TextFieldAlertViewModel?
+    let cardViewModel: TarotCardViewModel?
     
     var body: some View {
         VStack(spacing: 10) {
@@ -24,7 +26,7 @@ struct SpreadTarotCard: View {
                 .aspectRatio(contentMode: .fit)
                 .frame(width: 74.75)
                 .shadow(color: Color(.windowBackgroundColor), radius: 3)
-                .rotationEffect(.degrees(rotationDegrees))
+                .rotationEffect(.degrees(card.rotationDegrees))
             
             // Card Name
             Text(card.name)
@@ -34,19 +36,19 @@ struct SpreadTarotCard: View {
         }
         .padding()
         .overlay(plusOverlay)
-        .position(x: cardPosition.x, y: cardPosition.y)
+        .position(x: card.location.x, y: card.location.y)
         .gesture(gesture)
         .onHover(perform: showPlusOverlay)
         .disabled(isHoverable)
         .contextMenu {
             if !isHoverable {
-                // Add Card Meaning Button
-                //        Button {
-                //            withAnimation { self.showingTextFieldAlert = true }
-                //        } label: {
-                //            Text("Add meaning")
-                //            Image(systemName: "plus")
-                //        }
+                //                 Add Card Meaning Button
+                //                        Button {
+                //                            withAnimation { self.showingTextFieldAlert = true }
+                //                        } label: {
+                //                            Text("Add meaning")
+                //                            Image(systemName: "plus")
+                //                        }
                 
                 // Rotate x° Buttons
                 rotationButtons
@@ -68,11 +70,24 @@ struct SpreadTarotCard: View {
         }
     }
     
-    var gesture: _ChangedGesture<DragGesture> {
+    var gesture: _EndedGesture<_ChangedGesture<DragGesture>> {
         DragGesture()
-            .onChanged { value in
-                cardPosition = value.location
-            }
+            .onChanged(relocateCard)
+            .onEnded(saveCardPosition)
+    }
+    
+    func relocateCard(value: DragGesture.Value) -> Void {
+        if let cardViewModel = cardViewModel {
+            cardViewModel.selectedCard = card
+            card.location = value.location
+        }
+    }
+    
+    func saveCardPosition(value: DragGesture.Value) -> Void {
+        if let cardViewModel = cardViewModel {
+            let index = card.number
+            cardViewModel.cards[index].location = value.location
+        }
     }
     
     var plusOverlay: some View {
@@ -117,11 +132,16 @@ struct SpreadTarotCard: View {
     }
     
     func rotateCard(isAddition: Bool, degrees: Double) {
-        withAnimation(.linear(duration: 0.15)) {
+        withAnimation {
             if isAddition {
-                self.rotationDegrees += degrees
+                self.card.rotationDegrees += degrees
             } else {
-                self.rotationDegrees -= degrees
+                self.card.rotationDegrees -= degrees
+            }
+            
+            if let cardViewModel = cardViewModel {
+                let index = card.number
+                cardViewModel.cards[index].rotationDegrees = self.card.rotationDegrees
             }
         }
     }
@@ -130,12 +150,14 @@ struct SpreadTarotCard: View {
     func removeCard() {
         var filteredCards: [SpreadCard] = []
         
-        // Filter Cards
-        filteredCards = cards.filter { spreadCard in
-            spreadCard.id != card.id
+        if let cardViewModel = cardViewModel {
+            // Filter Cards
+            filteredCards = cardViewModel.cards.filter { spreadCard in
+                spreadCard.id != card.id
+            }
+            
+            // Assign a filtered array to the displayed array.
+            cardViewModel.cards = filteredCards
         }
-        
-        // Assign a filtered array to the displayed array.
-        self.cards = filteredCards
     }
 }

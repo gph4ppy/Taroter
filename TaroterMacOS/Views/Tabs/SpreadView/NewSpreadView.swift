@@ -8,10 +8,9 @@
 import SwiftUI
 
 struct NewSpreadView: View {
-    @State private var viewModel: TextFieldAlertViewModel = TextFieldAlertViewModel(alertType: .saving)
-    @State private var displayedCards: [SpreadCard]       = []
-    @State private var showingSavingAlert: Bool           = false
-    @State private var selectedCard: SpreadCard?
+    @ObservedObject private var alertViewModel = TextFieldAlertViewModel(alertType: .saving)
+    @ObservedObject private var cardViewModel = TarotCardViewModel(selectedCard: nil)
+    @Binding var showingAlert: Bool
     @Binding var selectedTab: SpreadTabs
     
     // Core Data Properties
@@ -28,50 +27,55 @@ struct NewSpreadView: View {
                 createTemplateManagementButtons(windowSize: geom.size)
                 
                 // Cards View
-                ForEach(displayedCards, id: \.self) { card in
-                    SpreadTarotCard(cardPosition: CGPoint(x: geom.size.width / 2,
-                                                          y: geom.size.height / 2),
-                                    rotationDegrees: 0.0,
-                                    cards: $displayedCards,
-                                    selectedCard: $selectedCard,
-                                    card: card,
-                                    isHoverable: false)
+                ForEach(cardViewModel.cards, id: \.self) { card in
+                    SpreadTarotCard(card: card,
+                                    isHoverable: false,
+                                    showingTextFieldAlert: $showingAlert,
+                                    alertViewModel: alertViewModel,
+                                    cardViewModel: cardViewModel)
                         .shadow(radius: 3)
                         .transition(.scale(scale: 0.5, anchor: .center))
                 }
-            }
-            
-            ExpandableView {
-                ScrollView {
-                    LazyVStack {
-                        ForEach(TarotCards.allCases, id: \.self) { card in
-                            let tarotCard = SpreadCard(id: UUID(),
-                                                       name: card.tarotCard.name,
-                                                       imageName: card.tarotCard.imageName,
-                                                       number: displayedCards.count,
-                                                       location: CGPoint(x: 125, y: 125),
-                                                       meaning: "",
-                                                       rotationDegrees: 0.0)
-                            
-                            Button(action: { addCard(card: tarotCard) }) {
-                                SpreadTarotCard(cardPosition: tarotCard.location,
-                                                rotationDegrees: 0.0,
-                                                cards: $displayedCards,
-                                                selectedCard: $selectedCard,
-                                                card: tarotCard,
-                                                isHoverable: true)
+                
+                ExpandableView {
+                    ScrollView {
+                        LazyVStack {
+                            ForEach(TarotCards.allCases, id: \.self) { card in
+                                var tarotCard = SpreadCard(id: UUID(),
+                                                           name: card.tarotCard.name,
+                                                           imageName: card.tarotCard.imageName,
+                                                           number: cardViewModel.cards.count,
+                                                           location: CGPoint(x: 125, y: 125),
+                                                           meaning: "",
+                                                           rotationDegrees: 0.0)
+                                
+                                Button(action: { addCard(card: &tarotCard, size: geom.size) }) {
+                                    SpreadTarotCard(card: tarotCard,
+                                                    isHoverable: true,
+                                                    showingTextFieldAlert: $showingAlert,
+                                                    alertViewModel: alertViewModel,
+                                                    cardViewModel: cardViewModel)
+                                }
+                                .buttonStyle(.plain)
                             }
-                            .buttonStyle(.plain)
                         }
                     }
                 }
+                .frame(maxHeight: .infinity)
             }
             
-            // TextField Save Spread Alert
-            if showingSavingAlert {
-                TextFieldAlert(viewModel: viewModel,
-                               isPresented: $showingSavingAlert,
+            // Saving TextField Alert
+            if showingAlert, alertViewModel.alertType == .saving {
+                TextFieldAlert(viewModel: alertViewModel,
+                               isPresented: $showingAlert,
                                saveAction: saveTarotSpread)
+            }
+            
+            // Meaning TextField Alert
+            if showingAlert, alertViewModel.alertType == .meaning  {
+                TextFieldAlert(viewModel: alertViewModel,
+                               isPresented: $showingAlert,
+                               saveAction: assignCardMeaning)
             }
         }
     }
@@ -79,56 +83,84 @@ struct NewSpreadView: View {
 
 // MARK: - Methods
 private extension NewSpreadView {
-    func addCard(card: SpreadCard) {
-        if !displayedCards.contains(card) {
+    // MARK: - TO FIX!!!!
+    func addCard(card: inout SpreadCard, size: CGSize) {
+        if !cardViewModel.cards.contains(card) {
             withAnimation(.spring(response: 0.5, dampingFraction: 0.6, blendDuration: 0)) {
-                self.displayedCards.append(card)
+                card.location = CGPoint(x: size.width / 2, y: size.height / 2)
+                cardViewModel.cards.append(card)
             }
         }
     }
     
+    /// This method removes all added cards from the array and view.
     func clearSpread() {
-        self.displayedCards.removeAll()
+        cardViewModel.cards.removeAll()
+    }
+    
+    /// This method assigns the card meaning to the card object
+    /// and closes the TextFieldAlert.
+    func assignCardMeaning() {
+        if let index = cardViewModel.selectedCard?.number {
+            cardViewModel.cards[index].meaning = alertViewModel.textFieldText
+            withAnimation { self.showingAlert = false }
+        }
+    }
+    
+    /// This method clears all the TextFields in
+    /// TextFieldViewModel and shows a TextFieldAlert.
+    func showSavingAlert() {
+        withAnimation {
+            self.alertViewModel.alertType = .saving
+            self.alertViewModel.textFieldText = ""
+            self.alertViewModel.textEditorText = ""
+            self.showingAlert = true
+        }
     }
 }
 
 // MARK: - Data Management
 private extension NewSpreadView {
-        func saveTarotSpread() {
-            withAnimation {
-                let newSpread = TarotSpreads(context: viewContext)
-    
-                newSpread.id = UUID()
-                newSpread.date = Date()
-                newSpread.title = viewModel.textFieldText
-                newSpread.spreadDescription = viewModel.textEditorText
-                newSpread.tarotSpreadCards = saveSpreadCards(from: self.displayedCards)
-    
-                PersistenceController.shared.save()
-                self.showingSavingAlert = false
-                self.selectedTab = .savedSpreads
-            }
+    func saveTarotSpread() {
+        withAnimation {
+            // Create New Spread
+            let newSpread = TarotSpreads(context: viewContext)
+            
+            // Assign Spread Data
+            newSpread.id                = UUID()
+            newSpread.date              = Date()
+            newSpread.title             = alertViewModel.textFieldText
+            newSpread.spreadDescription = alertViewModel.textEditorText
+            newSpread.tarotSpreadCards  = saveSpreadCards(from: cardViewModel.cards)
+            
+            // Save Spread
+            PersistenceController.shared.save()
+            
+            // Hide Alert and show Saved Spreads
+            self.showingAlert = false
+            self.selectedTab = .savedSpreads
         }
+    }
     
-        func saveSpreadCards(from cards: [SpreadCard]) -> NSSet? {
-            var cardsArray: [TarotSpreadCards] = []
-
-            for card in cards {
-                let newCard             = TarotSpreadCards(context: viewContext)
-                newCard.id              = UUID()
-                newCard.name            = card.name
-                newCard.imageName       = card.imageName
-                newCard.meaning         = card.meaning
-                newCard.number          = Int32(card.number)
-                newCard.xPosition       = card.location.x
-                newCard.yPosition       = card.location.y
-                newCard.rotationDegrees = card.rotationDegrees
-    
-                cardsArray.append(newCard)
-            }
-    
-            return NSSet(array: cardsArray)
+    func saveSpreadCards(from cards: [SpreadCard]) -> NSSet? {
+        var cardsArray: [TarotSpreadCards] = []
+        
+        for card in cards {
+            let newCard             = TarotSpreadCards(context: viewContext)
+            newCard.id              = UUID()
+            newCard.name            = card.name
+            newCard.imageName       = card.imageName
+            newCard.meaning         = card.meaning
+            newCard.number          = Int32(card.number)
+            newCard.xPosition       = card.location.x
+            newCard.yPosition       = card.location.y
+            newCard.rotationDegrees = card.rotationDegrees
+            
+            cardsArray.append(newCard)
         }
+        
+        return NSSet(array: cardsArray)
+    }
 }
 
 // MARK: - Views
@@ -139,15 +171,15 @@ private extension NewSpreadView {
             Button(action: clearSpread) {
                 Image(systemName: "xmark")
             }
-            .disabled(displayedCards.isEmpty ? true : false)
+            .disabled(cardViewModel.cards.isEmpty ? true : false)
             
             // Save Template Button
             Button(action: saveTarotSpread) {
                 Image(systemName: "square.and.arrow.down")
             }
-            .disabled(displayedCards.isEmpty ? true : false)
+            .disabled(cardViewModel.cards.isEmpty ? true : false)
         }
-        .disabled(showingSavingAlert ? true : false)
+        .disabled(showingAlert ? true : false)
         .frame(maxWidth: .infinity,
                alignment: .topTrailing)
         .zIndex(1)

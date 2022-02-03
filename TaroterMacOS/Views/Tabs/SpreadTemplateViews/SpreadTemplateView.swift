@@ -7,6 +7,7 @@
 
 import SwiftUI
 
+/// This view is used to show the views for selected template tabs.
 struct SpreadTemplateView: View {
     @State private var selectedTab: SpreadTabs  = .savedTemplates
     @State private var showingSavingAlert: Bool = false
@@ -42,6 +43,9 @@ struct SpreadTemplateView: View {
 
 // MARK: - Methods
 private extension SpreadTemplateView {
+    /// This method converts the provided title to a case of the SpreadTabs enum.
+    /// - Parameter title: A [String] title of the selected tab.
+    /// - Returns: SpreadTabs enum cases
     func selectTab(title: String) -> SpreadTabs {
         switch title {
             case SpreadTabs.savedTemplates.label: return .savedTemplates

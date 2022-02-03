@@ -18,7 +18,7 @@ struct SpreadPreview: View {
         
         ZStack {
             // Background with a close button
-            background.overlay(alignment: .topTrailing) {
+            Background().overlay(alignment: .topTrailing) {
                 CloseButton { self.showingSpread = false }
             }
             
@@ -36,12 +36,11 @@ struct SpreadPreview: View {
                                       rotationDegrees: card.rotationDegrees)
                 
                 // Card Shape
-                SpreadTarotCard(cardPosition: cardLocation,
-                                rotationDegrees: card.rotationDegrees,
-                                cards: .constant([]),
-                                selectedCard: .constant(nil),
-                                card: card,
-                                isHoverable: false)
+                SpreadTarotCard(card: card,
+                                isHoverable: false,
+                                showingTextFieldAlert: .constant(false),
+                                alertViewModel: nil,
+                                cardViewModel: nil)
             }
             
             // Meanings List
@@ -54,14 +53,6 @@ struct SpreadPreview: View {
 
 // MARK: - Views
 private extension SpreadPreview {
-    var background: some View {
-        // I couldn't find the color that matched the background (in dark mode),
-        // NSColor.underPageBackgroundColor didn't work either,
-        // so I used an empty list.
-        // Modern problems require modern solutions. ¯\_(ツ)_/¯
-        colorScheme == .dark ? AnyView(List{}) : AnyView(Color(.windowBackgroundColor))
-    }
-    
     @ViewBuilder func createMeaningsList(cards: [TarotSpreadCards]) -> some View {
         let sortedCards = cards.sorted { $0.number < $1.number }
         

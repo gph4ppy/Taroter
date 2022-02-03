@@ -117,6 +117,7 @@ private extension TemplateCardView {
             
             // Show TextFieldAlert
             self.alertViewModel?.alertType = .meaning
+            self.alertViewModel?.textFieldText = ""
             self.showingTextFieldAlert = true
         }
     }

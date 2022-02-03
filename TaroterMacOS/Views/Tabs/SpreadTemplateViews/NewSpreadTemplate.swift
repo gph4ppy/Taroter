@@ -7,9 +7,10 @@
 
 import SwiftUI
 
+/// This View is used to create new Spread Templates.
 struct NewSpreadTemplate: View {
-    @StateObject private var cardViewModel: TemplateCardViewModel = TemplateCardViewModel(selectedCard: nil)
-    @StateObject private var alertViewModel: TextFieldAlertViewModel    = TextFieldAlertViewModel(alertType: .saving)
+    @StateObject private var cardViewModel = TemplateCardViewModel(selectedCard: nil)
+    @StateObject private var alertViewModel = TextFieldAlertViewModel(alertType: .saving)
     @Binding var selectedTab: SpreadTabs
     @Binding var showingAlert: Bool
     
@@ -70,6 +71,7 @@ private extension NewSpreadTemplate {
         cardViewModel.cards.append(card)
     }
     
+    /// This method removes all added cards from the array and view.
     func clearSpread() {
         withAnimation {
             cardViewModel.cards.removeAll()
@@ -84,12 +86,25 @@ private extension NewSpreadTemplate {
             withAnimation { self.showingAlert = false }
         }
     }
+    
+    /// This method clears all the TextFields in
+    /// TextFieldViewModel and shows a TextFieldAlert.
+    func showSavingAlert() {
+        withAnimation {
+            self.alertViewModel.alertType = .saving
+            self.alertViewModel.textFieldText = ""
+            self.alertViewModel.textEditorText = ""
+            self.showingAlert = true
+        }
+    }
 }
 
 // MARK: - Data Management
 private extension NewSpreadTemplate {
+    /// This method saves the Spread Template.
     func saveSpreadTemplate() {
         withAnimation {
+            // Create new Template
             let newTemplate = SpreadTemplate(context: viewContext)
             
             // Assign Data
@@ -108,16 +123,22 @@ private extension NewSpreadTemplate {
         }
     }
     
+    /// This method saves the SpreadCards, appends them to the array,
+    /// which is returned as the NSSet.
+    /// - Parameter cards: An array of TemplateCards, which are converted
+    ///                    to the SpreadCards
+    /// - Returns: NSSet of SpreadCards
     func saveSpreadCards(from cards: [TemplateCard]) -> NSSet? {
         var cardsArray: [SpreadCards] = []
         
         for card in cards {
-            let newCard = SpreadCards(context: viewContext)
-            newCard.id = UUID()
-            newCard.meaning = card.meaning
-            newCard.number = Int32(card.number)
-            newCard.xPosition = card.location.x
-            newCard.yPosition = card.location.y
+            let newCard             = SpreadCards(context: viewContext)
+            
+            newCard.id              = UUID()
+            newCard.meaning         = card.meaning
+            newCard.number          = Int32(card.number)
+            newCard.xPosition       = card.location.x
+            newCard.yPosition       = card.location.y
             newCard.rotationDegrees = card.rotationDegrees
             
             cardsArray.append(newCard)
@@ -129,6 +150,9 @@ private extension NewSpreadTemplate {
 
 // MARK: - Views
 private extension NewSpreadTemplate {
+    /// This method creates the template management buttons.
+    /// - Parameter windowSize: A size of the container view
+    /// - Returns: HStack of Buttons for Template Management
     @ViewBuilder func createTemplateManagementButtons(windowSize: CGSize) -> some View {
         HStack {
             // Clear Button
@@ -138,10 +162,7 @@ private extension NewSpreadTemplate {
             .disabled(cardViewModel.cards.isEmpty ? true : false)
             
             // Save Template Button
-            Button(action: { withAnimation {
-                self.alertViewModel.alertType = .saving
-                self.showingAlert = true
-            } }) {
+            Button(action: showSavingAlert) {
                 Image(systemName: "square.and.arrow.down")
             }
             .disabled(cardViewModel.cards.isEmpty ? true : false)

@@ -9,7 +9,6 @@ import SwiftUI
 
 /// A view showing the saved spread template.
 struct SpreadTemplatePreview: View {
-    @Environment(\.colorScheme) var colorScheme: ColorScheme
     @Binding var showingSpread: Bool
     let spreadCards: NSSet
     
@@ -19,7 +18,7 @@ struct SpreadTemplatePreview: View {
         
         ZStack {
             // Background with a close button
-            background.overlay(alignment: .topTrailing) {
+            Background().overlay(alignment: .topTrailing) {
                 CloseButton { self.showingSpread = false }
             }
             
@@ -52,14 +51,9 @@ struct SpreadTemplatePreview: View {
 
 // MARK: - Views
 private extension SpreadTemplatePreview {
-    var background: some View {
-        // I couldn't find the color that matched the background (in dark mode),
-        // NSColor.underPageBackgroundColor didn't work either,
-        // so I used an empty list.
-        // Modern problems require modern solutions. ¯\_(ツ)_/¯
-        colorScheme == .dark ? AnyView(List{}) : AnyView(Color(.windowBackgroundColor))
-    }
-    
+    /// This method creates the SpreadCards meanings list.
+    /// - Parameter cards: SpreadCards containing their meanings
+    /// - Returns: A ScrollView of cards meanings.
     @ViewBuilder func createMeaningsList(cards: [SpreadCards]) -> some View {
         let sortedCards = cards.sorted { $0.number < $1.number }
         

@@ -7,6 +7,7 @@
 
 import SwiftUI
 
+/// This view is used to show the views for selected spread tabs.
 struct CreateSpreadView: View {
     @State private var selectedTab: SpreadTabs  = .savedSpreads
     @State private var showingSavingAlert: Bool = false
@@ -16,7 +17,8 @@ struct CreateSpreadView: View {
             // View Switch
             switch selectedTab {
                 case .savedSpreads: SavedSpreads()
-                case .newSpread: NewSpreadView(selectedTab: $selectedTab)
+                case .newSpread: NewSpreadView(showingAlert: $showingSavingAlert,
+                                               selectedTab: $selectedTab)
                 default: EmptyView()
             }
             
@@ -41,6 +43,9 @@ struct CreateSpreadView: View {
 
 // MARK: - Methods
 private extension CreateSpreadView {
+    /// This method converts the provided title to a case of the SpreadTabs enum.
+    /// - Parameter title: A [String] title of the selected tab.
+    /// - Returns: SpreadTabs enum cases
     func selectTab(title: String) -> SpreadTabs {
         switch title {
             case SpreadTabs.savedSpreads.label: return .savedSpreads

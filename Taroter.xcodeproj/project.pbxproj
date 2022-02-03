@@ -83,6 +83,8 @@
 		1CC6FF4D2767C23200B68785 /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = 1C53201427182FAE005AD950 /* Localizable.strings */; };
 		1CC6FF4E2767C23B00B68785 /* LocalizedStrings.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1C53200E27182F7C005AD950 /* LocalizedStrings.swift */; };
 		1CC6FF4F2767C23F00B68785 /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = 1C53201427182FAE005AD950 /* Localizable.strings */; };
+		1CD3B18427AC3DFC00CFCDBB /* SavedTemplateCardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1CD3B18327AC3DFC00CFCDBB /* SavedTemplateCardView.swift */; };
+		1CD3B18627AC75E000CFCDBB /* SavedSpreadCardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1CD3B18527AC75E000CFCDBB /* SavedSpreadCardView.swift */; };
 		1CE5B42527761E69009E200D /* TaroterMacOSApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1CE5B42427761E69009E200D /* TaroterMacOSApp.swift */; };
 		1CE5B42727761E69009E200D /* MainView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1CE5B42627761E69009E200D /* MainView.swift */; };
 		1CE5B42927761E6A009E200D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1CE5B42827761E6A009E200D /* Assets.xcassets */; };
@@ -91,6 +93,8 @@
 		1CE5B43127761E6A009E200D /* Taroter.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 1CE5B42F27761E6A009E200D /* Taroter.xcdatamodeld */; };
 		1CE71758278F5B610007ED61 /* TemplateCardViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1CE71757278F5B610007ED61 /* TemplateCardViewModel.swift */; };
 		1CF050F92791AC7900CD881D /* SpreadPreview.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1CF050F82791AC7900CD881D /* SpreadPreview.swift */; };
+		1CF050FB2791B0FF00CD881D /* Background.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1CF050FA2791B0FF00CD881D /* Background.swift */; };
+		1CF050FD2791B1A700CD881D /* TarotCardViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1CF050FC2791B1A700CD881D /* TarotCardViewModel.swift */; };
 		1CF73482278DA47A000A33FD /* TextFieldAlertViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1CF73481278DA47A000A33FD /* TextFieldAlertViewModel.swift */; };
 /* End PBXBuildFile section */
 
@@ -198,6 +202,8 @@
 		1CC6FF3C2767BDCD00B68785 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		1CC6FF3F2767BDCD00B68785 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		1CC6FF412767BDCD00B68785 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		1CD3B18327AC3DFC00CFCDBB /* SavedTemplateCardView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SavedTemplateCardView.swift; sourceTree = "<group>"; };
+		1CD3B18527AC75E000CFCDBB /* SavedSpreadCardView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SavedSpreadCardView.swift; sourceTree = "<group>"; };
 		1CE5B42227761E69009E200D /* TaroterMacOS.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TaroterMacOS.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		1CE5B42427761E69009E200D /* TaroterMacOSApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TaroterMacOSApp.swift; sourceTree = "<group>"; };
 		1CE5B42627761E69009E200D /* MainView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainView.swift; sourceTree = "<group>"; };
@@ -208,6 +214,8 @@
 		1CE5B43227761E6A009E200D /* TaroterMacOS.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = TaroterMacOS.entitlements; sourceTree = "<group>"; };
 		1CE71757278F5B610007ED61 /* TemplateCardViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TemplateCardViewModel.swift; sourceTree = "<group>"; };
 		1CF050F82791AC7900CD881D /* SpreadPreview.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SpreadPreview.swift; sourceTree = "<group>"; };
+		1CF050FA2791B0FF00CD881D /* Background.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Background.swift; sourceTree = "<group>"; };
+		1CF050FC2791B1A700CD881D /* TarotCardViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TarotCardViewModel.swift; sourceTree = "<group>"; };
 		1CF73481278DA47A000A33FD /* TextFieldAlertViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TextFieldAlertViewModel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -306,6 +314,7 @@
 				1C258A2A278476B300E72A86 /* CloseButton.swift */,
 				1CB953F72785EE9D00F109E2 /* ExpandableView.swift */,
 				1C62FD4927863C1100F428C1 /* SpreadTarotCard.swift */,
+				1CF050FA2791B0FF00CD881D /* Background.swift */,
 			);
 			path = Components;
 			sourceTree = "<group>";
@@ -446,6 +455,7 @@
 			children = (
 				1C420601277E07C600B0199F /* SpreadTemplateView.swift */,
 				1CB953F22785CF0700F109E2 /* SavedTemplates.swift */,
+				1CD3B18327AC3DFC00CFCDBB /* SavedTemplateCardView.swift */,
 				1CB953EE2785C2BA00F109E2 /* SpreadTemplatePreview.swift */,
 				1CB953F52785D13900F109E2 /* NewSpreadTemplate.swift */,
 			);
@@ -457,8 +467,9 @@
 			children = (
 				1CB953FA2785FB6500F109E2 /* CreateSpreadView.swift */,
 				1C372F45278C556B00166246 /* SavedSpreads.swift */,
-				1C62FD472786391E00F428C1 /* NewSpreadView.swift */,
+				1CD3B18527AC75E000CFCDBB /* SavedSpreadCardView.swift */,
 				1CF050F82791AC7900CD881D /* SpreadPreview.swift */,
+				1C62FD472786391E00F428C1 /* NewSpreadView.swift */,
 			);
 			path = SpreadView;
 			sourceTree = "<group>";
@@ -541,6 +552,7 @@
 			children = (
 				1CF73481278DA47A000A33FD /* TextFieldAlertViewModel.swift */,
 				1CE71757278F5B610007ED61 /* TemplateCardViewModel.swift */,
+				1CF050FC2791B1A700CD881D /* TarotCardViewModel.swift */,
 			);
 			path = ViewModels;
 			sourceTree = "<group>";
@@ -760,6 +772,7 @@
 			files = (
 				1C770F1027766116005FA2F9 /* TarotBooleanEnum.swift in Sources */,
 				1C28428C27775F2000B19AD5 /* BlurView.swift in Sources */,
+				1CF050FD2791B1A700CD881D /* TarotCardViewModel.swift in Sources */,
 				1CE5B42E27761E6A009E200D /* Persistence.swift in Sources */,
 				1C7144B5278B005900FA9AC5 /* SpreadCard.swift in Sources */,
 				1C26215A2781FC950035BA1F /* NSSet+ConvertSetToArray.swift in Sources */,
@@ -767,6 +780,7 @@
 				1C62FD4A27863C1100F428C1 /* SpreadTarotCard.swift in Sources */,
 				1C28428627775E8500B19AD5 /* SideBarButtonStyle.swift in Sources */,
 				1CC5EE9227788F69003DE010 /* CardsView.swift in Sources */,
+				1CD3B18427AC3DFC00CFCDBB /* SavedTemplateCardView.swift in Sources */,
 				1CB953EF2785C2BA00F109E2 /* SpreadTemplatePreview.swift in Sources */,
 				1CE71758278F5B610007ED61 /* TemplateCardViewModel.swift in Sources */,
 				1CB953F12785CE4900F109E2 /* SegmentedPickerStyle.swift in Sources */,
@@ -777,6 +791,7 @@
 				1CC630DA278C2C9500FB5DA4 /* RotationButtonOperation.swift in Sources */,
 				1C258A2B278476B300E72A86 /* CloseButton.swift in Sources */,
 				1C1D17DA277C796600089DF8 /* TemplateCard.swift in Sources */,
+				1CF050FB2791B0FF00CD881D /* Background.swift in Sources */,
 				1CC5EE95277893F8003DE010 /* CardDetailView.swift in Sources */,
 				1C770F132776618E005FA2F9 /* LocalizedStrings.swift in Sources */,
 				1CB953F32785CF0700F109E2 /* SavedTemplates.swift in Sources */,
@@ -785,6 +800,7 @@
 				1CE5B42727761E69009E200D /* MainView.swift in Sources */,
 				1C83036B2783797900559BF9 /* Tabs.swift in Sources */,
 				1C28428A27775EFC00B19AD5 /* SideBarButton.swift in Sources */,
+				1CD3B18627AC75E000CFCDBB /* SavedSpreadCardView.swift in Sources */,
 				1CB953FB2785FB6500F109E2 /* CreateSpreadView.swift in Sources */,
 				1C5257CF2785B673006F8BCF /* SegmentedPickerButton.swift in Sources */,
 				1CB953F82785EE9D00F109E2 /* ExpandableView.swift in Sources */,

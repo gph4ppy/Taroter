@@ -9,11 +9,9 @@ import SwiftUI
 import CoreData
 
 struct MainView: View {
-    @State private var selectedTab: Tabs        = .allCards
+    @State private var selectedTab: Tabs = .allCards
     @State private var spreadSearchText: String = ""
-    let colors: [Color]                         = [
-        Color.black.opacity(0), Color.black, Color.black, Color.black
-    ]
+    private let colors: [Color] = [Color.black.opacity(0), Color.black, Color.black, Color.black]
     
     var body: some View {
         GeometryReader(content: createMainView)
