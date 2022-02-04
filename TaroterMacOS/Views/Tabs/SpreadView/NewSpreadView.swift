@@ -7,18 +7,13 @@
 
 import SwiftUI
 
+/// This View is used to create new Spread.
 struct NewSpreadView: View {
-    @ObservedObject private var alertViewModel = TextFieldAlertViewModel(alertType: .saving)
-    @ObservedObject private var cardViewModel = TarotCardViewModel(selectedCard: nil)
+    @StateObject private var alertViewModel = TextFieldAlertViewModel(alertType: .saving)
+    @StateObject private var cardViewModel = TarotCardViewModel(selectedCard: nil)
+    @Environment(\.managedObjectContext) private var viewContext
     @Binding var showingAlert: Bool
     @Binding var selectedTab: SpreadTabs
-    
-    // Core Data Properties
-    @Environment(\.managedObjectContext) private var viewContext
-    @FetchRequest(
-        sortDescriptors: [NSSortDescriptor(keyPath: \TarotSpreads.date, ascending: true)],
-        animation: .default
-    ) private var spreadTemplates: FetchedResults<TarotSpreads>
     
     var body: some View {
         ZStack {
@@ -34,34 +29,16 @@ struct NewSpreadView: View {
                                     alertViewModel: alertViewModel,
                                     cardViewModel: cardViewModel)
                         .shadow(radius: 3)
-                        .transition(.scale(scale: 0.5, anchor: .center))
                 }
                 
+                // List of Tarot cards that can be added to the view
                 ExpandableView {
                     ScrollView {
-                        LazyVStack {
-                            ForEach(TarotCards.allCases, id: \.self) { card in
-                                var tarotCard = SpreadCard(id: UUID(),
-                                                           name: card.tarotCard.name,
-                                                           imageName: card.tarotCard.imageName,
-                                                           number: cardViewModel.cards.count,
-                                                           location: CGPoint(x: 125, y: 125),
-                                                           meaning: "",
-                                                           rotationDegrees: 0.0)
-                                
-                                Button(action: { addCard(card: &tarotCard, size: geom.size) }) {
-                                    SpreadTarotCard(card: tarotCard,
-                                                    isHoverable: true,
-                                                    showingTextFieldAlert: $showingAlert,
-                                                    alertViewModel: alertViewModel,
-                                                    cardViewModel: cardViewModel)
-                                }
-                                .buttonStyle(.plain)
-                            }
-                        }
+                        createCardsList(windowSize: geom.size)
                     }
                 }
                 .frame(maxHeight: .infinity)
+                .zIndex(2)
             }
             
             // Saving TextField Alert
@@ -83,10 +60,16 @@ struct NewSpreadView: View {
 
 // MARK: - Methods
 private extension NewSpreadView {
-    // MARK: - TO FIX!!!!
+    /// This method adds the draggable Tarot card to the view.
+    /// - Parameters:
+    ///   - card: [inout] SpreadCard, whose position is changed to the
+    ///           center of the view and then added to the
+    ///           array containing all displayed cards.
+    ///   - size: View size that allows the startup positioning of the card
+    ///           (x = half-width and y = half-height).
     func addCard(card: inout SpreadCard, size: CGSize) {
-        if !cardViewModel.cards.contains(card) {
-            withAnimation(.spring(response: 0.5, dampingFraction: 0.6, blendDuration: 0)) {
+        if !cardViewModel.cards.contains(where: { $0.imageName == card.imageName }) {
+            withAnimation {
                 card.location = CGPoint(x: size.width / 2, y: size.height / 2)
                 cardViewModel.cards.append(card)
             }
@@ -107,7 +90,7 @@ private extension NewSpreadView {
         }
     }
     
-    /// This method clears all the TextFields in
+    /// This method clears all the TextFields values in
     /// TextFieldViewModel and shows a TextFieldAlert.
     func showSavingAlert() {
         withAnimation {
@@ -121,6 +104,7 @@ private extension NewSpreadView {
 
 // MARK: - Data Management
 private extension NewSpreadView {
+    /// This method saves the spread.
     func saveTarotSpread() {
         withAnimation {
             // Create New Spread
@@ -142,20 +126,27 @@ private extension NewSpreadView {
         }
     }
     
+    /// This method saves the SpreadCards, appends them to the array,
+    /// which is returned as the NSSet.
+    /// - Parameter cards: An array of SpreadCards, which are converted
+    ///                    to the TarotSpreadCards
+    /// - Returns: NSSet of TarotSpreadCards
     func saveSpreadCards(from cards: [SpreadCard]) -> NSSet? {
         var cardsArray: [TarotSpreadCards] = []
         
         for card in cards {
-            let newCard             = TarotSpreadCards(context: viewContext)
-            newCard.id              = UUID()
-            newCard.name            = card.name
-            newCard.imageName       = card.imageName
-            newCard.meaning         = card.meaning
-            newCard.number          = Int32(card.number)
-            newCard.xPosition       = card.location.x
-            newCard.yPosition       = card.location.y
-            newCard.rotationDegrees = card.rotationDegrees
-            
+            let newCard              = TarotSpreadCards(context: viewContext)
+            newCard.id               = UUID()
+            newCard.name             = card.name
+            newCard.imageName        = card.imageName
+            newCard.meaning          = card.meaning
+            newCard.number           = Int32(card.number)
+            newCard.xPosition        = card.location.x
+            newCard.yPosition        = card.location.y
+            newCard.rotationDegrees  = card.rotationDegrees
+            newCard.uprightKeywords  = card.uprightKeywords
+            newCard.reversedKeywords = card.reversedKeywords
+
             cardsArray.append(newCard)
         }
         
@@ -165,6 +156,38 @@ private extension NewSpreadView {
 
 // MARK: - Views
 private extension NewSpreadView {
+    /// This method creates a list of Tarot cards that can be added to the view.
+    /// - Parameter windowSize: A size of the container view
+    /// - Returns: LazyVStack that contains TarotCards buttons,
+    ///            which are added to the view after tapping.
+    @ViewBuilder func createCardsList(windowSize: CGSize) -> some View {
+        LazyVStack {
+            ForEach(TarotCards.allCases, id: \.self) { card in
+                var tarotCard = SpreadCard(id: UUID(),
+                                           name: card.tarotCard.name,
+                                           imageName: card.tarotCard.imageName,
+                                           number: cardViewModel.cards.count,
+                                           location: CGPoint(x: 125, y: 125),
+                                           meaning: "",
+                                           rotationDegrees: 0.0,
+                                           uprightKeywords: card.tarotCard.uprightKeywords,
+                                           reversedKeywords: card.tarotCard.reversedKeywords)
+                
+                Button(action: { addCard(card: &tarotCard, size: windowSize) }) {
+                    SpreadTarotCard(card: tarotCard,
+                                    isHoverable: true,
+                                    showingTextFieldAlert: $showingAlert,
+                                    alertViewModel: alertViewModel,
+                                    cardViewModel: cardViewModel)
+                }
+                .buttonStyle(.plain)
+            }
+        }
+    }
+    
+    /// This method creates the spread management buttons.
+    /// - Parameter windowSize: A size of the container view
+    /// - Returns: HStack of Buttons for Spread Management
     @ViewBuilder func createTemplateManagementButtons(windowSize: CGSize) -> some View {
         HStack {
             // Clear Button
@@ -174,7 +197,7 @@ private extension NewSpreadView {
             .disabled(cardViewModel.cards.isEmpty ? true : false)
             
             // Save Template Button
-            Button(action: saveTarotSpread) {
+            Button(action: showSavingAlert) {
                 Image(systemName: "square.and.arrow.down")
             }
             .disabled(cardViewModel.cards.isEmpty ? true : false)

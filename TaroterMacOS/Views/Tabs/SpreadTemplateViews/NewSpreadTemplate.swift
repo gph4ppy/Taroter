@@ -11,15 +11,9 @@ import SwiftUI
 struct NewSpreadTemplate: View {
     @StateObject private var cardViewModel = TemplateCardViewModel(selectedCard: nil)
     @StateObject private var alertViewModel = TextFieldAlertViewModel(alertType: .saving)
+    @Environment(\.managedObjectContext) private var viewContext
     @Binding var selectedTab: SpreadTabs
     @Binding var showingAlert: Bool
-    
-    // Core Data Properties
-    @Environment(\.managedObjectContext) private var viewContext
-    @FetchRequest(
-        sortDescriptors: [NSSortDescriptor(keyPath: \SpreadTemplate.date, ascending: true)],
-        animation: .default
-    ) private var spreadTemplates: FetchedResults<SpreadTemplate>
     
     var body: some View {
         ZStack {
@@ -87,7 +81,7 @@ private extension NewSpreadTemplate {
         }
     }
     
-    /// This method clears all the TextFields in
+    /// This method clears all the TextFields values in
     /// TextFieldViewModel and shows a TextFieldAlert.
     func showSavingAlert() {
         withAnimation {

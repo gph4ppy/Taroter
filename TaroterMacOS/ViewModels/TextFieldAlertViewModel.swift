@@ -7,6 +7,7 @@
 
 import SwiftUI
 
+/// A ViewModel used to manage the TextFieldAlert.
 final class TextFieldAlertViewModel: ObservableObject {
     @Published var textFieldText: String   = ""
     @Published var textEditorText: String? = ""

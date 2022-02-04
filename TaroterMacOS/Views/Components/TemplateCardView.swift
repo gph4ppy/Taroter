@@ -21,19 +21,17 @@ struct TemplateCardView: View {
         ZStack {
             // Card Shape
             RoundedRectangle(cornerRadius: 12)
-                .frame(width: 74.75, height: 124.75)
-                .shadow(radius: 5)
                 .overlay(cardNumberOverlay)
-                .rotationEffect(.degrees(card.rotationDegrees))
+                .templateCardStyle(rotationDegrees: card.rotationDegrees,
+                                   isEditable: isEditable,
+                                   contextMenu: createContextMenu,
+                                   id: card.id)
                 .position(card.location)
                 .gesture(
                     DragGesture()
                         .onChanged(relocateCard)
                         .onEnded(saveCardPosition)
                 )
-                .contextMenu { isEditable ? createContextMenu() : nil }
-                .id(card.id)
-                .disabled(!isEditable)
         }
     }
 }
@@ -72,8 +70,8 @@ private extension TemplateCardView {
     /// This method removes the card from the spread.
     func removeCard() {
         /* ----------------------------------------------
-                        MARK: - Workaround
-              cards.remove(at: Index) didn't work:
+         MARK: - Workaround
+         cards.remove(at: Index) didn't work:
          
          - removing a card with its number, in many cases,
          threw the index out of range.

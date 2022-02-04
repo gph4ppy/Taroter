@@ -350,6 +350,7 @@
 "meaning_title" = "Znaczenie";
 "meaning_message" = "Dodaj znaczenie karty lub jej pytanie";
 "meaning_placeholder" = "Znaczenie lub pytanie karty...";
+"keywords" = "Słowa kluczowe";
 
 // Buttons
 "save" = "Zapisz";

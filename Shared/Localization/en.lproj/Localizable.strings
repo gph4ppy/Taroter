@@ -348,6 +348,7 @@
 "meaning_title" = "Meaning";
 "meaning_message" = "Add card meaning or question";
 "meaning_placeholder" = "Card meaning or question...";
+"keywords" = "Keywords";
 
 // Buttons
 "save" = "Save";

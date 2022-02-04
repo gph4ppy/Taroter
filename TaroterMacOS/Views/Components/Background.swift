@@ -7,6 +7,7 @@
 
 import SwiftUI
 
+/// The background of the views (mostly representing the data) appearing in ZStack.
 struct Background: View {
     @Environment(\.colorScheme) var colorScheme: ColorScheme
     

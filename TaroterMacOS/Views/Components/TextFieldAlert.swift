@@ -7,6 +7,8 @@
 
 import SwiftUI
 
+/// Alert replacement which includes TextField and if its type
+/// is selected to `.saving` also contains TextEditor.
 struct TextFieldAlert: View {
     @ObservedObject var viewModel: TextFieldAlertViewModel
     @Binding var isPresented:      Bool

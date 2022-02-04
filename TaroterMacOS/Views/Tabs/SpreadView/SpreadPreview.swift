@@ -33,7 +33,9 @@ struct SpreadPreview: View {
                                       number: Int(card.number),
                                       location: cardLocation,
                                       meaning: card.meaning ?? LocalizedStrings.noMeaning,
-                                      rotationDegrees: card.rotationDegrees)
+                                      rotationDegrees: card.rotationDegrees,
+                                      uprightKeywords: card.uprightKeywords ?? "",
+                                      reversedKeywords: card.reversedKeywords ?? "")
                 
                 // Card Shape
                 SpreadTarotCard(card: card,
@@ -53,21 +55,49 @@ struct SpreadPreview: View {
 
 // MARK: - Views
 private extension SpreadPreview {
+    /// This method creates the SpreadCards meanings list.
+    /// - Parameter cards: TarotSpreadCards containing their meanings
+    /// - Returns: A ScrollView of cards meanings.
     @ViewBuilder func createMeaningsList(cards: [TarotSpreadCards]) -> some View {
         let sortedCards = cards.sorted { $0.number < $1.number }
         
         ScrollView {
             LazyVStack(spacing: 6) {
                 Text(LocalizedStrings.meanings)
+                    .font(.title3)
                     .bold()
                 
                 ForEach(sortedCards, id: \.self) { card in
-                    if let cardMeaning = card.meaning {
-                        let isMeaningEmpty = cardMeaning.isEmpty
-                        let meaning = isMeaningEmpty ? LocalizedStrings.noMeaning : cardMeaning
+                    VStack {
+                        // Title
+                        Text("\(card.number + 1). \(card.name ?? "")")
+                            .font(.subheadline)
+                            .fontWeight(.semibold)
                         
-                        Text("\(card.number + 1). \(meaning)")
+                        // Meaning
+                        if let meaning = card.meaning, !meaning.isEmpty {
+                            DisclosureGroup(LocalizedStrings.meaningTitle) {
+                                Text(meaning)
+                            }
+                            .font(.footnote)
+                        }
+                        
+                        // Keywords
+                        DisclosureGroup(LocalizedStrings.keywords) {
+                            HStack {
+                                // Upright Keywords
+                                ListBuilder.createColumn(title: LocalizedStrings.uprightKeywords,
+                                                         data: card.uprightKeywords ?? "")
+                                
+                                // Reversed Keywords
+                                ListBuilder.createColumn(title: LocalizedStrings.reversedKeywords,
+                                                         data: card.reversedKeywords ?? "")
+                            }
+                            .frame(maxWidth: .infinity)
+                        }
+                        .font(.footnote)
                     }
+                    .padding(.bottom, 20)
                 }
             }
         }

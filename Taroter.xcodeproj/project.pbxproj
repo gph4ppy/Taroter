@@ -45,6 +45,8 @@
 		1C6899862767F115004C4091 /* ArcanaEnum.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1CB9815E2729C9AC005A0B09 /* ArcanaEnum.swift */; };
 		1C6899882767F3BB004C4091 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1CC6FF2B2767BDCB00B68785 /* Assets.xcassets */; };
 		1C7144B5278B005900FA9AC5 /* SpreadCard.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1C7144B4278B005900FA9AC5 /* SpreadCard.swift */; };
+		1C71905727AD8FC00067BA09 /* CloudKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1C71905627AD8FC00067BA09 /* CloudKit.framework */; };
+		1C71905927AD98FE0067BA09 /* TemplateCardModifier.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1C71905827AD98FE0067BA09 /* TemplateCardModifier.swift */; };
 		1C770F0D27766110005FA2F9 /* TarotCardModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1CB9815C2729C845005A0B09 /* TarotCardModel.swift */; };
 		1C770F0E27766112005FA2F9 /* TarotCardsEnum.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1C407F7B2729E7A0004043D8 /* TarotCardsEnum.swift */; };
 		1C770F0F27766114005FA2F9 /* ArcanaEnum.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1CB9815E2729C9AC005A0B09 /* ArcanaEnum.swift */; };
@@ -176,6 +178,8 @@
 		1C62FD4927863C1100F428C1 /* SpreadTarotCard.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SpreadTarotCard.swift; sourceTree = "<group>"; };
 		1C654624271CD09E00DDC36C /* TaroterCardModel.mlpackage */ = {isa = PBXFileReference; lastKnownFileType = folder.mlpackage; path = TaroterCardModel.mlpackage; sourceTree = "<group>"; };
 		1C7144B4278B005900FA9AC5 /* SpreadCard.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SpreadCard.swift; sourceTree = "<group>"; };
+		1C71905627AD8FC00067BA09 /* CloudKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CloudKit.framework; path = Platforms/MacOSX.platform/Developer/SDKs/MacOSX12.1.sdk/System/Library/Frameworks/CloudKit.framework; sourceTree = DEVELOPER_DIR; };
+		1C71905827AD98FE0067BA09 /* TemplateCardModifier.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TemplateCardModifier.swift; sourceTree = "<group>"; };
 		1C7F8194276951CA0084F2BF /* CardManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardManager.swift; sourceTree = "<group>"; };
 		1C7F81982769590F0084F2BF /* ListBuilder.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListBuilder.swift; sourceTree = "<group>"; };
 		1C7F819B27695D390084F2BF /* CardDetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardDetailView.swift; sourceTree = "<group>"; };
@@ -238,6 +242,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				1C71905727AD8FC00067BA09 /* CloudKit.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -287,6 +292,7 @@
 			children = (
 				1C28428527775E8500B19AD5 /* SideBarButtonStyle.swift */,
 				1CB953F02785CE4900F109E2 /* SegmentedPickerStyle.swift */,
+				1C71905827AD98FE0067BA09 /* TemplateCardModifier.swift */,
 			);
 			path = Modifiers;
 			sourceTree = "<group>";
@@ -328,6 +334,7 @@
 				1CC6FF352767BDCC00B68785 /* TaroterWatchOS WatchKit Extension */,
 				1CE5B42327761E69009E200D /* TaroterMacOS */,
 				1C531FF227182B87005AD950 /* Products */,
+				1C71905527AD8FC00067BA09 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -422,6 +429,14 @@
 				1C53200E27182F7C005AD950 /* LocalizedStrings.swift */,
 			);
 			path = Localization;
+			sourceTree = "<group>";
+		};
+		1C71905527AD8FC00067BA09 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				1C71905627AD8FC00067BA09 /* CloudKit.framework */,
+			);
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 		1C7F81932769519F0084F2BF /* Protocols */ = {
@@ -787,6 +802,7 @@
 				1C420604277E0A5F00B0199F /* TemplateCardView.swift in Sources */,
 				1CE5B43127761E6A009E200D /* Taroter.xcdatamodeld in Sources */,
 				1C1D17D7277C793A00089DF8 /* TextFieldAlert.swift in Sources */,
+				1C71905927AD98FE0067BA09 /* TemplateCardModifier.swift in Sources */,
 				1C770F0F27766114005FA2F9 /* ArcanaEnum.swift in Sources */,
 				1CC630DA278C2C9500FB5DA4 /* RotationButtonOperation.swift in Sources */,
 				1C258A2B278476B300E72A86 /* CloseButton.swift in Sources */,

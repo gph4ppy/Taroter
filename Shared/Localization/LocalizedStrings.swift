@@ -350,6 +350,7 @@ struct LocalizedStrings {
     public static let meaningTitle = NSLocalizedString("meaning_title", comment: "")
     public static let meaningMessage = NSLocalizedString("meaning_message", comment: "")
     public static let meaningPlaceholder = NSLocalizedString("meaning_placeholder", comment: "")
+    public static let keywords = NSLocalizedString("keywords", comment: "")
     
     // Buttons
     public static let save = NSLocalizedString("save", comment: "")

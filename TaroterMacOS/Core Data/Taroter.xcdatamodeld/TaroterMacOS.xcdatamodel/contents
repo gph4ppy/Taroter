@@ -22,7 +22,9 @@
         <attribute name="meaning" optional="YES" attributeType="String"/>
         <attribute name="name" optional="YES" attributeType="String"/>
         <attribute name="number" optional="YES" attributeType="Integer 32" defaultValueString="0" usesScalarValueType="YES"/>
+        <attribute name="reversedKeywords" optional="YES" attributeType="String"/>
         <attribute name="rotationDegrees" optional="YES" attributeType="Double" defaultValueString="0.0" usesScalarValueType="YES"/>
+        <attribute name="uprightKeywords" optional="YES" attributeType="String"/>
         <attribute name="xPosition" optional="YES" attributeType="Double" defaultValueString="0.0" usesScalarValueType="YES"/>
         <attribute name="yPosition" optional="YES" attributeType="Double" defaultValueString="0.0" usesScalarValueType="YES"/>
         <relationship name="tarotSpreads" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="TarotSpreads" inverseName="tarotSpreadCards" inverseEntity="TarotSpreads"/>
@@ -37,7 +39,7 @@
     <elements>
         <element name="SpreadCards" positionX="-63" positionY="-9" width="128" height="134"/>
         <element name="SpreadTemplate" positionX="-63" positionY="27" width="128" height="104"/>
-        <element name="TarotSpreadCards" positionX="-54" positionY="54" width="128" height="164"/>
+        <element name="TarotSpreadCards" positionX="-54" positionY="54" width="128" height="194"/>
         <element name="TarotSpreads" positionX="-45" positionY="81" width="128" height="104"/>
     </elements>
 </model>

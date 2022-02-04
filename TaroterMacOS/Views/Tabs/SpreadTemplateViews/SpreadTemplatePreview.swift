@@ -60,6 +60,7 @@ private extension SpreadTemplatePreview {
         ScrollView {
             LazyVStack(spacing: 6) {
                 Text(LocalizedStrings.meanings)
+                    .font(.title3)
                     .bold()
                 
                 ForEach(sortedCards, id: \.self) { card in

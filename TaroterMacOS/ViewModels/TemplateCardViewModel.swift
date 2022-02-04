@@ -7,6 +7,7 @@
 
 import SwiftUI
 
+/// A ViewModel used to manage the TemplateCard.
 final class TemplateCardViewModel: ObservableObject {
     @Published var cards: [TemplateCard] = []
     @Published var selectedCard: TemplateCard?

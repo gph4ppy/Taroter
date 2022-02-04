@@ -40,28 +40,12 @@ struct SpreadTarotCard: View {
         .gesture(gesture)
         .onHover(perform: showPlusOverlay)
         .disabled(isHoverable)
-        .contextMenu {
-            if !isHoverable {
-                //                 Add Card Meaning Button
-                //                        Button {
-                //                            withAnimation { self.showingTextFieldAlert = true }
-                //                        } label: {
-                //                            Text("Add meaning")
-                //                            Image(systemName: "plus")
-                //                        }
-                
-                // Rotate x° Buttons
-                rotationButtons
-                
-                // Remove Card Button
-                Button(action: removeCard) {
-                    Text("Delete card")
-                    Image(systemName: "trash")
-                }
-            }
-        }
+        .contextMenu { isHoverable ? nil : createContextMenu() }
     }
-    
+}
+
+// MARK: - Methods
+private extension SpreadTarotCard {
     func showPlusOverlay(_:Bool) {
         if isHoverable {
             withAnimation {
@@ -69,7 +53,10 @@ struct SpreadTarotCard: View {
             }
         }
     }
-    
+}
+
+// MARK: - Card Position Management
+private extension SpreadTarotCard {
     var gesture: _EndedGesture<_ChangedGesture<DragGesture>> {
         DragGesture()
             .onChanged(relocateCard)
@@ -90,6 +77,62 @@ struct SpreadTarotCard: View {
         }
     }
     
+    func rotateCard(isAddition: Bool, degrees: Double) {
+        withAnimation {
+            if isAddition {
+                self.card.rotationDegrees += degrees
+            } else {
+                self.card.rotationDegrees -= degrees
+            }
+            
+            if let cardViewModel = cardViewModel {
+                let index = card.number
+                cardViewModel.cards[index].rotationDegrees = self.card.rotationDegrees
+            }
+        }
+    }
+}
+
+// MARK: - Card Data Management
+private extension SpreadTarotCard {
+    func addMeaning() {
+        withAnimation {
+            // Assign selected card
+            guard let cardViewModel = cardViewModel else { return }
+            cardViewModel.selectedCard = card
+            
+            // Show TextFieldAlert
+            self.alertViewModel?.alertType = .meaning
+            self.alertViewModel?.textFieldText = ""
+            self.showingTextFieldAlert = true
+        }
+    }
+    
+    /// This method removes the card from the spread.
+    func removeCard() {
+        withAnimation {
+            var filteredCards: [SpreadCard] = []
+            
+            if let cardViewModel = cardViewModel {
+                // Filter Cards
+                filteredCards = cardViewModel.cards.filter { spreadCard in
+                    spreadCard.id != card.id
+                }
+                
+                // Assign the numbers again
+                for index in filteredCards.indices {
+                    filteredCards[index].number = index
+                }
+                
+                // Assign a filtered array to the displayed array.
+                cardViewModel.cards = filteredCards
+            }
+        }
+    }
+}
+
+// MARK: - Views
+private extension SpreadTarotCard {
     var plusOverlay: some View {
         ZStack {
             if showingPlusOverlay {
@@ -107,18 +150,21 @@ struct SpreadTarotCard: View {
         }
     }
     
-    @ViewBuilder var rotationButtons: some View {
-        // 15°
-        createRotationButton(degrees: 15, operation: .subtraction)
-        createRotationButton(degrees: 15, operation: .addition)
+    @ViewBuilder func createContextMenu() -> some View {
+        // Add Card Meaning Button
+        Button(action: addMeaning) {
+            Text("Add meaning")
+            Image(systemName: "plus")
+        }
         
-        // 45°
-        createRotationButton(degrees: 45, operation: .subtraction)
-        createRotationButton(degrees: 45, operation: .addition)
+        // Rotate x° Buttons
+        rotationButtons
         
-        // 90°
-        createRotationButton(degrees: 90, operation: .subtraction)
-        createRotationButton(degrees: 90, operation: .addition)
+        // Remove Card Button
+        Button(action: removeCard) {
+            Text("Delete card")
+            Image(systemName: "trash")
+        }
     }
     
     @ViewBuilder func createRotationButton(degrees: Double, operation: RotationButtonOperation) -> some View {
@@ -131,33 +177,17 @@ struct SpreadTarotCard: View {
         }
     }
     
-    func rotateCard(isAddition: Bool, degrees: Double) {
-        withAnimation {
-            if isAddition {
-                self.card.rotationDegrees += degrees
-            } else {
-                self.card.rotationDegrees -= degrees
-            }
-            
-            if let cardViewModel = cardViewModel {
-                let index = card.number
-                cardViewModel.cards[index].rotationDegrees = self.card.rotationDegrees
-            }
-        }
-    }
-    
-    /// This method removes the card from the spread.
-    func removeCard() {
-        var filteredCards: [SpreadCard] = []
+    @ViewBuilder var rotationButtons: some View {
+        // 15°
+        createRotationButton(degrees: 15, operation: .subtraction)
+        createRotationButton(degrees: 15, operation: .addition)
         
-        if let cardViewModel = cardViewModel {
-            // Filter Cards
-            filteredCards = cardViewModel.cards.filter { spreadCard in
-                spreadCard.id != card.id
-            }
-            
-            // Assign a filtered array to the displayed array.
-            cardViewModel.cards = filteredCards
-        }
+        // 45°
+        createRotationButton(degrees: 45, operation: .subtraction)
+        createRotationButton(degrees: 45, operation: .addition)
+        
+        // 90°
+        createRotationButton(degrees: 90, operation: .subtraction)
+        createRotationButton(degrees: 90, operation: .addition)
     }
 }

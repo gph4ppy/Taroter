@@ -7,6 +7,7 @@
 
 import SwiftUI
 
+/// A ViewModel used to manage the SpreadTarotCard.
 final class TarotCardViewModel: ObservableObject {
     @Published var cards: [SpreadCard] = []
     @Published var selectedCard: SpreadCard?
