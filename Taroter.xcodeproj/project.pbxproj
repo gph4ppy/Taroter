@@ -208,7 +208,7 @@
 		1CC6FF3F2767BDCD00B68785 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		1CC6FF412767BDCD00B68785 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		1CD3B18527AC75E000CFCDBB /* SavedSpreadCardView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SavedSpreadCardView.swift; sourceTree = "<group>"; };
-		1CE5B42227761E69009E200D /* TaroterMacOS.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TaroterMacOS.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		1CE5B42227761E69009E200D /* Taroter.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Taroter.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		1CE5B42427761E69009E200D /* TaroterMacOSApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TaroterMacOSApp.swift; sourceTree = "<group>"; };
 		1CE5B42627761E69009E200D /* MainView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainView.swift; sourceTree = "<group>"; };
 		1CE5B42827761E6A009E200D /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -345,7 +345,7 @@
 				1C531FF127182B87005AD950 /* Taroter.app */,
 				1CC6FF292767BDC700B68785 /* Taroter.app */,
 				1CC6FF312767BDCC00B68785 /* TaroterWatchOS WatchKit Extension.appex */,
-				1CE5B42227761E69009E200D /* TaroterMacOS.app */,
+				1CE5B42227761E69009E200D /* Taroter.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -650,7 +650,7 @@
 			);
 			name = TaroterMacOS;
 			productName = TaroterMacOS;
-			productReference = 1CE5B42227761E69009E200D /* TaroterMacOS.app */;
+			productReference = 1CE5B42227761E69009E200D /* Taroter.app */;
 			productType = "com.apple.product-type.application";
 		};
 /* End PBXNativeTarget section */
@@ -1174,7 +1174,7 @@
 				CODE_SIGN_ENTITLEMENTS = TaroterMacOS/TaroterMacOS.entitlements;
 				CODE_SIGN_STYLE = Automatic;
 				COMBINE_HIDPI_IMAGES = YES;
-				CURRENT_PROJECT_VERSION = 1;
+				CURRENT_PROJECT_VERSION = 2;
 				DEVELOPMENT_ASSET_PATHS = "\"TaroterMacOS/Preview Content\"";
 				DEVELOPMENT_TEAM = G6NTB33VYZ;
 				ENABLE_HARDENED_RUNTIME = YES;
@@ -1189,7 +1189,7 @@
 				MACOSX_DEPLOYMENT_TARGET = 12.0;
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = com.jakubdabrowski.TaroterMacOS;
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				PRODUCT_NAME = Taroter;
 				SDKROOT = macosx;
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
@@ -1204,7 +1204,7 @@
 				CODE_SIGN_ENTITLEMENTS = TaroterMacOS/TaroterMacOS.entitlements;
 				CODE_SIGN_STYLE = Automatic;
 				COMBINE_HIDPI_IMAGES = YES;
-				CURRENT_PROJECT_VERSION = 1;
+				CURRENT_PROJECT_VERSION = 2;
 				DEVELOPMENT_ASSET_PATHS = "\"TaroterMacOS/Preview Content\"";
 				DEVELOPMENT_TEAM = G6NTB33VYZ;
 				ENABLE_HARDENED_RUNTIME = YES;
@@ -1219,7 +1219,7 @@
 				MACOSX_DEPLOYMENT_TARGET = 12.0;
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = com.jakubdabrowski.TaroterMacOS;
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				PRODUCT_NAME = Taroter;
 				SDKROOT = macosx;
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
