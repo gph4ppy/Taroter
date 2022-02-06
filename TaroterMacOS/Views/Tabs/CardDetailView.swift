@@ -7,6 +7,7 @@
 
 import SwiftUI
 
+/// This view shows the card data.
 struct CardDetailView: View {
     let card: TarotCard
     @Binding var showingCardDetail: Bool

@@ -7,8 +7,9 @@
 
 import SwiftUI
 
+/// A view showing the saved spread.
 struct SpreadPreview: View {
-    @Environment(\.colorScheme) var colorScheme: ColorScheme
+    @Environment(\.colorScheme) private var colorScheme: ColorScheme
     @Binding var showingSpread: Bool
     let tarotSpreadCards: NSSet
     
@@ -24,21 +25,8 @@ struct SpreadPreview: View {
             
             // Saved Cards
             ForEach(sortedCards, id: \.self) { card in
-                let cardLocation = CGPoint(x: card.xPosition,
-                                           y: card.yPosition)
-                
-                let card = SpreadCard(id: card.id ?? UUID(),
-                                      name: card.name ?? "",
-                                      imageName: card.imageName ?? "",
-                                      number: Int(card.number),
-                                      location: cardLocation,
-                                      meaning: card.meaning ?? LocalizedStrings.noMeaning,
-                                      rotationDegrees: card.rotationDegrees,
-                                      uprightKeywords: card.uprightKeywords ?? "",
-                                      reversedKeywords: card.reversedKeywords ?? "")
-                
-                // Card Shape
-                SpreadTarotCard(card: card,
+                let spreadCard = prepareCard(card: card)
+                SpreadTarotCard(card: spreadCard,
                                 isHoverable: false,
                                 showingTextFieldAlert: .constant(false),
                                 alertViewModel: nil,
@@ -53,6 +41,31 @@ struct SpreadPreview: View {
     }
 }
 
+// MARK: - Methods
+private extension SpreadPreview {
+    /// This method prepares the card to be shown in the view.
+    /// It converts `TarotSpreadCards` to `SpreadCard`.
+    /// - Parameter card: TarotSpreadCards object which contains all card data.
+    /// - Returns: SpreadCard object which contains card data and
+    ///            will be displayed as `SpreadTarotCard` [View].
+    func prepareCard(card: TarotSpreadCards) -> SpreadCard {
+        // Prepare Card Position
+        let cardLocation = CGPoint(x: card.xPosition,
+                                   y: card.yPosition)
+        
+        // Return Spread Card
+        return SpreadCard(id: card.id ?? UUID(),
+                          name: card.name ?? "",
+                          imageName: card.imageName ?? "",
+                          number: Int(card.number),
+                          location: cardLocation,
+                          meaning: card.meaning ?? LocalizedStrings.noMeaning,
+                          rotationDegrees: card.rotationDegrees,
+                          uprightKeywords: card.uprightKeywords ?? "",
+                          reversedKeywords: card.reversedKeywords ?? "")
+    }
+}
+
 // MARK: - Views
 private extension SpreadPreview {
     /// This method creates the SpreadCards meanings list.
@@ -63,10 +76,12 @@ private extension SpreadPreview {
         
         ScrollView {
             LazyVStack(spacing: 6) {
+                // "Meanings" Label
                 Text(LocalizedStrings.meanings)
                     .font(.title3)
                     .bold()
                 
+                // Cards
                 ForEach(sortedCards, id: \.self) { card in
                     VStack {
                         // Title

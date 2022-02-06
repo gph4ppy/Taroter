@@ -7,7 +7,7 @@
 
 import SwiftUI
 
-struct SpreadTarotCard: View {
+struct SpreadTarotCard: View, CardViewManager {
     // Properties
     @State private var showingPlusOverlay: Bool = false
     @State var card: SpreadCard
@@ -46,6 +46,7 @@ struct SpreadTarotCard: View {
 
 // MARK: - Methods
 private extension SpreadTarotCard {
+    /// If hover is allowed and performed, show plus overlay.
     func showPlusOverlay(_:Bool) {
         if isHoverable {
             withAnimation {
@@ -56,13 +57,16 @@ private extension SpreadTarotCard {
 }
 
 // MARK: - Card Position Management
-private extension SpreadTarotCard {
-    var gesture: _EndedGesture<_ChangedGesture<DragGesture>> {
+extension SpreadTarotCard {
+    /// A DragGesture, which allows moving the card.
+    private var gesture: _EndedGesture<_ChangedGesture<DragGesture>> {
         DragGesture()
             .onChanged(relocateCard)
             .onEnded(saveCardPosition)
     }
     
+    /// This method changes the location of the displayed card.
+    /// - Parameter value: Attributes of DragGesture
     func relocateCard(value: DragGesture.Value) -> Void {
         if let cardViewModel = cardViewModel {
             cardViewModel.selectedCard = card
@@ -70,31 +74,19 @@ private extension SpreadTarotCard {
         }
     }
     
+    /// This method updates the location of the card.
+    /// - Parameter value: Attributes of DragGesture
     func saveCardPosition(value: DragGesture.Value) -> Void {
         if let cardViewModel = cardViewModel {
             let index = card.number
             cardViewModel.cards[index].location = value.location
         }
     }
-    
-    func rotateCard(isAddition: Bool, degrees: Double) {
-        withAnimation {
-            if isAddition {
-                self.card.rotationDegrees += degrees
-            } else {
-                self.card.rotationDegrees -= degrees
-            }
-            
-            if let cardViewModel = cardViewModel {
-                let index = card.number
-                cardViewModel.cards[index].rotationDegrees = self.card.rotationDegrees
-            }
-        }
-    }
 }
 
 // MARK: - Card Data Management
 private extension SpreadTarotCard {
+    /// This method shows an alert that allows adding the meaning of the card.
     func addMeaning() {
         withAnimation {
             // Assign selected card
@@ -133,6 +125,7 @@ private extension SpreadTarotCard {
 
 // MARK: - Views
 private extension SpreadTarotCard {
+    /// A plus overlay, which is displayed on hover.
     var plusOverlay: some View {
         ZStack {
             if showingPlusOverlay {
@@ -150,44 +143,25 @@ private extension SpreadTarotCard {
         }
     }
     
+    /// This method creates the context menu. 
     @ViewBuilder func createContextMenu() -> some View {
         // Add Card Meaning Button
         Button(action: addMeaning) {
-            Text("Add meaning")
+            Text(LocalizedStrings.addMeaning)
             Image(systemName: "plus")
         }
         
         // Rotate x° Buttons
-        rotationButtons
+        rotationButtons { degrees in
+            rotateCard(degrees: degrees, viewModel: cardViewModel, card: card.number) {
+                self.card.rotationDegrees += degrees
+            }
+        }
         
         // Remove Card Button
         Button(action: removeCard) {
-            Text("Delete card")
+            Text(LocalizedStrings.deleteCard)
             Image(systemName: "trash")
         }
-    }
-    
-    @ViewBuilder func createRotationButton(degrees: Double, operation: RotationButtonOperation) -> some View {
-        let isAddition: Bool  = operation == .addition
-        let direction: String = isAddition ? "right" : "left"
-        
-        Button(action: { rotateCard(isAddition: isAddition, degrees: degrees) }) {
-            Text("Rotate \(Int(degrees))° \(direction)")
-            Image(systemName: isAddition ? "rotate.right.fill" : "rotate.left.fill")
-        }
-    }
-    
-    @ViewBuilder var rotationButtons: some View {
-        // 15°
-        createRotationButton(degrees: 15, operation: .subtraction)
-        createRotationButton(degrees: 15, operation: .addition)
-        
-        // 45°
-        createRotationButton(degrees: 45, operation: .subtraction)
-        createRotationButton(degrees: 45, operation: .addition)
-        
-        // 90°
-        createRotationButton(degrees: 90, operation: .subtraction)
-        createRotationButton(degrees: 90, operation: .addition)
     }
 }

@@ -335,6 +335,9 @@
 "new_spread" = "New spread";
 "no_meaning" = "No meaning";
 "meanings" = "Meanings";
+"keywords" = "Keywords";
+"no_saved_spreads" = "Currently you have no saved spreads. Select the \"New Spread\" tab to create one.";
+"no_saved_templates" = "Currently you have no saved templates. Select the \"New Template\" tab to create one.";
 
 // MARK: - Text Field Alert
 "description" = "Description";
@@ -348,8 +351,14 @@
 "meaning_title" = "Meaning";
 "meaning_message" = "Add card meaning or question";
 "meaning_placeholder" = "Card meaning or question...";
-"keywords" = "Keywords";
 
 // Buttons
 "save" = "Save";
 "cancel" = "Cancel";
+
+// MARK: - Card Management
+"add_meaning" = "Add meaning";
+"delete_card" = "Delete card";
+"left" = "left";
+"right" = "right";
+"rotate" = "Rotate";

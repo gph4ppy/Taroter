@@ -7,8 +7,9 @@
 
 import SwiftUI
 
+/// A view that expands with the usage of MatchedGeometryEffect and represents the provided content.
 struct ExpandableView<Content>: View where Content: View {
-    @Namespace var namespace
+    @Namespace private var namespace
     @State private var isExpanded: Bool = false
     let content: () -> Content
     

@@ -8,6 +8,7 @@
 import SwiftUI
 import CoreData
 
+/// The main view showing the content depending on the selected tab.
 struct MainView: View {
     @State private var selectedTab: Tabs = .allCards
     @State private var spreadSearchText: String = ""

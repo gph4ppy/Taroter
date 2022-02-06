@@ -7,6 +7,7 @@
 
 import SwiftUI
 
+/// A modifier that configures the style of a TemplateCardView and its ContextMenu.
 struct TemplateCardModifier<ContextMenu>: ViewModifier where ContextMenu: View {
     var rotationDegrees: Double
     let isEditable: Bool

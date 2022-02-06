@@ -14,7 +14,7 @@ struct ListBuilder {
     ///   - title: The title of the information provided on the row
     ///   - data: Card data related to the title of the row
     /// - Returns: List row
-    @ViewBuilder public static func createRow(title: String, data: String) -> some View {
+    @ViewBuilder static func createRow(title: String, data: String) -> some View {
         HStack {
             Text(title)
                 .bold()
@@ -32,7 +32,7 @@ struct ListBuilder {
     ///   - title: The title of the card orientation provided on the column [Upright/Reversed]
     ///   - data: Card keywords related to the title of the column (card orientation)
     /// - Returns: A column in the list row
-    @ViewBuilder public static func createColumn(title: String, data: String) -> some View {
+    @ViewBuilder static func createColumn(title: String, data: String) -> some View {
         VStack(alignment: .center) {
             Text(title)
                 .bold()

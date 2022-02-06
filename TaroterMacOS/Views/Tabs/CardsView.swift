@@ -7,11 +7,12 @@
 
 import SwiftUI
 
+/// A view that shows all cards in a grid. When [card is] clicked, it shows `CardDetailView`.
 struct CardsView: View, CardManager {
-    @State private var searchText: String      = ""
+    @State private var searchText: String = ""
     @State private var showingCardDetail: Bool = false
     @State private var selectedCard: TarotCard?
-    private let columns: [GridItem]            = [GridItem(.adaptive(minimum: 130))]
+    private let columns: [GridItem] = [GridItem(.adaptive(minimum: 130))]
     let selectedTab: Tabs
     
     var body: some View {
@@ -43,6 +44,8 @@ struct CardsView: View, CardManager {
 
 // MARK: - Methods
 private extension CardsView {
+    /// This method selects a card and presents its data in a detail view.
+    /// - Parameter card: TarotCard enum case, containing all card data
     func showCardDetailView(about card: TarotCard) {
         withAnimation {
             self.selectedCard = card
@@ -53,7 +56,10 @@ private extension CardsView {
 
 // MARK: - Views
 private extension CardsView {
-    @ViewBuilder private func createGridCard(card: TarotCards) -> some View {
+    /// This method creates a view of the card (photo + name) presented in the grid.
+    /// - Parameter card: TarotCard enum case, containing all card data
+    /// - Returns: A VStack containing card image and name
+    @ViewBuilder func createGridCard(card: TarotCards) -> some View {
         VStack {
             // Card Image
             Image(card.tarotCard.imageName)

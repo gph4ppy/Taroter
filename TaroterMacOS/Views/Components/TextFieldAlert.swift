@@ -60,6 +60,7 @@ private extension TextFieldAlert {
                 Text(LocalizedStrings.save)
                     .frame(maxWidth: .infinity, alignment: .center)
             }
+            .disabled(viewModel.textFieldText.isEmpty)
             
             Divider()
             

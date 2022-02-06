@@ -7,7 +7,7 @@
 
 import SwiftUI
 
-struct TemplateCardView: View {
+struct TemplateCardView: View, CardViewManager {
     // Properties
     @State var card: TemplateCard
     var isEditable: Bool
@@ -27,32 +27,22 @@ struct TemplateCardView: View {
                                    contextMenu: createContextMenu,
                                    id: card.id)
                 .position(card.location)
-                .gesture(
-                    DragGesture()
-                        .onChanged(relocateCard)
-                        .onEnded(saveCardPosition)
-                )
+                .gesture(gesture)
         }
     }
 }
 
-// MARK: - Methods
-private extension TemplateCardView {
-    func rotateCard(isAddition: Bool, degrees: Double) {
-        withAnimation {
-            if isAddition {
-                self.card.rotationDegrees += degrees
-            } else {
-                self.card.rotationDegrees -= degrees
-            }
-            
-            if let cardViewModel = cardViewModel {
-                let index = card.number
-                cardViewModel.cards[index].rotationDegrees = self.card.rotationDegrees
-            }
-        }
+// MARK: - Card Position Management
+extension TemplateCardView {
+    /// A DragGesture, which allows moving the card.
+    private var gesture: _EndedGesture<_ChangedGesture<DragGesture>> {
+        DragGesture()
+            .onChanged(relocateCard)
+            .onEnded(saveCardPosition)
     }
     
+    /// This method changes the location of the displayed card.
+    /// - Parameter value: Attributes of DragGesture
     func relocateCard(value: DragGesture.Value) -> Void {
         if let cardViewModel = cardViewModel {
             cardViewModel.selectedCard = card
@@ -60,17 +50,36 @@ private extension TemplateCardView {
         }
     }
     
+    /// This method updates the location of the card.
+    /// - Parameter value: Attributes of DragGesture
     func saveCardPosition(value: DragGesture.Value) -> Void {
         if let cardViewModel = cardViewModel {
             let index = card.number
             cardViewModel.cards[index].location = value.location
         }
     }
+}
+
+// MARK: - Card Data Management
+private extension TemplateCardView {
+    /// This method shows an alert that allows adding the meaning of the card.
+    func addMeaning() {
+        withAnimation {
+            // Assign selected card
+            guard let cardViewModel = cardViewModel else { return }
+            cardViewModel.selectedCard = card
+            
+            // Show TextFieldAlert
+            self.alertViewModel?.alertType = .meaning
+            self.alertViewModel?.textFieldText = ""
+            self.showingTextFieldAlert = true
+        }
+    }
     
     /// This method removes the card from the spread.
     func removeCard() {
         /* ----------------------------------------------
-         MARK: - Workaround
+                       MARK: - Workaround
          cards.remove(at: Index) didn't work:
          
          - removing a card with its number, in many cases,
@@ -106,23 +115,11 @@ private extension TemplateCardView {
             cardViewModel.cards = filteredCards
         }
     }
-    
-    func addMeaning() {
-        withAnimation {
-            // Assign selected card
-            guard let cardViewModel = cardViewModel else { return }
-            cardViewModel.selectedCard = card
-            
-            // Show TextFieldAlert
-            self.alertViewModel?.alertType = .meaning
-            self.alertViewModel?.textFieldText = ""
-            self.showingTextFieldAlert = true
-        }
-    }
 }
 
 // MARK: - Views
 private extension TemplateCardView {
+    /// An overlay displaying a card number.
     var cardNumberOverlay: some View {
         Text(String(card.number + 1))
             .font(.largeTitle)
@@ -130,43 +127,24 @@ private extension TemplateCardView {
             .foregroundColor(Color(.windowBackgroundColor))
     }
     
-    @ViewBuilder var rotationButtons: some View {
-        // 15°
-        createRotationButton(degrees: 15, operation: .subtraction)
-        createRotationButton(degrees: 15, operation: .addition)
-        
-        // 45°
-        createRotationButton(degrees: 45, operation: .subtraction)
-        createRotationButton(degrees: 45, operation: .addition)
-        
-        // 90°
-        createRotationButton(degrees: 90, operation: .subtraction)
-        createRotationButton(degrees: 90, operation: .addition)
-    }
-    
-    @ViewBuilder func createRotationButton(degrees: Double, operation: RotationButtonOperation) -> some View {
-        let isAddition: Bool  = operation == .addition
-        let direction: String = isAddition ? "right" : "left"
-        
-        Button(action: { rotateCard(isAddition: isAddition, degrees: degrees) }) {
-            Text("Rotate \(Int(degrees))° \(direction)")
-            Image(systemName: isAddition ? "rotate.right.fill" : "rotate.left.fill")
-        }
-    }
-    
+    /// This method creates the context menu.
     @ViewBuilder func createContextMenu() -> some View {
         // Add Card Meaning Button
         Button(action: addMeaning) {
-            Text("Add meaning")
+            Text(LocalizedStrings.addMeaning)
             Image(systemName: "plus")
         }
         
         // Rotate x° Buttons
-        rotationButtons
+        rotationButtons { degrees in
+            rotateCard(degrees: degrees, viewModel: cardViewModel, card: card.number) {
+                self.card.rotationDegrees += degrees
+            }
+        }
         
         // Remove Card Button
         Button(action: removeCard) {
-            Text("Delete card")
+            Text(LocalizedStrings.deleteCard)
             Image(systemName: "trash")
         }
     }

@@ -59,10 +59,12 @@ private extension SpreadTemplatePreview {
         
         ScrollView {
             LazyVStack(spacing: 6) {
+                // "Meanings" Label
                 Text(LocalizedStrings.meanings)
                     .font(.title3)
                     .bold()
                 
+                // Card Meanings
                 ForEach(sortedCards, id: \.self) { card in
                     if let cardMeaning = card.meaning {
                         let isMeaningEmpty = cardMeaning.isEmpty

@@ -337,6 +337,9 @@
 "new_spread" = "Nowy rozkład";
 "no_meaning" = "Brak znaczenia";
 "meanings" = "Znaczenia";
+"keywords" = "Słowa kluczowe";
+"no_saved_spreads" = "Aktualnie nie posiadasz zapisanych rozkładów. Wybierz kartę \"Nowy rozkład\", aby go utworzyć.";
+"no_saved_templates" = "Aktualnie nie posiadasz zapisanych szablonów. Wybierz kartę \"Nowy szablon\", aby go utworzyć.";
 
 // MARK: - Text Field Alert
 "description" = "Opis";
@@ -350,8 +353,14 @@
 "meaning_title" = "Znaczenie";
 "meaning_message" = "Dodaj znaczenie karty lub jej pytanie";
 "meaning_placeholder" = "Znaczenie lub pytanie karty...";
-"keywords" = "Słowa kluczowe";
 
 // Buttons
 "save" = "Zapisz";
 "cancel" = "Anuluj";
+
+// MARK: - Card Management
+"add_meaning" = "Dodaj znaczenie";
+"delete_card" = "Usuń kartę";
+"left" = "w lewo";
+"right" = "w prawo";
+"rotate" = "Obróć";

@@ -7,6 +7,7 @@
 
 import SwiftUI
 
+/// A modifier that setups the SegmentedPicker style.
 struct SegmentedPickerStyle: ViewModifier {
     let isDisabled: Bool
     

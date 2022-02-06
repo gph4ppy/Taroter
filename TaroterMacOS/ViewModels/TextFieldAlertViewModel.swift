@@ -31,7 +31,7 @@ final class TextFieldAlertViewModel: ObservableObject {
     /// This method returns a tuple that contains the data displayed in the alert.
     /// - Returns: String data contained in a tuple.
     ///            Alert title, alert description, and TextField placeholder.
-    func assignAlertData() -> (title: String, message: String, textFieldPlaceholder: String)  {
+    private func assignAlertData() -> (title: String, message: String, textFieldPlaceholder: String) {
         switch alertType {
             // Saving Alert Data
             case .saving:

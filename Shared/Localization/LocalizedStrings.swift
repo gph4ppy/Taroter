@@ -337,7 +337,10 @@ struct LocalizedStrings {
     public static let newSpread = NSLocalizedString("new_spread", comment: "")
     public static let noMeaning = NSLocalizedString("no_meaning", comment: "")
     public static let meanings = NSLocalizedString("meanings", comment: "")
-    
+    public static let keywords = NSLocalizedString("keywords", comment: "")
+    public static let noSavedSpreads = NSLocalizedString("no_saved_spreads", comment: "")
+    public static let noSavedTemplates = NSLocalizedString("no_saved_templates", comment: "")
+
     // MARK: - Text Field Alert
     public static let description = NSLocalizedString("description", comment: "")
 
@@ -350,9 +353,15 @@ struct LocalizedStrings {
     public static let meaningTitle = NSLocalizedString("meaning_title", comment: "")
     public static let meaningMessage = NSLocalizedString("meaning_message", comment: "")
     public static let meaningPlaceholder = NSLocalizedString("meaning_placeholder", comment: "")
-    public static let keywords = NSLocalizedString("keywords", comment: "")
     
     // Buttons
     public static let save = NSLocalizedString("save", comment: "")
     public static let cancel = NSLocalizedString("cancel", comment: "")
+    
+    // MARK: - Card Management
+    public static let addMeaning = NSLocalizedString("add_meaning", comment: "")
+    public static let deleteCard = NSLocalizedString("delete_card", comment: "")
+    public static let left = NSLocalizedString("left", comment: "")
+    public static let right = NSLocalizedString("right", comment: "")
+    public static let rotate = NSLocalizedString("rotate", comment: "")
 }

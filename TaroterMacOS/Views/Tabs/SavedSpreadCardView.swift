@@ -7,12 +7,13 @@
 
 import SwiftUI
 
-/// A view showing basic data about the saved spread template.
+/// A view showing basic data about the saved spread.
 struct SavedSpreadCardView: View {
-    var savedSpread: TarotSpreads
-    @Binding var showingSpread: Bool
-    @Binding var selectedSpread: TarotSpreads?
-    @Environment(\.managedObjectContext) private var viewContext
+    let title: String
+    let description: String
+    let date: Date
+    let onTapAction: () -> ()
+    let deleteAction: () -> ()
     private var dateFormatter: DateFormatter {
         let formatter = DateFormatter()
         formatter.dateStyle = .short
@@ -29,51 +30,34 @@ struct SavedSpreadCardView: View {
                         x: -5, y: 5)
             
             VStack(spacing: 10) {
-                // Title, Date and Remove Template Button
                 HStack(spacing: 10) {
-                    Text(savedSpread.title ?? "")
+                    // Title
+                    Text(title)
                         .font(.largeTitle)
                         .fontWeight(.medium)
                     
                     Spacer()
                     
-                    Text(dateFormatter.string(from: savedSpread.date ?? Date()))
+                    // Date String
+                    Text(dateFormatter.string(from: date))
                         .font(.title3)
                         .fontWeight(.medium)
                     
-                    Button(action: { removeTemplate(template: savedSpread) }) {
+                    // Delete Saved Spread/Template Button
+                    Button(action: deleteAction) {
                         Image(systemName: "minus.circle")
                             .foregroundColor(.red)
                     }
                 }
                 
                 // Description
-                Text(savedSpread.spreadDescription ?? "")
+                Text(description)
                     .font(.footnote)
             }
             .foregroundColor(Color(.textBackgroundColor))
             .padding()
         }
         .padding()
-        .onTapGesture {
-            // Show Spread Template
-            withAnimation {
-                self.selectedSpread = savedSpread
-                self.showingSpread = true
-            }
-        }
+        .onTapGesture(perform: onTapAction)
     }
 }
-
-// MARK: - Data Management
-private extension SavedSpreadCardView {
-    /// This method removes the template from the viewContext.
-    /// - Parameter template: SpreadTemplate displayed on this card
-    private func removeTemplate(template: TarotSpreads) {
-        withAnimation {
-            viewContext.delete(template)
-            PersistenceController.shared.save()
-        }
-    }
-}
-

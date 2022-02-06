@@ -136,6 +136,7 @@ private extension NewSpreadView {
         
         for card in cards {
             let newCard              = TarotSpreadCards(context: viewContext)
+            
             newCard.id               = UUID()
             newCard.name             = card.name
             newCard.imageName        = card.imageName
@@ -163,6 +164,7 @@ private extension NewSpreadView {
     @ViewBuilder func createCardsList(windowSize: CGSize) -> some View {
         LazyVStack {
             ForEach(TarotCards.allCases, id: \.self) { card in
+                // Prepare Card
                 var tarotCard = SpreadCard(id: UUID(),
                                            name: card.tarotCard.name,
                                            imageName: card.tarotCard.imageName,
@@ -173,6 +175,7 @@ private extension NewSpreadView {
                                            uprightKeywords: card.tarotCard.uprightKeywords,
                                            reversedKeywords: card.tarotCard.reversedKeywords)
                 
+                // Add Card Button
                 Button(action: { addCard(card: &tarotCard, size: windowSize) }) {
                     SpreadTarotCard(card: tarotCard,
                                     isHoverable: true,
