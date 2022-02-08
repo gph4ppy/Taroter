@@ -67,11 +67,7 @@ Taroter is available for free on the AppStore - you can try it out yourself. To 
 
 ## Usage
 <p align="center">
-<p><h4><b>- iOS</b></h4></p>
   <img src="https://user-images.githubusercontent.com/41966757/146793328-9e64a4c9-c4f8-4c26-8e4d-9de7bb78a843.gif" alt="[iOS] Usage of the application"/>
-</p>
-<p align="center">
-<p><h4><b>- macOS</b></h4></p>
   <img src="https://user-images.githubusercontent.com/41966757/153026765-d68bfb81-9999-4347-8720-88cb04bf9007.gif" alt="[macOS] Usage of the application"/>
 </p>
 
