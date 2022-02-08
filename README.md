@@ -41,7 +41,7 @@ Taroter is an application that not only facilitates learning but also allows you
 <table>
   <tr>
     <th align="center">
-      <p><small>All Cards View</small></p>
+      <p>All Cards View</p>
     </th>
     <th align="center">
       <p><small>Detail View</small></p>
