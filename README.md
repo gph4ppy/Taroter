@@ -41,20 +41,18 @@ Taroter is an application that not only facilitates learning but also allows you
 <table>
   <tr>
     <th align="center">
-      <img width="441" height="1">
         <p><small>All Cards View</small></p>
     </th>
     <th align="center">
-      <img width="441" height="1">
         <p><small>Detail View</small></p>
     </th>
   </tr>
   <tr>
     <td>
-      ![Light AllCardsView](https://user-images.githubusercontent.com/41966757/146790821-5d73a51e-5b11-4f02-af5e-5045f56202fb.PNG)
+      <img src="https://user-images.githubusercontent.com/41966757/146790821-5d73a51e-5b11-4f02-af5e-5045f56202fb.PNG" alt="AllCardsView"/>
     </td>
     <td>
-      ![Dark AllCardsView](https://user-images.githubusercontent.com/41966757/146790864-67d118da-f7b0-4e34-acf4-334527eb66c4.PNG)
+      <img src="https://user-images.githubusercontent.com/41966757/146790864-67d118da-f7b0-4e34-acf4-334527eb66c4.PNG" alt="DetailView"/>
     </td>
   </tr>
 </table>
