@@ -51,10 +51,10 @@ Taroter is an application that not only facilitates learning but also allows you
   </tr>
   <tr>
     <td>
-      <img src="https://user-images.githubusercontent.com/41966757/146790821-5d73a51e-5b11-4f02-af5e-5045f56202fb.PNG" alt="AllCardsView"/>
+      <img src="https://user-images.githubusercontent.com/41966757/146790821-5d73a51e-5b11-4f02-af5e-5045f56202fb.PNG" alt="AllCardsView" width="441"/>
     </td>
     <td>
-      <img src="https://user-images.githubusercontent.com/41966757/146790864-67d118da-f7b0-4e34-acf4-334527eb66c4.PNG" alt="DetailView"/>
+      <img src="https://user-images.githubusercontent.com/41966757/146790864-67d118da-f7b0-4e34-acf4-334527eb66c4.PNG" alt="DetailView" width="441"/>
     </td>
   </tr>
 </table>
