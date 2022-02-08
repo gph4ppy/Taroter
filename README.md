@@ -30,23 +30,22 @@ Taroter is an application that not only facilitates learning but also allows you
 - Taroter works in a vertical and horizontal mode so that each user can use the application in any device orientation.
 
 ## Screenshots
-** iOS ** 
+######iOS ** 
 | Card Detail View          | Scanner                   |
 |:-------------------------:|:-------------------------:|
 | ![Light Detail View](https://user-images.githubusercontent.com/41966757/146786161-857560d2-27e2-4aff-b3fe-6358fde47c80.png)    | ![Light Detail View](https://user-images.githubusercontent.com/41966757/146786188-d5d10dd9-d254-4767-ac02-69ed43f5397a.png)    |
 | **Light All Cards View**  | **Dark All Cards View**   |
 | ![Light AllCardsView](https://user-images.githubusercontent.com/41966757/146786082-47d460a4-f560-43ba-8cd9-19656f55fea4.png)   |  ![Dark AllCardsView](https://user-images.githubusercontent.com/41966757/146786123-59870b9a-56c9-428a-8b8f-dceae90505a7.png)   |
 
-** watchOS ** 
+######watchOS ** 
 | All Cards View            | Detail View               |
 |:-------------------------:|:-------------------------:|
 | ![Light AllCardsView](https://user-images.githubusercontent.com/41966757/146790821-5d73a51e-5b11-4f02-af5e-5045f56202fb.PNG)   |  ![Dark AllCardsView](https://user-images.githubusercontent.com/41966757/146790864-67d118da-f7b0-4e34-acf4-334527eb66c4.PNG)   |
 
-** macOS ** 
+######macOS
 | All Cards View + Dark Mode New Template View | Detail View |
 |:-------------------------:|:-------------------------:|
-| 
-![AllCardsView + DarkMode NewTemplateView](https://user-images.githubusercontent.com/41966757/153022853-0b636633-583c-4f40-890a-ffa33703dd79.png) | ![Detail View](https://user-images.githubusercontent.com/41966757/153023018-0bf54a2c-b2b3-4254-8649-e97705c0905f.png) |
+| ![AllCardsView + DarkMode NewTemplateView](https://user-images.githubusercontent.com/41966757/153022853-0b636633-583c-4f40-890a-ffa33703dd79.png) | ![Detail View](https://user-images.githubusercontent.com/41966757/153023018-0bf54a2c-b2b3-4254-8649-e97705c0905f.png) |
 | **Saved Template View**   | **New Spread View**       |
 | ![SavedTemplateView](https://user-images.githubusercontent.com/41966757/153023298-d83b7eda-61a8-4789-9cdb-b40dd0cc400c.png) | ![NewSpreadView](https://user-images.githubusercontent.com/41966757/153024399-706cb6f2-dd71-4341-9550-8381f29e3995.png) |
 
