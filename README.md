@@ -38,10 +38,27 @@ Taroter is an application that not only facilitates learning but also allows you
 | ![Light AllCardsView](https://user-images.githubusercontent.com/41966757/146786082-47d460a4-f560-43ba-8cd9-19656f55fea4.png)   |  ![Dark AllCardsView](https://user-images.githubusercontent.com/41966757/146786123-59870b9a-56c9-428a-8b8f-dceae90505a7.png)   |
 
 ###### - watchOS 
-| All Cards View            | Detail View               |
-|:-------------------------:|:-------------------------:|
-| ![Light AllCardsView](https://user-images.githubusercontent.com/41966757/146790821-5d73a51e-5b11-4f02-af5e-5045f56202fb.PNG)   |  ![Dark AllCardsView](https://user-images.githubusercontent.com/41966757/146790864-67d118da-f7b0-4e34-acf4-334527eb66c4.PNG)   |
-
+<table>
+  <tr>
+    <th align="center">
+      <img width="441" height="1">
+        <p><small>All Cards View</small></p>
+    </th>
+    <th align="center">
+      <img width="441" height="1">
+        <p><small>Detail View</small></p>
+    </th>
+  </tr>
+  <tr>
+    <td>
+      ![Light AllCardsView](https://user-images.githubusercontent.com/41966757/146790821-5d73a51e-5b11-4f02-af5e-5045f56202fb.PNG)
+    </td>
+    <td>
+      ![Dark AllCardsView](https://user-images.githubusercontent.com/41966757/146790864-67d118da-f7b0-4e34-acf4-334527eb66c4.PNG)
+    </td>
+  </tr>
+</table>
+  
 ###### - macOS
 | All Cards View + Dark Mode New Template View | Detail View |
 |:-------------------------:|:-------------------------:|
