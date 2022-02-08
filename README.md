@@ -30,19 +30,19 @@ Taroter is an application that not only facilitates learning but also allows you
 - Taroter works in a vertical and horizontal mode so that each user can use the application in any device orientation.
 
 ## Screenshots
-###### iOS
+###### - iOS
 | Card Detail View          | Scanner                   |
 |:-------------------------:|:-------------------------:|
 | ![Light Detail View](https://user-images.githubusercontent.com/41966757/146786161-857560d2-27e2-4aff-b3fe-6358fde47c80.png)    | ![Light Detail View](https://user-images.githubusercontent.com/41966757/146786188-d5d10dd9-d254-4767-ac02-69ed43f5397a.png)    |
 | **Light All Cards View**  | **Dark All Cards View**   |
 | ![Light AllCardsView](https://user-images.githubusercontent.com/41966757/146786082-47d460a4-f560-43ba-8cd9-19656f55fea4.png)   |  ![Dark AllCardsView](https://user-images.githubusercontent.com/41966757/146786123-59870b9a-56c9-428a-8b8f-dceae90505a7.png)   |
 
-###### watchOS 
+###### - watchOS 
 | All Cards View            | Detail View               |
 |:-------------------------:|:-------------------------:|
 | ![Light AllCardsView](https://user-images.githubusercontent.com/41966757/146790821-5d73a51e-5b11-4f02-af5e-5045f56202fb.PNG)   |  ![Dark AllCardsView](https://user-images.githubusercontent.com/41966757/146790864-67d118da-f7b0-4e34-acf4-334527eb66c4.PNG)   |
 
-###### macOS
+###### - macOS
 | All Cards View + Dark Mode New Template View | Detail View |
 |:-------------------------:|:-------------------------:|
 | ![AllCardsView + DarkMode NewTemplateView](https://user-images.githubusercontent.com/41966757/153022853-0b636633-583c-4f40-890a-ffa33703dd79.png) | ![Detail View](https://user-images.githubusercontent.com/41966757/153023018-0bf54a2c-b2b3-4254-8649-e97705c0905f.png) |
@@ -67,7 +67,11 @@ Taroter is available for free on the AppStore - you can try it out yourself. To 
 
 ## Usage
 <p align="center">
-  <img src="https://user-images.githubusercontent.com/41966757/146793328-9e64a4c9-c4f8-4c26-8e4d-9de7bb78a843.gif" alt="Usage of the application"/>
+  <h3><b> - iOS <\h3><\b>
+  <img src="https://user-images.githubusercontent.com/41966757/146793328-9e64a4c9-c4f8-4c26-8e4d-9de7bb78a843.gif" alt="[iOS] Usage of the application"/>
+    
+  ###### - macOS
+  <img src="https://user-images.githubusercontent.com/41966757/153026765-d68bfb81-9999-4347-8720-88cb04bf9007.gif" alt="[macOS] Usage of the application"/>
 </p>
 
 ## Project Status
