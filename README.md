@@ -44,7 +44,7 @@ Taroter is an application that not only facilitates learning but also allows you
       All Cards View
     </th>
     <th align="center">
-      <p style="display:inline">Detail View</p>
+      Detail View
     </th>
   </tr>
   <tr>
